@@ -96,23 +96,47 @@ nav ul li a.active { opacity: 1; border-bottom: 2px solid var(--color-accent); }
   padding: 2rem 1.5rem 4rem;
 }
 
-/* Home page */
+/* Home page — hero with portrait */
 .home-hero {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
   border-bottom: 1px solid var(--color-border);
   padding-bottom: 2rem;
   margin-bottom: 2.5rem;
 }
 
+.hero-portrait {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+  border: 3px solid var(--color-accent);
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.hero-text { flex: 1; }
+
 .home-hero h1 {
   font-family: var(--font-vedic);
   font-size: 2rem;
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.3rem;
   color: var(--color-accent);
 }
 
 .home-hero .subtitle {
+  font-size: 1.1rem;
+  margin: 0 0 0.2rem;
+  font-weight: bold;
+  color: var(--color-text);
+}
+
+.home-hero .hero-desc {
   color: var(--color-muted);
-  font-size: 1.05rem;
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
   margin: 0;
 }
 
@@ -355,4 +379,6 @@ footer a { color: var(--color-accent); text-decoration: none; }
   nav ul li a { padding: 0.5rem 0.5rem; font-size: 0.75rem; }
   .events-list li { grid-template-columns: 1fr; gap: 0.25rem; }
   article.full-article h1 { font-size: 1.5rem; }
+  .home-hero { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .hero-portrait { width: 100px; height: 100px; }
 }

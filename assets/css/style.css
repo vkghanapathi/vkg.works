@@ -59,9 +59,22 @@ nav .site-title {
   text-decoration: none;
   font-family: var(--font-vedic);
   font-size: 1.3rem;
-  padding: 0.9rem 1rem 0.9rem 0;
+  padding: 0.6rem 1rem 0.6rem 0;
   margin-right: 1rem;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.nav-portrait {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 20%;
+  border: 2px solid rgba(245, 230, 211, 0.45);
+  flex-shrink: 0;
 }
 
 nav ul {

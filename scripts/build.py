@@ -61,6 +61,8 @@ SECTION_TITLES = {
     'contact':  'Contact',
 }
 
+QUEUE_STATUSES = {'planned', 'draft', 'in-progress', 'in progress'}
+
 
 # ─── Registry ───────────────────────────────────────────────────────────────
 def load_registry() -> dict:
@@ -206,10 +208,33 @@ def render_site(sections: dict[str, list[ArticleData]], site_url: str, env: Envi
         shutil.copytree(str(ASSETS_DIR), str(site_assets))
         print('  Copied assets/')
 
+    # Separate queue items (planned/draft) from published items
+    queue_items: list[ArticleData] = []
+    for section_name in list(sections.keys()):
+        regular, queued = [], []
+        for item in sections[section_name]:
+            if item.status and item.status.lower() in QUEUE_STATUSES:
+                queued.append(item)
+            else:
+                regular.append(item)
+        sections[section_name] = regular
+        queue_items.extend(queued)
+
     # Render home page
+    all_items = [item for items in sections.values() for item in items]
+    featured_items = [i for i in all_items if getattr(i, 'featured', False)]
+    latest_items = sorted(
+        [i for i in all_items if i.date],
+        key=lambda x: x.date, reverse=True
+    )[:7]
     home_tmpl = env.get_template('home.html')
     (SITE_DIR / 'index.html').write_text(
-        home_tmpl.render(sections=sections, site_url=site_url),
+        home_tmpl.render(
+            sections=sections,
+            featured_items=featured_items,
+            latest_items=latest_items,
+            site_url=site_url,
+        ),
         encoding='utf-8'
     )
     print('  Rendered index.html')
@@ -277,6 +302,15 @@ def render_site(sections: dict[str, list[ArticleData]], site_url: str, env: Envi
     contact_dir.mkdir(parents=True, exist_ok=True)
     (contact_dir / 'index.html').write_text(
         contact_tmpl.render(), encoding='utf-8'
+    )
+
+    # Render queue page (planned + draft items)
+    queue_tmpl = env.get_template('queue.html')
+    queue_dir = SITE_DIR / 'queue'
+    queue_dir.mkdir(parents=True, exist_ok=True)
+    (queue_dir / 'index.html').write_text(
+        queue_tmpl.render(queue_items=queue_items),
+        encoding='utf-8'
     )
 
 

@@ -1,8 +1,9 @@
 """
 social.py — Social media posting for vkg.works
-Platforms: Facebook Page, Twitter/X, LinkedIn, WhatsApp Business Cloud API
+Platforms: Facebook Page, LinkedIn, WhatsApp Business Cloud API
 Run after build.py detects new items.
 Reads credentials from environment variables (set as GitHub Secrets).
+Note: Twitter/X excluded — write access requires paid API tier ($100/mo).
 """
 from __future__ import annotations
 import os
@@ -28,31 +29,6 @@ def _post_facebook(title: str, excerpt: str, url: str, section: str) -> bool:
         return True
     print(f'  Facebook: FAILED ({resp.status_code}) — {resp.text[:200]}', file=sys.stderr)
     return False
-
-
-def _post_twitter(title: str, url: str, section: str) -> bool:
-    api_key = os.environ.get('TWITTER_API_KEY', '')
-    api_secret = os.environ.get('TWITTER_API_SECRET', '')
-    access_token = os.environ.get('TWITTER_ACCESS_TOKEN', '')
-    access_secret = os.environ.get('TWITTER_ACCESS_SECRET', '')
-    if not all([api_key, api_secret, access_token, access_secret]):
-        print('  Twitter/X: skipped (credentials not set)')
-        return False
-    try:
-        import tweepy
-        client = tweepy.Client(
-            consumer_key=api_key,
-            consumer_secret=api_secret,
-            access_token=access_token,
-            access_token_secret=access_secret,
-        )
-        text = f'[{section.upper()}] {title}\n{url}'
-        client.create_tweet(text=text[:280])
-        print('  Twitter/X: posted')
-        return True
-    except Exception as e:
-        print(f'  Twitter/X: FAILED — {e}', file=sys.stderr)
-        return False
 
 
 def _post_linkedin(title: str, excerpt: str, url: str) -> bool:
@@ -155,8 +131,6 @@ def post_all(new_items: list, site_url: str) -> list[str]:
 
         if _post_facebook(title, excerpt, url, section_name):
             posted_platforms.add('facebook')
-        if _post_twitter(title, url, section_name):
-            posted_platforms.add('twitter')
         if _post_linkedin(title, excerpt, url):
             posted_platforms.add('linkedin')
         if _post_whatsapp(title, url):

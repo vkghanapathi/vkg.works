@@ -39,6 +39,7 @@ class ArticleData:
     status: Optional[str] = None          # For projects
     category: Optional[str] = None        # Free-text type (administrative/technical/etc.)
     ref: Optional[str] = None             # Permanent section ref e.g. A·0001
+    featured: bool = False                # Pin to home page featured column
 
 
 _md = MarkdownIt()
@@ -70,23 +71,23 @@ def _truncate(text: str, length: int = 200) -> str:
     return text[:length].rsplit(' ', 1)[0] + '…'
 
 
-def _first_paragraph(text: str, max_chars: int = 200) -> str:
-    """Extract first meaningful paragraph from plain text."""
-    lines = [l.strip() for l in text.splitlines()]
-    paragraphs = []
-    current = []
-    for line in lines:
-        if line:
-            current.append(line)
-        elif current:
-            paragraphs.append(' '.join(current))
-            current = []
-    if current:
-        paragraphs.append(' '.join(current))
-    for para in paragraphs:
-        if len(para) > 20:
-            return _truncate(para, max_chars)
-    return ''
+def _first_paragraph(text: str, max_chars: int = 220) -> str:
+    """Extract first 1-2 sentences from plain text."""
+    # Strip markdown headings and blank lines
+    lines = [l.strip() for l in text.splitlines()
+             if l.strip() and not l.strip().startswith('#')]
+    plain = ' '.join(lines)
+    # Split on sentence-ending punctuation followed by space
+    sentences = re.split(r'(?<=[.!?।])\s+', plain)
+    result = ''
+    for sent in sentences:
+        if len(result) + len(sent) <= max_chars:
+            result = (result + ' ' + sent).strip()
+        else:
+            break
+        if len(result) >= 80:   # at least one decent sentence
+            break
+    return result or _truncate(plain, max_chars)
 
 
 def _youtube_to_embed(url: str) -> Optional[str]:
@@ -146,6 +147,7 @@ def convert_markdown(path: Path, section: str) -> ArticleData:
         pdf_file=meta.get('pdf_file'),
         status=meta.get('status'),
         category=meta.get('category') or None,
+        featured=bool(meta.get('featured', False)),
     )
 
 

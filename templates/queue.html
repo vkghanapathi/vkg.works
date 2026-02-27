@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Queue — vkg.works{% endblock %}
+{% set active_section = 'queue' %}
+
+{% block content %}
+<div class="page-container">
+  <div class="section-header">
+    <h1>Queue <span class="section-cat-label">Planned &amp; In Progress</span></h1>
+    <p style="color:var(--color-muted); font-family:var(--font-ui); font-size:0.9rem; margin-top:0.5rem;">
+      Works in progress and planned pieces. Add <code>status: planned</code> or <code>status: draft</code>
+      to any content file to list it here.
+    </p>
+  </div>
+
+  {% if queue_items %}
+  <ul class="item-list">
+    {% for item in queue_items %}
+    <li>
+      <p class="item-title">
+        {{ item.title }}
+        <span class="section-badge">{{ item.section | title }}</span>
+        <span class="queue-status queue-status--{{ item.status | lower | replace(' ', '-') }}">
+          {{ item.status | title }}
+        </span>
+      </p>
+      <p class="item-meta">
+        {% if item.date_display %}{{ item.date_display }}{% endif %}
+        {% if item.author %} &bull; {{ item.author }}{% endif %}
+      </p>
+      {% if item.excerpt %}<p class="item-excerpt">{{ item.excerpt }}</p>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p style="color: var(--color-muted);">No planned or draft items yet.</p>
+  {% endif %}
+</div>
+{% endblock %}

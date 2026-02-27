@@ -3,10 +3,11 @@
 {% block title %}vkg.works — Dr. Vamshi Krishna Ghanapāṭhī{% endblock %}
 {% block description %}Scholarly articles, poems, songs, books, and Vedic recitation by Dr. Vamshi Krishna Ghanapāṭhī{% endblock %}
 
+{% set active_section = 'home' %}
 {% block content %}
 <div class="page-container">
   <div class="home-hero">
-    <img src="/assets/img/vkg-portrait.jpg"
+    <img src="/assets/img/vkg-home.jpg"
          alt="Dr. Vamshi Krishna Ghanapāṭhī"
          class="hero-portrait">
     <div class="hero-text">
@@ -17,26 +18,52 @@
     </div>
   </div>
 
-  <div class="home-sections">
-    {% for section_name, items in sections.items() if items %}
-    <section class="home-section">
-      <h2><a href="/{{ section_name }}/">{{ section_name | title }}</a></h2>
+  <div class="home-columns">
+
+    <!-- Featured column -->
+    <div class="home-col">
+      <h2 class="home-col-header">Featured</h2>
+      {% if featured_items %}
       <ul class="item-list">
-        {% for item in items[:5] %}
+        {% for item in featured_items %}
         <li>
-          <p class="item-title"><a href="/{{ section_name }}/{{ item.slug }}/">{{ item.title }}</a></p>
-          {% if item.date %}<p class="item-meta">{{ item.date_display }}</p>{% endif %}
+          <p class="item-title">
+            <a href="/{{ item.section }}/{{ item.slug }}/">{{ item.title }}</a>
+            <span class="section-badge">{{ item.section | title }}</span>
+          </p>
           {% if item.excerpt %}<p class="item-excerpt">{{ item.excerpt }}</p>{% endif %}
         </li>
         {% endfor %}
       </ul>
-      {% if items | length > 5 %}
-      <p style="margin-top:0.75rem; font-family: var(--font-ui); font-size:0.85rem;">
-        <a href="/{{ section_name }}/" style="color:var(--color-accent);">View all &rarr;</a>
-      </p>
+      {% else %}
+      <p class="home-empty">Add <code>featured: true</code> to any content file to pin it here.</p>
       {% endif %}
-    </section>
-    {% endfor %}
+    </div>
+
+    <!-- Latest column -->
+    <div class="home-col">
+      <h2 class="home-col-header">Latest</h2>
+      {% if latest_items %}
+      <ul class="item-list">
+        {% for item in latest_items %}
+        <li>
+          <p class="item-title">
+            <a href="/{{ item.section }}/{{ item.slug }}/">{{ item.title }}</a>
+            <span class="section-badge">{{ item.section | title }}</span>
+          </p>
+          <p class="item-meta">
+            {% if item.ref %}<span class="item-ref">{{ item.ref }}</span>{% endif %}
+            {% if item.date_display %}{{ item.date_display }}{% endif %}
+          </p>
+          {% if item.excerpt %}<p class="item-excerpt">{{ item.excerpt }}</p>{% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p class="home-empty">No content yet. Check back soon.</p>
+      {% endif %}
+    </div>
+
   </div>
 </div>
 {% endblock %}

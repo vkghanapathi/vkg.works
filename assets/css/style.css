@@ -4,6 +4,13 @@
   font-family: 'VijayaDV';
   src: url('/assets/fonts/VijayaDV.woff2') format('woff2');
   font-display: swap;
+  /* Apply ONLY to Devanagari Unicode range + VijayaDV PUA characters.
+     English and other Latin text falls back to Georgia automatically. */
+  unicode-range:
+    U+0900-U+097F,   /* Devanagari */
+    U+0966-U+096F,   /* Devanagari digits */
+    U+1CD0-U+1CFF,   /* Vedic Extensions */
+    U+E000-U+F8FF;   /* PUA — VijayaDV custom characters */
 }
 
 :root {

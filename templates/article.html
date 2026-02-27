@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block title %}{{ title }} — vkg.works{% endblock %}
-{% block description %}{{ excerpt }}{% endblock %}
+{% block description %}{{ abstract if abstract else excerpt }}{% endblock %}
 {% set active_section = section_name %}
 
 {% block content %}
@@ -10,13 +10,34 @@
     <header>
       <h1>{{ title }}</h1>
       <p class="article-meta">
+        {% if ref %}<span class="article-ref">{{ ref }}</span>{% endif %}
         {% if date_display %}{{ date_display }}{% endif %}
         {% if author %} &bull; {{ author }}{% endif %}
+        {% if category %} &bull; <span class="category-badge">{{ category }}</span>{% endif %}
       </p>
+      {% if abstract %}
+      <p class="article-abstract">{{ abstract }}</p>
+      {% endif %}
     </header>
+
+    {% if preamble %}
+    <aside class="article-preamble">
+      <p>{{ preamble }}</p>
+    </aside>
+    {% endif %}
+
     <div class="article-body">
       {{ body_html | safe }}
     </div>
+
+    {% if keywords %}
+    <footer class="article-keywords">
+      <span class="keywords-label">Keywords:</span>
+      {% for kw in keywords %}
+      <span class="keyword-tag">{{ kw }}</span>
+      {% endfor %}
+    </footer>
+    {% endif %}
   </article>
 </div>
 {% endblock %}

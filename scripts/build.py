@@ -358,6 +358,12 @@ def _build_context(item: ArticleData, site_url: str) -> dict:
         ctx['ref'] = item.ref
     if item.category:
         ctx['category'] = item.category
+    if item.abstract:
+        ctx['abstract'] = item.abstract
+    if item.preamble:
+        ctx['preamble'] = item.preamble
+    if getattr(item, 'keywords', None):
+        ctx['keywords'] = item.keywords
     return ctx
 
 

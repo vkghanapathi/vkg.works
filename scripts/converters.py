@@ -41,6 +41,9 @@ class ArticleData:
     ref: Optional[str] = None             # Permanent section ref e.g. A·0001
     featured: bool = False                # Pin to home page featured column
     extracted_images: list = field(default_factory=list)  # [(filename, bytes), …] from DOCX
+    abstract: Optional[str] = None        # AI-generated English scholarly summary
+    preamble: Optional[str] = None        # AI-generated tradition/context paragraph
+    keywords: list = field(default_factory=list)  # AI-generated subject terms
 
 
 _md = MarkdownIt()
@@ -149,6 +152,9 @@ def convert_markdown(path: Path, section: str) -> ArticleData:
         status=meta.get('status'),
         category=meta.get('category') or None,
         featured=bool(meta.get('featured', False)),
+        abstract=str(meta['abstract']).strip() if meta.get('abstract') else None,
+        preamble=str(meta['preamble']).strip() if meta.get('preamble') else None,
+        keywords=[str(k).strip() for k in meta['keywords'] if k] if isinstance(meta.get('keywords'), list) else [],
     )
 
 
@@ -229,6 +235,9 @@ def convert_docx(path: Path, section: str) -> ArticleData:
     status = None
     category = None
     featured = False
+    abstract = None
+    preamble = None
+    keywords: list = []
     if sidecar.exists():
         try:
             post = frontmatter.load(str(sidecar))
@@ -244,6 +253,9 @@ def convert_docx(path: Path, section: str) -> ArticleData:
             featured = bool(meta.get('featured', False))
             if meta.get('excerpt'):
                 excerpt = str(meta['excerpt'])
+            abstract = str(meta['abstract']).strip() if meta.get('abstract') else None
+            preamble = str(meta['preamble']).strip() if meta.get('preamble') else None
+            keywords = [str(k).strip() for k in meta['keywords'] if k] if isinstance(meta.get('keywords'), list) else []
         except Exception:
             pass
 
@@ -254,6 +266,7 @@ def convert_docx(path: Path, section: str) -> ArticleData:
         body_html=body_html,
         status=status, category=category, featured=featured,
         extracted_images=extracted_images,
+        abstract=abstract, preamble=preamble, keywords=keywords,
     )
 
 

@@ -122,7 +122,7 @@ def convert_markdown(path: Path, section: str) -> ArticleData:
     if not date_str:
         date_str = str(meta.get('date', '')) or None
     excerpt = str(meta.get('excerpt', '')) or _first_paragraph(post.content)
-    author = str(meta.get('author', 'Dr. Vamśīkṛṣṇa Ghanapāṭhī'))
+    author = str(meta.get('author', 'Dr. Vamshi Krishna Ghanapāṭhī'))
     body_html = _md.render(post.content)
 
     youtube_raw = meta.get('youtube_url', '')
@@ -159,7 +159,7 @@ def convert_html(path: Path, section: str) -> ArticleData:
     return ArticleData(
         slug=slug, section=section, title=title,
         date=date_str, date_display=_fmt_date(date_str),
-        excerpt=_truncate(excerpt), author='Dr. Vamśīkṛṣṇa Ghanapāṭhī',
+        excerpt=_truncate(excerpt), author='Dr. Vamshi Krishna Ghanapāṭhī',
         body_html=body_html,
     )
 
@@ -210,7 +210,7 @@ def convert_docx(path: Path, section: str) -> ArticleData:
     return ArticleData(
         slug=slug, section=section, title=title,
         date=date_str, date_display=_fmt_date(date_str),
-        excerpt=excerpt, author='Dr. Vamśīkṛṣṇa Ghanapāṭhī',
+        excerpt=excerpt, author='Dr. Vamshi Krishna Ghanapāṭhī',
         body_html=body_html,
     )
 
@@ -262,7 +262,7 @@ def convert_pptx(path: Path, section: str) -> ArticleData:
     return ArticleData(
         slug=slug, section=section, title=title,
         date=date_str, date_display=_fmt_date(date_str),
-        excerpt=excerpt, author='Dr. Vamśīkṛṣṇa Ghanapāṭhī',
+        excerpt=excerpt, author='Dr. Vamshi Krishna Ghanapāṭhī',
         body_html=body_html,
     )
 
@@ -286,7 +286,7 @@ def convert_pdf(path: Path, section: str) -> ArticleData:
     return ArticleData(
         slug=slug, section=section, title=title,
         date=date_str, date_display=_fmt_date(date_str),
-        excerpt=_truncate(excerpt), author='Dr. Vamśīkṛṣṇa Ghanapāṭhī',
+        excerpt=_truncate(excerpt), author='Dr. Vamshi Krishna Ghanapāṭhī',
         body_html='', is_pdf=True, pdf_filename=path.name,
     )
 
@@ -311,7 +311,7 @@ def convert_txt(path: Path, section: str) -> ArticleData:
     return ArticleData(
         slug=slug, section=section, title=title,
         date=date_str, date_display=_fmt_date(date_str),
-        excerpt=_truncate(excerpt), author='Dr. Vamśīkṛṣṇa Ghanapāṭhī',
+        excerpt=_truncate(excerpt), author='Dr. Vamshi Krishna Ghanapāṭhī',
         body_html=body_html,
     )
 
@@ -321,7 +321,7 @@ def convert_audio(path: Path, section: str, md_path: Optional[Path] = None) -> A
     date_str, slug = _parse_filename(path.stem)
     title = slug.replace('-', ' ').title()
     excerpt = ''
-    author = 'Dr. Vamśīkṛṣṇa Ghanapāṭhī'
+    author = 'Dr. Vamshi Krishna Ghanapāṭhī'
     body_html = ''
 
     if md_path and md_path.exists():

@@ -11,9 +11,9 @@ from typing import List
 from feedgen.feed import FeedGenerator
 
 
-FEED_TITLE = "vkg.works — Dr. Vamśīkṛṣṇa Ghanapāṭhī"
+FEED_TITLE = "vkg.works — Dr. Vamshi Krishna Ghanapāṭhī"
 FEED_DESCRIPTION = "Scholarly articles, poems, songs, books, and Vedic recitation"
-FEED_AUTHOR = "Dr. Vamśīkṛṣṇa Ghanapāṭhī"
+FEED_AUTHOR = "Dr. Vamshi Krishna Ghanapāṭhī"
 FEED_SECTIONS = ('articles', 'poems', 'songs', 'books', 'audio', 'video', 'projects', 'coverage')
 
 

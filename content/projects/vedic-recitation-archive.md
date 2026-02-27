@@ -1,7 +1,7 @@
 ---
 title: "Vedic Recitation Archive"
 excerpt: "A comprehensive archive of Rigveda Ghanapatha recitations, documenting traditional oral transmission methods."
-author: "Dr. Vamśīkṛṣṇa Ghanapāṭhī"
+author: "Dr. Vamshi Krishna Ghanapāṭhī"
 status: "ongoing"
 ---
 

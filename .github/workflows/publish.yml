@@ -21,8 +21,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write   # Required to commit state files back
-    env:
-      FTP_HOST: ${{ secrets.FTP_HOST }}
 
     steps:
       - name: Checkout
@@ -71,7 +69,6 @@ jobs:
           WHATSAPP_RECIPIENT_LIST: ${{ secrets.WHATSAPP_RECIPIENT_LIST }}
 
       - name: Deploy to cPanel via FTP
-        if: env.FTP_HOST != ''
         continue-on-error: true
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:

@@ -8,6 +8,7 @@ on:
       - "templates/**"
       - "assets/**"
       - "scripts/**"
+  workflow_dispatch:   # Allow manual trigger for testing
 
 # Prevent concurrent deploys — queue, never cancel
 concurrency:
@@ -20,6 +21,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write   # Required to commit state files back
+    env:
+      FTP_HOST: ${{ secrets.FTP_HOST }}
 
     steps:
       - name: Checkout
@@ -68,8 +71,8 @@ jobs:
           WHATSAPP_RECIPIENT_LIST: ${{ secrets.WHATSAPP_RECIPIENT_LIST }}
 
       - name: Deploy to cPanel via FTP
-        if: ${{ secrets.FTP_HOST != '' }}
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        if: env.FTP_HOST != ''
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}

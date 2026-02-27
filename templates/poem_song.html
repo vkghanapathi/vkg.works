@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }} — vkg.works{% endblock %}
+{% block description %}{{ excerpt }}{% endblock %}
+{% set active_section = section_name %}
+
+{% block content %}
+<div class="page-container">
+  <article class="full-article">
+    <header>
+      <h1>{{ title }}</h1>
+      <p class="article-meta">
+        {% if date_display %}{{ date_display }}{% endif %}
+        {% if author %} &bull; {{ author }}{% endif %}
+      </p>
+    </header>
+
+    {% if audio_url %}
+    <div class="audio-player">
+      <p>Listen:</p>
+      <audio controls preload="metadata">
+        <source src="{{ audio_url }}" type="audio/mpeg">
+        Your browser does not support audio playback.
+      </audio>
+    </div>
+    {% endif %}
+
+    {% if youtube_url %}
+    <div class="video-container">
+      <iframe src="{{ youtube_url }}" allowfullscreen
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+      </iframe>
+    </div>
+    {% endif %}
+
+    <div class="article-body vedic-text">
+      {{ body_html | safe }}
+    </div>
+
+    {% if notation_pdf_url %}
+    <p class="download-link">
+      <a href="{{ notation_pdf_url }}" download>Download notation / score (PDF)</a>
+    </p>
+    {% endif %}
+  </article>
+</div>
+{% endblock %}

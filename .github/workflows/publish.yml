@@ -1,0 +1,81 @@
+name: Publish vkg.works
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "content/**"
+      - "templates/**"
+      - "assets/**"
+
+# Prevent concurrent deploys — queue, never cancel
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  test-and-deploy:
+    name: Test, Build, Deploy, Announce
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # Required to commit state/posted.json back
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      # ── TEST GATE ──────────────────────────────────────────────────────────
+      - name: Run build validation tests
+        run: python scripts/test_build.py
+        # This step builds the site AND validates output.
+        # If any check fails, the workflow stops here — nothing is deployed.
+
+      # ── DEPLOY ────────────────────────────────────────────────────────────
+      # Re-run build with social flag (test already ran dry-run build above)
+      - name: Build site with social flag
+        run: python scripts/build.py --site-url "https://vkg.works" --social
+        env:
+          FB_PAGE_ACCESS_TOKEN: ${{ secrets.FB_PAGE_ACCESS_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
+          TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
+          TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+          TWITTER_ACCESS_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET }}
+          LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+          LINKEDIN_PERSON_URN: ${{ secrets.LINKEDIN_PERSON_URN }}
+          WHATSAPP_PHONE_NUMBER_ID: ${{ secrets.WHATSAPP_PHONE_NUMBER_ID }}
+          WHATSAPP_ACCESS_TOKEN: ${{ secrets.WHATSAPP_ACCESS_TOKEN }}
+          WHATSAPP_RECIPIENT_LIST: ${{ secrets.WHATSAPP_RECIPIENT_LIST }}
+
+      - name: Deploy to cPanel via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: ${{ secrets.FTP_REMOTE_DIR }}
+          local-dir: ./site/
+          dangerous-clean-slate: false
+          exclude: |
+            **/.git*
+            **/.DS_Store
+            **/Thumbs.db
+
+      # ── STATE COMMIT ──────────────────────────────────────────────────────
+      - name: Commit updated social post state
+        run: |
+          git config user.name "vkg-publisher[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/posted.json
+          git diff --staged --quiet || git commit -m "chore: update social post state [skip ci]"
+          git push

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}{{ section_title }} — vkg.works{% endblock %}
+{% set active_section = section_name %}
+
+{% block content %}
+<div class="page-container">
+  <div class="section-header">
+    <h1>{{ section_title }}</h1>
+  </div>
+
+  {% if items %}
+  <ul class="item-list">
+    {% for item in items %}
+    <li>
+      <p class="item-title"><a href="/{{ section_name }}/{{ item.slug }}/">{{ item.title }}</a></p>
+      <p class="item-meta">
+        {% if item.date_display %}{{ item.date_display }}{% endif %}
+        {% if item.author %} &bull; {{ item.author }}{% endif %}
+      </p>
+      {% if item.excerpt %}<p class="item-excerpt">{{ item.excerpt }}</p>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p style="color: var(--color-muted);">No content yet. Check back soon.</p>
+  {% endif %}
+</div>
+{% endblock %}

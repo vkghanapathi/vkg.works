@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }} — vkg.works{% endblock %}
+{% block description %}{{ excerpt }}{% endblock %}
+{% set active_section = section_name %}
+
+{% block content %}
+<div class="page-container">
+  <article class="full-article">
+    <header>
+      <h1>{{ title }}</h1>
+      <p class="article-meta">
+        {% if date_display %}{{ date_display }}{% endif %}
+        {% if author %} &bull; {{ author }}{% endif %}
+      </p>
+    </header>
+    <div class="article-body">
+      {{ body_html | safe }}
+    </div>
+  </article>
+</div>
+{% endblock %}

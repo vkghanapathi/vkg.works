@@ -1,0 +1,11 @@
+events:
+  - date: "2026-03-15"
+    title: "Vedic Chanting Workshop"
+    venue: "Mysore University, Mysore"
+    time: "10:00 AM IST"
+    description: "Open to all. Focuses on Rigveda recitation techniques."
+  - date: "2026-04-01"
+    title: "Annual Vedic Concert"
+    venue: "Rangayana, Mysore"
+    time: "6:00 PM IST"
+    description: "Annual performance featuring Rigveda Ghanapatha."

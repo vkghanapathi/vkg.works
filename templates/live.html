@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Live — vkg.works{% endblock %}
+{% block description %}Upcoming events and live streams by Dr. Vamśīkṛṣṇa Ghanapāṭhī{% endblock %}
+{% set active_section = "live" %}
+
+{% block content %}
+<div class="page-container">
+  <div class="section-header">
+    <h1>Live</h1>
+  </div>
+
+  {% if stream_active %}
+  <div class="live-stream-active">
+    <span class="live-badge">Live Now</span>
+    <p style="margin:0 0 0.75rem; font-weight:bold;">{{ stream_title }}</p>
+    <div class="video-container">
+      <iframe src="{{ stream_url }}" allowfullscreen
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+      </iframe>
+    </div>
+  </div>
+  {% endif %}
+
+  <h2 style="font-family:var(--font-ui); font-size:1rem; margin-bottom:1rem;">Upcoming Events</h2>
+
+  {% if events %}
+  <ul class="events-list">
+    {% for event in events %}
+    <li>
+      <div class="event-date">{{ event.date }}</div>
+      <div>
+        <p class="event-title">{{ event.title }}</p>
+        <p class="event-meta">{{ event.venue }} &bull; {{ event.time }}</p>
+        {% if event.description %}<p style="margin:0.3rem 0 0; font-size:0.9rem;">{{ event.description }}</p>{% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p style="color:var(--color-muted);">No upcoming events at this time.</p>
+  {% endif %}
+</div>
+{% endblock %}

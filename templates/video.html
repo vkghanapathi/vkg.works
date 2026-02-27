@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }} — vkg.works{% endblock %}
+{% block description %}{{ excerpt }}{% endblock %}
+{% set active_section = "video" %}
+
+{% block content %}
+<div class="page-container">
+  <article class="full-article">
+    <header>
+      <h1>{{ title }}</h1>
+      <p class="article-meta">
+        {% if date_display %}{{ date_display }}{% endif %}
+        {% if author %} &bull; {{ author }}{% endif %}
+      </p>
+    </header>
+
+    {% if youtube_embed_url %}
+    <div class="video-container">
+      <iframe src="{{ youtube_embed_url }}" allowfullscreen
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+      </iframe>
+    </div>
+    {% elif video_file_url %}
+    <div style="margin: 1.5rem 0;">
+      <video controls style="width:100%; border-radius:6px;">
+        <source src="{{ video_file_url }}" type="video/mp4">
+        Your browser does not support video playback.
+      </video>
+    </div>
+    {% endif %}
+
+    {% if body_html %}
+    <div class="article-body">
+      {{ body_html | safe }}
+    </div>
+    {% endif %}
+  </article>
+</div>
+{% endblock %}

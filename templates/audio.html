@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }} — vkg.works{% endblock %}
+{% block description %}{{ excerpt }}{% endblock %}
+{% set active_section = "audio" %}
+
+{% block content %}
+<div class="page-container">
+  <article class="full-article">
+    <header>
+      <h1>{{ title }}</h1>
+      <p class="article-meta">
+        {% if date_display %}{{ date_display }}{% endif %}
+        {% if author %} &bull; {{ author }}{% endif %}
+      </p>
+    </header>
+
+    <div class="audio-player">
+      <audio controls preload="metadata" style="width:100%;">
+        <source src="{{ audio_url }}" type="{{ audio_mime }}">
+        Your browser does not support audio playback.
+        <a href="{{ audio_url }}">Download audio file</a>
+      </audio>
+    </div>
+
+    {% if body_html %}
+    <div class="article-body">
+      {{ body_html | safe }}
+    </div>
+    {% endif %}
+
+    <p class="download-link">
+      <a href="{{ audio_url }}" download>Download ({{ audio_filename }})</a>
+    </p>
+  </article>
+</div>
+{% endblock %}

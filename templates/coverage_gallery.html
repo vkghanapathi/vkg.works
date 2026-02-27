@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }} — vkg.works{% endblock %}
+{% block description %}{{ excerpt }}{% endblock %}
+{% set active_section = "coverage" %}
+
+{% block content %}
+<div class="page-container">
+  <article class="full-article">
+    <header>
+      <h1>{{ title }}</h1>
+      <p class="article-meta">
+        {% if date_display %}{{ date_display }}{% endif %}
+        {% if coverage_type %} &bull; {{ coverage_type | title }}{% endif %}
+      </p>
+    </header>
+
+    {% if photos %}
+    <div class="photo-grid">
+      {% for photo in photos %}
+      <figure>
+        <a href="{{ photo.url }}" target="_blank">
+          <img src="{{ photo.url }}" alt="{{ photo.name }}" loading="lazy">
+        </a>
+      </figure>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if body_html %}
+    <div class="article-body">
+      {{ body_html | safe }}
+    </div>
+    {% endif %}
+
+    {% if source_url %}
+    <p class="download-link">
+      <a href="{{ source_url }}" target="_blank" rel="noopener">View original source &rarr;</a>
+    </p>
+    {% endif %}
+  </article>
+</div>
+{% endblock %}

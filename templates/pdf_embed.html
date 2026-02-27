@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }} — vkg.works{% endblock %}
+{% block description %}{{ excerpt }}{% endblock %}
+{% set active_section = section_name %}
+
+{% block content %}
+<div class="page-container">
+  <article class="full-article">
+    <header>
+      <h1>{{ title }}</h1>
+      <p class="article-meta">
+        {% if date_display %}{{ date_display }}{% endif %}
+        {% if author %} &bull; {{ author }}{% endif %}
+      </p>
+    </header>
+
+    <div class="pdf-container">
+      <iframe src="/assets/js/pdfjs/web/viewer.html?file={{ pdf_url | urlencode }}"
+              title="{{ title }}">
+      </iframe>
+    </div>
+
+    <p class="download-link">
+      <a href="{{ pdf_url }}" download>Download PDF</a>
+    </p>
+  </article>
+</div>
+{% endblock %}

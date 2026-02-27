@@ -1,0 +1,6 @@
+---
+title: कर्मप्रबोध ग्रन्थविषयः
+date: '2026-02-27'
+author: Dr. Vamshi Krishna Ghanapāṭhī
+status: draft
+---

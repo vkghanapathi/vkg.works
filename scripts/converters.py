@@ -212,11 +212,36 @@ def convert_docx(path: Path, section: str) -> ArticleData:
 
     body_html = '\n'.join(paragraphs_html)
     excerpt = _truncate(first_text_para or '')
+
+    # Check for a .md sidecar that provides frontmatter metadata
+    sidecar = path.with_suffix('.md')
+    status = None
+    category = None
+    featured = False
+    if sidecar.exists():
+        try:
+            post = frontmatter.load(str(sidecar))
+            meta = post.metadata
+            if meta.get('title'):
+                title = str(meta['title'])
+            if meta.get('date'):
+                date_str = str(meta['date'])
+            if meta.get('author'):
+                pass  # use sidecar author below
+            status = meta.get('status') or None
+            category = meta.get('category') or None
+            featured = bool(meta.get('featured', False))
+            if meta.get('excerpt'):
+                excerpt = str(meta['excerpt'])
+        except Exception:
+            pass
+
     return ArticleData(
         slug=slug, section=section, title=title,
         date=date_str, date_display=_fmt_date(date_str),
         excerpt=excerpt, author='Dr. Vamshi Krishna Ghanapāṭhī',
         body_html=body_html,
+        status=status, category=category, featured=featured,
     )
 
 

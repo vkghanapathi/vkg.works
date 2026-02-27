@@ -157,6 +157,9 @@ def scan_section(section: str) -> list[ArticleData]:
         suffix = f.suffix.lower()
         if suffix not in text_exts:
             continue
+        # Skip .md sidecars — their metadata is read by convert_docx instead
+        if suffix == '.md' and f.with_suffix('.docx').exists():
+            continue
         converter = CONVERTERS[suffix]
         try:
             data = converter(f, section)

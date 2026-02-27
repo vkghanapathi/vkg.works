@@ -217,23 +217,9 @@ def convert_docx(path: Path, section: str) -> ArticleData:
                 level = min(int(m.group()), 4)
             paragraphs_html.append(f'<h{level}>{text}</h{level}>')
         else:
-            # Build inline HTML for runs (bold, italic)
-            runs_html = ''
-            for run in para.runs:
-                t = run.text
-                if not t:
-                    continue
-                if run.bold and run.italic:
-                    t = f'<strong><em>{t}</em></strong>'
-                elif run.bold:
-                    t = f'<strong>{t}</strong>'
-                elif run.italic:
-                    t = f'<em>{t}</em>'
-                runs_html += t
-            if runs_html:
-                paragraphs_html.append(f'<p>{runs_html}</p>')
-                if first_text_para is None:
-                    first_text_para = text
+            paragraphs_html.append(f'<p>{text}</p>')
+            if first_text_para is None:
+                first_text_para = text
 
     body_html = '\n'.join(paragraphs_html)
     excerpt = _truncate(first_text_para or '')

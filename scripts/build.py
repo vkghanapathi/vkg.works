@@ -61,7 +61,7 @@ SECTION_TITLES = {
     'contact':  'Contact',
 }
 
-QUEUE_STATUSES = {'planned', 'draft', 'in-progress', 'in progress'}
+QUEUE_STATUSES = {'planned', 'draft', 'in-progress', 'in progress', 'incomplete'}
 
 
 # ─── Registry ───────────────────────────────────────────────────────────────

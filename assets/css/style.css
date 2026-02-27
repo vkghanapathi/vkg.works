@@ -224,9 +224,10 @@ nav ul li a.active { opacity: 1; border-bottom: 2px solid var(--color-accent); }
   margin-left: 0.35rem;
   vertical-align: middle;
 }
-.queue-status--planned  { background: #fff3cd; color: #856404; border: 1px solid #ffc107; }
-.queue-status--draft    { background: #e2e3e5; color: #383d41; border: 1px solid #ced4da; }
+.queue-status--planned     { background: #fff3cd; color: #856404; border: 1px solid #ffc107; }
+.queue-status--draft       { background: #e2e3e5; color: #383d41; border: 1px solid #ced4da; }
 .queue-status--in-progress { background: #cce5ff; color: #004085; border: 1px solid #b8daff; }
+.queue-status--incomplete  { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
 
 /* Listing cards */
 .item-list { list-style: none; margin: 0; padding: 0; }

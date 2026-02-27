@@ -3,5 +3,5 @@ title: GNSµR¶aRP LRiVúµR¶ NUPLRiò©«s (@¼½ LRiVúµR¶ ¸R¶WgRi xqsLi�
   NSLjiòNRP ª«sWxqsLi)
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: incomplete
 ---

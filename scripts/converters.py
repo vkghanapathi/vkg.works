@@ -40,6 +40,7 @@ class ArticleData:
     category: Optional[str] = None        # Free-text type (administrative/technical/etc.)
     ref: Optional[str] = None             # Permanent section ref e.g. A·0001
     featured: bool = False                # Pin to home page featured column
+    extracted_images: list = field(default_factory=list)  # [(filename, bytes), …] from DOCX
 
 
 _md = MarkdownIt()
@@ -171,14 +172,38 @@ def convert_html(path: Path, section: str) -> ArticleData:
 
 def convert_docx(path: Path, section: str) -> ArticleData:
     from docx import Document
+    from docx.oxml.ns import qn as _qn
     date_str, slug = _parse_filename(path.stem)
     doc = Document(str(path))
 
     title = slug.replace('-', ' ').title()
     paragraphs_html = []
     first_text_para = None
+    extracted_images: list = []
+    img_idx = 0
 
     for para in doc.paragraphs:
+        # Extract any inline images from this paragraph
+        for drawing in para._p.findall('.//' + _qn('w:drawing')):
+            for blip in drawing.findall('.//' + _qn('a:blip')):
+                r_embed = blip.get(_qn('r:embed'))
+                if r_embed:
+                    try:
+                        img_part = doc.part.related_parts[r_embed]
+                        ext = img_part.partname.rpartition('.')[-1].lower() or 'png'
+                        if ext not in ('png', 'jpg', 'jpeg', 'gif', 'bmp', 'webp'):
+                            ext = 'png'
+                        fname = f'{slug}-img-{img_idx:03d}.{ext}'
+                        extracted_images.append((fname, img_part.blob))
+                        paragraphs_html.append(
+                            f'<figure class="article-figure">'
+                            f'<img src="{fname}" alt="Figure {img_idx + 1}" loading="lazy">'
+                            f'</figure>'
+                        )
+                        img_idx += 1
+                    except Exception:
+                        pass
+
         text = para.text.strip()
         if not text:
             continue
@@ -242,6 +267,7 @@ def convert_docx(path: Path, section: str) -> ArticleData:
         excerpt=excerpt, author='Dr. Vamshi Krishna Ghanapāṭhī',
         body_html=body_html,
         status=status, category=category, featured=featured,
+        extracted_images=extracted_images,
     )
 
 

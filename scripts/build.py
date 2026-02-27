@@ -407,6 +407,10 @@ def _copy_item_assets(item: ArticleData, item_dir: Path) -> None:
         if src.exists():
             shutil.copy2(str(src), str(item_dir / item.video_file))
 
+    # Write extracted images (from DOCX inline images)
+    for img_fname, img_bytes in getattr(item, 'extracted_images', []):
+        (item_dir / img_fname).write_bytes(img_bytes)
+
 
 def _render_live(env: Environment) -> None:
     live_dir = CONTENT_DIR / 'live'

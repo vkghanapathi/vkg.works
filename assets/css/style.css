@@ -490,6 +490,19 @@ article.full-article .article-meta {
   display: block;
 }
 
+/* Extracted DOCX figures */
+.article-figure {
+  margin: 1.75rem auto;
+  text-align: center;
+}
+
+.article-figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+}
+
 /* Footer */
 footer {
   border-top: 1px solid var(--color-border);

@@ -282,13 +282,13 @@ def render_site(sections: dict[str, list[ArticleData]], site_url: str, env: Envi
         tmpl_name = SECTION_TEMPLATES.get(section_name)
         if not tmpl_name:
             continue
-        tmpl = env.get_template(tmpl_name)
         for item in items:
             item_dir = SITE_DIR / section_name / item.slug
             item_dir.mkdir(parents=True, exist_ok=True)
 
+            item_tmpl = env.get_template('pdf_embed.html' if item.is_pdf else tmpl_name)
             ctx = _build_context(item, site_url)
-            html = tmpl.render(**ctx)
+            html = item_tmpl.render(**ctx)
             (item_dir / 'index.html').write_text(html, encoding='utf-8')
 
             # Copy associated binary files

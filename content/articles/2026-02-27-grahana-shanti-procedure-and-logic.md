@@ -1,6 +1,8 @@
 ---
-title: Grahana Shanti (Eclipse related Ritual) Procedures and Rationale
-date: '2026-02-27'
+title: Grahana Shanti — Procedure and Rationale
+date: '2024-01-01'
 author: Dr. Vamshi Krishna Ghanapāṭhī
 category: analytical
+subject_area: Philosophy of Vedic Practices, Analysis
+status: published
 ---

@@ -72,6 +72,7 @@ jobs:
 
       - name: Deploy to cPanel via FTP
         if: env.FTP_HOST != ''
+        continue-on-error: true
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST }}

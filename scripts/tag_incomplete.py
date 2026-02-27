@@ -38,11 +38,19 @@ CONTENT_DIRS = [
 # Match any character in the Latin-1 Supplement block (legacy font artefacts)
 _LEGACY_CHAR = re.compile(r'[\u0080-\u00FF]')
 _ASCII_LETTER = re.compile(r'[A-Za-z]')
+# Match VijayaDV/iLeap PUA characters (E000–F8FF) — unreadable by AI/search
+_PUA_CHAR = re.compile(r'[\uE000-\uF8FF]')
 
 
 def is_garbled(title: str) -> bool:
     """Return True if the title looks like legacy single-byte font encoding."""
-    return bool(_LEGACY_CHAR.search(title)) and bool(_ASCII_LETTER.search(title))
+    # Latin-1 Supplement artefacts (Nudi/iLeap imported as UTF-8)
+    if bool(_LEGACY_CHAR.search(title)) and bool(_ASCII_LETTER.search(title)):
+        return True
+    # PUA-only titles (VijayaDV encoding — no ASCII letters, just PUA glyphs)
+    if _PUA_CHAR.search(title) and not _ASCII_LETTER.search(title):
+        return True
+    return False
 
 
 def tag_file(md_path: Path, dry_run: bool) -> bool:
@@ -65,7 +73,7 @@ def tag_file(md_path: Path, dry_run: bool) -> bool:
         return False  # already tagged
 
     if dry_run:
-        print(f'  WOULD TAG: {md_path.relative_to(ROOT)}  title={title!r}')
+        print(f'  WOULD TAG: {md_path.relative_to(ROOT)}  title={ascii(title)}')
         return True
 
     # Update status to incomplete
@@ -74,7 +82,7 @@ def tag_file(md_path: Path, dry_run: bool) -> bool:
     yaml_block = yaml.dump(meta_dict, allow_unicode=True,
                            default_flow_style=False, sort_keys=False).rstrip()
     md_path.write_text(f'---\n{yaml_block}\n---\n{post.content}', encoding='utf-8')
-    print(f'  TAGGED: {md_path.relative_to(ROOT)}  title={title!r}')
+    print(f'  TAGGED: {md_path.relative_to(ROOT)}  title={ascii(title)}')
     return True
 
 

@@ -2,7 +2,7 @@
 title: 
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: incomplete
 abstract: This work is a song composition from Dr. Vamshi Krishna Ghanapāṭhī's collection,
   representing a musical rendering within the devotional or classical Indian music
   tradition. The excerpt shows minimal textual content, suggesting this may be a fragment,

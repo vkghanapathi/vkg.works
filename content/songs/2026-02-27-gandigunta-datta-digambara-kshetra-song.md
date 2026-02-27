@@ -2,7 +2,7 @@
 title: 
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: incomplete
 abstract: This work presents a collection of devotional songs (bhajans) that forms
   part of Dr. Vamshi Krishna Ghanapāṭhī's broader corpus of Sanskrit and regional-language
   compositions. The songs represent a continuation of the classical Indian tradition

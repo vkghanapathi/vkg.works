@@ -2,7 +2,7 @@
 title:  देवी अष्टकम् (मात्राछन्दः)
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: incomplete
 abstract: A devotional hymn in praise of the Goddess (Devī) composed in mātrāchanda
   (syllabic metre) and presented in both Sanskrit and Telugu. The eight verses employ
   sophisticated sound patterning and alliterative techniques while invoking the divine

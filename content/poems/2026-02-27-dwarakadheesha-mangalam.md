@@ -2,7 +2,7 @@
 title: 
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: incomplete
 abstract: A collection of devotional poems composed in Telugu by Dr. Vamshi Krishna
   Ghanapāṭhī, demonstrating the integration of classical Vedic learning with vernacular
   poetic expression. These verses exemplify the living tradition of ghanapāṭha (Vedic

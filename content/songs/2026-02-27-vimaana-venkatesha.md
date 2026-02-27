@@ -2,7 +2,7 @@
 title: విమాన వేంకటేశ్వరాసమాన వైభవేక్షితా
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: incomplete
 abstract: A devotional song in classical Telugu kīrtana form composed in honour of
   Vēṅkaṭēśvara at Tirupati, celebrating his transcendent glory equated with the celestial
   vimāna (temple tower). The work employs the three-part structure of pallavi, anupallavi,

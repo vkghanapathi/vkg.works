@@ -2,7 +2,7 @@
 title: "\t\t\t\t\t\t\t\t\t\t"
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: incomplete
 abstract: Unable to generate metadata. The work excerpt provided is empty or contains
   no textual content in any language. Please supply the body text of the poem in its
   original language (Sanskrit, Telugu, or Kannada) to enable accurate scholarly description

@@ -2,7 +2,7 @@
 title: "\t"
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: incomplete
 abstract: This collection of devotional songs represents a curated selection of lyrical
   compositions within Dr. Vamshi Krishna Ghanapāṭhī's broader scholarly corpus. The
   songs exemplify the integration of traditional melodic and textual frameworks with

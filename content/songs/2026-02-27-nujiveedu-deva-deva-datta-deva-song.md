@@ -2,7 +2,7 @@
 title: 
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: incomplete
 abstract: This work is a fragment from a collection of devotional songs by Dr. Vamshi
   Krishna Ghanapāṭhī. The excerpt presents minimal textual content, appearing as a
   structural or editorial placeholder within the larger songs section, and requires

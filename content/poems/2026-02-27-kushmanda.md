@@ -2,7 +2,7 @@
 title: हे देवा यद्यदस्माभि श्चरितं देवहेडनम्। ऋतस्यर्तेन चादित्या मां प्रमुच्यासु.रेनसः।।
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: incomplete
 abstract: A comprehensive liturgical hymn of expiation and purification addressed
   to Agni (the fire deity) and various Vedic deities, in which the speaker seeks absolution
   from transgressions across multiple domains—speech, action, bodily conduct, and

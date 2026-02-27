@@ -2,7 +2,7 @@
 title: "1) \tపరాశరమునేః పౌత్రం వేదవ్యాస తనూద్భవమ్।"
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: incomplete
 abstract: A devotional hymn sequence in Sanskrit composed to honour Śuka Mahārṣi,
   the legendary sage and principal narrator of the Bhāgavata Purāṇa. The six verses
   employ parallel structures and ascending spiritual attributes to commemorate Śuka's

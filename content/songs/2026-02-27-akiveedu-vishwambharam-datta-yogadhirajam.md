@@ -2,7 +2,7 @@
 title: 
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: incomplete
 abstract: This work presents a collection of devotional songs (bhajans or kirtanas)
   compiled and possibly composed by Dr. Vamshi Krishna Ghanapāṭhī. The songs represent
   an important category of vernacular religious literature designed for congregational

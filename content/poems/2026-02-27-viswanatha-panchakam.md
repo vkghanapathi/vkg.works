@@ -2,7 +2,7 @@
 title: अम्बा पार्श्वेन्नपूर्णा निखिलजनगणान् पोषयन्तीह भान्ती
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: incomplete
 abstract: A Sanskrit devotional hymn in five stanzas composed on 4 March 2013 in Varanasi,
   honouring Viśvānātha (Viśveśvara), the presiding deity of Kāśī. The work employs
   a refrain structure celebrating the god's cosmic sovereignty and salvific power

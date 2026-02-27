@@ -58,6 +58,7 @@ jobs:
           WHATSAPP_RECIPIENT_LIST: ${{ secrets.WHATSAPP_RECIPIENT_LIST }}
 
       - name: Deploy to cPanel via FTP
+        if: ${{ secrets.FTP_HOST != '' }}
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_HOST }}

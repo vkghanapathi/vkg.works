@@ -3,10 +3,14 @@ name: Build and Deploy
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
+    env:
+      FTP_HOST: ${{ secrets.FTP_HOST }}
 
     steps:
       - name: Checkout
@@ -27,6 +31,7 @@ jobs:
         run: python scripts/build.py
 
       - name: Deploy via FTP
+        if: ${{ env.FTP_HOST != '' }}
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_HOST }}
@@ -35,3 +40,7 @@ jobs:
           server-dir: ${{ secrets.FTP_REMOTE_DIR }}/
           local-dir: ./site/
           dangerous-clean-slate: false
+
+      - name: FTP not configured
+        if: ${{ env.FTP_HOST == '' }}
+        run: echo "⚠️  FTP secrets not configured — build passed, deploy skipped. Add FTP_HOST / FTP_USER / FTP_PASSWORD / FTP_REMOTE_DIR in repo Settings → Secrets to enable deployment."

@@ -7,6 +7,7 @@ on:
       - "content/**"
       - "templates/**"
       - "assets/**"
+      - "scripts/**"
 
 # Prevent concurrent deploys — queue, never cancel
 concurrency:
@@ -18,7 +19,7 @@ jobs:
     name: Test, Build, Deploy, Announce
     runs-on: ubuntu-latest
     permissions:
-      contents: write   # Required to commit state/posted.json back
+      contents: write   # Required to commit state files back
 
     steps:
       - name: Checkout
@@ -33,6 +34,19 @@ jobs:
 
       - name: Install dependencies
         run: pip install -r scripts/requirements.txt
+
+      # ── INGEST ZIP FILES ───────────────────────────────────────────────────
+      - name: Ingest ZIP files from content/inbox (if any)
+        run: |
+          shopt -s nullglob
+          zips=(content/inbox/*.zip)
+          if [ ${#zips[@]} -gt 0 ]; then
+            python scripts/ingest.py
+            git config user.name "vkg-publisher[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add content/
+            git diff --staged --quiet || (git commit -m "chore: ingest content from inbox [skip ci]" && git push)
+          fi
 
       # ── TEST GATE ──────────────────────────────────────────────────────────
       - name: Run build validation tests
@@ -73,10 +87,10 @@ jobs:
             **/Thumbs.db
 
       # ── STATE COMMIT ──────────────────────────────────────────────────────
-      - name: Commit updated social post state
+      - name: Commit updated state (registry + social posts)
         run: |
           git config user.name "vkg-publisher[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add state/posted.json
-          git diff --staged --quiet || git commit -m "chore: update social post state [skip ci]"
+          git add state/posted.json state/registry.json
+          git diff --staged --quiet || git commit -m "chore: update state [skip ci]"
           git push

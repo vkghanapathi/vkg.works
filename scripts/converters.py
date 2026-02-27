@@ -37,6 +37,8 @@ class ArticleData:
     photos: list = field(default_factory=list)
     pdf_file: Optional[str] = None        # For books
     status: Optional[str] = None          # For projects
+    category: Optional[str] = None        # Free-text type (administrative/technical/etc.)
+    ref: Optional[str] = None             # Permanent section ref e.g. A·0001
 
 
 _md = MarkdownIt()
@@ -143,6 +145,7 @@ def convert_markdown(path: Path, section: str) -> ArticleData:
         source_url=meta.get('source_url'),
         pdf_file=meta.get('pdf_file'),
         status=meta.get('status'),
+        category=meta.get('category') or None,
     )
 
 

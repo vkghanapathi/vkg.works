@@ -68,12 +68,12 @@ nav .site-title {
 }
 
 .nav-portrait {
-  width: 36px;
-  height: 36px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center 20%;
-  border: 2px solid rgba(245, 230, 211, 0.45);
+  border: 2px solid rgba(245, 230, 211, 0.55);
   flex-shrink: 0;
 }
 
@@ -209,6 +209,67 @@ nav ul li a.active { opacity: 1; border-bottom: 2px solid var(--color-accent); }
 }
 
 .item-excerpt { margin: 0; color: var(--color-text); font-size: 0.95rem; }
+
+/* Category filter bar */
+.category-filter {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.category-filter a {
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+  text-decoration: none;
+  color: var(--color-text);
+  background: #fff;
+}
+
+.category-filter a:hover { border-color: var(--color-accent); color: var(--color-accent); }
+
+.category-filter a.active {
+  background: var(--color-accent);
+  color: var(--color-nav-text);
+  border-color: var(--color-accent);
+}
+
+/* Category badge on listing items */
+.category-badge {
+  font-family: var(--font-ui);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-accent);
+  background: rgba(139, 69, 19, 0.08);
+  padding: 0.1rem 0.4rem;
+  border-radius: 2px;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+/* Section category label in h1 */
+.section-cat-label {
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: var(--color-accent);
+  margin-left: 0.5rem;
+}
+
+/* Ref number badge (A·0001) */
+.item-ref {
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  color: var(--color-muted);
+  margin-right: 0.5rem;
+  font-variant-numeric: tabular-nums;
+}
 
 /* Section header */
 .section-header {

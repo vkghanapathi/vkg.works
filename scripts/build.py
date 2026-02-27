@@ -25,7 +25,13 @@ CONTENT_DIR = ROOT / 'content'
 TEMPLATES_DIR = ROOT / 'templates'
 ASSETS_DIR = ROOT / 'assets'
 STATE_FILE = ROOT / 'state' / 'posted.json'
+REGISTRY_FILE = ROOT / 'state' / 'registry.json'
 SITE_DIR = ROOT / 'site'
+
+SECTION_PREFIX = {
+    'articles': 'A',  'poems': 'P',  'songs': 'S',  'books': 'B',
+    'audio': 'AU',    'video': 'V',  'projects': 'PR', 'coverage': 'C',
+}
 
 SECTIONS = ['articles', 'poems', 'songs', 'books', 'audio', 'video',
             'projects', 'live', 'coverage', 'contact']
@@ -54,6 +60,36 @@ SECTION_TITLES = {
     'coverage': 'Coverage',
     'contact':  'Contact',
 }
+
+
+# ─── Registry ───────────────────────────────────────────────────────────────
+def load_registry() -> dict:
+    if REGISTRY_FILE.exists():
+        return json.loads(REGISTRY_FILE.read_text(encoding='utf-8'))
+    return {s: {} for s in SECTION_PREFIX}
+
+
+def save_registry(registry: dict) -> None:
+    REGISTRY_FILE.parent.mkdir(parents=True, exist_ok=True)
+    REGISTRY_FILE.write_text(
+        json.dumps(registry, indent=2, ensure_ascii=False),
+        encoding='utf-8'
+    )
+
+
+def assign_refs(sections: dict, registry: dict) -> None:
+    """Assign permanent A·0001-style refs to every item. Idempotent."""
+    for section, items in sections.items():
+        if section not in SECTION_PREFIX:
+            continue
+        prefix = SECTION_PREFIX[section]
+        reg = registry.setdefault(section, {})
+        next_num = max(reg.values(), default=0) + 1
+        for item in sorted(items, key=lambda x: x.date or '0000-00-00'):
+            if item.slug not in reg:
+                reg[item.slug] = next_num
+                next_num += 1
+            item.ref = f"{prefix}·{reg[item.slug]:04d}"
 
 
 # ─── Jinja2 env ─────────────────────────────────────────────────────────────
@@ -136,6 +172,15 @@ def _sort_items(items: list[ArticleData]) -> list[ArticleData]:
     return sorted(items, key=lambda x: x.date or '0000-00-00', reverse=True)
 
 
+def _get_categories(items: list[ArticleData]) -> list[str]:
+    """Return ordered unique categories preserving first-seen order."""
+    seen: list[str] = []
+    for item in items:
+        if item.category and item.category not in seen:
+            seen.append(item.category)
+    return seen
+
+
 def scan_all_sections() -> dict[str, list[ArticleData]]:
     print('Scanning content...')
     sections: dict[str, list[ArticleData]] = {}
@@ -174,14 +219,35 @@ def render_site(sections: dict[str, list[ArticleData]], site_url: str, env: Envi
     for section_name, items in sections.items():
         sec_dir = SITE_DIR / section_name
         sec_dir.mkdir(parents=True, exist_ok=True)
+        categories = _get_categories(items)
         (sec_dir / 'index.html').write_text(
             list_tmpl.render(
                 section_name=section_name,
                 section_title=SECTION_TITLES.get(section_name, section_name.title()),
                 items=items,
+                categories=categories,
+                active_category=None,
             ),
             encoding='utf-8'
         )
+        # Render per-category sub-pages
+        if categories:
+            section_title = SECTION_TITLES.get(section_name, section_name.title())
+            for cat in categories:
+                cat_slug = cat.lower().replace(' ', '-')
+                filtered = [item for item in items if item.category == cat]
+                cat_dir = sec_dir / cat_slug
+                cat_dir.mkdir(parents=True, exist_ok=True)
+                (cat_dir / 'index.html').write_text(
+                    list_tmpl.render(
+                        section_name=section_name,
+                        section_title=section_title,
+                        items=filtered,
+                        categories=categories,
+                        active_category=cat,
+                    ),
+                    encoding='utf-8'
+                )
 
     # Render individual item pages
     for section_name, items in sections.items():
@@ -251,6 +317,10 @@ def _build_context(item: ArticleData, site_url: str) -> dict:
         ctx['source_url'] = item.source_url
     if item.photos:
         ctx['photos'] = item.photos
+    if item.ref:
+        ctx['ref'] = item.ref
+    if item.category:
+        ctx['category'] = item.category
     return ctx
 
 
@@ -387,6 +457,10 @@ def main() -> None:
     # 1. Scan all content
     sections = scan_all_sections()
 
+    # 1b. Assign permanent reference numbers
+    registry = load_registry()
+    assign_refs(sections, registry)
+
     # 2. Render static site
     render_site(sections, site_url, env)
 
@@ -395,12 +469,15 @@ def main() -> None:
     rss_module.generate(sections, site_url, rss_output)
     print(f'  Generated rss.xml ({sum(len(v) for v in sections.values())} items)')
 
-    # 4. Detect new items for social posting
+    # 4. Save updated registry
+    save_registry(registry)
+
+    # 5. Detect new items for social posting
     new_items = detect_new_items(sections)
     if new_items:
         print(f'  {len(new_items)} new item(s) detected for social media')
 
-    # 5. Social posting (only if --social and not --dry-run)
+    # 6. Social posting (only if --social and not --dry-run)
     if args.social and not args.dry_run and new_items:
         import social as social_module
         posted_platforms = social_module.post_all(new_items, site_url)

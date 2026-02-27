@@ -1,20 +1,34 @@
 {% extends "base.html" %}
 
-{% block title %}{{ section_title }} — vkg.works{% endblock %}
+{% block title %}{{ section_title }}{% if active_category %} — {{ active_category | title }}{% endif %} — vkg.works{% endblock %}
 {% set active_section = section_name %}
 
 {% block content %}
 <div class="page-container">
   <div class="section-header">
-    <h1>{{ section_title }}</h1>
+    <h1>{{ section_title }}{% if active_category %} <span class="section-cat-label">{{ active_category | title }}</span>{% endif %}</h1>
   </div>
+
+  {% if categories %}
+  <nav class="category-filter" aria-label="Filter by category">
+    <a href="/{{ section_name }}/" {% if not active_category %}class="active"{% endif %}>All</a>
+    {% for cat in categories %}
+    <a href="/{{ section_name }}/{{ cat | lower | replace(' ', '-') }}/"
+       {% if active_category == cat %}class="active"{% endif %}>{{ cat | title }}</a>
+    {% endfor %}
+  </nav>
+  {% endif %}
 
   {% if items %}
   <ul class="item-list">
     {% for item in items %}
     <li>
-      <p class="item-title"><a href="/{{ section_name }}/{{ item.slug }}/">{{ item.title }}</a></p>
+      <p class="item-title">
+        <a href="/{{ section_name }}/{{ item.slug }}/">{{ item.title }}</a>
+        {% if item.category and not active_category %}<span class="category-badge">{{ item.category }}</span>{% endif %}
+      </p>
       <p class="item-meta">
+        {% if item.ref %}<span class="item-ref">{{ item.ref }}</span>{% endif %}
         {% if item.date_display %}{{ item.date_display }}{% endif %}
         {% if item.author %} &bull; {{ item.author }}{% endif %}
       </p>

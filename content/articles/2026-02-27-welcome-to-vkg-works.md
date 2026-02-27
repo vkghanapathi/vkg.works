@@ -3,6 +3,7 @@ title: "Welcome to vkg.works"
 date: 2026-02-27
 excerpt: "This is the official website of Dr. Vamshi Krishna Ghanapāṭhī, featuring scholarly articles, poems, songs, books, and more on Vedic traditions."
 author: "Dr. Vamshi Krishna Ghanapāṭhī"
+category: administrative
 ---
 
 Welcome to vkg.works — the online home of Dr. Vamshi Krishna Ghanapāṭhī.

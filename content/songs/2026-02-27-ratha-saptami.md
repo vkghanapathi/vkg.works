@@ -26,4 +26,7 @@ keywords:
 - disease-removal (roga-nasha)
 - Telugu devotional hymn
 - Puranic cosmology
+uid: VKG-S-122
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

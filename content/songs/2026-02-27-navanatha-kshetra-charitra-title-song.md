@@ -23,4 +23,7 @@ keywords:
 - Sanskrit composition
 - melodic rendering
 - oral tradition
+uid: VKG-S-107
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

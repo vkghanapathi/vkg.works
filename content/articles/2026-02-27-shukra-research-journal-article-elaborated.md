@@ -28,4 +28,7 @@ keywords:
 - Phenomenology
 - Microcosm-macrocosm correspondence
 - Vedic cosmology
+uid: VKG-A-108
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

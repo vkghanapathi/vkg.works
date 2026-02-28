@@ -25,4 +25,7 @@ keywords:
 - devotional theology
 - Upaniṣadic cosmology
 - Dakṣiṇā (ritual gift)
+uid: VKG-S-036
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

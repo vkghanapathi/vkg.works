@@ -29,4 +29,7 @@ keywords:
 - Vedic mantra
 - Brahmanaspati
 - Gāṇapatya tradition
+uid: VKG-S-080
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

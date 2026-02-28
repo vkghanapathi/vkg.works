@@ -28,4 +28,7 @@ keywords:
 - religious evolution
 - Hindu philosophy
 - ritual symbolism
+uid: VKG-A-141
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -29,4 +29,7 @@ keywords:
 - Vedabhāṣya
 - guru-kula
 - Sanskrit higher learning
+uid: VKG-A-009
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

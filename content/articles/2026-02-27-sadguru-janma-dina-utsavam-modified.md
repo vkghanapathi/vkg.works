@@ -30,4 +30,7 @@ keywords:
 - Pindaanda
 - birth anniversary
 - spiritual introspection
+uid: VKG-A-098
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -26,4 +26,7 @@ keywords:
 - Sanskrit stuti
 - Telugu devotional composition
 - Institutional eulogy
+uid: VKG-S-119
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -29,4 +29,7 @@ keywords:
 - Tirupati
 - śikhariṇī metre
 - non-duality
+uid: VKG-P-028
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -25,4 +25,7 @@ keywords:
 - Ganeśa
 - Padmāvatī
 - Telugu devotional literature
+uid: VKG-S-148
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

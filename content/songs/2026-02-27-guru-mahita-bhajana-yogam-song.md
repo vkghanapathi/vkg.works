@@ -24,4 +24,7 @@ keywords:
 - devotional composition
 - samgita sadhana
 - solkattu
+uid: VKG-S-075
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

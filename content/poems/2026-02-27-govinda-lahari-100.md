@@ -29,4 +29,7 @@ keywords:
 - śikhariṇī meter
 - Vishnu theology
 - non-duality
+uid: VKG-P-029
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

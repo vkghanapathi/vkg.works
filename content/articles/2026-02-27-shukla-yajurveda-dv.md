@@ -31,4 +31,7 @@ keywords:
 - purāṇic exegesis
 - Vedic transmission
 - adhyāya (Vedic study)
+uid: VKG-A-105
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

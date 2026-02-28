@@ -28,4 +28,7 @@ keywords:
 - brahmakalasha-abhiṣeka
 - Vedānta metaphysics
 - temple consecration
+uid: VKG-A-032
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

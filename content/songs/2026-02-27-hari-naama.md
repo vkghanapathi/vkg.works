@@ -29,4 +29,7 @@ keywords:
 - Advaita Vedānta
 - Puruṣārtha (four aims of life)
 - Prāṇa (life force)
+uid: VKG-S-079
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

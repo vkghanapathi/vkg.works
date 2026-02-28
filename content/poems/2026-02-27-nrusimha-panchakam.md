@@ -27,4 +27,7 @@ keywords:
 - phala-śruti
 - devotional petition
 - daśāvatāra
+uid: VKG-P-064
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

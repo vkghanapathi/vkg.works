@@ -28,4 +28,7 @@ keywords:
 - Lakṣmī
 - Śākta tradition
 - devotional verse
+uid: VKG-P-061
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

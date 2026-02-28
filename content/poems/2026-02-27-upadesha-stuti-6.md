@@ -27,4 +27,7 @@ keywords:
 - Vedantic philosophy
 - consciousness (Chaitanya)
 - Sanskrit verse commentary
+uid: VKG-P-092
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

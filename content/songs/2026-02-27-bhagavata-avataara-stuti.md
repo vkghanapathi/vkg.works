@@ -27,4 +27,7 @@ keywords:
 - avatāravāda
 - Telugu devotional literature
 - Śrīvaiṣṇavism
+uid: VKG-S-040
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -23,4 +23,7 @@ keywords:
 - Sanskrit learning
 - oral tradition
 - ritual composition
+uid: VKG-P-022
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

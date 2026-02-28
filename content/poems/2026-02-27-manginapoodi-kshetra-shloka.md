@@ -10,4 +10,7 @@ preamble: Please provide the poem text or excerpt in its original language (Sans
   Telugu, Kannada, or other) so that appropriate historical, scriptural, and ritual
   context can be established within the relevant Vedic or classical Indian literary
   tradition.
+uid: VKG-P-054
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -27,4 +27,7 @@ keywords:
 - cow protection
 - Hindu dharma
 - Vedic tradition
+uid: VKG-A-020
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

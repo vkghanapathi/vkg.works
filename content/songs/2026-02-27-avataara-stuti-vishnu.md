@@ -27,4 +27,7 @@ keywords:
 - caturaśraya
 - anuṣṭup
 - Telugu devotional poetry
+uid: VKG-S-034
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

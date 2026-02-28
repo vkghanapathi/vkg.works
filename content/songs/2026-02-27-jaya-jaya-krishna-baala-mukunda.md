@@ -10,4 +10,7 @@ preamble: No contextual information can be established without textual content. 
   produce accurate scholarly metadata aligned with Dr. Vamshi Krishna Ghanapāṭhī's
   work in Vedic literature and classical Indian compositions, a non-empty excerpt
   or clear work identifier is necessary.
+uid: VKG-S-084
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

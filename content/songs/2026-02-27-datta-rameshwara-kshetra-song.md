@@ -23,4 +23,7 @@ keywords:
 - oral tradition
 - Indian classical music
 - contemporary Vedic scholarship
+uid: VKG-S-060
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -29,4 +29,7 @@ keywords:
 - Prakṛti-Purusha
 - Māyā
 - Grihasthaśrama
+uid: VKG-A-138
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

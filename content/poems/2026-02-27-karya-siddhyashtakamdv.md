@@ -27,4 +27,7 @@ keywords:
 - Phalaśruti (fruit of recitation)
 - Naivedya (ritual offering)
 - Vaiṣṇava liturgy
+uid: VKG-P-050
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

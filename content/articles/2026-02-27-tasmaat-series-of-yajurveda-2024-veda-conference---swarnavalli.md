@@ -29,4 +29,7 @@ keywords:
 - havīr (oblation)
 - ritual propriety
 - karmic consequence
+uid: VKG-A-118
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

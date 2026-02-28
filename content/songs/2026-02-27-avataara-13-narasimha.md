@@ -26,4 +26,7 @@ keywords:
 - Telugu devotional poetry
 - bhakti padya
 - Vaishnava theology
+uid: VKG-S-018
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

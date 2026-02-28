@@ -26,4 +26,7 @@ keywords:
 - Praśasti (encomium)
 - Shashtiyabda-pūrti (sixtieth birthday)
 - Paramahaṃsa tradition
+uid: VKG-P-053
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -26,4 +26,7 @@ keywords:
 - saṃskāra
 - dharma-mārga
 - brahma-ātman
+uid: VKG-P-042
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

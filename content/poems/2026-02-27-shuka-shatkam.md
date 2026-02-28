@@ -25,4 +25,7 @@ keywords:
 - guru-śiṣya paramparā (teacher-student lineage)
 - Parīkṣit
 - non-dualistic wisdom
+uid: VKG-P-077
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

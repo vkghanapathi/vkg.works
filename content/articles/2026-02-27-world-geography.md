@@ -28,4 +28,7 @@ keywords:
 - Vedic geography
 - Bharata-varsha
 - scriptural geography
+uid: VKG-A-139
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -25,4 +25,7 @@ keywords:
 - classical Sanskrit composition
 - Vedic cosmology
 - devotional hymn (stotram)
+uid: VKG-P-081
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

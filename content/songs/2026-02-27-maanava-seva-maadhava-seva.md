@@ -26,4 +26,7 @@ keywords:
 - Viṣṇu
 - vṛddha-āśrama
 - daśa-vidha-seva
+uid: VKG-S-099
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

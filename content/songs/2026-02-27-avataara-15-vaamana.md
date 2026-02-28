@@ -25,4 +25,7 @@ keywords:
 - vikramaṇa
 - devotional lyric
 - Purāṇic narrative
+uid: VKG-S-020
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -27,4 +27,7 @@ keywords:
 - dharma
 - siddhis (supernatural powers)
 - Vedantic theology
+uid: VKG-S-006
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

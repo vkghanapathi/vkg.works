@@ -27,4 +27,7 @@ keywords:
 - Advaita Vedanta
 - ghanapāṭha (Vedic recitation)
 - Kannada script transmission
+uid: VKG-P-043
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

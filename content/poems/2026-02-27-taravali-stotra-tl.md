@@ -28,4 +28,7 @@ keywords:
 - Telugu devotional poetry
 - Advaita Vedānta
 - Nāma-japa (divine name-remembrance)
+uid: VKG-P-084
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -26,4 +26,7 @@ keywords:
 - environmental ethics
 - Hindu devotional theology
 - pollution and sustainability
+uid: VKG-P-062
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

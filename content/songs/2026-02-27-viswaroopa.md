@@ -26,4 +26,7 @@ keywords:
 - South Indian sacred geography
 - Narasimha
 - Gañgāpura
+uid: VKG-S-163
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

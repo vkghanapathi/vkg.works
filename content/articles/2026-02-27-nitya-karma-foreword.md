@@ -26,4 +26,7 @@ keywords:
 - prārabdha
 - śukti
 - guru-śiṣya
+uid: VKG-A-070
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

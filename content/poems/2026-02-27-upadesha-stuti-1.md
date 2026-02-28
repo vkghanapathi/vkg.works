@@ -26,4 +26,7 @@ keywords:
 - devotional instruction
 - Vedantic philosophy
 - ethical cultivation
+uid: VKG-P-087
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

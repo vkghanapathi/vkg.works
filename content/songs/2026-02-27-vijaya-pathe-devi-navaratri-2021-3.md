@@ -25,4 +25,7 @@ keywords:
 - conjugal welfare
 - Sanskrit devotional poetry
 - Telugu religious discourse
+uid: VKG-S-158
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

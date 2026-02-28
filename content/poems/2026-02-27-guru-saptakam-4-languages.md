@@ -30,4 +30,7 @@ keywords:
 - Vedic learning
 - Yoga
 - Guru-bhakti
+uid: VKG-P-035
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

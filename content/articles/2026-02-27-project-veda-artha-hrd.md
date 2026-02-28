@@ -27,4 +27,7 @@ keywords:
 - Vedic philosophy
 - textual preservation
 - Āchārya tradition
+uid: VKG-A-076
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

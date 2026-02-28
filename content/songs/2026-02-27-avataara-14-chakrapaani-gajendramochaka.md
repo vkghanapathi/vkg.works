@@ -24,4 +24,7 @@ keywords:
 - mokṣa (liberation)
 - bhakti
 - Telugu kīrtana
+uid: VKG-S-019
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

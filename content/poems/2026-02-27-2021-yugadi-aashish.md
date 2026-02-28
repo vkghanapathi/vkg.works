@@ -25,4 +25,7 @@ keywords:
 - Kuja/Mars
 - divine lotus feet
 - auspicious blessings
+uid: VKG-P-001
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

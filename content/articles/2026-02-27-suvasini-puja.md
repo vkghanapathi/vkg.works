@@ -30,4 +30,7 @@ keywords:
 - Divine Feminine
 - household ritual
 - feminine dharma
+uid: VKG-A-115
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

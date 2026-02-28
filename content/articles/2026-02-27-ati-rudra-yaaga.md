@@ -28,4 +28,7 @@ keywords:
 - Vedic ritual
 - abhisheka
 - Bodhayana Sutra
+uid: VKG-A-012
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -11,4 +11,7 @@ preamble: To contextualise this work within its scriptural or ritual tradition, 
   original body text of the poem must be supplied. This will allow proper situating
   within relevant Sanskrit, Telugu, or Kannada poetic traditions and their associated
   philosophical or devotional frameworks.
+uid: VKG-P-102
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

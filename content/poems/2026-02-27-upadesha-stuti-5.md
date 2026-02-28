@@ -26,4 +26,7 @@ keywords:
 - sat-cit-ānanda
 - devotional pedagogy
 - Vedic cosmology
+uid: VKG-P-091
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

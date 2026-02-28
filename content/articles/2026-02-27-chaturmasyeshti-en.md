@@ -26,4 +26,7 @@ keywords:
 - Ritviks
 - Prdhāna Homa
 - Vaidika Āgama
+uid: VKG-A-022
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -26,4 +26,7 @@ keywords:
 - devotional petition
 - Andhra Pradesh
 - atma-jnana
+uid: VKG-S-091
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -26,4 +26,7 @@ keywords:
 - yajña (Vedic sacrifice)
 - nitya-pūjā (daily worship)
 - Śrauta ritual
+uid: VKG-A-119
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

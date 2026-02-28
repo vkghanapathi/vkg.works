@@ -29,4 +29,7 @@ keywords:
 - Dikpālas (directional deities)
 - Sāṃkhya (enumeration and philosophical system)
 - Sat-cit-ānanda (being-consciousness-bliss)
+uid: VKG-S-152
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

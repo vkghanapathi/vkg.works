@@ -29,4 +29,7 @@ keywords:
 - Agnihotra
 - Vedic scholarship
 - institutional collaboration
+uid: VKG-A-061
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

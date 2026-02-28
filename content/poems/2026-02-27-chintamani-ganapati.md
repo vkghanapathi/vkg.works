@@ -27,4 +27,7 @@ keywords:
 - devotional hymn
 - Sanskrit mantra
 - Telugu liturgy
+uid: VKG-P-007
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

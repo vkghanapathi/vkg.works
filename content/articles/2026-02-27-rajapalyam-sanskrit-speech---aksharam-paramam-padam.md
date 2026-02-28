@@ -31,4 +31,7 @@ keywords:
 - brahman
 - varna-jñāna
 - Upaniṣadic metaphysics
+uid: VKG-A-087
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

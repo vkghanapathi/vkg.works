@@ -27,4 +27,7 @@ keywords:
 - vairagya
 - Sanskrit-Telugu hybrid metre
 - Ramayana theology
+uid: VKG-S-090
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

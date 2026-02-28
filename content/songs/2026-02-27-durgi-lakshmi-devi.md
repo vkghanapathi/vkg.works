@@ -27,4 +27,7 @@ keywords:
 - Mathyatāḷam
 - sat-chit-ānanda
 - Tantric theology
+uid: VKG-S-064
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

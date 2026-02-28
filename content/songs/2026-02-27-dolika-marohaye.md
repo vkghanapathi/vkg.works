@@ -26,4 +26,7 @@ keywords:
 - bhakti literature
 - Śikṣā
 - mnemonic technique
+uid: VKG-S-063
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -29,4 +29,7 @@ keywords:
 - non-dualism
 - stotram
 - Sanskrit hymn
+uid: VKG-P-023
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

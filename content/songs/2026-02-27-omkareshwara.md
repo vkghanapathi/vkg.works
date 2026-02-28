@@ -26,4 +26,7 @@ keywords:
 - Śaiva worship
 - Kīrtana
 - Upaniṣadic philosophy
+uid: VKG-S-109
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

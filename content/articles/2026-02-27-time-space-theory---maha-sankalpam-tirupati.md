@@ -30,4 +30,7 @@ keywords:
 - multiverse
 - space-time
 - Vedic epistemology
+uid: VKG-A-121
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

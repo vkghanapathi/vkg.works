@@ -28,4 +28,7 @@ keywords:
 - Tiṣra Gati
 - Agnīndhra
 - Jain devotional gīta
+uid: VKG-S-033
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

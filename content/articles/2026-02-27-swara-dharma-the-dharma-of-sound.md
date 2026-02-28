@@ -27,4 +27,7 @@ keywords:
 - Vedic phonetics
 - Ach (vowels)
 - Vedāṅga
+uid: VKG-A-116
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -27,4 +27,7 @@ keywords:
 - Sanskrit liturgy
 - Votive worship
 - Vedic cosmology
+uid: VKG-P-026
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

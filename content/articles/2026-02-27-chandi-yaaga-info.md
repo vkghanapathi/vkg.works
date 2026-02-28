@@ -27,4 +27,7 @@ keywords:
 - Chandi Homa
 - Vedic sacrifice
 - Aswalayana Grihya Sutra
+uid: VKG-A-019
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

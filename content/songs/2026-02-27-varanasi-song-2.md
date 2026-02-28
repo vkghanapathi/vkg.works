@@ -25,4 +25,7 @@ keywords:
 - pallavi
 - Śaiva philosophy
 - sacred geography
+uid: VKG-S-150
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

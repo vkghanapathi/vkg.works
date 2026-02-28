@@ -26,4 +26,7 @@ keywords:
 - Vedantic philosophy
 - Sanskrit devotional poetry
 - grace (kṛpā)
+uid: VKG-P-027
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

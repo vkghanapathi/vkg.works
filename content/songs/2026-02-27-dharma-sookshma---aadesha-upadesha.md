@@ -26,4 +26,7 @@ keywords:
 - ācāryavarga
 - moral cultivation
 - Sanskrit-Telugu bilingualism
+uid: VKG-S-062
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

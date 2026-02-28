@@ -26,4 +26,7 @@ keywords:
 - Telugu devotional poetry
 - divine grace
 - Vedantic theology
+uid: VKG-S-092
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

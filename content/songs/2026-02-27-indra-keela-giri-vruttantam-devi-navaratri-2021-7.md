@@ -25,4 +25,7 @@ keywords:
 - Mallīśvara
 - sat-chit-ānanda
 - kanaka-rūpa
+uid: VKG-S-082
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

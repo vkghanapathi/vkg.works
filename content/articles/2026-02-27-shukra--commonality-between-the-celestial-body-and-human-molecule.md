@@ -28,4 +28,7 @@ keywords:
 - Phenomenology (functional isomorphism)
 - Tidal locking (restrained potency)
 - Icchā Śakti (power of will)
+uid: VKG-A-106
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

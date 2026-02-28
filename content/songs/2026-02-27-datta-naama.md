@@ -28,4 +28,7 @@ keywords:
 - saccidānanda
 - Telugu devotional literature
 - tri-form divinity
+uid: VKG-S-059
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

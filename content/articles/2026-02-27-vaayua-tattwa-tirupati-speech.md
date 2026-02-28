@@ -27,4 +27,7 @@ keywords:
 - upāsanā (meditative worship)
 - bhūta (cosmic elements)
 - prāṇa (vital breath)
+uid: VKG-A-128
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

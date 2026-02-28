@@ -28,4 +28,7 @@ keywords:
 - Pindanda
 - Vedic astrology
 - birth anniversary ritual
+uid: VKG-A-099
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

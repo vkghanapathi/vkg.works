@@ -26,4 +26,7 @@ keywords:
 - guru principle
 - Vedic exegesis
 - desire-negation
+uid: VKG-S-155
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

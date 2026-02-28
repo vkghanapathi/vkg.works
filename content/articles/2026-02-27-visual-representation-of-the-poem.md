@@ -29,4 +29,7 @@ keywords:
 - Śaṅkara
 - non-duality
 - philosophical schematization
+uid: VKG-A-135
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

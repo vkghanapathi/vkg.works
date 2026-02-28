@@ -28,4 +28,7 @@ keywords:
 - Brahman
 - tisr agati (triple metre)
 - Ganesha festival
+uid: VKG-S-131
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -23,4 +23,7 @@ keywords:
 - Indian classical song
 - contemporary Sanskrit and Telugu composition
 - devotional literature
+uid: VKG-S-161
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -26,4 +26,7 @@ keywords:
 - Śākta theology
 - Navratri worship
 - Śaiva–Śākta synthesis
+uid: VKG-P-059
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

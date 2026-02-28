@@ -28,4 +28,7 @@ keywords:
 - Gopatha Brāhmaṇam
 - Vedic semantics
 - Odisha Vedic lineage
+uid: VKG-A-011
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

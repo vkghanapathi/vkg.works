@@ -26,4 +26,7 @@ keywords:
 - Śaivism
 - Tantricism
 - Ghanapāṭhī
+uid: VKG-S-111
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

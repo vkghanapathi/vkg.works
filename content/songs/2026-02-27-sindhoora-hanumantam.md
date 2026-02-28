@@ -28,4 +28,7 @@ keywords:
 - bhakti philosophy
 - Vedantic realization
 - rāga (musical mode and passionate attachment)
+uid: VKG-S-136
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

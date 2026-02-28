@@ -28,4 +28,7 @@ keywords:
 - Vedic exegesis
 - scriptural authority
 - ritual semantics
+uid: VKG-A-132
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

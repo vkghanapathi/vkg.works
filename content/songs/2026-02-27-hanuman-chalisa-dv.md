@@ -27,4 +27,7 @@ keywords:
 - Telugu devotional poetry
 - monkey deity mythology
 - Rāmāyaṇa narrative
+uid: VKG-S-078
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -28,4 +28,7 @@ keywords:
 - Vratam
 - Vedic ritual
 - Avadhoota Datta Peetham
+uid: VKG-A-029
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -25,4 +25,7 @@ keywords:
 - Sanskrit poetics
 - auspiciousness (śubha)
 - Vedic tradition
+uid: VKG-P-003
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

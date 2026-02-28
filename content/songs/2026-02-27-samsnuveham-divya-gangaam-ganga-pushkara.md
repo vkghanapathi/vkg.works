@@ -28,4 +28,7 @@ keywords:
 - bhajana (devotional song)
 - Carnatic music
 - amṛta (sacred nectar)
+uid: VKG-S-128
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -27,4 +27,7 @@ keywords:
 - Guru tradition
 - Nātha philosophy
 - Devatāyatana (temple consecration)
+uid: VKG-S-058
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

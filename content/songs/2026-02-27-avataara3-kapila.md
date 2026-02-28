@@ -28,4 +28,7 @@ keywords:
 - Bhāgavata Purāṇa
 - devotional song
 - Sāṃkhya-Yoga
+uid: VKG-S-037
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

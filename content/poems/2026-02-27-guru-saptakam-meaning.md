@@ -27,4 +27,7 @@ keywords:
 - Vedic authority
 - Bharadvāja Gotra
 - Saccidānanda
+uid: VKG-P-036
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

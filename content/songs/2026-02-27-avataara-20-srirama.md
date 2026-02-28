@@ -28,4 +28,7 @@ keywords:
 - Viṣṇu avatāra
 - Sanskrit devotional verse
 - charaṇa structure
+uid: VKG-S-025
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

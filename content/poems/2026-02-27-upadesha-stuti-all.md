@@ -27,4 +27,7 @@ keywords:
 - Śiva worship
 - Sacred bathing (tīrtha-snāna)
 - Ganesh propitiation
+uid: VKG-P-093
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

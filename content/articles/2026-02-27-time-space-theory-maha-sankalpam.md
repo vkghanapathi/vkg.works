@@ -28,4 +28,7 @@ keywords:
 - cosmic cycles
 - Hindu Trinity
 - Vedic time measurement
+uid: VKG-A-122
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -29,4 +29,7 @@ keywords:
 - Prāṇa (vital breath)
 - Sāṃkhya philosophy
 - Sat-cit-ānanda
+uid: VKG-S-153
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

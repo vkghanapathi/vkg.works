@@ -32,4 +32,7 @@ keywords:
 - ritual timekeeping
 - stellar observation
 - calendrical logic
+uid: VKG-A-066
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

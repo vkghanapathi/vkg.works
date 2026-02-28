@@ -28,4 +28,7 @@ keywords:
 - Vedic ritual
 - Homa
 - Vedic cosmology
+uid: VKG-A-140
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

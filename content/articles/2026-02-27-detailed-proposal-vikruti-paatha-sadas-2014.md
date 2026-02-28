@@ -32,4 +32,7 @@ keywords:
 - Samhita
 - Svara (Vedic accent)
 - Oral transmission
+uid: VKG-A-026
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -30,4 +30,7 @@ keywords:
 - etymology
 - ritual application
 - vāyu-skandha
+uid: VKG-A-114
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -26,4 +26,7 @@ keywords:
 - Vedic ethics
 - health and longevity (āyu-ārogya)
 - daily ritual practice
+uid: VKG-P-008
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -26,4 +26,7 @@ keywords:
 - cessation of activity
 - life force
 - rejuvenation
+uid: VKG-A-120
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -25,4 +25,7 @@ keywords:
 - karma
 - Tirupati
 - Brahman metaphysics
+uid: VKG-P-079
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

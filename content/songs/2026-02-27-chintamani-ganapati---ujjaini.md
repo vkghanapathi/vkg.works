@@ -30,4 +30,7 @@ keywords:
 - desire and liberation
 - ritual practice
 - ghanapāṭha
+uid: VKG-S-048
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -26,4 +26,7 @@ keywords:
 - Tāravali
 - advaita Vedanta
 - Sanskrit devotional poetry
+uid: VKG-P-058
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

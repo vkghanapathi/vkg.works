@@ -25,4 +25,7 @@ keywords:
 - Valli
 - six-faced deity
 - Sanskrit prayer
+uid: VKG-P-033
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

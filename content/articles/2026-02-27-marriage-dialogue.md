@@ -28,4 +28,7 @@ keywords:
 - life-cycle ceremony
 - brahmacharya
 - vaiśvadeva
+uid: VKG-A-057
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

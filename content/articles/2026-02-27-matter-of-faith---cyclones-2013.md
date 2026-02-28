@@ -28,4 +28,7 @@ keywords:
 - coastal India
 - Machilipatnam
 - collective ritual
+uid: VKG-A-059
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

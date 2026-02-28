@@ -28,4 +28,7 @@ keywords:
 - Viṣṇu worship
 - Hindu liturgical calendar
 - Mārgaśīrṣa
+uid: VKG-A-030
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

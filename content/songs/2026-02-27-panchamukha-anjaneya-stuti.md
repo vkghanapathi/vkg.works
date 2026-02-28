@@ -30,4 +30,7 @@ keywords:
 - Telugu devotional literature
 - Narasiṃha
 - Varāha
+uid: VKG-S-110
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

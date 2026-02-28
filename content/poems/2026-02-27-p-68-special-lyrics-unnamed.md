@@ -25,4 +25,7 @@ keywords:
 - mnemonic technique
 - Śrīrāma
 - classical Sanskrit grammar
+uid: VKG-P-065
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

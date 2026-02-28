@@ -30,4 +30,7 @@ keywords:
 - scene cognition
 - multisensory integration
 - cortical pathways
+uid: VKG-A-064
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

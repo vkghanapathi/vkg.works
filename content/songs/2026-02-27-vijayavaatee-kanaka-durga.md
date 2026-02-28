@@ -26,4 +26,7 @@ keywords:
 - Telugu devotional song
 - Mother goddess (mātr̥mūrti)
 - Goddess worship
+uid: VKG-S-160
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -28,4 +28,7 @@ keywords:
 - Mādhavīya-vṛtti commentary tradition
 - Vedāṅga phonology
 - Sanskrit grammatical nomenclature
+uid: VKG-A-100
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

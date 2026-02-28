@@ -24,4 +24,7 @@ keywords:
 - multisensory integration
 - neural pathways
 - sensory transduction
+uid: VKG-A-063
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

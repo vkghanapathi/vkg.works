@@ -25,4 +25,7 @@ keywords:
 - Pallavi form
 - Anuṣṭup meter
 - Telugu bhakti
+uid: VKG-S-024
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

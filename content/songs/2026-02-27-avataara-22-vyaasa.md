@@ -26,4 +26,7 @@ keywords:
 - Purāṇas
 - Vedānta
 - brahman
+uid: VKG-S-027
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

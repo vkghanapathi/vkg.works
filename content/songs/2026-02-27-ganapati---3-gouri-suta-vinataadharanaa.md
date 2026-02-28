@@ -27,4 +27,7 @@ keywords:
 - bhakti
 - Gaṇapati worship
 - Śakti triad
+uid: VKG-S-069
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -27,4 +27,7 @@ keywords:
 - Phala-śruti
 - Devotional hymn
 - Hindu ritual liturgy
+uid: VKG-P-048
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

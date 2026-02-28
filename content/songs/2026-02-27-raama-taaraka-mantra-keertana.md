@@ -25,4 +25,7 @@ keywords:
 - dharma
 - liberation
 - Telugu devotional poetry
+uid: VKG-S-115
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

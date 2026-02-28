@@ -26,4 +26,7 @@ keywords:
 - non-dualism
 - Sanskrit devotional poetry
 - Upaniṣadic philosophy
+uid: VKG-A-113
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

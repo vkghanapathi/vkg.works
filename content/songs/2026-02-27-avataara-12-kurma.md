@@ -28,4 +28,7 @@ keywords:
 - Guṇas (Sattva, Rajas, Tamas)
 - Telugu devotional song
 - Non-duality (Advaita)
+uid: VKG-S-017
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

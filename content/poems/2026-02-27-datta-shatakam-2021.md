@@ -28,4 +28,7 @@ keywords:
 - Vedic nonduality
 - Śataka composition
 - divine descent (avatāra)
+uid: VKG-P-012
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

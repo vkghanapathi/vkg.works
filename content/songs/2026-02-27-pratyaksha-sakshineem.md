@@ -24,4 +24,7 @@ keywords:
 - Maheśvara Sūtra
 - etymological devotion (nighantupūjā)
 - Madurai temple tradition
+uid: VKG-S-113
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

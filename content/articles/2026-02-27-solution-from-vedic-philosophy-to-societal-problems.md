@@ -31,4 +31,7 @@ keywords:
 - Bhagavad Gītā
 - environmental solutions
 - Upaniṣadic thought
+uid: VKG-A-112
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

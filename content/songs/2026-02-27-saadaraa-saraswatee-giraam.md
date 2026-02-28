@@ -26,4 +26,7 @@ keywords:
 - Brahmānī
 - Vedic knowledge tradition
 - Bhakti composition
+uid: VKG-S-125
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

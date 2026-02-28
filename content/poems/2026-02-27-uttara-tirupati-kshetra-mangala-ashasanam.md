@@ -25,4 +25,7 @@ keywords:
 - kshetra (sacred shrine)
 - aśīrvāda (benediction)
 - Hanumān
+uid: VKG-P-094
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

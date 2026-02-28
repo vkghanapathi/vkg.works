@@ -26,4 +26,7 @@ keywords:
 - padya
 - Viṣṇu
 - ananda (bliss)
+uid: VKG-S-133
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

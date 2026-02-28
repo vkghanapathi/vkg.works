@@ -28,4 +28,7 @@ keywords:
 - Vinayaka Chaturthi
 - Vedic procedure
 - ritual efficacy
+uid: VKG-A-037
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -28,4 +28,7 @@ keywords:
 - dharma
 - chakravartin
 - Carnatic devotion
+uid: VKG-S-032
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

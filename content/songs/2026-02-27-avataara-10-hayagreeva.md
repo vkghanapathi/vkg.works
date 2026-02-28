@@ -24,4 +24,7 @@ keywords:
 - miśra gati
 - Vedantic cosmology
 - Satrāśin
+uid: VKG-S-015
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

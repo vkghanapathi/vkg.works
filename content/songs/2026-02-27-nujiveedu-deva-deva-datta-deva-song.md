@@ -24,4 +24,7 @@ keywords:
 - vernacular composition
 - sacred music
 - manuscript transmission
+uid: VKG-S-108
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

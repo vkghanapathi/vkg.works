@@ -31,4 +31,7 @@ keywords:
 - detoxification
 - spiritual discipline
 - kshut (appetite)
+uid: VKG-A-092
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

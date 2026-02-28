@@ -26,4 +26,7 @@ keywords:
 - music philosophy
 - dhruva (fixed, eternal)
 - devotional scholarship
+uid: VKG-P-097
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

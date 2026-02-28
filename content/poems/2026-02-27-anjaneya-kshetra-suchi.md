@@ -25,4 +25,7 @@ keywords:
 - kārya-siddhi (accomplishment of endeavours)
 - deity manifestations
 - regional Hinduism
+uid: VKG-P-004
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -25,4 +25,7 @@ keywords:
 - Vaishnava devotion
 - anushtup metre
 - asceticism
+uid: VKG-S-030
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

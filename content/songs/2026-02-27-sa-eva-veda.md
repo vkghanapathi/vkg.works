@@ -27,4 +27,7 @@ keywords:
 - mokṣa
 - spiritual realization
 - non-duality
+uid: VKG-S-124
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

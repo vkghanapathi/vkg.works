@@ -25,4 +25,7 @@ keywords:
 - Sanskrit devotional poetry
 - mokṣa
 - Varanasi
+uid: VKG-P-099
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

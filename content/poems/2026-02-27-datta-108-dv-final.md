@@ -28,4 +28,7 @@ keywords:
 - Brahman
 - devotional Sanskrit poetry
 - Avdhūta
+uid: VKG-P-009
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

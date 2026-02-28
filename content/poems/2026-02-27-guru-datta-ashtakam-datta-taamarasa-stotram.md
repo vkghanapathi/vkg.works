@@ -31,4 +31,7 @@ keywords:
 - dharma (cosmic law)
 - prasāda (divine grace)
 - Sanskrit devotional literature
+uid: VKG-P-034
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

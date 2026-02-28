@@ -28,4 +28,7 @@ keywords:
 - Kali
 - Moksha
 - Shakta philosophy
+uid: VKG-A-027
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

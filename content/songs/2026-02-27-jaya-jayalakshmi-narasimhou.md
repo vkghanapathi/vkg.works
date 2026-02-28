@@ -26,4 +26,7 @@ keywords:
 - sapta-padī
 - Vedic ritual
 - Bharadvāja gotra
+uid: VKG-S-086
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

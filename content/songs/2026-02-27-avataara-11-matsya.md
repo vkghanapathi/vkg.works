@@ -26,4 +26,7 @@ keywords:
 - Vaishnava bhakti
 - samsara
 - liberation (moksa)
+uid: VKG-S-016
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

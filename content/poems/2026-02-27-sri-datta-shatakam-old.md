@@ -27,4 +27,7 @@ keywords:
 - Guru-disciple transmission
 - Bhakti devotion
 - Jñāna-vairāgya (knowledge and dispassion)
+uid: VKG-P-078
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

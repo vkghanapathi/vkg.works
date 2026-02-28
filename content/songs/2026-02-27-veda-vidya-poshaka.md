@@ -26,4 +26,7 @@ keywords:
 - karma and jñāna
 - guru-yoga
 - spiritual liberation
+uid: VKG-S-154
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

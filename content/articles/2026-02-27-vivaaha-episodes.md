@@ -30,4 +30,7 @@ keywords:
 - homa (ritual fire)
 - Saptapadi
 - Puruṣa Artha
+uid: VKG-A-136
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

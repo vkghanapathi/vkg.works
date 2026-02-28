@@ -27,4 +27,7 @@ keywords:
 - bhakti
 - guru-principle
 - Vedānta
+uid: VKG-S-002
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

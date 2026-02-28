@@ -29,4 +29,7 @@ keywords:
 - Project Vedārtha
 - Vedic pedagogy
 - Sanātana Dharma
+uid: VKG-A-130
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

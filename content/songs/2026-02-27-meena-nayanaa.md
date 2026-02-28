@@ -27,4 +27,7 @@ keywords:
 - Vedic phonetics
 - devotional literature
 - Sanskrit-Telugu synthesis
+uid: VKG-S-105
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

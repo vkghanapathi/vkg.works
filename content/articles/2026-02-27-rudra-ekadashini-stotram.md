@@ -27,4 +27,7 @@ keywords:
 - jīvātmā and paramātmā
 - Vāsordharā Mantra
 - Vedic ritual
+uid: VKG-A-097
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

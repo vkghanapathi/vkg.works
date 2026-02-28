@@ -30,4 +30,7 @@ keywords:
 - feminine cosmology
 - creation narratives
 - temple worship evolution
+uid: VKG-A-088
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

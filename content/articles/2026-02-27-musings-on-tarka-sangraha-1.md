@@ -26,4 +26,7 @@ keywords:
 - life stages
 - Telugu philosophy
 - contemporary ethics
+uid: VKG-A-062
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

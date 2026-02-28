@@ -29,4 +29,7 @@ keywords:
 - Vedic Database
 - Certification and Quality Control
 - Guru-śiṣya Paramparā
+uid: VKG-A-095
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

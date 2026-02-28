@@ -26,4 +26,7 @@ keywords:
 - guru-parampara (lineage of teachers)
 - Vedantic symbolism
 - āśīrvāda (blessing)
+uid: VKG-P-101
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

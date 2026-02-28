@@ -24,4 +24,7 @@ keywords:
 - Vedānta philosophy
 - Sāṃkhya
 - bhakti
+uid: VKG-S-003
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

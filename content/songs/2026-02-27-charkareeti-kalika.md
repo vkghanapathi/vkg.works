@@ -28,4 +28,7 @@ keywords:
 - Sanskrit mantra
 - Śaiva-Śakta theology
 - cosmic manifestation
+uid: VKG-S-047
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

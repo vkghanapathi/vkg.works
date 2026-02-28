@@ -26,4 +26,7 @@ keywords:
 - gurupūjana
 - Advaita Vedānta
 - bhakti
+uid: VKG-S-076
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

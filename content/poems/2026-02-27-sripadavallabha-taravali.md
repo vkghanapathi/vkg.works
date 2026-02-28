@@ -30,4 +30,7 @@ keywords:
 - Bhakti
 - Dattātreya sampradāya
 - Guru-śiṣya paramparā
+uid: VKG-P-080
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

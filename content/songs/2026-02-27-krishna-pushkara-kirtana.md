@@ -25,4 +25,7 @@ keywords:
 - river praise (nadi-stuti)
 - purity and purification
 - Sanskrit-Telugu devotional literature
+uid: VKG-S-097
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

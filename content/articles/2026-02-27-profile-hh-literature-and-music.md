@@ -29,4 +29,7 @@ keywords:
 - Kannada literature
 - Hindu monastic tradition
 - Vernacular devotional composition
+uid: VKG-A-075
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

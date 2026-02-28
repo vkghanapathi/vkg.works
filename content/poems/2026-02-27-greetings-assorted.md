@@ -28,4 +28,7 @@ keywords:
 - body-mapping ritual
 - Yājñavalkya
 - Vedic devotion
+uid: VKG-P-032
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

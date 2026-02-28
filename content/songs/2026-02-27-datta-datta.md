@@ -27,4 +27,7 @@ keywords:
 - divine grace
 - suffering and liberation
 - dharma practice
+uid: VKG-S-052
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

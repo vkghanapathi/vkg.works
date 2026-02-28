@@ -28,4 +28,7 @@ keywords:
 - ontology
 - Nārāyaṇa Sūkta
 - Vedic exegesis
+uid: VKG-A-094
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -31,4 +31,7 @@ keywords:
 - Ganagapur
 - Dattatreya
 - Monastic theology
+uid: VKG-P-083
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

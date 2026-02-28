@@ -29,4 +29,7 @@ keywords:
 - constitutional equality
 - inter-trust fund transfers
 - corpus fund accumulation
+uid: VKG-A-033
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

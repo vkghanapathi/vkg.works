@@ -25,4 +25,7 @@ keywords:
 - vaidya (physician)
 - Telugu devotional poetry
 - Anuṣṭubh meter
+uid: VKG-S-023
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

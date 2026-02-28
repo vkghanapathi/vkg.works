@@ -27,4 +27,7 @@ keywords:
 - pūjā (worship)
 - punya (merit)
 - Sanskrit devotional literature
+uid: VKG-P-073
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

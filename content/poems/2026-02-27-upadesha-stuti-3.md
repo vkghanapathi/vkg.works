@@ -27,4 +27,7 @@ keywords:
 - Dīpa-Darśana
 - Paramātman-Jīvātman
 - Sachidānanda
+uid: VKG-P-089
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

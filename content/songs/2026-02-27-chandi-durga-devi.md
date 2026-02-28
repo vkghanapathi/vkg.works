@@ -25,4 +25,7 @@ keywords:
 - Devī Māhātmya
 - litany
 - śakta theology
+uid: VKG-S-044
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

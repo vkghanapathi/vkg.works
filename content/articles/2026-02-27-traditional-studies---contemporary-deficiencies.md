@@ -29,4 +29,7 @@ keywords:
 - Samskṛta textual transmission
 - Vaidika Śāstra pedagogy
 - Purohit training
+uid: VKG-A-124
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

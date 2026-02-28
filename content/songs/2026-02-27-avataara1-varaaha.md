@@ -26,4 +26,7 @@ keywords:
 - Hiranyaksha demon
 - Earth rescue mythology
 - Sanskrit-Telugu hybrid composition
+uid: VKG-S-035
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

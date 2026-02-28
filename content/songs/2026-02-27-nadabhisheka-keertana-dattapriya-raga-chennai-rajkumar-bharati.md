@@ -26,4 +26,7 @@ keywords:
 - multilingual devotional composition
 - Advaita Vedānta
 - Dattapriyan raga
+uid: VKG-S-106
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -26,4 +26,7 @@ keywords:
 - Divine grace
 - Lotus symbolism
 - Bhāgavata tradition
+uid: VKG-P-082
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

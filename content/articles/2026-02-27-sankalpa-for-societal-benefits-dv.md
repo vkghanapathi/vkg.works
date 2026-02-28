@@ -25,4 +25,7 @@ keywords:
 - Vedic practice
 - collective welfare
 - ritual agency
+uid: VKG-A-103
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -29,4 +29,7 @@ keywords:
 - Sanskrit stotra
 - Telugu devotional poetry
 - divine attributes
+uid: VKG-S-120
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

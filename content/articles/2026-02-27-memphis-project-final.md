@@ -27,4 +27,7 @@ keywords:
 - Vedic ritual
 - Ghanapāṭha
 - Sanskrit recitation
+uid: VKG-A-060
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

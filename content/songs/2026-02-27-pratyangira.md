@@ -27,4 +27,7 @@ keywords:
 - goddess iconography
 - mantra-based composition
 - classical Indian music
+uid: VKG-S-114
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

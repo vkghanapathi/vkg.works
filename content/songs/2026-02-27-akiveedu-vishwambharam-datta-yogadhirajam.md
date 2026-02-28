@@ -22,4 +22,7 @@ keywords:
 - kirtana
 - congregational singing
 - vernacular religiosity
+uid: VKG-S-008
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

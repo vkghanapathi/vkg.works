@@ -29,4 +29,7 @@ keywords:
 - Śukra dhātu
 - Retrograde motion
 - Macrocosm-microcosm
+uid: VKG-A-109
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

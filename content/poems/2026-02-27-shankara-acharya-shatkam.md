@@ -25,4 +25,7 @@ keywords:
 - Vedic dharma
 - Brahman
 - mokṣa
+uid: VKG-P-074
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

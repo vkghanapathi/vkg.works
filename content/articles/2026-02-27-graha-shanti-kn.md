@@ -31,4 +31,7 @@ keywords:
 - graha-chakra (planetary system)
 - rishi-siddhanta (sage doctrine)
 - rishis (Vedic seers)
+uid: VKG-A-044
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

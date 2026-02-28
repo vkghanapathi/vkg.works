@@ -26,4 +26,7 @@ keywords:
 - Advaita Vedānta
 - carnatic music
 - puruṣārtha
+uid: VKG-S-121
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

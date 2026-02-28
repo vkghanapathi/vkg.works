@@ -27,4 +27,7 @@ keywords:
 - karma cycle
 - Vedantic philosophy
 - Tālapravāha
+uid: VKG-S-014
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

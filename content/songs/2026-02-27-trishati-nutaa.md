@@ -30,4 +30,7 @@ keywords:
 - Ghanapāṭhī
 - Tantric philosophy
 - sat-chit-ānanda
+uid: VKG-S-146
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

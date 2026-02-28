@@ -25,4 +25,7 @@ keywords:
 - Sanskrit kavya
 - Vedic education
 - South Indian religious patronage
+uid: VKG-P-056
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

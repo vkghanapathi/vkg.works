@@ -28,4 +28,7 @@ keywords:
 - Sanskrit devotional literature
 - raga and tala
 - guru-shishya tradition
+uid: VKG-S-001
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

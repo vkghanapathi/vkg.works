@@ -25,4 +25,7 @@ keywords:
 - Purāṇic narrative
 - Advaita Vedānta
 - maṅgalya ritual
+uid: VKG-S-074
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

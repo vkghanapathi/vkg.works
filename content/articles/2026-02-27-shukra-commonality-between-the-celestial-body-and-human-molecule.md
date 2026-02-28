@@ -27,4 +27,7 @@ keywords:
 - retrograde motion
 - reproductive biology
 - analogy and pattern
+uid: VKG-A-107
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

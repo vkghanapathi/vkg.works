@@ -27,4 +27,7 @@ keywords:
 - brahman-realization
 - Srirangam temple
 - Vedantic philosophy
+uid: VKG-S-043
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

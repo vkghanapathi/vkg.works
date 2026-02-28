@@ -26,4 +26,7 @@ keywords:
 - Homa ritual
 - Durga
 - Markandeya Purana
+uid: VKG-S-045
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

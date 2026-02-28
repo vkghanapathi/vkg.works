@@ -26,4 +26,7 @@ keywords:
 - twelve-syllable mantra
 - Bhakti
 - trisargati
+uid: VKG-S-031
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -30,4 +30,7 @@ keywords:
 - avatara
 - bhakti tradition
 - Carnatic song structure
+uid: VKG-S-028
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

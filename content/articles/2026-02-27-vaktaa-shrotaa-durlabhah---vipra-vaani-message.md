@@ -28,4 +28,7 @@ keywords:
 - dharma
 - public discourse
 - svādhyāya
+uid: VKG-A-129
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

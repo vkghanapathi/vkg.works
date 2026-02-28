@@ -26,4 +26,7 @@ keywords:
 - cit-ātman (consciousness)
 - Hindu calendar (tithi)
 - auspicious blessing (śubhāśaṃsana)
+uid: VKG-P-044
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

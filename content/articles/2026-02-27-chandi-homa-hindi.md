@@ -29,4 +29,7 @@ keywords:
 - Śākta tradition
 - Mārkandey Purāṇa
 - tantric practice
+uid: VKG-A-018
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -29,4 +29,7 @@ keywords:
 - Shaiva devotion
 - Mahabharata narrative
 - Sanskrit prosody
+uid: VKG-S-101
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

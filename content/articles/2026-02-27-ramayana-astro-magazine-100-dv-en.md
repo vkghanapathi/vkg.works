@@ -27,4 +27,7 @@ keywords:
 - Classical Sanskrit composition
 - Ghanapāṭhī method
 - Guru-paramparā transmission
+uid: VKG-A-090
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

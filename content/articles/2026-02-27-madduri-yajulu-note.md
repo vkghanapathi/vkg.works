@@ -28,4 +28,7 @@ keywords:
 - Vedic ritual continuity
 - Yajurveda
 - kṣetra (sacred precinct)
+uid: VKG-A-055
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

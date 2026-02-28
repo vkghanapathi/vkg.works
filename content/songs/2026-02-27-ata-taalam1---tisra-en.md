@@ -27,4 +27,7 @@ keywords:
 - devotional composition
 - guru-śiṣya paramparā
 - mokṣa
+uid: VKG-S-011
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

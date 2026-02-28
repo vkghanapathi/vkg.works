@@ -25,4 +25,7 @@ keywords:
 - Rāma and Rāvaṇa narrative
 - alliterative composition (anuprāsa)
 - festival observance
+uid: VKG-S-088
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

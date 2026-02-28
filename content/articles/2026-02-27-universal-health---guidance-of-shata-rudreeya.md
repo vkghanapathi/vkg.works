@@ -28,4 +28,7 @@ keywords:
 - ethical speech
 - social wellness
 - ayakṣma
+uid: VKG-A-125
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

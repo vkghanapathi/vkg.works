@@ -27,4 +27,7 @@ keywords:
 - Sanskrit kritis
 - Carnatic ragas
 - devotional theology
+uid: VKG-S-051
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

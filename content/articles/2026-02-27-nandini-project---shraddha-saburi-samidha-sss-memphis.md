@@ -25,4 +25,7 @@ keywords:
 - Rigveda
 - Yajurveda
 - Vedic ethics
+uid: VKG-A-068
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -26,4 +26,7 @@ keywords:
 - saṃskāra (ritual refinement)
 - ādhidaivika tāpa (divine affliction)
 - pūjā (worship)
+uid: VKG-P-002
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

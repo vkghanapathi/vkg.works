@@ -27,4 +27,7 @@ keywords:
 - Śailaputrī
 - Brahmacharinī
 - Kātyāyanī
+uid: VKG-P-060
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

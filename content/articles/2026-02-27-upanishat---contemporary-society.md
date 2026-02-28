@@ -25,4 +25,7 @@ keywords:
 - social ethics
 - Indian metaphysics
 - consciousness
+uid: VKG-A-127
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

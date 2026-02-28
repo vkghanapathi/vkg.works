@@ -25,4 +25,7 @@ keywords:
 - Datta tradition
 - monastic community
 - defamation response
+uid: VKG-A-005
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

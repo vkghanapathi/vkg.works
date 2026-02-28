@@ -24,4 +24,7 @@ keywords:
 - Brahmanic ritual
 - feminine divinity
 - Vedic Brahminism
+uid: VKG-S-010
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

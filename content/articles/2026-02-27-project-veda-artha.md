@@ -26,4 +26,7 @@ keywords:
 - Vedic philosophy
 - cultural preservation
 - textual exegesis
+uid: VKG-A-077
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

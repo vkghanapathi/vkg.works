@@ -26,4 +26,7 @@ keywords:
 - Tāntric cosmology
 - Śaiva-Śākta theology
 - devotional song
+uid: VKG-S-103
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

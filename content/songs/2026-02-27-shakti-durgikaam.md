@@ -23,4 +23,7 @@ keywords:
 - ajñāna
 - moksha
 - Advaita Vedānta
+uid: VKG-S-132
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

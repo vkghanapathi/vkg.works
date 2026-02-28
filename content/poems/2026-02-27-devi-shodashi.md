@@ -25,4 +25,7 @@ keywords:
 - bīja mantra
 - three guṇas
 - Divine Feminine
+uid: VKG-P-019
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

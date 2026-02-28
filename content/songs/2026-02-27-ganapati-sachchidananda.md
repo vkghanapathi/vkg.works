@@ -26,4 +26,7 @@ keywords:
 - non-duality (advaita)
 - Telugu devotional song
 - liberation (mokṣa)
+uid: VKG-S-072
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

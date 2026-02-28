@@ -25,4 +25,7 @@ keywords:
 - Vedic recitation
 - Sanskrit devotional poetry
 - tisra-jāti
+uid: VKG-S-012
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

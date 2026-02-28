@@ -26,4 +26,7 @@ keywords:
 - religious endowments
 - donor obligations
 - monastic law
+uid: VKG-A-093
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

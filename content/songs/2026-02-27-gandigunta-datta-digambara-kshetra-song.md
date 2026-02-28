@@ -23,4 +23,7 @@ keywords:
 - devotional poetry
 - lyric composition
 - congregational worship
+uid: VKG-S-073
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

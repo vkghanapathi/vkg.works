@@ -29,4 +29,7 @@ keywords:
 - guru-disciple lineage
 - bhakti
 - sat-chit-ānanda
+uid: VKG-S-054
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

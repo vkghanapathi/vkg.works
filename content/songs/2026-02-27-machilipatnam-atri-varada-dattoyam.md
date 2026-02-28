@@ -24,4 +24,7 @@ keywords:
 - liturgical music
 - melodic text
 - sampradaya
+uid: VKG-S-100
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

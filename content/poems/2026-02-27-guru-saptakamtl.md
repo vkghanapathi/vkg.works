@@ -27,4 +27,7 @@ keywords:
 - Vedic Knowledge
 - Stotras
 - Sanskrit Devotional Poetry
+uid: VKG-P-038
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

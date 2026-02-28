@@ -26,4 +26,7 @@ keywords:
 - adhi (mental distress)
 - moral virtue
 - pallavi-anupallavi form
+uid: VKG-S-005
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

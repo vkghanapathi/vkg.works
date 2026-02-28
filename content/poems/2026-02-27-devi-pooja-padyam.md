@@ -28,4 +28,7 @@ keywords:
 - mantra saubhāgya (mantric auspiciousness)
 - tantric visualization
 - Śākta theology
+uid: VKG-P-018
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

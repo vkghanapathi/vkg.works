@@ -29,4 +29,7 @@ keywords:
 - stotram
 - sat-chit-ānanda
 - alliterative composition
+uid: VKG-P-017
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

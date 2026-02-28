@@ -27,4 +27,7 @@ keywords:
 - Vedic ethics
 - Krishna devotion
 - A2 beta-casein
+uid: VKG-A-067
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

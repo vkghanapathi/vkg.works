@@ -25,4 +25,7 @@ keywords:
 - Devī worship
 - Linguistic philosophy
 - Hindu metaphysics of language
+uid: VKG-P-100
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -25,4 +25,7 @@ keywords:
 - mahāyāga
 - South Indian devotional music
 - Vedic ethics
+uid: VKG-S-151
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

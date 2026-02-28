@@ -27,4 +27,7 @@ keywords:
 - Dharma Śāstra
 - Brahmanda
 - introspection and self-review
+uid: VKG-A-047
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

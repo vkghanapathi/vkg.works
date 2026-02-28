@@ -26,4 +26,7 @@ keywords:
 - Narasiṁha
 - Sacred geography
 - Bhakti theology
+uid: VKG-S-156
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

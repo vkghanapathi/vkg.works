@@ -29,4 +29,7 @@ keywords:
 - upanayana (initiation)
 - Vedic ritual
 - gṛhya-sūtra (domestic ritual)
+uid: VKG-A-142
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

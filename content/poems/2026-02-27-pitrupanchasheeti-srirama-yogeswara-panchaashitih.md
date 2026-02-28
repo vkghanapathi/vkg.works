@@ -28,4 +28,7 @@ keywords:
 - śrāddha ritual
 - ātman
 - liberation (mokṣa)
+uid: VKG-P-068
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -26,4 +26,7 @@ keywords:
 - Navaratri
 - Telugu devotional song
 - Goddess worship
+uid: VKG-S-093
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

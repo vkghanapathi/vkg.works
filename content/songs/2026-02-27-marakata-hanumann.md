@@ -27,4 +27,7 @@ keywords:
 - South Indian bhakti tradition
 - temple liturgy
 - Rāmāyaṇa
+uid: VKG-S-102
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

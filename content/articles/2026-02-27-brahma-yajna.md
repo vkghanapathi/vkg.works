@@ -29,4 +29,7 @@ keywords:
 - Gāyatrī mantra
 - Dharmaśāstra
 - Upaniṣadic philosophy
+uid: VKG-A-017
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

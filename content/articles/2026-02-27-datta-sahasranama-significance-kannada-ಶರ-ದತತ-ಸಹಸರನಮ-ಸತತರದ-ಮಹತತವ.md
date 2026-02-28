@@ -27,4 +27,7 @@ keywords:
 - mantra recitation
 - spiritual sādhana
 - bhakti
+uid: VKG-A-025
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

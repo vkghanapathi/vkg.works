@@ -27,4 +27,7 @@ keywords:
 - Telugu devotional literature
 - coconut offering (nārikela)
 - phalaśruti
+uid: VKG-P-047
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

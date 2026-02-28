@@ -28,4 +28,7 @@ keywords:
 - chakra symbolism
 - pada (devotional song)
 - Telugu religious poetry
+uid: VKG-S-137
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

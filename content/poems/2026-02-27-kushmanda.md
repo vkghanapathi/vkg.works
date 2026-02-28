@@ -28,4 +28,7 @@ keywords:
 - śuddhi
 - Mitra-Varuṇa
 - Trita Āptya
+uid: VKG-P-052
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

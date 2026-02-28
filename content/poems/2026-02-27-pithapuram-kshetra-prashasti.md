@@ -10,4 +10,7 @@ abstract: Unable to generate metadata. The work excerpt provided is empty or con
 preamble: Metadata generation requires substantive source material. Please resubmit
   with the complete poem or excerpt in its original language so that appropriate scriptural,
   ritual, or philosophical context can be established.
+uid: VKG-P-067
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

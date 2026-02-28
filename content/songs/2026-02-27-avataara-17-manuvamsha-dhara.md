@@ -26,4 +26,7 @@ keywords:
 - Puranic cosmology
 - Telugu devotional verse
 - Bhakti theology
+uid: VKG-S-022
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

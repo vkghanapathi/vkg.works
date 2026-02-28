@@ -25,4 +25,7 @@ keywords:
 - transactional versus scholarly engagement
 - human-AI epistemology
 - sustained inquiry
+uid: VKG-A-021
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

@@ -30,4 +30,7 @@ keywords:
 - planetary conjunction
 - Vedic cosmology
 - ṛṣi astronomy
+uid: VKG-A-043
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

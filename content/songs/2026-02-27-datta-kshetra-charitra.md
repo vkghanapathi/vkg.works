@@ -26,4 +26,7 @@ keywords:
 - Upaniṣadic philosophy
 - dharma-rakṣaṇa
 - navagraha-upāsanā
+uid: VKG-S-057
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

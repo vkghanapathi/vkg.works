@@ -24,4 +24,7 @@ keywords:
 - pranidhana
 - guru-grace
 - South Indian hymnology
+uid: VKG-S-068
+orcid: 0009-0007-3852-0158
+doi: ''
 ---

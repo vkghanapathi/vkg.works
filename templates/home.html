@@ -4,6 +4,34 @@
 {% block description %}Scholarly articles, poems, songs, books, and Vedic recitation by Dr. Vamshi Krishna Ghanapāṭhī{% endblock %}
 
 {% set active_section = 'home' %}
+{% block head_extra %}
+<style>
+  .hero-ornament-line {
+    font-size: 0.8rem;
+    color: rgba(232, 200, 112, 0.45);
+    letter-spacing: 0.4em;
+    margin: 0.6rem 0 0;
+    font-family: var(--font-ui);
+  }
+  .home-intro-strip {
+    background: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    text-align: center;
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+    padding: 0.6rem 1rem;
+    margin-bottom: 2.5rem;
+  }
+  .home-intro-strip span {
+    color: var(--color-accent);
+    font-weight: 600;
+  }
+</style>
+{% endblock %}
 {% block content %}
 <div class="page-container">
   <div class="home-hero">
@@ -11,11 +39,20 @@
          alt="Dr. Vamshi Krishna Ghanapāṭhī"
          class="hero-portrait">
     <div class="hero-text">
+      <p class="hero-ornament">ॐ</p>
       <h1>vkg.works</h1>
       <p class="subtitle">Dr. Vamshi Krishna Ghanapāṭhī</p>
       <p class="subtitle-devanagari">विद्वान् वंशीकृष्ण घनपाठी</p>
       <p class="hero-desc">Vedic scholar &bull; Poet &bull; Musician &bull; Mysore</p>
+      <p class="hero-credentials">D.Litt (Veda) &bull; PhD Sanskrit &bull; Ghanapāṭhī, Yajurveda</p>
+      <p class="hero-ornament-line">✦ &nbsp; ✦ &nbsp; ✦</p>
     </div>
+  </div>
+
+  <div class="home-intro-strip">
+    <span>Articles</span> &nbsp;·&nbsp; <span>Poems</span> &nbsp;·&nbsp;
+    <span>Songs</span> &nbsp;·&nbsp; <span>Books</span> &nbsp;·&nbsp;
+    <span>Audio</span> &nbsp;·&nbsp; <span>Video</span> &nbsp;·&nbsp; <span>Projects</span>
   </div>
 
   <div class="home-columns">

@@ -392,6 +392,7 @@ def enrich_section(section: str, limit: int, dry_run: bool,
 
 
 def main() -> None:
+    sys.stdout.reconfigure(encoding='utf-8')
     parser = argparse.ArgumentParser(
         description='AI-enrich vkg.works content with abstract/preamble/keywords/language/subject/topic')
     scope = parser.add_mutually_exclusive_group(required=True)

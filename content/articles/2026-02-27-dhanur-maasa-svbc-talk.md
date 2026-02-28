@@ -31,4 +31,11 @@ keywords:
 uid: VKG-A-030
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Devotional Music
+topic:
+- Dhanurmāsa
+- Pañcarātra Āgama
+- Tiruppāvai
+- Śrīvaiṣṇavism
 ---

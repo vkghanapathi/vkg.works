@@ -33,4 +33,11 @@ keywords:
 uid: VKG-A-013
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Contemporary Commentary
+topic:
+- Bhagavad Gita
+- kula vṛtti
+- labour economics
+- occupational dharma
 ---

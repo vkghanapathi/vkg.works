@@ -29,4 +29,11 @@ keywords:
 uid: VKG-A-062
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Philosophy & Vedānta
+topic:
+- old age and life stages
+- masculinity and social dignity
+- dharma and renunciation
+- family structure and ethics
 ---

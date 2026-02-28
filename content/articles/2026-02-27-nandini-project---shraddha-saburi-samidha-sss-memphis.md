@@ -28,4 +28,11 @@ keywords:
 uid: VKG-A-068
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Contemporary Commentary
+topic:
+- Go Seva
+- Bhagavata Purana
+- Vedic ethics
+- Krishna theology
 ---

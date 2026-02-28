@@ -30,4 +30,11 @@ keywords:
 uid: VKG-A-067
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Contemporary Commentary
+topic:
+- go-seva
+- go-raksha
+- Bhagavata Purana
+- Vedic ethics
 ---

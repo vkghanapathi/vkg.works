@@ -31,4 +31,11 @@ keywords:
 uid: VKG-A-049
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Vedic Ritual
+topic:
+- Karma Kaanda
+- Meemaamsa Shaastra
+- Shrouta Sutra
+- Gruhya Sutra
 ---

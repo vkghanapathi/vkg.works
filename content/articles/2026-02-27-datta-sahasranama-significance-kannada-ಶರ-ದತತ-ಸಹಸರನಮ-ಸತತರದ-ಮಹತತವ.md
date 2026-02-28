@@ -30,4 +30,11 @@ keywords:
 uid: VKG-A-025
 orcid: 0009-0007-3852-0158
 doi: ''
+language: kn
+subject: Sacred Poetry
+topic:
+- Datta Sahasranāma Stotra
+- Dattātreya
+- japa
+- phalaśruti
 ---

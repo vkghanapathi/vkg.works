@@ -32,4 +32,11 @@ keywords:
 uid: VKG-A-061
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Vedic Ritual
+topic:
+- Vedic recitation
+- Chandi Saptashati
+- Rudra Parayana
+- Agnihotra
 ---

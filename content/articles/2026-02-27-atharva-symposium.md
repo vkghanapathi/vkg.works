@@ -31,4 +31,11 @@ keywords:
 uid: VKG-A-011
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Vedic Linguistics
+topic:
+- Atharva Veda
+- Paippalaada śākhā
+- Śaunaka śākhā
+- Vedic transmission
 ---

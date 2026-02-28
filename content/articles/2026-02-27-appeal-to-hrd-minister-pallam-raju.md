@@ -31,4 +31,11 @@ keywords:
 uid: VKG-A-008
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Contemporary Commentary
+topic:
+- Vedic education
+- MSRVVP
+- Gurukula system
+- Educational policy
 ---

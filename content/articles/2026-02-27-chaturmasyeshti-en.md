@@ -29,4 +29,11 @@ keywords:
 uid: VKG-A-022
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa;en
+subject: Vedic Ritual
+topic:
+- Chaturmāasya Iṣṭi
+- Śrauta Yāga
+- Seasonal Rites
+- Ritviks
 ---

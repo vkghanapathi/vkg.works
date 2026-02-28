@@ -32,4 +32,11 @@ keywords:
 uid: VKG-A-033
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Dharmaśāstra
+topic:
+- religious trust taxation
+- charitable endowment regulation
+- constitutional equal protection
+- Direct Taxes Code amendments
 ---

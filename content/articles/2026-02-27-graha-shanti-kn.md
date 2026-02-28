@@ -34,4 +34,11 @@ keywords:
 uid: VKG-A-044
 orcid: 0009-0007-3852-0158
 doi: ''
+language: kn
+subject: Jyotiṣa
+topic:
+- graha (planets)
+- graha-shanti (planetary propitiation)
+- nakshatras (fixed stars)
+- Vedic astronomy
 ---

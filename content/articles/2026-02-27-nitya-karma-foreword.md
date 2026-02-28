@@ -29,4 +29,11 @@ keywords:
 uid: VKG-A-070
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Dharmaśāstra
+topic:
+- nityakarma
+- sandhyāvandana
+- pañcamahāyajña
+- prārabdha-karma
 ---

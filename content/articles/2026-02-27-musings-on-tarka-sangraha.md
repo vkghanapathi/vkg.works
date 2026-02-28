@@ -27,4 +27,10 @@ keywords:
 uid: VKG-A-063
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Contemporary Commentary
+topic:
+- neuroscience
+- sensory perception
+- cognitive processing
 ---

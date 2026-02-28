@@ -31,4 +31,11 @@ keywords:
 uid: VKG-A-059
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Philosophy & Vedānta
+topic:
+- faith and pragmatism
+- Īśvara (divine providence)
+- bhakti (devotion)
+- theodicy and natural calamity
 ---

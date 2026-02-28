@@ -32,4 +32,11 @@ keywords:
 uid: VKG-A-009
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Vedic Linguistics
+topic:
+- Vedic education policy
+- guru-kula system
+- Sanskrit higher learning
+- Vedabhāṣya tradition
 ---

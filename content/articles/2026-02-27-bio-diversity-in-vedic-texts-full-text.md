@@ -34,4 +34,11 @@ keywords:
 uid: VKG-A-015
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Vedic Ritual
+topic:
+- Yajurveda
+- fauna classification
+- ecological preservation
+- Vedic biodiversity
 ---

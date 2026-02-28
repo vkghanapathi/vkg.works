@@ -32,4 +32,11 @@ keywords:
 uid: VKG-A-075
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa;te;kn;ta;hi;en
+subject: Contemporary Commentary
+topic:
+- Avadhoota Datta Peetham
+- Dharma propagation
+- Multilingual Sanskrit composition
+- Carnatic music
 ---

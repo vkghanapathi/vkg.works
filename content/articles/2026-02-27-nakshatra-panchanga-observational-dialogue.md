@@ -35,4 +35,11 @@ keywords:
 uid: VKG-A-066
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Jyotiṣa
+topic:
+- nakshatra observation
+- Panchanga
+- Vedanga Jyotisha
+- sidereal anchoring
 ---

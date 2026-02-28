@@ -291,6 +291,12 @@ def render_site(sections: dict[str, list[ArticleData]], site_url: str, env: Envi
             html = item_tmpl.render(**ctx)
             (item_dir / 'index.html').write_text(html, encoding='utf-8')
 
+            # Top-level alias: also output at /{alias}/ if frontmatter specifies it
+            if getattr(item, 'top_level_alias', None):
+                alias_dir = SITE_DIR / item.top_level_alias
+                alias_dir.mkdir(parents=True, exist_ok=True)
+                (alias_dir / 'index.html').write_text(html, encoding='utf-8')
+
             # Copy associated binary files
             _copy_item_assets(item, item_dir)
 

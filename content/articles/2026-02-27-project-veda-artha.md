@@ -29,4 +29,11 @@ keywords:
 uid: VKG-A-077
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Vedic Linguistics
+topic:
+- Śabdātmaka Veda Parirakṣaṇa
+- oral transmission
+- Uchchāraṇa
+- textual exegesis
 ---

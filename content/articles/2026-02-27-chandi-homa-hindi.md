@@ -32,4 +32,11 @@ keywords:
 uid: VKG-A-018
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa
+subject: Vedic Ritual
+topic:
+- Durgā Saptaśatī
+- Chandi Path
+- havan
+- Kāli worship
 ---

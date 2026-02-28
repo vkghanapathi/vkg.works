@@ -30,4 +30,11 @@ keywords:
 uid: VKG-A-076
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Vedic Linguistics
+topic:
+- Śabdātmaka Veda Pari Rakṣaṇa
+- Uchchāraṇa
+- oral transmission
+- textual preservation
 ---

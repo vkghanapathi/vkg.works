@@ -31,4 +31,11 @@ keywords:
 uid: VKG-A-012
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Vedic Ritual
+topic:
+- Ati Rudra Yaaga
+- Rudra Adhyaya
+- Yajurveda
+- Rudra Homa
 ---

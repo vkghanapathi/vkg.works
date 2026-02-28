@@ -50,6 +50,7 @@ class ArticleData:
     language: Optional[str] = None        # ISO 639-1 e.g. 'sa', 'te', 'sa;te'
     subject: Optional[str] = None         # LCSH-aligned subject heading
     topic: list = field(default_factory=list)  # Specific topic terms
+    top_level_alias: Optional[str] = None  # Also publish at /{alias}/ (e.g. "pranetaa")
 
 
 _md = MarkdownIt()
@@ -167,6 +168,7 @@ def convert_markdown(path: Path, section: str) -> ArticleData:
         language=str(meta['language']).strip() if meta.get('language') else None,
         subject=str(meta['subject']).strip() if meta.get('subject') else None,
         topic=[str(t).strip() for t in meta['topic'] if t] if isinstance(meta.get('topic'), list) else [],
+        top_level_alias=str(meta['top_level_alias']).strip() if meta.get('top_level_alias') else None,
     )
 
 

@@ -31,4 +31,11 @@ keywords:
 uid: VKG-A-029
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Vedic Ritual
+topic:
+- Datta Sampradaya
+- Abhishekam
+- Avadhoota Datta Peetham
+- Temple Worship Protocols
 ---

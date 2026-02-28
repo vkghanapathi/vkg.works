@@ -2,15 +2,56 @@
 
 @font-face {
   font-family: 'VijayaDV';
-  src: url('/assets/fonts/VijayaDV.woff2') format('woff2');
+  src: url('/assets/fonts/VijayaDV.woff2') format('woff2'),
+       url('/assets/fonts/VIJAYADV.TTF') format('truetype');
   font-display: swap;
-  /* Apply ONLY to Devanagari Unicode range + VijayaDV PUA characters.
-     English and other Latin text falls back to Georgia automatically. */
   unicode-range:
     U+0900-U+097F,   /* Devanagari */
     U+0966-U+096F,   /* Devanagari digits */
     U+1CD0-U+1CFF,   /* Vedic Extensions */
     U+E000-U+F8FF;   /* PUA — VijayaDV custom characters */
+}
+
+@font-face {
+  font-family: 'NandanaDV';
+  src: url('/assets/fonts/NandanaDV.woff2') format('woff2'),
+       url('/assets/fonts/NandanaDV.ttf') format('truetype');
+  font-display: swap;
+  unicode-range:
+    U+0900-U+097F,   /* Devanagari */
+    U+0966-U+096F,   /* Devanagari digits */
+    U+1CD0-U+1CFF,   /* Vedic Extensions */
+    U+E000-U+F8FF;   /* PUA */
+}
+
+@font-face {
+  font-family: 'VijayaTL';
+  src: url('/assets/fonts/VijayaTL.woff2') format('woff2'),
+       url('/assets/fonts/VijayaTL.ttf') format('truetype');
+  font-display: swap;
+  unicode-range:
+    U+0C00-U+0C7F,   /* Telugu */
+    U+E000-U+F8FF;   /* PUA */
+}
+
+@font-face {
+  font-family: 'NandanaTL';
+  src: url('/assets/fonts/NandanaTL.woff2') format('woff2'),
+       url('/assets/fonts/NandanaTL.ttf') format('truetype');
+  font-display: swap;
+  unicode-range:
+    U+0C00-U+0C7F,   /* Telugu */
+    U+E000-U+F8FF;   /* PUA */
+}
+
+@font-face {
+  font-family: 'NandanaKN';
+  src: url('/assets/fonts/NandanaKN.woff2') format('woff2'),
+       url('/assets/fonts/NandanaKN.ttf') format('truetype');
+  font-display: swap;
+  unicode-range:
+    U+0C80-U+0CFF,   /* Kannada */
+    U+E000-U+F8FF;   /* PUA */
 }
 
 :root {
@@ -23,6 +64,11 @@
   --color-nav-text: #f5e6d3;
   --font-body: Georgia, 'Times New Roman', serif;
   --font-vedic: 'VijayaDV', Georgia, serif;
+  --font-dv: 'VijayaDV', Georgia, serif;
+  --font-dv-heading: 'NandanaDV', Georgia, serif;
+  --font-tl: 'VijayaTL', Georgia, serif;
+  --font-tl-heading: 'NandanaTL', Georgia, serif;
+  --font-kn: 'NandanaKN', Georgia, serif;
   --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --max-width: 860px;
 }
@@ -579,6 +625,17 @@ footer {
 }
 
 footer a { color: var(--color-accent); text-decoration: none; }
+
+/* Language font utility classes */
+/* Body text */
+.lang-dv { font-family: var(--font-dv); }
+.lang-tl { font-family: var(--font-tl); }
+.lang-kn { font-family: var(--font-kn); }
+
+/* Headings — apply to h1/h2 elements */
+h1.lang-dv, h2.lang-dv { font-family: var(--font-dv-heading); }
+h1.lang-tl, h2.lang-tl { font-family: var(--font-tl-heading); }
+h1.lang-kn, h2.lang-kn { font-family: var(--font-kn); }
 
 /* Responsive */
 @media (max-width: 600px) {

@@ -30,4 +30,11 @@ keywords:
 uid: VKG-A-019
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa;en
+subject: Vedic Ritual
+topic:
+- Chandi Homa
+- Shrauta karma
+- Smaarta karma
+- Puranic ritual
 ---

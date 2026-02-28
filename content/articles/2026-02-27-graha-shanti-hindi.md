@@ -33,4 +33,11 @@ keywords:
 uid: VKG-A-043
 orcid: 0009-0007-3852-0158
 doi: ''
+language: hi
+subject: Jyotiṣa
+topic:
+- grahashānti
+- navagraha
+- grahadṛṣṭi
+- Rāhu and Ketu
 ---

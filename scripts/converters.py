@@ -44,6 +44,12 @@ class ArticleData:
     abstract: Optional[str] = None        # AI-generated English scholarly summary
     preamble: Optional[str] = None        # AI-generated tradition/context paragraph
     keywords: list = field(default_factory=list)  # AI-generated subject terms
+    uid: Optional[str] = None             # Internal ID e.g. VKG-A-042
+    orcid: Optional[str] = None           # Author ORCID
+    doi: Optional[str] = None             # DOI (filled after Zenodo upload)
+    language: Optional[str] = None        # ISO 639-1 e.g. 'sa', 'te', 'sa;te'
+    subject: Optional[str] = None         # LCSH-aligned subject heading
+    topic: list = field(default_factory=list)  # Specific topic terms
 
 
 _md = MarkdownIt()
@@ -155,6 +161,12 @@ def convert_markdown(path: Path, section: str) -> ArticleData:
         abstract=str(meta['abstract']).strip() if meta.get('abstract') else None,
         preamble=str(meta['preamble']).strip() if meta.get('preamble') else None,
         keywords=[str(k).strip() for k in meta['keywords'] if k] if isinstance(meta.get('keywords'), list) else [],
+        uid=str(meta['uid']).strip() if meta.get('uid') else None,
+        orcid=str(meta['orcid']).strip() if meta.get('orcid') else None,
+        doi=str(meta['doi']).strip() if meta.get('doi') else None,
+        language=str(meta['language']).strip() if meta.get('language') else None,
+        subject=str(meta['subject']).strip() if meta.get('subject') else None,
+        topic=[str(t).strip() for t in meta['topic'] if t] if isinstance(meta.get('topic'), list) else [],
     )
 
 
@@ -238,6 +250,12 @@ def convert_docx(path: Path, section: str) -> ArticleData:
     abstract = None
     preamble = None
     keywords: list = []
+    uid = None
+    orcid = None
+    doi = None
+    language = None
+    subject = None
+    topic: list = []
     if sidecar.exists():
         try:
             post = frontmatter.load(str(sidecar))
@@ -256,6 +274,12 @@ def convert_docx(path: Path, section: str) -> ArticleData:
             abstract = str(meta['abstract']).strip() if meta.get('abstract') else None
             preamble = str(meta['preamble']).strip() if meta.get('preamble') else None
             keywords = [str(k).strip() for k in meta['keywords'] if k] if isinstance(meta.get('keywords'), list) else []
+            uid = str(meta['uid']).strip() if meta.get('uid') else None
+            orcid = str(meta['orcid']).strip() if meta.get('orcid') else None
+            doi = str(meta['doi']).strip() if meta.get('doi') else None
+            language = str(meta['language']).strip() if meta.get('language') else None
+            subject = str(meta['subject']).strip() if meta.get('subject') else None
+            topic = [str(t).strip() for t in meta['topic'] if t] if isinstance(meta.get('topic'), list) else []
         except Exception:
             pass
 
@@ -267,6 +291,7 @@ def convert_docx(path: Path, section: str) -> ArticleData:
         status=status, category=category, featured=featured,
         extracted_images=extracted_images,
         abstract=abstract, preamble=preamble, keywords=keywords,
+        uid=uid, orcid=orcid, doi=doi, language=language, subject=subject, topic=topic,
     )
 
 

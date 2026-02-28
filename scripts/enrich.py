@@ -51,6 +51,46 @@ BODY_EXCERPT_CHARS = 3000
 # Delay between API calls (seconds) to respect rate limits
 API_DELAY = 0.5
 
+LANGUAGE_CODES = {
+    'Sanskrit': 'sa', 'Telugu': 'te', 'Kannada': 'kn', 'English': 'en',
+    'Hindi': 'hi', 'Tamil': 'ta', 'Mixed': None,
+}
+
+SUBJECT_CHOICES = [
+    'Vedic Ritual',
+    'Devotional Music',
+    'Philosophy & Vedānta',
+    'Sacred Poetry',
+    'Dharmaśāstra',
+    'Jyotiṣa',
+    'Vedic Linguistics',
+    'Contemporary Commentary',
+]
+
+CLASSIFY_PROMPT_TEMPLATE = """\
+Work title   : {title}
+Section      : {section}
+Abstract     : {abstract}
+Keywords     : {keywords}
+
+Classify this work using the controlled vocabularies below.
+Respond with ONLY a valid JSON object — no explanation, no markdown:
+
+{{
+  "language": "<primary language(s) of the work — use ISO 639-1 codes, semicolon-separated if mixed, e.g. sa, te, sa;te, en>",
+  "subject": "<one subject from this list: {subjects}>",
+  "topic": ["<specific topic 1>", "<specific topic 2>", "<specific topic 3>"]
+}}
+
+Rules:
+- language: reflect the actual composition language (not the metadata language).
+  Sanskrit compositions → sa. Telugu compositions → te. Kannada → kn. English → en.
+  Mixed script compositions → use semicolon, e.g. sa;te
+- subject: pick exactly one from the list provided
+- topic: 2-4 specific terms (deity names, ritual names, scripture names, philosophical concepts)
+  drawn from or consistent with the abstract and keywords
+"""
+
 SYSTEM_PROMPT = """\
 You are a scholarly research assistant specialising in Vedic literature,
 Indian classical texts, Sanskrit, Telugu, and Kannada compositions.
@@ -176,6 +216,121 @@ def _write_enrichment(md_path: Path, enrichment: dict) -> None:
     md_path.write_text(f'---\n{yaml_block}\n---\n{content_body}', encoding='utf-8')
 
 
+def _call_classify(title: str, section: str, abstract: str,
+                   keywords: list, client, model: str) -> dict | None:
+    """Call Claude to classify language / subject / topic. Returns dict or None."""
+    prompt = CLASSIFY_PROMPT_TEMPLATE.format(
+        title=title,
+        section=section,
+        abstract=abstract or '(not available)',
+        keywords=', '.join(keywords) if keywords else '(not available)',
+        subjects=', '.join(SUBJECT_CHOICES),
+    )
+    try:
+        message = client.messages.create(
+            model=model,
+            max_tokens=200,
+            system=SYSTEM_PROMPT,
+            messages=[{'role': 'user', 'content': prompt}],
+        )
+        raw = message.content[0].text.strip()
+        raw = re.sub(r'^```(?:json)?\s*', '', raw)
+        raw = re.sub(r'\s*```$', '', raw)
+        return json.loads(raw)
+    except json.JSONDecodeError as e:
+        print(f'    WARN: JSON parse error — {e}', file=sys.stderr)
+        return None
+    except Exception as e:
+        print(f'    WARN: API error — {e}', file=sys.stderr)
+        return None
+
+
+def _write_classification(md_path: Path, classification: dict) -> None:
+    """Write language / subject / topic into the .md sidecar frontmatter."""
+    post = frontmatter.load(str(md_path))
+    meta = dict(post.metadata)
+
+    language = str(classification.get('language', '')).strip()
+    subject  = str(classification.get('subject',  '')).strip()
+    topic    = classification.get('topic', [])
+    if isinstance(topic, list):
+        topic = [str(t).strip() for t in topic if t]
+
+    if language:
+        meta['language'] = language
+    if subject and subject in SUBJECT_CHOICES:
+        meta['subject'] = subject
+    if topic:
+        meta['topic'] = topic
+
+    yaml_block = yaml.dump(meta, allow_unicode=True,
+                           default_flow_style=False, sort_keys=False).rstrip()
+    content_body = post.content or ''
+    md_path.write_text(f'---\n{yaml_block}\n---\n{content_body}', encoding='utf-8')
+
+
+def classify_section(section: str, limit: int, dry_run: bool,
+                     client, model: str) -> tuple[int, int, int]:
+    """
+    Second-pass classification: add language/subject/topic to enriched items.
+    Skips items that already have a language field.
+    Returns (classified, skipped, errors).
+    """
+    section_dir = CONTENT_DIR / section
+    if not section_dir.exists():
+        return 0, 0, 0
+
+    classified = skipped = errors = 0
+
+    for md_path in sorted(section_dir.glob('*.md')):
+        if classified >= limit:
+            break
+        try:
+            post = frontmatter.load(str(md_path))
+        except Exception:
+            skipped += 1
+            continue
+
+        meta = post.metadata
+        status = str(meta.get('status', '')).lower()
+        title = str(meta.get('title', md_path.stem))
+
+        if status in ('', 'published', 'incomplete'):
+            skipped += 1
+            continue
+        if meta.get('language'):
+            skipped += 1
+            continue
+        # Need at least abstract or keywords to classify meaningfully
+        if not meta.get('abstract') and not meta.get('keywords'):
+            skipped += 1
+            continue
+
+        abstract = str(meta.get('abstract', '')).strip()
+        keywords = meta.get('keywords', []) if isinstance(meta.get('keywords'), list) else []
+
+        if dry_run:
+            print(f'  WOULD CLASSIFY [{section}]: {md_path.name}  — "{title[:60]}"')
+            classified += 1
+            continue
+
+        print(f'  Classifying [{section}] {md_path.name}  — "{title[:60]}"')
+        result = _call_classify(title, section, abstract, keywords, client, model)
+
+        if result:
+            _write_classification(md_path, result)
+            print(f'    OK: language={result.get("language")}  '
+                  f'subject={result.get("subject")}  '
+                  f'topic={result.get("topic", [])}')
+            classified += 1
+        else:
+            errors += 1
+
+        time.sleep(API_DELAY)
+
+    return classified, skipped, errors
+
+
 def enrich_section(section: str, limit: int, dry_run: bool,
                    client, model: str) -> tuple[int, int, int]:
     """
@@ -238,16 +393,18 @@ def enrich_section(section: str, limit: int, dry_run: bool,
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description='AI-enrich vkg.works content with abstract/preamble/keywords')
+        description='AI-enrich vkg.works content with abstract/preamble/keywords/language/subject/topic')
     scope = parser.add_mutually_exclusive_group(required=True)
     scope.add_argument('--section', choices=SECTIONS,
-                       help='Enrich one section')
+                       help='Process one section')
     scope.add_argument('--all', action='store_true',
-                       help='Enrich all sections')
+                       help='Process all sections')
     parser.add_argument('--limit', type=int, default=20,
-                        help='Max items to enrich per section (default 20)')
+                        help='Max items to process per section (default 20)')
     parser.add_argument('--dry-run', action='store_true',
-                        help='Show what would be enriched without calling API')
+                        help='Show what would be processed without calling API')
+    parser.add_argument('--classify', action='store_true',
+                        help='Second pass: add language/subject/topic (requires existing abstract)')
     parser.add_argument('--model', default='claude-haiku-4-5-20251001',
                         choices=['claude-haiku-4-5-20251001', 'claude-sonnet-4-6'],
                         help='Claude model to use (default: haiku — fast and cost-effective)')
@@ -265,21 +422,27 @@ def main() -> None:
         client = anthropic.Anthropic(api_key=api_key)
 
     sections_to_process = SECTIONS if args.all else [args.section]
-    total_enriched = total_skipped = total_errors = 0
+    total_done = total_skipped = total_errors = 0
 
     for section in sections_to_process:
-        e, s, err = enrich_section(section, args.limit, args.dry_run, client, args.model)
-        total_enriched += e
+        if args.classify:
+            d, s, err = classify_section(section, args.limit, args.dry_run, client, args.model)
+            label = 'classified'
+        else:
+            d, s, err = enrich_section(section, args.limit, args.dry_run, client, args.model)
+            label = 'enriched'
+        total_done += d
         total_skipped += s
         total_errors += err
-        if e > 0 or err > 0:
-            print(f'  {section}: {e} enriched, {s} skipped, {err} errors')
+        if d > 0 or err > 0:
+            print(f'  {section}: {d} {label}, {s} skipped, {err} errors')
 
-    action = 'Would enrich' if args.dry_run else 'Enriched'
-    print(f'\n{action} {total_enriched} item(s). '
+    action = f'Would {"classify" if args.classify else "enrich"}' if args.dry_run else ('Classified' if args.classify else 'Enriched')
+    print(f'\n{action} {total_done} item(s). '
           f'Skipped {total_skipped}. Errors: {total_errors}.')
-    if total_enriched > 0 and not args.dry_run:
-        print('Run: git add content/ && git commit -m "chore: AI enrich content" && git push')
+    if total_done > 0 and not args.dry_run:
+        pass_name = 'classify' if args.classify else 'enrich'
+        print(f'Run: git add content/ && git commit -m "chore: AI {pass_name} content" && git push')
 
 
 if __name__ == '__main__':

@@ -1,0 +1,247 @@
+{% extends "base.html" %}
+{% set active_section = 'catalogue' %}
+
+{% block title %}Catalogue — vkg.works{% endblock %}
+{% block description %}Master catalogue of all works by Dr. Vamshi Krishna Ghanapāṭhī — sortable and filterable by section, language, and subject.{% endblock %}
+
+{% block head_extra %}
+<style>
+/* ── Catalogue page ─────────────────────────────────────────────────── */
+.catalogue-header {
+  padding: 2rem 1.5rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.catalogue-header h1 { margin-bottom: 0.25rem; }
+.catalogue-header p  { color: var(--color-muted); margin: 0; }
+
+.catalogue-filters {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+}
+.catalogue-filters select,
+.catalogue-filters input[type="search"] {
+  padding: 0.35rem 0.65rem;
+  border: 1px solid var(--color-border, #ddd);
+  border-radius: 4px;
+  font-size: 0.85rem;
+  background: var(--color-bg, #fff);
+  color: var(--color-text, #222);
+  min-width: 140px;
+}
+.catalogue-filters input[type="search"] { min-width: 200px; }
+.catalogue-filters label { font-size: 0.8rem; color: var(--color-muted); }
+
+.catalogue-count {
+  margin-left: auto;
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  white-space: nowrap;
+}
+
+.catalogue-table-wrap {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  padding: 0 1.5rem;
+  overflow-x: auto;
+}
+table.catalogue {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+table.catalogue th {
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 2px solid var(--color-border, #ddd);
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  color: var(--color-muted);
+  font-weight: 600;
+}
+table.catalogue th:hover { color: var(--color-text, #222); }
+table.catalogue th .sort-icon { margin-left: 4px; opacity: 0.4; font-style: normal; }
+table.catalogue th.sort-asc  .sort-icon,
+table.catalogue th.sort-desc .sort-icon { opacity: 1; }
+table.catalogue td {
+  padding: 0.45rem 0.75rem;
+  border-bottom: 1px solid var(--color-border, #eee);
+  vertical-align: top;
+}
+table.catalogue tr:hover td { background: var(--color-hover, #f9f9f9); }
+table.catalogue tr.hidden { display: none; }
+
+.uid-cell  { font-family: monospace; font-size: 0.78rem; white-space: nowrap; color: var(--color-muted); }
+.sect-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: var(--color-badge-bg, #e8e8e8);
+  color: var(--color-badge-text, #555);
+  white-space: nowrap;
+}
+.sect-badge.articles { background:#dbeafe; color:#1e40af; }
+.sect-badge.poems    { background:#fce7f3; color:#9d174d; }
+.sect-badge.songs    { background:#d1fae5; color:#065f46; }
+.sect-badge.books    { background:#fef3c7; color:#92400e; }
+.lang-cell  { font-size: 0.78rem; white-space: nowrap; font-family: monospace; }
+.subj-cell  { font-size: 0.78rem; }
+.topic-cell { font-size: 0.75rem; color: var(--color-muted); }
+.title-link { color: var(--color-link, inherit); text-decoration: none; }
+.title-link:hover { text-decoration: underline; }
+.date-cell  { white-space: nowrap; font-size: 0.78rem; color: var(--color-muted); }
+.doi-cell a { font-size: 0.75rem; font-family: monospace; }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="catalogue-header">
+  <h1>Catalogue</h1>
+  <p>{{ total }} works by Dr. Vamshi Krishna Ghanapāṭhī &nbsp;·&nbsp;
+     <a href="https://orcid.org/0009-0007-3852-0158" target="_blank" rel="noopener">ORCID 0009-0007-3852-0158</a></p>
+</div>
+
+<div class="catalogue-filters">
+  <label>Section
+    <select id="f-section">
+      <option value="">All sections</option>
+      {% for s in sections_available %}<option value="{{ s }}">{{ s | title }}</option>{% endfor %}
+    </select>
+  </label>
+  <label>Language
+    <select id="f-language">
+      <option value="">All languages</option>
+      {% for l in languages_available %}<option value="{{ l }}">{{ l }}</option>{% endfor %}
+    </select>
+  </label>
+  <label>Subject
+    <select id="f-subject">
+      <option value="">All subjects</option>
+      {% for s in subjects_available %}<option value="{{ s }}">{{ s }}</option>{% endfor %}
+    </select>
+  </label>
+  <input type="search" id="f-search" placeholder="Search title, topic, keyword…" autocomplete="off">
+  <span class="catalogue-count" id="cat-count">{{ total }} works</span>
+</div>
+
+<div class="catalogue-table-wrap">
+<table class="catalogue" id="cat-table">
+  <thead>
+    <tr>
+      <th data-col="uid">UID <i class="sort-icon">↕</i></th>
+      <th data-col="title">Title <i class="sort-icon">↕</i></th>
+      <th data-col="section">Section <i class="sort-icon">↕</i></th>
+      <th data-col="language">Language <i class="sort-icon">↕</i></th>
+      <th data-col="subject">Subject <i class="sort-icon">↕</i></th>
+      <th data-col="topic">Topics / Keywords</th>
+      <th data-col="date">Date <i class="sort-icon">↕</i></th>
+      <th data-col="doi">DOI</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for item in catalogue_items %}
+  <tr
+    data-uid="{{ item.uid or '' }}"
+    data-section="{{ item.section }}"
+    data-language="{{ item.language or '' }}"
+    data-subject="{{ item.subject or '' }}"
+    data-search="{{ item.title | lower }} {{ (item.topic | join(' ')) | lower }} {{ (item.keywords | join(' ')) | lower }} {{ (item.subject or '') | lower }}"
+    data-date="{{ item.date or '' }}"
+  >
+    <td class="uid-cell">{{ item.uid or '—' }}</td>
+    <td>
+      {% if item.section in ('articles','poems','songs','books','audio','video','projects') %}
+      <a class="title-link" href="/{{ item.section }}/{{ item.slug }}/">{{ item.title }}</a>
+      {% else %}
+      {{ item.title }}
+      {% endif %}
+    </td>
+    <td><span class="sect-badge {{ item.section }}">{{ item.section | title }}</span></td>
+    <td class="lang-cell">{{ item.language or '—' }}</td>
+    <td class="subj-cell">{{ item.subject or '—' }}</td>
+    <td class="topic-cell">
+      {% set all_terms = (item.topic or []) + (item.keywords[:3] if item.keywords and not item.topic else []) %}
+      {{ all_terms | join(' · ') if all_terms else '—' }}
+    </td>
+    <td class="date-cell">{{ item.date_display or item.date or '—' }}</td>
+    <td class="doi-cell">
+      {% if item.doi %}<a href="https://doi.org/{{ item.doi }}" target="_blank" rel="noopener">{{ item.doi }}</a>{% else %}—{% endif %}
+    </td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+
+<script>
+(function () {
+  const table   = document.getElementById('cat-table');
+  const tbody   = table.querySelector('tbody');
+  const count   = document.getElementById('cat-count');
+  const fSect   = document.getElementById('f-section');
+  const fLang   = document.getElementById('f-language');
+  const fSubj   = document.getElementById('f-subject');
+  const fSearch = document.getElementById('f-search');
+
+  let sortCol = 'uid', sortDir = 1;
+
+  function rows() { return Array.from(tbody.querySelectorAll('tr')); }
+
+  function filter() {
+    const sect   = fSect.value;
+    const lang   = fLang.value;
+    const subj   = fSubj.value;
+    const search = fSearch.value.trim().toLowerCase();
+    let visible  = 0;
+    rows().forEach(r => {
+      const show =
+        (!sect   || r.dataset.section   === sect) &&
+        (!lang   || r.dataset.language  === lang) &&
+        (!subj   || r.dataset.subject   === subj) &&
+        (!search || r.dataset.search.includes(search));
+      r.classList.toggle('hidden', !show);
+      if (show) visible++;
+    });
+    count.textContent = visible + ' work' + (visible === 1 ? '' : 's');
+  }
+
+  function sort(col) {
+    if (sortCol === col) { sortDir *= -1; }
+    else { sortCol = col; sortDir = 1; }
+
+    // Update header icons
+    table.querySelectorAll('th').forEach(th => {
+      th.classList.remove('sort-asc', 'sort-desc');
+      if (th.dataset.col === col) th.classList.add(sortDir === 1 ? 'sort-asc' : 'sort-desc');
+      const icon = th.querySelector('.sort-icon');
+      if (icon) icon.textContent = th.dataset.col === col ? (sortDir === 1 ? '↑' : '↓') : '↕';
+    });
+
+    const sorted = rows().sort((a, b) => {
+      let va = a.dataset[col] || a.cells[colIndex(col)].textContent.trim();
+      let vb = b.dataset[col] || b.cells[colIndex(col)].textContent.trim();
+      return va.localeCompare(vb, undefined, {numeric: true}) * sortDir;
+    });
+    sorted.forEach(r => tbody.appendChild(r));
+  }
+
+  function colIndex(col) {
+    const cols = ['uid','title','section','language','subject','topic','date','doi'];
+    return cols.indexOf(col);
+  }
+
+  table.querySelectorAll('th[data-col]').forEach(th => {
+    th.addEventListener('click', () => { sort(th.dataset.col); filter(); });
+  });
+  [fSect, fLang, fSubj].forEach(el => el.addEventListener('change', filter));
+  fSearch.addEventListener('input', filter);
+})();
+</script>
+{% endblock %}

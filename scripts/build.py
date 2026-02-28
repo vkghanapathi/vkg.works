@@ -316,6 +316,45 @@ def render_site(sections: dict[str, list[ArticleData]], site_url: str, env: Envi
         encoding='utf-8'
     )
 
+    # Render master catalogue page
+    _render_catalogue(sections, queue_items, env)
+
+
+def _render_catalogue(sections: dict, queue_items: list, env: Environment) -> None:
+    """Render the master catalogue page — all published + queued items."""
+    # Collect all items across all sections (published + queued)
+    all_items: list[ArticleData] = []
+    for items in sections.values():
+        all_items.extend(items)
+    all_items.extend(queue_items)
+
+    # Sort by uid (natural numeric order), falling back to date then title
+    def _sort_key(item: ArticleData):
+        uid = getattr(item, 'uid', None) or ''
+        return uid if uid else '\xff' + (item.date or '0000') + item.title
+
+    catalogue_items = sorted(all_items, key=_sort_key)
+
+    # Derive filter option lists (sorted, non-empty values only)
+    sections_available = sorted({i.section for i in catalogue_items if i.section})
+    languages_available = sorted({i.language for i in catalogue_items if getattr(i, 'language', None)})
+    subjects_available  = sorted({i.subject  for i in catalogue_items if getattr(i, 'subject',  None)})
+
+    cat_tmpl = env.get_template('catalogue.html')
+    cat_dir  = SITE_DIR / 'catalogue'
+    cat_dir.mkdir(parents=True, exist_ok=True)
+    (cat_dir / 'index.html').write_text(
+        cat_tmpl.render(
+            catalogue_items=catalogue_items,
+            total=len(catalogue_items),
+            sections_available=sections_available,
+            languages_available=languages_available,
+            subjects_available=subjects_available,
+        ),
+        encoding='utf-8'
+    )
+    print(f'  Rendered catalogue ({len(catalogue_items)} items)')
+
 
 def _build_context(item: ArticleData, site_url: str) -> dict:
     """Build Jinja2 template context from ArticleData."""

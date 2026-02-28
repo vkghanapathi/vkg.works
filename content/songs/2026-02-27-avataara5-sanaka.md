@@ -28,4 +28,11 @@ keywords:
 uid: VKG-S-039
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Philosophy & Vedānta
+topic:
+- Sanatsujāta Upaniṣad
+- Sanat Kumāra
+- Advaita Vedānta
+- ātma-tattva
 ---

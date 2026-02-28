@@ -31,4 +31,11 @@ keywords:
 uid: VKG-S-128
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Devotional Music
+topic:
+- Gaṅgā
+- tīrtha
+- bhajana
+- Viṣṇu
 ---

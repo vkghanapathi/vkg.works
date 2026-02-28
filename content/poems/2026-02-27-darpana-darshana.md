@@ -29,4 +29,11 @@ keywords:
 uid: VKG-P-008
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Jyotiṣa
+topic:
+- horā śāstra
+- karma and dharma
+- ātma-darśana
+- āyu-ārogya
 ---

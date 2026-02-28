@@ -32,4 +32,11 @@ keywords:
 uid: VKG-A-118
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa;en
+subject: Vedic Ritual
+topic:
+- Taittirīya Saṃhitā
+- Taittirīya Brāhmaṇa
+- Vedic purification
+- havīr
 ---

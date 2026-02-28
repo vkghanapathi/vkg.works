@@ -30,4 +30,11 @@ keywords:
 uid: VKG-P-036
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa
+subject: Philosophy & Vedānta
+topic:
+- Guru-bhakti
+- Advaita Vedānta
+- Dattatreya
+- Saccidānanda
 ---

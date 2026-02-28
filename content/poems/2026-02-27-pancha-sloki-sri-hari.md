@@ -31,4 +31,11 @@ keywords:
 uid: VKG-P-066
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa;te
+subject: Sacred Poetry
+topic:
+- Hari
+- Vāsudeva
+- bhakti stotra
+- phalaśruti
 ---

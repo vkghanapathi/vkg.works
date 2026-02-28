@@ -32,4 +32,11 @@ keywords:
 uid: VKG-A-124
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Vedic Linguistics
+topic:
+- Śabdātmaka Veda
+- Arthātmaka Veda
+- Vedic textual transmission
+- Uchchāraṇa
 ---

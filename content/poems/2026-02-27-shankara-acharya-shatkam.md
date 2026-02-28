@@ -28,4 +28,11 @@ keywords:
 uid: VKG-P-074
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa;te;kn
+subject: Philosophy & Vedānta
+topic:
+- Ādi Śaṅkara
+- Advaita Vedānta
+- guru-stuti
+- Brahman
 ---

@@ -27,4 +27,11 @@ keywords:
 uid: VKG-S-145
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa
+subject: Philosophy & Vedānta
+topic:
+- sat-chit-ānanda
+- ghanapāṭha
+- mantra phonetics
+- samādhāna
 ---

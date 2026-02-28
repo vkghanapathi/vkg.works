@@ -32,4 +32,12 @@ keywords:
 uid: VKG-S-153
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Philosophy & Vedānta
+topic:
+- Vedic cosmology
+- Oṃkāra
+- Dikpāla
+- Sāṃkhya philosophy
+- Sat-cit-ānanda
 ---

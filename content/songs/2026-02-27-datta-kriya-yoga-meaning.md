@@ -28,4 +28,11 @@ keywords:
 uid: VKG-S-055
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa;te
+subject: Devotional Music
+topic:
+- Dattatreya
+- Datta Kriya Yoga
+- Guru tradition
+- Bhakti
 ---

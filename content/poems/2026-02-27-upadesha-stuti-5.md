@@ -29,4 +29,11 @@ keywords:
 uid: VKG-P-091
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa;te
+subject: Sacred Poetry
+topic:
+- Sūrya
+- Āditya
+- Solar worship
+- Upadeśa pedagogy
 ---

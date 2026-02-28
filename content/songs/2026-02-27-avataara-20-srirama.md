@@ -31,4 +31,11 @@ keywords:
 uid: VKG-S-025
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te;sa
+subject: Devotional Music
+topic:
+- Rāma Chandra
+- kīrtana
+- Rāmāyaṇa
+- misra gati
 ---

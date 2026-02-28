@@ -28,4 +28,11 @@ keywords:
 uid: VKG-P-100
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa
+subject: Sacred Poetry
+topic:
+- Vyākaraṇa
+- Vāg Devī
+- Pāṇinian linguistics
+- Morphology and semantics
 ---

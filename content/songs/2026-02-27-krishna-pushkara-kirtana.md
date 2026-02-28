@@ -28,4 +28,11 @@ keywords:
 uid: VKG-S-097
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa;te
+subject: Sacred Poetry
+topic:
+- Krishna River
+- tirtha (pilgrimage site)
+- snana-vidhi (bathing ritual)
+- nadi-stuti (river praise)
 ---

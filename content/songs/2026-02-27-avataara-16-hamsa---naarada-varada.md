@@ -30,4 +30,11 @@ keywords:
 uid: VKG-S-021
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Devotional Music
+topic:
+- Nārada
+- Haṃsa avatāra
+- bhakti yoga
+- tattva jñāna
 ---

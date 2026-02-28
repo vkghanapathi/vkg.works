@@ -30,4 +30,11 @@ keywords:
 uid: VKG-P-092
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa;te
+subject: Philosophy & Vedānta
+topic:
+- Brahman
+- Sat-Chit-Ananda
+- Advaita Vedanta
+- Non-duality
 ---

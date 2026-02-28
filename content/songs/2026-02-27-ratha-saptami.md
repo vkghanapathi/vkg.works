@@ -29,4 +29,11 @@ keywords:
 uid: VKG-S-122
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Devotional Music
+topic:
+- Ratha Saptami
+- Surya Narayana
+- vrata observance
+- Sat-Chit-Ananda
 ---

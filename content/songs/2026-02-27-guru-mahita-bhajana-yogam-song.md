@@ -27,4 +27,11 @@ keywords:
 uid: VKG-S-075
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Devotional Music
+topic:
+- bhajana yoga
+- guru bhakti
+- Hamsanandi raga
+- samgita sadhana
 ---

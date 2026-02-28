@@ -31,4 +31,11 @@ keywords:
 uid: VKG-A-099
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Jyotiṣa
+topic:
+- Jaataka Chakram
+- Sadguru veneration
+- Vedic astrology
+- Dharmic temporal practice
 ---

@@ -29,4 +29,11 @@ keywords:
 uid: VKG-P-075
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Sacred Poetry
+topic:
+- Śiva
+- stotram
+- Śaiva devotion
+- nāma-kīrtana
 ---

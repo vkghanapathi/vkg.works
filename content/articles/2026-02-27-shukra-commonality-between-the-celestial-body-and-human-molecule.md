@@ -30,4 +30,11 @@ keywords:
 uid: VKG-A-107
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Jyotiṣa
+topic:
+- Śukra/Venus retrograde motion
+- Ṛta-based phenomenology
+- reproductive physiology
+- pattern analogy
 ---

@@ -31,4 +31,11 @@ keywords:
 uid: VKG-A-108
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Jyotiṣa
+topic:
+- Śukra
+- Śukra dhātu
+- Bandhu
+- Microcosm-macrocosm correspondence
 ---

@@ -30,4 +30,11 @@ keywords:
 uid: VKG-S-067
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa;te
+subject: Devotional Music
+topic:
+- Kumaresha
+- Śaiva bhakti
+- swarita notation
+- temple music
 ---

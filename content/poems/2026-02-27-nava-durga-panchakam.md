@@ -29,4 +29,11 @@ keywords:
 uid: VKG-P-059
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Sacred Poetry
+topic:
+- Navadurgā
+- Mandākrāntā metre
+- Śākta theology
+- Devī Māhātmya
 ---

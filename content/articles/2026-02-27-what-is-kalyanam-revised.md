@@ -32,4 +32,11 @@ keywords:
 uid: VKG-A-137
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa
+subject: Philosophy & Vedānta
+topic:
+- Shiva-Shakti union
+- Kalyanam ritual
+- Prakriti-Purusha
+- Soundarya Lahari
 ---

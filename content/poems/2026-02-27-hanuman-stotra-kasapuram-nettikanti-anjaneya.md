@@ -29,4 +29,11 @@ keywords:
 uid: VKG-P-041
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa;te
+subject: Sacred Poetry
+topic:
+- Hanuman
+- stotra
+- phalaśruti
+- dharma-protection
 ---

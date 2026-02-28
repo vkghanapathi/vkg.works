@@ -31,4 +31,11 @@ keywords:
 uid: VKG-P-061
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa;te;kn
+subject: Sacred Poetry
+topic:
+- Śakti
+- Devi
+- Gaurī
+- Śākta tradition
 ---

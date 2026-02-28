@@ -32,4 +32,11 @@ keywords:
 uid: VKG-A-130
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Contemporary Commentary
+topic:
+- Vedic preservation
+- Śabdātmaka Veda Parirakṣaṇa
+- Arthātmaka Veda Parirakṣaṇa
+- Vedic pedagogy
 ---

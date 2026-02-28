@@ -28,4 +28,11 @@ keywords:
 uid: VKG-A-127
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Philosophy & Vedānta
+topic:
+- Upaniṣads
+- contemporary social ethics
+- Brahman and ātman
+- modern metaphysics
 ---

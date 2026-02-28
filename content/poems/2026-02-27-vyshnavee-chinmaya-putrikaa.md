@@ -29,4 +29,11 @@ keywords:
 uid: VKG-P-101
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Sacred Poetry
+topic:
+- Lakṣmī (Vaiṣṇavī)
+- Śāṇḍilya gotra
+- āśīrvāda (blessing)
+- Vedantic symbolism
 ---

@@ -29,4 +29,11 @@ keywords:
 uid: VKG-P-062
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa
+subject: Sacred Poetry
+topic:
+- Nīlakaṇṭha Mahadeva
+- Halāhala venom
+- Samudra Manthan
+- Environmental ethics
 ---

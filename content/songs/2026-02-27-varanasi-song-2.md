@@ -28,4 +28,11 @@ keywords:
 uid: VKG-S-150
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Devotional Music
+topic:
+- Śiva
+- Viśveśvara
+- Vārāṇasī
+- bhakti
 ---

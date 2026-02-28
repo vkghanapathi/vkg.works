@@ -31,4 +31,11 @@ keywords:
 uid: VKG-P-057
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Sacred Poetry
+topic:
+- Śiva bhakti
+- Śaiva theology
+- tīrtha worship
+- Rudra cosmology
 ---

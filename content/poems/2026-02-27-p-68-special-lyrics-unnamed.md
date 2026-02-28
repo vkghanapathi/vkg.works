@@ -28,4 +28,11 @@ keywords:
 uid: VKG-P-065
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa
+subject: Vedic Linguistics
+topic:
+- Sanskrit phonetics
+- word-endings and verbal stems
+- oral transmission
+- ghanapāṭhī recitation method
 ---

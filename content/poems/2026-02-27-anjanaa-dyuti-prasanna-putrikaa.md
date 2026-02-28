@@ -28,4 +28,11 @@ keywords:
 uid: VKG-P-003
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te;sa
+subject: Sacred Poetry
+topic:
+- Āṣāḍha month
+- Hanumān
+- Vālakhilya lineage
+- śubha (auspiciousness)
 ---

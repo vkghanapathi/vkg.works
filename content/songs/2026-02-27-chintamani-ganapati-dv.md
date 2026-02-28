@@ -29,4 +29,11 @@ keywords:
 uid: VKG-S-049
 orcid: 0009-0007-3852-0158
 doi: ''
+language: mr
+subject: Devotional Music
+topic:
+- Ganesha
+- Chintamani
+- Kirtan
+- Devotional dialogue
 ---

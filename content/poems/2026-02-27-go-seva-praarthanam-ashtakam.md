@@ -30,4 +30,11 @@ keywords:
 uid: VKG-P-026
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa
+subject: Sacred Poetry
+topic:
+- Go Seva
+- Sankalpa
+- Kamadhenu
+- Votive Worship
 ---

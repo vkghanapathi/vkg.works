@@ -29,4 +29,11 @@ keywords:
 uid: VKG-S-045
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Devotional Music
+topic:
+- Chandi Homa
+- Devi Mahatmya
+- Navaratri
+- Shakta devotion
 ---

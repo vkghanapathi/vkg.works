@@ -29,4 +29,11 @@ keywords:
 uid: VKG-S-076
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Devotional Music
+topic:
+- Guru Pūrṇimā
+- kīrtana
+- gurupūjana
+- Advaita Vedānta
 ---

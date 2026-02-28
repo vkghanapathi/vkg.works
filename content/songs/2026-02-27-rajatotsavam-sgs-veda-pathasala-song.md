@@ -29,4 +29,11 @@ keywords:
 uid: VKG-S-119
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa;te
+subject: Devotional Music
+topic:
+- Gaṇapati
+- Vedic school (pāṭhaśālā)
+- Vedas (śruti)
+- Dharma
 ---

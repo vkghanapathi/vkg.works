@@ -28,4 +28,11 @@ keywords:
 uid: VKG-P-081
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa
+subject: Sacred Poetry
+topic:
+- Sūrya stotra
+- Aśvalalita metre
+- Sanskrit prosody
+- solar devotion
 ---

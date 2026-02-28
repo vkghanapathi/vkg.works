@@ -27,4 +27,11 @@ keywords:
 uid: VKG-S-038
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Devotional Music
+topic:
+- Dattatreya
+- Bhakti
+- Guru principle
+- Moksha
 ---

@@ -29,4 +29,11 @@ keywords:
 uid: VKG-S-155
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Devotional Music
+topic:
+- Veṅkaṭa Datta
+- Datta sampradāya
+- Advaita Vedānta
+- guru principle
 ---

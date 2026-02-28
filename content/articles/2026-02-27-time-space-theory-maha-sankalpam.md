@@ -31,4 +31,12 @@ keywords:
 uid: VKG-A-122
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Philosophy & Vedānta
+topic:
+- Vedic cosmology
+- Brahma
+- Kalpa
+- Manvantara
+- Yugas
 ---

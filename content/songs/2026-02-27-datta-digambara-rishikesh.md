@@ -31,4 +31,11 @@ keywords:
 uid: VKG-S-053
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Devotional Music
+topic:
+- Dattātreya
+- avadhūta
+- bhakti
+- viveka
 ---

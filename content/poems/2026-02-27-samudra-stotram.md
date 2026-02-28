@@ -30,4 +30,11 @@ keywords:
 uid: VKG-P-073
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa
+subject: Sacred Poetry
+topic:
+- Samudra (Ocean deity)
+- stotram (devotional hymn)
+- pūjā (ritual worship)
+- purification ritual
 ---

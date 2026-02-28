@@ -31,4 +31,11 @@ keywords:
 uid: VKG-A-100
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa
+subject: Vedic Linguistics
+topic:
+- Pāṇini Śikṣāsūtra
+- samānākṣarāṇi
+- varna-samāmnāya
+- Vedāṅga phonology
 ---

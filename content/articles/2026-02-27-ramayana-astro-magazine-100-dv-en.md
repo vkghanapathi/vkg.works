@@ -30,4 +30,11 @@ keywords:
 uid: VKG-A-090
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa
+subject: Sacred Poetry
+topic:
+- Vālmīki Rāmāyaṇa
+- Sanskrit pedagogy
+- Saṅkṣepa
+- Ghanapāṭhī method
 ---

@@ -30,4 +30,11 @@ keywords:
 uid: VKG-P-046
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa;te
+subject: Sacred Poetry
+topic:
+- Kārtavīrya Arjuna
+- aṣṭaka (eight-verse hymn)
+- stotra (devotional petition)
+- bhakti practice
 ---

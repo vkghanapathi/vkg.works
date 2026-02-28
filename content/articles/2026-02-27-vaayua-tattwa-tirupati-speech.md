@@ -30,4 +30,11 @@ keywords:
 uid: VKG-A-128
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Philosophy & Vedānta
+topic:
+- vāyu cosmology
+- sṛṣṭi-krama
+- Upaniṣadic exegesis
+- vāyu-upāsanā
 ---

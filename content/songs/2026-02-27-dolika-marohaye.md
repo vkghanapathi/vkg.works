@@ -29,4 +29,11 @@ keywords:
 uid: VKG-S-063
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa;te
+subject: Devotional Music
+topic:
+- ghanapāṭha
+- bhakti literature
+- Sanskrit phonetics
+- Vedic recitation
 ---

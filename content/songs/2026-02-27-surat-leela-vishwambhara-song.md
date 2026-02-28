@@ -29,4 +29,11 @@ keywords:
 uid: VKG-S-142
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Devotional Music
+topic:
+- Dattātreya
+- bhakti
+- guru-śiṣya paramparā
+- Nāth yoga
 ---

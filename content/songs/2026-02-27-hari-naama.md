@@ -32,4 +32,11 @@ keywords:
 uid: VKG-S-079
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa;te
+subject: Philosophy & Vedānta
+topic:
+- Sat-Chit-Ananda
+- Dharma
+- Advaita Vedānta
+- Devotional Hymn
 ---

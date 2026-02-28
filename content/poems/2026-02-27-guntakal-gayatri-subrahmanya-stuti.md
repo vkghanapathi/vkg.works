@@ -28,4 +28,11 @@ keywords:
 uid: VKG-P-033
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa;te
+subject: Sacred Poetry
+topic:
+- Subrahmanya
+- Gāyatrī mantra
+- Śaiva devotion
+- Vedic ritual
 ---

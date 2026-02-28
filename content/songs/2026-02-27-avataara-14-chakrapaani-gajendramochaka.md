@@ -27,4 +27,11 @@ keywords:
 uid: VKG-S-019
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Devotional Music
+topic:
+- Gajendra-mokṣa
+- Viṣṇu
+- Bhāgavata Purāṇa
+- bhakti
 ---

@@ -30,4 +30,12 @@ keywords:
 uid: VKG-A-116
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Vedic Linguistics
+topic:
+- Swara detection
+- Vedic phonetics
+- Udātta
+- Anudātta
+- Swarita
 ---

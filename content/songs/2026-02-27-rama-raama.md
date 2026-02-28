@@ -29,4 +29,11 @@ keywords:
 uid: VKG-S-121
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Devotional Music
+topic:
+- Rāma-bhakti
+- Śaṅkarābharaṇam rāga
+- miśragati
+- Advaita Vedānta
 ---

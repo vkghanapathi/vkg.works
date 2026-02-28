@@ -34,4 +34,11 @@ keywords:
 uid: VKG-A-105
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa
+subject: Contemporary Commentary
+topic:
+- Śukla Yajurveda
+- Yājñavalkya
+- Vedic śākhā transmission
+- Purāṇic exegesis
 ---

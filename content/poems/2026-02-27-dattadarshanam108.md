@@ -33,4 +33,11 @@ keywords:
 uid: VKG-P-015
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Philosophy & Vedānta
+topic:
+- Dattātreya
+- sṛṣṭi (creation doctrine)
+- Sadguru avatar
+- mokṣa (liberation)
 ---

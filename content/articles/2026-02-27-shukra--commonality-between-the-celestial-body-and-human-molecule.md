@@ -31,4 +31,11 @@ keywords:
 uid: VKG-A-106
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Jyotiṣa
+topic:
+- Śukra (Venus)
+- Bandhu (cosmic correspondence)
+- Śukra Dhātu (reproductive essence)
+- Phenomenological isomorphism
 ---

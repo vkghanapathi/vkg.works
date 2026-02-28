@@ -31,4 +31,11 @@ keywords:
 uid: VKG-P-032
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa
+subject: Sacred Poetry
+topic:
+- Gāyatrī mantra
+- Kavaca (protective armour)
+- Gāyatrī Aṣṭakam
+- body-mapping ritual
 ---

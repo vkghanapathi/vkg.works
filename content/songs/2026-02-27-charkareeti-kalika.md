@@ -31,4 +31,11 @@ keywords:
 uid: VKG-S-047
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa
+subject: Devotional Music
+topic:
+- Kālīkā
+- Śakti
+- Sat-Chit-Ānanda
+- tantric devotion
 ---

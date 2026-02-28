@@ -27,4 +27,11 @@ keywords:
 uid: VKG-P-016
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te;sa
+subject: Sacred Poetry
+topic:
+- Venkateswara
+- temple consecration
+- Vaishnava devotion
+- Hindu diaspora
 ---

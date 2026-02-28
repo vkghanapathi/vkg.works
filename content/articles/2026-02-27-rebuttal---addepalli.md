@@ -29,4 +29,11 @@ keywords:
 uid: VKG-A-093
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Contemporary Commentary
+topic:
+- Sri Ganapati Sachchidananda Ashrama
+- trust administration
+- ashrama governance
+- religious endowments
 ---

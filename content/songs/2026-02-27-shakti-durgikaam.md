@@ -26,4 +26,12 @@ keywords:
 uid: VKG-S-132
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Philosophy & Vedānta
+topic:
+- Śakti
+- Durgā
+- Śākta theology
+- Advaita Vedānta
+- moksha
 ---

@@ -29,4 +29,11 @@ keywords:
 uid: VKG-S-031
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Devotional Music
+topic:
+- Dhruva
+- Vāsudev
+- Bhāgavata Purāṇa
+- Bhakti
 ---

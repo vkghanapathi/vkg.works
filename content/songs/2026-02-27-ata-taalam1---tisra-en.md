@@ -30,4 +30,11 @@ keywords:
 uid: VKG-S-011
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa;en
+subject: Devotional Music
+topic:
+- Malahari rāga
+- guru sevā
+- kīrtana
+- guru-śiṣya paramparā
 ---

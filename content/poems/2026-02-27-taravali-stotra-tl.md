@@ -31,4 +31,12 @@ keywords:
 uid: VKG-P-084
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Sacred Poetry
+topic:
+- Ganapatī/Gaṇeśa
+- Satguru
+- Saccidānanda
+- Nāma-japa
+- Advaita Vedānta
 ---

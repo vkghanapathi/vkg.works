@@ -32,4 +32,11 @@ keywords:
 uid: VKG-P-071
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa
+subject: Sacred Poetry
+topic:
+- Dattātreya
+- guru-stuti
+- Datta Sampradāya
+- mokṣa
 ---

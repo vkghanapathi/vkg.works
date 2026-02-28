@@ -32,4 +32,11 @@ keywords:
 uid: VKG-P-023
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa
+subject: Philosophy & Vedānta
+topic:
+- Ganesha
+- Atharvashīrṣa
+- Advaita Vedanta
+- stotram
 ---

@@ -33,4 +33,11 @@ keywords:
 uid: VKG-A-088
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Philosophy & Vedānta
+topic:
+- Deity origins and genealogy
+- Rigveda theology
+- Ganesha
+- Feminine cosmology
 ---

@@ -32,4 +32,11 @@ keywords:
 uid: VKG-P-090
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa
+subject: Sacred Poetry
+topic:
+- Gaṇapati
+- stotra
+- vighna-vināśana
+- homa
 ---

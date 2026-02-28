@@ -33,4 +33,11 @@ keywords:
 uid: VKG-A-115
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Philosophy & Vedānta
+topic:
+- Suvasini Puja
+- Srichakra
+- Shakta tradition
+- vasana
 ---

@@ -29,4 +29,11 @@ keywords:
 uid: VKG-S-057
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Devotional Music
+topic:
+- Dattātreya
+- Datta Kṣetra
+- Sat-Chit-Ānanda
+- guru-śiṣya paramparā
 ---

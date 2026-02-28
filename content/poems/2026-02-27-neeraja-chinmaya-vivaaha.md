@@ -28,4 +28,11 @@ keywords:
 uid: VKG-P-063
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa;te
+subject: Sacred Poetry
+topic:
+- wedding benediction
+- Mandākrānta metre
+- gṛhastha āśrama
+- Brahmavidyā
 ---

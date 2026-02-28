@@ -30,4 +30,11 @@ keywords:
 uid: VKG-A-102
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Dharmaśāstra
+topic:
+- Sandhyāvandanam
+- nityakarma
+- trikāraṇa-śuddhi
+- karma purification
 ---

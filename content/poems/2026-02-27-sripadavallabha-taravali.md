@@ -33,4 +33,11 @@ keywords:
 uid: VKG-P-080
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te;sa
+subject: Sacred Poetry
+topic:
+- Śrīpadavallabha
+- Dattātreya
+- Tāravali Stotra
+- Pīṭhāpuram
 ---

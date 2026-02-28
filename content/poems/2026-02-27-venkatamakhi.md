@@ -29,4 +29,11 @@ keywords:
 uid: VKG-P-097
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa;te
+subject: Devotional Music
+topic:
+- Veṅkaṭa Makhī
+- śāstrīya saṅgīta
+- Chaturdaṇḍī Prakāśikā
+- saṅgīta śāstra
 ---

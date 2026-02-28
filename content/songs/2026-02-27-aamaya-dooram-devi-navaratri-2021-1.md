@@ -29,4 +29,11 @@ keywords:
 uid: VKG-S-005
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te;sa
+subject: Devotional Music
+topic:
+- Durga
+- Navaratri
+- vyadhi-adhi
+- pallavi-anupallavi
 ---

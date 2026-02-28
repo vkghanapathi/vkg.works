@@ -28,4 +28,11 @@ keywords:
 uid: VKG-S-012
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa
+subject: Devotional Music
+topic:
+- Mālahari rāga
+- Aṭatāla
+- guru-sevā
+- pallavi-anupallavi-caraṇa
 ---

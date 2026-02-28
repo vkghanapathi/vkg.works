@@ -30,4 +30,11 @@ keywords:
 uid: VKG-P-043
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa;kn
+subject: Sacred Poetry
+topic:
+- janamotsava
+- śubhāśaṃsana
+- Advaita Vedānta
+- ghanapāṭha
 ---

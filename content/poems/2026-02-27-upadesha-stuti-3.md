@@ -30,4 +30,11 @@ keywords:
 uid: VKG-P-089
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Philosophy & Vedānta
+topic:
+- Advaita Vedānta
+- Śākta devotionalism
+- Paramātman-Jīvātman
+- Dīpa-Darśana
 ---

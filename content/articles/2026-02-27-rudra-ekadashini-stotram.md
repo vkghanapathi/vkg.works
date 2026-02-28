@@ -30,4 +30,11 @@ keywords:
 uid: VKG-A-097
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa
+subject: Vedic Ritual
+topic:
+- Rudra Adhyāya
+- Śatarudríya
+- Yajurveda
+- Rudra Homa
 ---

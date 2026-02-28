@@ -34,4 +34,11 @@ keywords:
 uid: VKG-A-092
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Dharmaśāstra
+topic:
+- vrata
+- Ekadashi
+- Vedic jurisprudence
+- ritual fasting
 ---

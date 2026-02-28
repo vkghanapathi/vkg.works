@@ -29,4 +29,11 @@ keywords:
 uid: VKG-S-106
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa;te;ta;kn;hi
+subject: Devotional Music
+topic:
+- Ganapatī Saccidānanda
+- Datta Pitha
+- Carnatic music form
+- guru devotion
 ---

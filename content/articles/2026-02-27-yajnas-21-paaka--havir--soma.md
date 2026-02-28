@@ -32,4 +32,11 @@ keywords:
 uid: VKG-A-142
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa
+subject: Dharmaśāstra
+topic:
+- saṃskāra
+- Gautama Dharmasūtra
+- gṛhya-sūtra
+- pāka-yajña
 ---

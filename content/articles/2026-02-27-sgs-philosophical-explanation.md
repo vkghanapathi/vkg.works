@@ -30,4 +30,11 @@ keywords:
 uid: VKG-A-104
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Philosophy & Vedānta
+topic:
+- Prasthāna Traya
+- Guru-śiṣya paramparā
+- Tattvajñāna
+- Vedānta samvaya
 ---

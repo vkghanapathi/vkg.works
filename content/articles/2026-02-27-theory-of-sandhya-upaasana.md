@@ -29,4 +29,11 @@ keywords:
 uid: VKG-A-120
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Contemporary Commentary
+topic:
+- Sandhya Upaasana
+- Vedic ritual practice
+- Ayurveda
+- mental health and rejuvenation
 ---

@@ -33,4 +33,11 @@ keywords:
 uid: VKG-P-035
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa;te;kn
+subject: Sacred Poetry
+topic:
+- Gaṇapati Guru
+- Saccidānanda
+- Dattāpīṭha sampradāya
+- Stotra
 ---

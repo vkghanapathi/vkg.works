@@ -33,4 +33,11 @@ keywords:
 uid: VKG-A-114
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa
+subject: Vedic Linguistics
+topic:
+- Adityas
+- Rig Veda
+- nirukta
+- vāyu-skandha
 ---

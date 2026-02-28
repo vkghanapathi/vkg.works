@@ -28,4 +28,11 @@ keywords:
 uid: VKG-P-079
 orcid: 0009-0007-3852-0158
 doi: ''
+language: sa;te
+subject: Philosophy & Vedānta
+topic:
+- Śrīnivāsa
+- Vaiṣṇava bhakti
+- Brahman metaphysics
+- aṣṭakam
 ---

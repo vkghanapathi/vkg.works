@@ -29,4 +29,11 @@ keywords:
 uid: VKG-S-111
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Sacred Poetry
+topic:
+- Parameshvara
+- mantra devotionalism
+- Śaivism
+- grace (kripā)
 ---

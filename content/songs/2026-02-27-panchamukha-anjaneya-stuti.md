@@ -33,4 +33,11 @@ keywords:
 uid: VKG-S-110
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Devotional Music
+topic:
+- Hanumān
+- pañcamukha avatāra
+- kīrtana
+- bhakti philosophy
 ---

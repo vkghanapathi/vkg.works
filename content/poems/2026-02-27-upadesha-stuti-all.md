@@ -30,4 +30,11 @@ keywords:
 uid: VKG-P-093
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Philosophy & Vedānta
+topic:
+- Sat-Chit-Ānanda
+- Dharma
+- Śiva worship
+- Ganesh propitiation
 ---

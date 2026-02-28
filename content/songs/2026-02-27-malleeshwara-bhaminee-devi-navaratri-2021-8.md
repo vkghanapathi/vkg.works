@@ -32,4 +32,11 @@ keywords:
 uid: VKG-S-101
 orcid: 0009-0007-3852-0158
 doi: ''
+language: te
+subject: Devotional Music
+topic:
+- Malleshvara
+- Kirata episode
+- Navaratri worship
+- Shaiva devotion
 ---

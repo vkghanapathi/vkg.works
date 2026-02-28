@@ -32,4 +32,11 @@ keywords:
 uid: VKG-A-123
 orcid: 0009-0007-3852-0158
 doi: ''
+language: en
+subject: Vedic Linguistics
+topic:
+- Vedic preservation methodology
+- Shabdaatmaka Veda Pari Rakshana
+- Arthaatmaka Veda Pari Rakshana
+- Vedangas
 ---

@@ -437,6 +437,8 @@
   "books": {},
   "audio": {},
   "video": {},
-  "projects": {},
+  "projects": {
+    "pranetaa": 1
+  },
   "coverage": {}
 }

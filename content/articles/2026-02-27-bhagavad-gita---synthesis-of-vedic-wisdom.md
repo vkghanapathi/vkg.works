@@ -7,4 +7,5 @@ featured: true
 uid: VKG-A-014
 orcid: 0009-0007-3852-0158
 doi: ''
+excerpt: "An examination of how the Bhagavad Gita synthesizes the principal streams of Vedic knowledge — Jñāna, Karma, and Bhakti — into a comprehensive guide for human action and liberation."
 ---

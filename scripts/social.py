@@ -89,15 +89,23 @@ def _post_whatsapp(title: str, url: str) -> bool:
             'to': recipient,
             'type': 'template',
             'template': {
-                'name': 'new_article_announcement',
-                'language': {'code': 'en'},
-                'components': [{
-                    'type': 'body',
-                    'parameters': [
-                        {'type': 'text', 'text': title[:512]},
-                        {'type': 'text', 'text': url},
-                    ],
-                }],
+                'name': 'publication_notification',
+                'language': {'code': 'en_US'},
+                'components': [
+                    {
+                        'type': 'header',
+                        'parameters': [
+                            {'type': 'text', 'text': title[:60]},
+                        ],
+                    },
+                    {
+                        'type': 'body',
+                        'parameters': [
+                            {'type': 'text', 'text': title[:512]},
+                            {'type': 'text', 'text': url},
+                        ],
+                    },
+                ],
             },
         }
         resp = requests.post(

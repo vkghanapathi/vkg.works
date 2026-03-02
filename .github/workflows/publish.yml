@@ -77,8 +77,6 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: ${{ secrets.FTP_REMOTE_DIR }}
           local-dir: ./site/
-          protocol: ftps
-          port: 21
           dangerous-clean-slate: false
           exclude: |
             **/.git*

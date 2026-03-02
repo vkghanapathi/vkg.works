@@ -34,4 +34,24 @@ topic:
 - temple consecration
 - Vaishnava devotion
 - Hindu diaspora
+translation_en: '1.  Him who shines in the land between the three lakes, the guide
+  to the righteous path,
+
+  Dwelling in the city of Detroit, dense of form, destroyer of the multitude of sins;
+
+
+  2.  Him, the Lord Śrī Veṅkaṭeśa, whose feet adorn the northern lands of America,
+
+  I praise, the giver of boons, the supreme Guru, bestower of Being, Consciousness,
+  and Bliss.'
+translation_te: '1. మూడు సరస్సుల నడుమ ప్రకాశించువాడు, సన్మార్గమును చూపువాడు,
+
+  డెట్రాయిట్ నగరమున నివసించువాడు, దట్టమైన శరీరము కలవాడు, పాపముల సమూహమును నాశనము చేయువాడు;
+
+
+  2. ఉత్తర అమెరికాను అలంకరించిన పాదములు కలవాడు, శ్రీ వేంకటేశ్వరుడు, సర్వశక్తుడు,
+
+  వరముల నొసంగువాడు, ఉత్తమోత్తమ గురువు, సచ్చిదానంద స్వరూపుడు, అట్టి ప్రభువును నేను
+  కొనియాడుచున్నాను.'
+translation_status: draft
 ---

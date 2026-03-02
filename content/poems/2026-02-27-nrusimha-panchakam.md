@@ -37,4 +37,48 @@ topic:
 - Vaiṣṇava bhakti
 - stotram
 - phala-śruti
+translation_en: '1.  O Great Lord, uproot the thorns of the world and cultivate goodness.
+  I bow again and again with joy to Lakshmi Narasimha.
+
+
+  2.  O Great Lord, quell envy, malice, spite, and disease. I bow again and again
+  with joy to Lakshmi Narasimha.
+
+
+  3.  You are ever gracious to those who offer even a single prostration in worship.
+  I bow again and again with joy to Lakshmi Narasimha.
+
+
+  4.  O Lord, grant good speech to those inclined to slander others. I bow again and
+  again with joy to Lakshmi Narasimha.
+
+
+  5.  O Lord, bestow the good fortune of serving Your feet and grant me graciousness.
+  I bow again and again with joy to Lakshmi Narasimha.
+
+
+  6.  Whoever devoutly recites this five-versed hymn to Lord Narasimha for the attainment
+  of perfect Existence, Consciousness, and Bliss, assuredly obtains it.'
+translation_te: '1. ఓ మహాప్రభూ, లోకములోని ముండ్లను పెకలించి శుభమును పెంపొందించుము.
+  లక్ష్మీ నృసింహునికి సంతోషముతో మరల మరల నమస్కరించుచున్నాను.
+
+
+  2. ఓ మహాప్రభూ, అసూయ, ద్వేషము, రోగములను శాంతింపజేయుము. లక్ష్మీ నృసింహునికి సంతోషముతో
+  మరల మరల నమస్కరించుచున్నాను.
+
+
+  3. ఒక్క నమస్కారము చేసినను నీవు అనుగ్రహించువాడవు. లక్ష్మీ నృసింహునికి సంతోషముతో మరల
+  మరల నమస్కరించుచున్నాను.
+
+
+  4. ఓ ప్రభూ, ఇతరులను నిందించే స్వభావం కలవారికి మంచి మాటలను ప్రసాదించుము. లక్ష్మీ
+  నృసింహునికి సంతోషముతో మరల మరల నమస్కరించుచున్నాను.
+
+
+  5. ఓ ప్రభూ, నీ పాదసేవను పొందే అదృష్టమును, సౌజన్యమును ప్రసాదించుము. లక్ష్మీ నృసింహునికి
+  సంతోషముతో మరల మరల నమస్కరించుచున్నాను.
+
+
+  6. సచ్చిదానంద పూర్ణత్వము కొరకు నృసింహుని ఈ పంచకమును భక్తితో పఠించినవారు తప్పక పొందుతారు.'
+translation_status: draft
 ---

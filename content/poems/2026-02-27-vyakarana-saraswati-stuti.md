@@ -35,4 +35,18 @@ topic:
 - Vāg Devī
 - Pāṇinian linguistics
 - Morphology and semantics
+translation_en: 1.  She, by whom the Speech, transformed into grammatical form, shines
+  forth; in whom Nouns, established and perfected, beautifully play; whose defining
+  Paribhāṣās, Atideśas, and Vibhāṣās, whether dormant or awake, attain a certain state
+  through the rules of Pada, and nourishment through Dhātu; and who, through the union
+  of inner thought and speech in manifold ways, generates the state of oneness of
+  meaning in these—She is the Vyākṛti of Speech, wherein Taddharāja, Taddhita, and
+  Kṛt affixes are transformed.
+translation_te: 1. ఎవరి ద్వారా వ్యాకరణ రూపంలోకి మార్చబడిన వాక్కు ప్రకాశిస్తుందో; నామవాచకాలు
+  స్థిరపడి పరిపూర్ణంగా అందంగా ఆడతాయి; ఎవరి నిర్వచించే పరిభాషలు, అతిదేశాలు మరియు విభాగములు,
+  నిద్రాణమైనా మేల్కొన్నా పదవిధి ద్వారా ఒక నిర్దిష్ట స్థితిని పొందుతాయి, మరియు ధాతువు
+  ద్వారా పోషణ పొందుతాయి; మరియు ఎవరైతే, అంతర్గత ఆలోచన మరియు ప్రసంగం కలయిక ద్వారా అనేక
+  విధాలుగా, వీటిలో ఏకత్వం యొక్క స్థితిని ఉత్పత్తి చేస్తారో - ఆమె వాక్కు యొక్క వ్యాకృతి,
+  దీనిలో తద్ధరాజ, తద్ధిత మరియు కృత్ ప్రత్యయాలు రూపాంతరం చెందుతాయి.
+translation_status: draft
 ---

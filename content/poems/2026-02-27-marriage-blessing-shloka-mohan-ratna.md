@@ -35,4 +35,33 @@ topic:
 - Vedapatha institution
 - benedictory verse
 - institutional patronage
+translation_en: '1.  May you attain the most excellent stage of life (the householder
+  ashram), a source of great joy and support for all people.
+
+  May you become a householder, capable of performing the many auspicious deeds prescribed
+  by the Vedas, a home filled with happiness.
+
+  Having accepted Ratna, a jewel among women, in the sacred marriage rite, dispelling
+  all delusion,
+
+  May Śrī Datta and Veṅkaṭeśa, through the grace of your own Guru, lead you to their
+  divine presence.
+
+
+  *Vaṃśī Kṛṣṇa Ghanapāṭhī, Śrāvaṇa Kṛṣṇa Tṛtīyā, 27-8-2010*'
+translation_te: '1.  నీవు సకల జనులకు ఆధారమై, అత్యంత ఆనందమును కలిగించు గృహస్థాశ్రమమనే
+  శ్రేష్ఠమైన ఆశ్రమమును పొందుదువు గాక!
+
+  వేదములచే విధింపబడిన శుభకరమైన కర్మలను చేయుటకు సమర్థుడవై, సుఖముల నిలయమైన గృహస్థుడ
+  వగుదువు గాక!
+
+  మోహమును తొలగించునట్టి రత్నముల వంటి శ్రేష్ఠురాలైన రత్న అను నామెను వివాహ విధి ద్వారా
+  స్వీకరించి,
+
+  శ్రీ దత్తుడు మరియు వేంకటేశ్వరుడు, మీ గురువుగారి కరుణా కటాక్షముతో, వారి సన్నిధికి
+  నిన్ను చేర్చుదురు గాక!
+
+
+  *వంశీ కృష్ణ ఘనపాఠీ, శ్రావణ కృష్ణ తృతీయ, 27-8-2010*'
+translation_status: draft
 ---

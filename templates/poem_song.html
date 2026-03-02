@@ -140,6 +140,40 @@
     </style>
     {% endif %}
 
+    {% if translation_en or translation_te %}
+    <section class="translation-section" id="translations">
+      <button class="map-toggle" aria-expanded="false" aria-controls="trans-body"
+              onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded')==='true'?'false':'true'); document.getElementById('trans-body').classList.toggle('map-open')">
+        Translations
+        <span class="map-toggle-icon">&#9660;</span>
+      </button>
+      <div id="trans-body" class="map-body">
+        {% if translation_en %}
+        <div class="translation-block">
+          <h4 class="map-verse-heading">English Translation</h4>
+          <div class="translation-text">{{ translation_en | replace('\n', '<br>') | safe }}</div>
+        </div>
+        {% endif %}
+        {% if translation_te %}
+        <div class="translation-block">
+          <h4 class="map-verse-heading">Telugu Translation — తెలుగు అనువాదం</h4>
+          <div class="translation-text vedic-text">{{ translation_te | replace('\n', '<br>') | safe }}</div>
+        </div>
+        {% endif %}
+      </div>
+    </section>
+    <style>
+    .translation-section { margin-top: 1.5rem; }
+    .translation-block { margin: 1.5rem 0 1rem; }
+    .translation-text {
+      font-size: 0.9rem;
+      line-height: 1.9;
+      padding: 0.75rem 0;
+      color: var(--color-text, #222);
+    }
+    </style>
+    {% endif %}
+
   </article>
 </div>
 {% endblock %}

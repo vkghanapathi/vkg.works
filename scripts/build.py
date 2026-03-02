@@ -414,6 +414,10 @@ def _build_context(item: ArticleData, site_url: str) -> dict:
     if getattr(item, 'map', None) and item.map_status == 'approved':
         ctx['map'] = item.map
         ctx['map_status'] = item.map_status
+    if getattr(item, 'translation_en', None) and item.translation_status == 'approved':
+        ctx['translation_en'] = item.translation_en
+    if getattr(item, 'translation_te', None) and item.translation_status == 'approved':
+        ctx['translation_te'] = item.translation_te
     return ctx
 
 

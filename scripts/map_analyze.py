@@ -17,21 +17,20 @@ sidecar .md frontmatter under the key `map:` as a list of verse dicts.
 
 A top-level `map_status: draft` is set so VKG can review before publishing.
 
+Uses Vertex AI Gemini via gcloud access token — no separate API key needed.
+Ensure `gcloud auth login` has been run for the active account.
+
 Usage:
     python scripts/map_analyze.py --uid VKG-P-001
     python scripts/map_analyze.py --uid VKG-P-001 VKG-P-006 VKG-P-018
     python scripts/map_analyze.py --batch map1     # runs the pre-set MAP1 batch
     python scripts/map_analyze.py --dry-run --uid VKG-P-001
     python scripts/map_analyze.py --print --uid VKG-P-001   # print stored MAP
-
-Requires:
-    ANTHROPIC_API_KEY environment variable
 """
 from __future__ import annotations
 
 import argparse
 import json
-import os
 import re
 import sys
 import time
@@ -40,6 +39,9 @@ from pathlib import Path
 import docx
 import frontmatter
 import yaml
+
+sys.path.insert(0, str(Path(__file__).parent))
+from _gemini_rest import GeminiClient
 
 ROOT = Path(__file__).parent.parent
 CONTENT_DIR = ROOT / 'content'
@@ -154,26 +156,10 @@ def extract_verses_from_docx(docx_path: Path) -> list[str]:
     return verses
 
 
-def call_map_api(title: str, verse_text: str, client, model: str) -> dict | None:
-    """Call Claude for MAP analysis of a single verse. Returns dict or None."""
+def call_map_api(title: str, verse_text: str, client: GeminiClient) -> dict | None:
+    """Call Gemini for MAP analysis of a single verse. Returns dict or None."""
     prompt = MAP_PROMPT_TEMPLATE.format(title=title, verse_text=verse_text)
-    try:
-        message = client.messages.create(
-            model=model,
-            max_tokens=1200,
-            system=SYSTEM_PROMPT,
-            messages=[{'role': 'user', 'content': prompt}],
-        )
-        raw = message.content[0].text.strip()
-        raw = re.sub(r'^```(?:json)?\s*', '', raw)
-        raw = re.sub(r'\s*```$', '', raw)
-        return json.loads(raw)
-    except json.JSONDecodeError as e:
-        print(f'    WARN: JSON parse error — {e}', file=sys.stderr)
-        return None
-    except Exception as e:
-        print(f'    WARN: API error — {e}', file=sys.stderr)
-        return None
+    return client.generate_json(SYSTEM_PROMPT, prompt, max_tokens=1400)
 
 
 def build_uid_index() -> dict[str, dict]:
@@ -263,7 +249,7 @@ def print_map(uid: str, info: dict) -> None:
                     print(f'    {line}')
 
 
-def analyze_poem(uid: str, info: dict, client, model: str,
+def analyze_poem(uid: str, info: dict, client: GeminiClient,
                  dry_run: bool, max_verses: int = 10) -> bool:
     """
     Run MAP analysis for one poem/song. Returns True if successful.
@@ -305,7 +291,7 @@ def analyze_poem(uid: str, info: dict, client, model: str,
     map_entries: list[dict] = []
     for i, verse_text in enumerate(verses, 1):
         print(f'  Analyzing verse {i}/{len(verses)}…', end=' ', flush=True)
-        result = call_map_api(title, verse_text, client, model)
+        result = call_map_api(title, verse_text, client)
         if result is None:
             print('FAILED')
             map_entries.append({'mula': verse_text, 'error': 'API call failed'})
@@ -345,8 +331,10 @@ def main() -> None:
                         help='Print stored MAP data for the given UIDs (no API calls)')
     parser.add_argument('--max-verses', type=int, default=10,
                         help='Max verses per poem to analyze (default 10)')
-    parser.add_argument('--model', default='claude-sonnet-4-6',
-                        help='Claude model to use (default: claude-sonnet-4-6)')
+    parser.add_argument('--model', default='gemini-2.0-flash-001',
+                        help='Gemini model to use (default: gemini-2.0-flash-001)')
+    parser.add_argument('--project', default='pranetaa',
+                        help='GCP project for Vertex AI (default: pranetaa)')
     args = parser.parse_args()
 
     # Determine which UIDs to process
@@ -384,17 +372,8 @@ def main() -> None:
             print_map(uid, info)
         return
 
-    # API mode
-    api_key = os.environ.get('ANTHROPIC_API_KEY')
-    if not api_key and not args.dry_run:
-        print('ERROR: ANTHROPIC_API_KEY not set. Use --dry-run or set the key.',
-              file=sys.stderr)
-        sys.exit(1)
-
-    client = None
-    if not args.dry_run:
-        import anthropic
-        client = anthropic.Anthropic(api_key=api_key)
+    # Create Gemini client (uses gcloud token — no separate API key needed)
+    client = GeminiClient(project=args.project, model=args.model) if not args.dry_run else None
 
     succeeded = failed = skipped = 0
     for uid in target_uids:
@@ -403,7 +382,7 @@ def main() -> None:
             print(f'\n  UNKNOWN UID: {uid}')
             skipped += 1
             continue
-        ok = analyze_poem(uid, info, client, args.model,
+        ok = analyze_poem(uid, info, client,
                           args.dry_run, args.max_verses)
         if ok:
             succeeded += 1

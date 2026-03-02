@@ -51,6 +51,8 @@ class ArticleData:
     subject: Optional[str] = None         # LCSH-aligned subject heading
     topic: list = field(default_factory=list)  # Specific topic terms
     top_level_alias: Optional[str] = None  # Also publish at /{alias}/ (e.g. "pranetaa")
+    map: list = field(default_factory=list)          # MAP verse analysis blocks
+    map_status: Optional[str] = None                  # 'draft' | 'approved'
 
 
 _md = MarkdownIt()
@@ -169,6 +171,8 @@ def convert_markdown(path: Path, section: str) -> ArticleData:
         subject=str(meta['subject']).strip() if meta.get('subject') else None,
         topic=[str(t).strip() for t in meta['topic'] if t] if isinstance(meta.get('topic'), list) else [],
         top_level_alias=str(meta['top_level_alias']).strip() if meta.get('top_level_alias') else None,
+        map=meta.get('map', []) if isinstance(meta.get('map'), list) else [],
+        map_status=str(meta['map_status']).strip() if meta.get('map_status') else None,
     )
 
 
@@ -258,6 +262,8 @@ def convert_docx(path: Path, section: str) -> ArticleData:
     language = None
     subject = None
     topic: list = []
+    map_data: list = []
+    map_status = None
     if sidecar.exists():
         try:
             post = frontmatter.load(str(sidecar))
@@ -282,6 +288,8 @@ def convert_docx(path: Path, section: str) -> ArticleData:
             language = str(meta['language']).strip() if meta.get('language') else None
             subject = str(meta['subject']).strip() if meta.get('subject') else None
             topic = [str(t).strip() for t in meta['topic'] if t] if isinstance(meta.get('topic'), list) else []
+            map_data = meta.get('map', []) if isinstance(meta.get('map'), list) else []
+            map_status = str(meta['map_status']).strip() if meta.get('map_status') else None
         except Exception:
             pass
 
@@ -294,6 +302,7 @@ def convert_docx(path: Path, section: str) -> ArticleData:
         extracted_images=extracted_images,
         abstract=abstract, preamble=preamble, keywords=keywords,
         uid=uid, orcid=orcid, doi=doi, language=language, subject=subject, topic=topic,
+        map=map_data, map_status=map_status,
     )
 
 

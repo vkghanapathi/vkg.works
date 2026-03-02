@@ -364,6 +364,7 @@ def _render_catalogue(sections: dict, queue_items: list, env: Environment) -> No
 
 def _build_context(item: ArticleData, site_url: str) -> dict:
     """Build Jinja2 template context from ArticleData."""
+    page_url = f'{site_url}/{item.section}/{item.slug}/'
     ctx = {
         'title':        item.title,
         'date':         item.date,
@@ -374,6 +375,7 @@ def _build_context(item: ArticleData, site_url: str) -> dict:
         'slug':         item.slug,
         'section_name': item.section,
         'site_url':     site_url,
+        'page_url':     page_url,
     }
     if item.is_pdf:
         ctx['pdf_url'] = f'/{item.section}/{item.slug}/{item.pdf_filename}'

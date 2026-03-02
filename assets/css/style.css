@@ -680,6 +680,53 @@ footer {
 
 footer a { color: var(--color-accent); text-decoration: none; }
 
+.footer-social { margin-top: 0.6rem; }
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 500;
+}
+
+.social-whatsapp { color: #25d366 !important; }
+.social-facebook { color: #1877f2 !important; }
+
+/* Share bar on article pages */
+.share-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+}
+
+.share-label {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.7rem;
+  color: var(--color-muted);
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 4px;
+  font-weight: 500;
+  text-decoration: none !important;
+  transition: opacity 0.15s;
+}
+.share-btn:hover { opacity: 0.8; }
+
+.share-whatsapp { background: #e8fdf0; color: #1a7a45 !important; border: 1px solid #b0e8c8; }
+.share-facebook { background: #e8f0fe; color: #1554a0 !important; border: 1px solid #b0c8f0; }
+
 /* Language font utility classes */
 /* Body text */
 .lang-dv { font-family: var(--font-dv); }

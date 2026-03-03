@@ -63,4 +63,33 @@ translation_te: '1.  నీవు సకల జనులకు ఆధారమ�
 
   *వంశీ కృష్ణ ఘనపాఠీ, శ్రావణ కృష్ణ తృతీయా, 27-8-2010*'
 translation_status: approved
+map:
+- mula: 'श्रीगणपति सच्चिदानन्द वेदपाठशाला बृन्देन विहिताः  कल्याण शुभाशिषः
+
+    एषि श्रेष्ठाश्रमं त्वं सकल जन गणाधार मत्यन्त मोदं
+
+    गेही भूया स्सुखानां श्रुतिविहित कृति प्राचराणां समर्थः।
+
+    रत्ना नाम्नीं सुरत्ना मुपयमन विधा मग्रहीर् मोहनाद्य
+
+    श्रीदत्तो वेङ्कटेशो निज गुरु करुणा सन्निधि न्ते निनीयात्।।'
+  error: API call failed
+- mula: वंशी कृष्ण घनपाठी
+  padavibhaga: वंशी | कृष्ण | घनपाठी
+  anvaya: वंशी कृष्ण घनपाठी
+  pratipadartha: वंशी = vaṃśī (flute); कृष्ण = kṛṣṇa (Krishna); घनपाठी = ghanapāṭhī
+    (Ghanapathi, a Vedic recitation style)
+  rupa_nishpatti: वंशी — vaṃśī, प्रातिपदिकम् vaṃśī, प्रथमा विभक्तिः, एकवचनम्; कृष्ण
+    — kṛṣṇa, प्रातिपदिकम् kṛṣṇa, प्रथमा विभक्तिः, एकवचनम्; घनपाठी — ghanapāṭhī, प्रातिपदिकम्
+    ghanapāṭhin, प्रथमा विभक्तिः, एकवचनम्
+  sandhi: ''
+  samasa: ''
+  bhavartha_en: This verse refers to Vamshi Krishna Ghanapathi, likely the author
+    himself. It is a simple statement identifying the person.
+  commentary: The verse serves as an introduction or signature, indicating the author's
+    name and Vedic expertise. The term 'Ghanapathi' signifies a high level of mastery
+    in Vedic recitation, specifically the 'Ghana' style, which is considered one of
+    the most complex and rigorous methods of preserving the Vedic texts.
+  verse_num: 2
+map_status: draft
 ---

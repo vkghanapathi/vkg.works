@@ -158,4 +158,101 @@ translation_te: '1. ఆమ్: అవును, నిశ్చయముగా �
 
   31. క్లోమ్: ఆయనే కరుణకు మూలము!'
 translation_status: approved
+map:
+- mula: 'श्रीराम
+
+    आम
+
+    एम
+
+    ऊम
+
+    काम
+
+    कोमल
+
+    ग्राम
+
+    जामि
+
+    तामस
+
+    धाम
+
+    धीमद
+
+    धीमदुरु
+
+    धीमहि
+
+    धूम
+
+    नाम
+
+    नेम
+
+    भाम
+
+    भीम
+
+    भूम
+
+    याम
+
+    रोम
+
+    लोम
+
+    वाम
+
+    श्याम
+
+    साम
+
+    स्राम
+
+    सीम
+
+    सोम
+
+    हेम
+
+    होम
+
+    क्षेम
+
+    क्लोम'
+  padavibhaga: श्रीराम | आम | एम | ऊम | काम | कोमल | ग्राम | जामि | तामस | धाम | धीमद
+    | धीमदुरु | धीमहि | धूम | नाम | नेम | भाम | भीम | भूम | याम | रोम | लोम | वाम
+    | श्याम | साम | स्राम | सीम | सोम | हेम | होम | क्षेम | क्लोम
+  anvaya: श्रीराम आम एम ऊम काम कोमल ग्राम जामि तामस धाम धीमद धीमदुरु धीमहि धूम नाम
+    नेम भाम भीम भूम याम रोम लोम वाम श्याम साम स्राम सीम सोम हेम होम क्षेम क्लोम
+  pratipadartha: श्रीराम = śrīrāma (Śrī Rāma); आम = āma (unripe); एम = ema (this);
+    ऊम = ūma (protection); काम = kāma (desire); कोमल = komala (soft); ग्राम = grāma
+    (village); जामि = jāmi (sister); तामस = tāmasa (dark); धाम = dhāma (abode); धीमद
+    = dhīmada (wise); धीमदुरु = dhīmaduru (very wise); धीमहि = dhīmahi (we meditate);
+    धूम = dhūma (smoke); नाम = nāma (name); नेम = nema (rule); भाम = bhāma (anger);
+    भीम = bhīma (terrible); भूम = bhūma (earth); याम = yāma (watch); रोम = roma (hair);
+    लोम = loma (hair); वाम = vāma (left); श्याम = śyāma (dark); साम = sāma (Sāma Veda);
+    स्राम = srāma (tired); सीम = sīma (boundary); सोम = soma (Soma); हेम = hema (gold);
+    होम = homa (oblation); क्षेम = kṣema (welfare); क्लोम = kloma (spleen)
+  rupa_nishpatti: श्रीराम — śrīrāmaḥ, prātipadika; प्रथमा विभक्ति, एकवचन; राम — √ramu
+    krīḍāyām, ghañ, पुंल्लिङ्ग; नाम — √nam prahvatve śabde ca, ghañ, नपुंसकलिङ्ग;
+    होम — √hu dāne, ghañ, पुंल्लिङ्ग
+  sandhi: ''
+  samasa: ''
+  bhavartha_en: This verse is a collection of words, many of which are monosyllabic
+    or disyllabic, evoking a sense of simplicity and directness. The words touch upon
+    various aspects of life, nature, and spirituality, ranging from the name of Lord
+    Rama to elements like smoke and earth, and qualities like softness and wisdom.
+    It is a meditative exploration of sound and meaning.
+  commentary: The verse, composed of seemingly disparate words, creates a unique tapestry
+    of sounds and meanings. The repetition of short words ending in 'ma' creates a
+    rhythmic and meditative quality. The inclusion of 'श्रीराम' at the beginning suggests
+    that all these words are somehow connected to or emanate from the divine essence
+    of Rāma, representing the all-encompassing nature of the divine. The verse can
+    be interpreted as a symbolic representation of the universe, where each element,
+    quality, and action is a manifestation of the ultimate reality.
+  verse_num: 1
+map_status: draft
 ---

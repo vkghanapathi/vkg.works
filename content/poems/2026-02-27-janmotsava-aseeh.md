@@ -53,4 +53,47 @@ translation_te: '1. ముప్పైమూడు దేవతల స్తు�
 
   వికృతి సంవత్సరం, పుష్య శుక్లాష్టమి, 12.1.2011'
 translation_status: approved
+map:
+- mula: त्रयस्त्रिंशत् स्तोमै रिह दिविषदां स्वाश्रितविराट् चिदात्मा श्रीदत्तः प्रमति
+    विजयानन्द फलदः। तवैतस्मिन् चतुस्त्रिंशे जन्मोत्सव वितत मोदे शुभकरः स्थितिं ब्राह्मीं
+    पूर्णां ध्रुवशिखरिणीं कल्पयतु भोः।
+  padavibhaga: त्रयस्त्रिंशत् | स्तोमैः | इह | दिविषदां | स्वाश्रितविराट् | चिदात्मा
+    | श्रीदत्तः | प्रमति | विजयानन्दफलदः | तव | एतस्मिन् | चतुस्त्रिंशे | जन्मोत्सवविततमोदे
+    | शुभकरः | स्थितिं | ब्राह्मीं | पूर्णां | ध्रुवशिखरिणीं | कल्पयतु | भोः
+  anvaya: इह त्रयस्त्रिंशत् स्तोमैः दिविषदां स्वाश्रितविराट् चिदात्मा श्रीदत्तः प्रमति
+    विजयानन्दफलदः शुभकरः (सः) तव एतस्मिन् चतुस्त्रिंशे जन्मोत्सवविततमोदे ब्राह्मीं
+    पूर्णां ध्रुवशिखरिणीं स्थितिं कल्पयतु भोः
+  pratipadartha: त्रयस्त्रिंशत् = trayastriṃśat (thirty-three); स्तोमैः = stomaiḥ
+    (with praises); इह = iha (here); दिविषदां = diviṣadāṃ (of the gods); स्वाश्रितविराट्
+    = svāśritavirāṭ (the all-encompassing one who protects those who take refuge in
+    him); चिदात्मा = cidātmā (the soul of consciousness); श्रीदत्तः = śrīdattaḥ (bestower
+    of auspiciousness); प्रमति = pramati (intellect); विजयानन्दफलदः = vijayānandaphaladaḥ
+    (giver of the fruit of victory and bliss); तव = tava (your); एतस्मिन् = etasmin
+    (in this); चतुस्त्रिंशे = catustriṃśe (thirty-fourth); जन्मोत्सवविततमोदे = janmotsavavitatamode
+    (in the extended joy of the birth festival); शुभकरः = śubhakarah (auspicious);
+    स्थितिं = sthitiṃ (state); ब्राह्मीं = brāhmīṃ (divine); पूर्णां = pūrṇāṃ (complete);
+    ध्रुवशिखरिणीं = dhruvaśikhariṇīṃ (steady and elevated); कल्पयतु = kalpayatu (may
+    he grant); भोः = bhoḥ (O!)
+  rupa_nishpatti: स्तोमैः — stoma, puṃliṅga, tṛtīyā vibhakti, bahuvacana; स्वाश्रितविराट्
+    — svāśrita virāj, prathamā vibhakti, ekavacana; चिदात्मा — cit + ātmā, prathamā
+    vibhakti, ekavacana; श्रीदत्तः — śrīdatta, prathamā vibhakti, ekavacana; कल्पयतु
+    — √kḷp, causative, lot, prathama-puruṣa, ekavacana
+  sandhi: चित्+आत्मा → चिदात्मा (jastva sandhi and savarṇa-dīrgha sandhi); तव+एतस्मिन्
+    → तवैतस्मिन् (vṛddhi sandhi); जन्म+उत्सव → जन्मोत्सव (guṇa sandhi)
+  samasa: स्वाश्रितविराट् — स्वम् आश्रितः येन सः (bahuvrīhi); विजयानन्दफलदः — विजयः
+    च आनन्दः च तयोः फलम् ददाति यः सः (bahuvrīhi); जन्मोत्सवविततमोदे — जन्म च उत्सवः
+    च, तयोः विततः मोदः (karmadhāraya)
+  bhavartha_en: May Śrīdatta, the soul of consciousness, the all-encompassing protector
+    of those who seek refuge in him, the giver of the fruits of victory and bliss,
+    who is praised by the thirty-three gods, grant you a divine, complete, steady,
+    and elevated state in this thirty-fourth year, filled with the extended joy of
+    your birth festival. O auspicious one!
+  commentary: This verse is a prayer offered on the occasion of a birthday. It invokes
+    Śrīdatta, a form of the divine, to bestow auspiciousness and spiritual elevation
+    upon the person whose birthday is being celebrated. The phrase 'dhruvaśikhariṇīṃ
+    sthitiṃ' suggests a state of unwavering spiritual attainment, like a mountain
+    peak, which is the ultimate goal of spiritual practice. The verse beautifully
+    blends devotion, auspiciousness, and a desire for spiritual growth.
+  verse_num: 1
+map_status: draft
 ---

@@ -142,4 +142,109 @@ translation_te: '1. తపశ్శక్తి ప్రభావమున మ�
   1) ఐతరేయ బ్రాహ్మణము 3.13.30, 2) శా.సం.మ.4.5.50 ఏవా పిత్రే, శా.సం.10.5.63 యేభ్యో
   మాతా, మనుష్యగంధదోషనివారణవిధిః – ధర్మ సింధుః।'
 translation_status: approved
+map:
+- mula: 'मनुष्यगन्धदोष निवारणम्
+
+    तपश्चर्याप्रभावेण देवत्वं प्राप्य मानवाः। ऋभुनाम्ना प्रसिध्यन्ते प्रजापतिवशा उत।।'
+  padavibhaga: तपश्चर्याप्रभावेण | देवत्वम् | प्राप्य | मानवाः | ऋभुनाम्ना | प्रसिध्यन्ते
+    | प्रजापतिवशाः | उत ||
+  anvaya: मानवाः तपश्चर्याप्रभावेण देवत्वं प्राप्य ऋभुनाम्ना प्रसिध्यन्ते, प्रजापतिवशाः
+    उत।
+  pratipadartha: तपश्चर्याप्रभावेण = tapaścaryāprabhāveṇa (by the power of ascetic
+    practice); देवत्वम् = devatvam (divinity); प्राप्य = prāpya (having obtained);
+    मानवाः = mānavāḥ (humans); ऋभुनाम्ना = ṛbhunāmnā (by the name Ṛbhu); प्रसिध्यन्ते
+    = prasidhyante (they become famous); प्रजापतिवशाः = prajāpativaśāḥ (under the
+    control of Prajāpati); उत = uta (or)
+  rupa_nishpatti: तपश्चर्याप्रभावेण — tapaścaryā + prabhāva, tṛtīyā ekavacana; देवत्वम्
+    — deva + tva, dvitīyā ekavacana; प्राप्य — √āp + ktvā; मानवाः — manu + aṇ, prathamā
+    bahuvacana; ऋभुनाम्ना — ṛbhu + nāman, tṛtīyā ekavacana; प्रसिध्यन्ते — pra + √sidh,
+    yaṅ-luk, Ātm., lat, prathama-bahu; प्रजापतिवशाः — prajāpati + vaśa, prathamā bahuvacana
+  sandhi: तपश्चर्याप्रभावेण देवत्वं → तपश्चर्याप्रभावेण देवत्वम् (visarga sandhi);
+    प्रजापतिवशाः उत → प्रजापतिवशा उत (visarga utva)
+  samasa: तपश्चर्याप्रभावेण — tapaścaryāyāḥ prabhāvaḥ, tasya, ṣaṣṭhī tatpuruṣa; प्रजापतिवशाः
+    — prajāpateḥ vaśāḥ, ṣaṣṭhī tatpuruṣa
+  bhavartha_en: Humans, through the power of their ascetic practices, attain divinity
+    and become famous by the name Ṛbhu. Are they under the control of Prajāpati, or
+    is it by their own merit? This verse highlights the transformative power of tapas
+    and questions the source of their elevated status.
+  commentary: This verse from 'Manushyagandhadosha Nivaranam' explores the idea of
+    humans attaining divinity through rigorous asceticism. The Ṛbhus are a group of
+    semi-divine beings known for their skill and craftsmanship, elevated to divine
+    status through their virtuous deeds. The verse subtly questions whether their
+    elevation is due to their own efforts (tapas) or the grace of a higher power (Prajāpati),
+    reflecting a deeper philosophical inquiry into the nature of karma and divine
+    intervention.
+  verse_num: 1
+- mula: 'अग्नीन्द्रविश्वदेवैस्तु सोमपीथे निराकृताः। प्रचोदकेन गुरुणा सवित्रा प्रेरितस्स्वयम्।
+
+    तदोभयत एतेषां पपौ सोमं प्रजापतिः। प्राप्तैव.मृभुदेवेभिर्- देवैश्च सधमादता।
+
+    मनुष्यागन्धात् किञ्चामी अबीभत्सन्त कारणात्। तन्मर्त्यगन्धदोषाप-नयनाय यतेमहि।
+
+    जनकस्मरणं चात्र स्यान्मातृ.पितृशब्दयोः। श्रुतेर्द्यावापृथिव्यौ ते अवेयुस्सविता
+    गुरुः।
+
+    (येभ्यो माता)
+
+    निर्मात्री पृथिवी माता पयो येभ्यस्तु पिन्वते। अदीना द्यौरद्रिबर्हाः पीयुषं पिन्वते
+    मधु।
+
+    उक्थशुष्मान् वृष्टिहरान् तानादित्यान् स्तुवीमहि। मनुष्यगन्धदोषो मे विनश्यात् स्वस्तिरस्तु
+    नः।
+
+    (एवा पित्रे)
+
+    एवं यज्ञेन हविषा नमसा विदधीमहि। पित्रेस्मै विश्वदेवाय पालकाय पुरोधसे।
+
+    बृहस्पते वृषन् देव कृपया हि भवेम ते। वीरवन्त.स्सुप्रजसो रयीणां पतयस्सदा।।'
+  error: API call failed
+- mula: मनुष्यगन्धदोषो मे विनश्यात् स्वस्तिरस्तु नः।
+  padavibhaga: मनुष्यगन्धदोषः | मे | विनश्यात् | स्वस्तिः | अस्तु | नः |
+  anvaya: मनुष्यगन्धदोषः मे विनश्यात्, नः स्वस्तिः अस्तु।
+  pratipadartha: मनुष्यगन्धदोषः = manuṣyagandhadoṣaḥ (the fault/taint of human smell);
+    मे = me (to me); विनश्यात् = vinaśyāt (may it be destroyed); स्वस्तिः = svastiḥ
+    (well-being, auspiciousness); अस्तु = astu (may it be); नः = naḥ (to us)
+  rupa_nishpatti: मनुष्यगन्धदोषः — manuṣya + gandha + doṣaḥ, prathamā, eka.; विनश्यात्
+    — √naś + yat + tip, lot, prathama, eka.; स्वस्तिः — su + asti, prathamā, eka.;
+    अस्तु — √as + tu, lot, prathama, eka.
+  sandhi: मनुष्यगन्धदोषः मे → मनुष्यगन्धदोषो मे (visarga utva); स्वस्तिः अस्तु → स्वस्तिरस्तु
+    (visarga repha)
+  samasa: मनुष्यगन्धदोषः — मनुष्यस्य गन्धः, तस्य दोषः (ṣaṣṭhī tatpuruṣa)
+  bhavartha_en: May the fault of human smell be destroyed in me. May there be auspiciousness
+    and well-being for us.
+  commentary: This verse is a prayer for purification and well-being. The 'fault of
+    human smell' likely refers to the subtle impurities or attachments that bind one
+    to the material world. By seeking the destruction of this fault and praying for
+    auspiciousness, the verse expresses a desire for spiritual liberation and the
+    attainment of a higher state of being.
+  verse_num: 3
+- mula: ऐतरेयब्राह्मणम् ३.१३.३०, शा.सं.म.४.५.५० एवा पित्रे, शा.सं.१०.५.६३ येभ्यो माता,
+    मनुष्यगन्धदोषनिवारणविधिः – धर्मसिन्धुः।
+  padavibhaga: ऐतरेयब्राह्मणम् | ३.१३.३० | शा.सं.म. | ४.५.५० | एवा | पित्रे | शा.सं.
+    | १०.५.६३ | येभ्यो | माता | मनुष्यगन्धदोषनिवारणविधिः | धर्मसिन्धुः
+  anvaya: ऐतरेयब्राह्मणम् ३.१३.३०, शा.सं.म. ४.५.५० एवा पित्रे, शा.सं. १०.५.६३ येभ्यो
+    माता, मनुष्यगन्धदोषनिवारणविधिः धर्मसिन्धुः।
+  pratipadartha: ऐतरेयब्राह्मणम् = aitareyabrāhmaṇam (Aitareya Brahmana); ३.१३.३०
+    = 3.13.30 (3.13.30); शा.सं.म. = śā.saṃ.ma. (Śākhālāyana Saṃhitā Mantra); ४.५.५०
+    = 4.5.50 (4.5.50); एवा = evā (indeed); पित्रे = pitre (to the father); शा.सं.
+    = śā.saṃ. (Śākhālāyana Saṃhitā); १०.५.६३ = 10.5.63 (10.5.63); येभ्यो = yebhyo
+    (to whom); माता = mātā (mother); मनुष्यगन्धदोषनिवारणविधिः = manuṣyagandhadoṣanivāraṇavidhiḥ
+    (the method of removing the defect of human smell); धर्मसिन्धुः = dharmasindhuḥ
+    (Dharmasindhu)
+  rupa_nishpatti: पित्रे — पितृ शब्द, चतुर्थी विभक्ति, एकवचन; माता — मातृ शब्द, प्रथमा
+    विभक्ति, एकवचन
+  sandhi: येभ्यो + माता → येभ्यो माता (visarga lopa sandhi)
+  samasa: मनुष्यगन्धदोषनिवारणविधिः — मनुष्यस्य गन्धः, गन्धस्य दोषः, दोषस्य निवारणम्,
+    निवारणस्य विधिः - षष्ठी तत्पुरुष समास
+  bhavartha_en: This verse references Aitareya Brahmana 3.13.30, Śākhālāyana Saṃhitā
+    Mantra 4.5.50 'evā pitre', Śākhālāyana Saṃhitā 10.5.63 'yebhyo mātā', and the
+    method of removing the defect of human smell, as found in the Dharmasindhu.
+  commentary: This verse serves as a reference to various Vedic texts and the Dharmasindhu,
+    specifically highlighting mantras related to ancestors and the procedure for removing
+    the 'manuṣyagandha doṣa'. The inclusion of these references suggests the importance
+    of Vedic mantras and ritualistic procedures in addressing specific issues, as
+    detailed in the Dharmasindhu. The verse emphasizes the interconnectedness of Vedic
+    knowledge and practical application in addressing human concerns.
+  verse_num: 4
+map_status: draft
 ---

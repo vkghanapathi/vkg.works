@@ -730,4 +730,496 @@ translation_te: 'గోవింద లహరి
 
   ప్రభువుకు సేవ చేస్తూ.'
 translation_status: approved
+map:
+- mula: 'अनिर्वाच्यस्यैतत् हरिपदवचः किन्नु करवै
+
+    जगद्व्याप्तं व्योमास्पदमिममहं कुत्र विचरै।
+
+    परब्रह्मात्मानं मदधिकरणं कं विकलयै
+
+    स्वसिद्धां गोविन्दो द्वयरहित संस्थां प्रदिशताम्।।'
+  padavibhaga: अनिर्वाच्यस्य | एतत् | हरिपदवचः | किम् नु | करवै | जगद्व्याप्तम् |
+    व्योमास्पदम् | इमम् | अहम् | कुत्र | विचरै | परब्रह्मात्मानम् | मदधिकरणम् | कम्
+    | विकलयै | स्वसिद्धां | गोविन्दः | द्वयरहित | संस्थाम् | प्रदिशताम्
+  anvaya: अनिर्वाच्यस्य एतत् हरिपदवचः किम् नु करवै? अहम् जगद्व्याप्तम् व्योमास्पदम्
+    इमम् कुत्र विचरै? मदधिकरणम् परब्रह्मात्मानम् कम् विकलयै? गोविन्दः स्वसिद्धां द्वयरहित
+    संस्थाम् प्रदिशताम्
+  pratipadartha: अनिर्वाच्यस्य = anirvācyasya (of the inexpressible); एतत् = etat
+    (this); हरिपदवचः = haripadavacaḥ (words at the feet of Hari); किम् = kim (what);
+    नु = nu (indeed); करवै = karavai (should I do); जगद्व्याप्तम् = jagadvyāptam (world-pervading);
+    व्योमास्पदम् = vyomāspadam (space-abiding); इमम् = imam (this); अहम् = aham (I);
+    कुत्र = kutra (where); विचरै = vicarai (should I wander); परब्रह्मात्मानम् = parabrahmātmānam
+    (the supreme Brahman-Self); मदधिकरणम् = madadhikaraṇam (my basis); कम् = kam (what);
+    विकलयै = vikalayai (should I analyze); स्वसिद्धां = svasiddhāṃ (self-established);
+    गोविन्दः = govindaḥ (Govinda); द्वयरहित = dvayarahita (devoid of duality); संस्थाम्
+    = saṃsthām (state); प्रदिशताम् = pradiśatām (may He grant)
+  rupa_nishpatti: 'करवै — √kṛ + lot, उत्तमपुरुष, एकवचन, आत्मनेपद;
+
+    विचरै — √car + vi + lot, उत्तमपुरुष, एकवचन, आत्मनेपद;
+
+    विकलयै — √kal + vi + lot, उत्तमपुरुष, एकवचन, आत्मनेपद;
+
+    प्रदिशताम् — √diś + pra + lot, प्रथमपुरुष, एकवचन, परस्मैपद'
+  sandhi: 'कम् + विकलयै → कं विकलयै (anusvāra sandhi);
+
+    व्योम + आस्पदम् → व्योमास्पदम् (savarṇa-dīrgha sandhi);
+
+    हरिपद + वचः → हरिपदवचः (visarga sandhi)'
+  samasa: 'हरिपदवचः — हरेः पदं, तस्य वचः (ṣaṣṭhī tatpuruṣa);
+
+    जगद्व्याप्तम् — जगत् व्याप्तम् (tṛtīyā tatpuruṣa);
+
+    व्योमास्पदम् — व्योम आस्पदम् (saptamī tatpuruṣa);
+
+    परब्रह्मात्मानम् — परम च तत् ब्रह्म, सः आत्मा (karmadhāraya, then rūpaka);
+
+    मदधिकरणम् — मम अधिकरणम् (ṣaṣṭhī tatpuruṣa);
+
+    द्वयरहित — द्वयात् रहितः (pañcamī tatpuruṣa)'
+  bhavartha_en: What should I do with these words at the feet of Hari, belonging to
+    the Inexpressible? Where should I wander, as I am, pervading the world and abiding
+    in space? What aspect of the supreme Brahman-Self, which is my very basis, should
+    I analyze? May Govinda bestow upon me that self-established state devoid of duality.
+  commentary: This verse expresses the devotee's bewilderment and longing for divine
+    grace. The devotee feels overwhelmed by the vastness of the world and the ineffable
+    nature of the divine. He seeks guidance from Govinda to attain a state of non-duality,
+    transcending the limitations of his individual self. The verse highlights the
+    importance of surrendering to the divine will and seeking liberation from the
+    cycle of birth and death through devotion.
+  verse_num: 1
+- mula: 'पथिकस्नेहः
+
+    श्रियं लक्ष्मीं वाञ्छन् यदि यतनमद्धैव विदधे
+
+    तदीयं सख्यं मे पुनरपि स लक्ष्मीं हि चकमे।
+
+    समो मार्गो यन्नौ बत भवति सख्या सह सुखं
+
+    स्वसिद्धां गोविन्दो द्वयरहित संस्थां प्रदिशताम्।।'
+  padavibhaga: श्रियम् | लक्ष्मीम् | वाञ्छन् | यदि | यतनम् | अद्धा | एव | विदधे |
+    तदीयं | सख्यम् | मे | पुनरपि | सः | लक्ष्मीम् | हि | चकमे | समः | मार्गः | यत्
+    | नौ | बत | भवति | सख्या | सह | सुखम् | स्वसिद्धां | गोविन्दः | द्वयरहित | संस्थाम्
+    | प्रदिशताम्
+  anvaya: यदि श्रियं लक्ष्मीं वाञ्छन् अद्धा यतनम् एव विदधे, तदीयं सख्यं मे सः पुनरपि
+    लक्ष्मीं हि चकमे। यत् नौ सख्या सह सुखं समः मार्गः बत भवति, गोविन्दः स्वसिद्धां
+    द्वयरहित संस्थां प्रदिशताम्।
+  pratipadartha: श्रियम् = śriyam (prosperity, beauty); लक्ष्मीम् = lakṣmīm (Lakshmi,
+    wealth); वाञ्छन् = vāñchan (desiring); यदि = yadi (if); यतनम् = yatanam (effort);
+    अद्धा = addhā (truly); एव = eva (indeed); विदधे = vidadhe (made, performed); तदीयं
+    = tadīyam (that); सख्यम् = sakhyam (friendship); मे = me (to me, my); पुनरपि =
+    punarapi (again); सः = saḥ (he); लक्ष्मीम् = lakṣmīm (Lakshmi, wealth); हि = hi
+    (indeed); चकमे = cakame (desired); समः = samaḥ (equal, same); मार्गः = mārgaḥ
+    (path); यत् = yat (that); नौ = nau (our); बत = bata (alas, indeed); भवति = bhavati
+    (is); सख्या = sakhyā (with friendship); सह = saha (with); सुखम् = sukham (happiness);
+    स्वसिद्धां = svasiddhāṃ (self-attained); गोविन्दः = govindaḥ (Govinda, Krishna);
+    द्वयरहित = dvayarahita (free from duality); संस्थाम् = saṃsthām (state, condition);
+    प्रदिशताम् = pradiśatām (may grant)
+  rupa_nishpatti: श्रियम् — śrī, strīliṅga, dvitīyā, ekavacana; लक्ष्मीम् — lakṣmī,
+    strīliṅga, dvitīyā, ekavacana; वाञ्छन् — √vāñch (desire), śatṛ, prathamā, ekavacana,
+    puṃlliṅga; विदधे — √dhā (to place, do), liṭ, ātmanepada, prathama, ekavacana;
+    सख्यम् — sakhi, napuṃsakaliṅga, prathamā, ekavacana; चकमे — √kamu (to desire),
+    liṭ, ātmanepada, prathama, ekavacana; समः — sama, puṃlliṅga, prathamā, ekavacana;
+    मार्गः — mārga, puṃlliṅga, prathamā, ekavacana; भवति — √bhū (to be), laṭ, parasmaipada,
+    prathama, ekavacana; सुखम् — sukha, napuṃsakaliṅga, prathamā, ekavacana; स्वसिद्धां
+    — svasiddhā, strīliṅga, dvitīyā, ekavacana; गोविन्दः — govinda, puṃlliṅga, prathamā,
+    ekavacana; संस्थाम् — saṃsthā, strīliṅga, dvitīyā, ekavacana; प्रदिशताम् — √diś
+    (to show, grant), āśīrvāda-lot, parasmaipada, prathama, ekavacana
+  sandhi: पुनरपि → पुनः + अपि (visarga sandhi); यद्यतनम् → यदि + यतनम् (yaṇ sandhi);
+    अद्धैव → अद्धा + एव (vṛddhi sandhi); सख्यं मे → सख्यम् + मे (anusvāra sandhi);
+    पुनरपि स → पुनरपि + स (visarga sandhi); यन्नौ → यत् + नौ (ścütva sandhi); द्वयरहित
+    संस्थां → द्वयरहित + संस्थाम् (savarṇa-dīrgha sandhi)
+  samasa: पथिकस्नेहः — पथिकस्य स्नेहः, ṣaṣṭhī tatpuruṣa; द्वयरहित — द्वयेन रहितः,
+    tṛtīyā tatpuruṣa; स्वसिद्धां — स्वयम् सिद्धा, tṛtīyā tatpuruṣa
+  bhavartha_en: If someone, desiring wealth and prosperity, truly makes an effort,
+    that friendship of his again desires wealth for me. Alas, may our path be equal
+    and filled with happiness in friendship. May Govinda grant us a self-attained
+    state free from duality.
+  commentary: This verse speaks of the importance of sincere effort in attaining prosperity
+    and the value of true friendship. It expresses a desire for a path of equality
+    and happiness shared with friends. Ultimately, it seeks the grace of Govinda to
+    bestow a state of being that transcends duality, suggesting a spiritual aspiration
+    for unity and liberation.
+  verse_num: 2
+- mula: 'वेदोद्धरणहेतुः
+
+    पुरा क्षीणं पाथो दनुजगणकालादिवशतः
+
+    समुज्जह्रे वेदं किमुत निज सत्त्वप्रकटितेः।
+
+    धियो ध्येयं दातुं जनिवलयमुच्छेत्तुमथवा
+
+    स्वसिद्धां गोविन्दो द्वयरहित संस्थां प्रदिशताम्।।'
+  padavibhaga: पुरा | क्षीणम् | पाथः | दनुजगणकालादिवशतः | समुज्जह्रे | वेदम् | किमुत
+    | निज | सत्त्वप्रकटितेः | धियः | ध्येयम् | दातुम् | जनिवलयम् | उच्छेत्तुम् | अथवा
+    | स्वसिद्धां | गोविन्दः | द्वयरहित | संस्थाम् | प्रदिशताम्
+  anvaya: गोविन्दः पुरा दनुजगणकालादिवशतः क्षीणं पाथः (सति) वेदं समुज्जह्रे, किमुत
+    निज सत्त्वप्रकटितेः (समुज्जह्रे)। धियः ध्येयं दातुं अथवा जनिवलयम् उच्छेत्तुम्
+    स्वसिद्धां द्वयरहित संस्थां प्रदिशताम्।
+  pratipadartha: पुरा = purā (formerly, in ancient times); क्षीणम् = kṣīṇam (diminished,
+    weakened); पाथः = pāthaḥ (water); दनुजगणकालादिवशतः = danujagaṇakālādivaśataḥ (due
+    to the power of the hordes of demons and time); समुज्जह्रे = samujjahre (lifted
+    up, rescued); वेदम् = vedam (the Veda); किमुत = kimuta (what to say, how much
+    more); निज = nija (own); सत्त्वप्रकटितेः = sattvaprakaṭiteḥ (manifestation of
+    essence); धियः = dhiyaḥ (for the intellects); ध्येयम् = dhyeyam (object of meditation);
+    दातुम् = dātum (to give); जनिवलयम् = janivalayam (cycle of birth); उच्छेत्तुम्
+    = ucchettum (to destroy); अथवा = athavā (or); स्वसिद्धां = svasiddhāṃ (self-established);
+    द्वयरहित = dvayarahita (free from duality); संस्थाम् = saṃsthām (state, condition);
+    प्रदिशताम् = pradiśatām (may He grant)
+  rupa_nishpatti: क्षीणम् — √kṣi, kta, napuṃsaka, prathamā-ekavacana; पाथः — √pā,
+    thas, napuṃsaka, prathamā-ekavacana; समुज्जह्रे — sam-ut-√hṛ, karmaṇi, liṭ, prathama-puruṣa,
+    ekavacana, ātmanepada; वेदम् — √vid, ghञ्, puṃlliṅga, dvitīyā-ekavacana; ध्येयम्
+    — √dhyai, yat, napuṃsaka, dvitīyā-ekavacana; दातुम् — √dā, tumun; उच्छेत्तुम्
+    — ut-√chid, tumun; स्वसिद्धां — sva+siddhā, strīliṅga, dvitīyā-ekavacana; गोविन्दः
+    — go+√vid, ac, puṃlliṅga, prathamā-ekavacana; प्रदिशताम् — pra-√diś, lot, prathama-puruṣa,
+    ekavacana, parasmaipada
+  sandhi: कालादिवशतः समुज्जह्रे → कालादिवशतः + समुज्जह्रे (visarga sandhi); किमुत
+    निज → किमुत + निज (utva sandhi); मुच्छेत्तुमथवा → मुच्छेत्तुम् + अथवा (m-sandhi);
+    द्वयरहित संस्थां → द्वयरहित + संस्थाम् (anusvāra sandhi)
+  samasa: दनुजगणकालादिवशतः — दनुजानां गणः, तेन कालः, कालादिः, कालादेः वशः, तेन (ṣaṣṭhī-tatpuruṣa);
+    जनिवलयम् — जनिः एव वलयम् (rūpaka karmadhāraya); द्वयरहित — द्वयेन रहितः (tṛtīyā-tatpuruṣa)
+  bhavartha_en: Govinda formerly rescued the Vedas when the waters were diminished
+    due to the power of demons and time, how much more will He manifest His own essence!
+    May Govinda bestow that self-established state, free from duality, to grant the
+    object of meditation to intellects or to destroy the cycle of birth.
+  commentary: This verse praises Lord Govinda's power to restore dharma and grant
+    liberation. The act of rescuing the Vedas is symbolic of restoring knowledge and
+    righteousness. The verse emphasizes that Govinda's true nature is beyond duality
+    and that He can bestow this state of non-duality upon those who seek liberation,
+    either by granting them the object of their meditation or by completely destroying
+    the cycle of birth and death.
+  verse_num: 3
+- mula: 'श्रीवासः
+
+    श्रियं श्रीवासोऽयं धरति परवात्सल्यमतिमान्
+
+    श्रियॊ वात्सल्यं संभजति नितरां भाममुखतः।
+
+    श्रितश्श्रीवत्सेति प्रथितविभवैर्दैवतगणैः
+
+    स्वसिद्धां गोविन्दो द्वयरहित संस्थां प्रदिशताम्।।'
+  padavibhaga: श्रियम् | श्रीवासः | अयम् | धरति | परवात्सल्यमतिमान् | श्रियः | वात्सल्यम्
+    | सं-भजति | नितराम् | भाममुखतः | श्रितः | श्रीवत्सा | इति | प्रथितविभवैः | दैवतगणैः
+    | स्वसिद्धां | गोविन्दः | द्वयरहित | संस्थाम् | प्रदिशताम्
+  anvaya: अयम् श्रीवासः श्रियं धरति, परवात्सल्यमतिमान् (अस्ति)। (सः) भाममुखतः श्रियः
+    वात्सल्यं नितरां संभजति। श्रीवत्सा इति प्रथितविभवैः दैवतगणैः श्रितः गोविन्दः स्वसिद्धां
+    द्वयरहित संस्थाम् प्रदिशताम्।
+  pratipadartha: श्रियम् = śriyam (prosperity, beauty); श्रीवासः = śrīvāsaḥ (Śrīvāsa,
+    a devotee of Krishna); अयम् = ayam (this); धरति = dharati (bears, holds); परवात्सल्यमतिमान्
+    = paravātsalyamatimān (one possessing supreme affection); श्रियः = śriyaḥ (of
+    prosperity); वात्सल्यम् = vātsalyam (affection, love); संभजति = saṃbhajati (enjoys,
+    partakes); नितराम् = nitarām (exceedingly); भाममुखतः = bhāmamukhataḥ (from the
+    face of Bhāmā); श्रितः = śritaḥ (sheltered, resorted to); श्रीवत्सा = śrīvatsā
+    (Śrīvatsa mark); इति = iti (thus); प्रथितविभवैः = prathitavibhavaiḥ (by those
+    of renowned glory); दैवतगणैः = daivatagaṇaiḥ (by groups of gods); स्वसिद्धां =
+    svasiddhāṃ (self-accomplished); गोविन्दः = govindaḥ (Govinda, Krishna); द्वयरहित
+    = dvayarahita (free from duality); संस्थाम् = saṃsthām (state, condition); प्रदिशताम्
+    = pradiśatām (may grant)
+  rupa_nishpatti: श्रीवासः — śrīvāsaḥ, prātipadika, pum̐lliṅga, prathamā, ekavacana;
+    धरति — √dhṛ dhāraṇe, parasmaipada, laṭ, prathama, ekavacana; वात्सल्यम् — vātsalyam,
+    prātipadika, napuṃsakaliṅga, prathamā, ekavacana; संभजति — sam+√bhaj sevāyām,
+    parasmaipada, laṭ, prathama, ekavacana; गोविन्दः — govindaḥ, prātipadika, pum̐lliṅga,
+    prathamā, ekavacana; प्रदिशताम् — pra+√diś atisarge, ātm., loṭ, prathama, ekavacana
+  sandhi: श्रियॊ वात्सल्यं → श्रियः + वात्सल्यं (visarga sandhi); श्रितश्श्रीवत्सेति
+    → श्रितः + श्रीवत्सा + इति (visarga sandhi, savarṇa-dīrgha); दैवतगणैः स्व → दैवतगणैः
+    + स्व (visarga sandhi)
+  samasa: परवात्सल्यमतिमान् — परं वात्सल्यं यस्य सः मतिः यस्य सः, bahuvrīhi; भाममुखतः
+    — भामयाः मुखम्, ṣaṣṭhī tatpuruṣa; प्रथितविभवैः — प्रथितः विभवः येषां तैः, bahuvrīhi;
+    द्वयरहित — द्वयात् रहितः, pañcamī tatpuruṣa
+  bhavartha_en: Śrīvāsa, possessing supreme affection, bears prosperity. He exceedingly
+    enjoys the affection of Śrī (Lakshmi) from the face of Bhāmā (Satyabhāmā). May
+    Govinda, who is resorted to by groups of gods with renowned glory and marked by
+    Śrīvatsa, grant that self-accomplished state free from duality.
+  commentary: This verse praises Śrīvāsa and Govinda. Śrīvāsa is described as one
+    who embodies prosperity and is filled with supreme affection. The verse highlights
+    the divine love and affection between Krishna and his consorts, particularly Satyabhāmā.
+    The ultimate goal is to attain a state of non-duality (advaita), a state of oneness
+    with the divine, which Govinda is capable of bestowing upon devotees.
+  verse_num: 4
+- mula: 'सुकृतहेतुः
+
+    चतुर्णां वेदानामनुदिनमधीत्याऽसि सुकृती
+
+    कृतं कार्यं ते यत् प्रदिशति स एको व्यपदिशेत्।
+
+    सखे जानीह्येतं सुकृतितममध्यस्तभुवनम्
+
+    स्वकां गोविन्दोऽयं द्वयरहित संस्थां प्रदिशताम्।।'
+  padavibhaga: सुकृतहेतुः | चतुर्णां | वेदानां | अनुदिनम् | अधीत्य | असि | सुकृती
+    | कृतं | कार्यं | ते | यत् | प्रदिशति | सः | एकः | व्यपदिशेत् | सखे | जानीहि |
+    एतं | सुकृतितममध्यस्तभुवनम् | स्वकां | गोविन्दः | अयं | द्वयरहित | संस्थां | प्रदिशताम्
+  anvaya: सखे! चतुर्णां वेदानां अनुदिनम् अधीत्य सुकृती असि, ते कृतं कार्यं यत् प्रदिशति,
+    सः एकः व्यपदिशेत्। अयं गोविन्दः सुकृतितममध्यस्तभुवनम् एतं द्वयरहित स्वकां संस्थां
+    प्रदिशताम्।
+  pratipadartha: सुकृतहेतुः = sukṛtahetuḥ (cause of merit); चतुर्णां = catuṇāṃ (of
+    the four); वेदानां = vedānāṃ (of the Vedas); अनुदिनम् = anudinam (daily); अधीत्य
+    = adhītya (having studied); असि = asi (you are); सुकृती = sukṛtī (virtuous); कृतं
+    = kṛtaṃ (done); कार्यं = kāryaṃ (work); ते = te (by you); यत् = yat (which); प्रदिशति
+    = pradiśati (indicates); सः = saḥ (he); एकः = ekaḥ (one); व्यपदिशेत् = vyapadiśet
+    (may declare); सखे = sakhe (O friend); जानीहि = jānīhi (know); एतं = etaṃ (this);
+    सुकृतितममध्यस्तभुवनम् = sukṛtittamamadhystabhuvanaṃ (the world inhabited by the
+    most virtuous); स्वकां = svakāṃ (own); गोविन्दः = govindaḥ (Govinda); अयं = ayaṃ
+    (this); द्वयरहित = dvayarahita (free from duality); संस्थां = saṃsthāṃ (state);
+    प्रदिशताम् = pradiśatām (may bestow)
+  rupa_nishpatti: अधीत्य — √iṅ + dīrgha, ktvā, अव्यय; सुकृती — सुकृत + इनि, प्रथमा-एकवचन;
+    प्रदिशति — प्र + √diś, lat, prathama-puruṣa, eka-vacana; व्यपदिशेत् — वि + अप
+    + √diś, vidhi-liṅ, prathama-puruṣa, eka-vacana; जानीहि — √jñā, lot, madhyama-puruṣa,
+    eka-vacana; प्रदिशताम् — प्र + √diś, lot, prathama-puruṣa, eka-vacana
+  sandhi: अधीत्य+असि → अधीत्याऽसि (yaṇ); सः+एको → स एको (visarga-utva, guṇa)
+  samasa: सुकृतहेतुः — सुकृतस्य हेतुः, ṣaṣṭhī-tatpuruṣa; सुकृतितममध्यस्तभुवनम् — सुकृतितमानां
+    मध्यस्तं भुवनं, ṣaṣṭhī-tatpuruṣa; द्वयरहित — द्वयात् रहितः, pañcamī-tatpuruṣa
+  bhavartha_en: O friend, having studied the four Vedas daily, you are virtuous. May
+    that one declare the work done by you, which He indicates. May this Govinda bestow
+    His own state, free from duality, upon this world inhabited by the most virtuous.
+  commentary: This verse emphasizes the importance of Vedic study and virtuous actions.
+    It suggests that through diligent study of the Vedas, one attains virtue, and
+    the Lord Govinda, free from duality, bestows His grace upon those who inhabit
+    the world of the most virtuous. The ultimate goal is to attain a state beyond
+    duality, a state of oneness with the divine.
+  verse_num: 5
+- mula: पथां गम्यं विलीयन्तेऽध्वानो बहुविधमहामोहगहनाः परे ब्रह्मण्यस्मिन् पृथुमहितसत्त्वे
+    ध्रुवपदे। जगच्चारं चारं विश चरम पद्यां मधुरिपोः स्वसिद्धां गोविन्दो द्वयरहित संस्थां
+    प्रदिशताम्।।
+  padavibhaga: पथां | गम्यम् | विलीयन्ते | अध्वानः | बहुविधमहामोहगहनाः | परे | ब्रह्मणि
+    | अस्मिन् | पृथुमहितसत्त्वे | ध्रुवपदे | जगत् | चारं चारं | विश | चरम | पद्यां
+    | मधुरिपोः | स्वसिद्धां | गोविन्दः | द्वयरहितसंस्थां | प्रदिशताम् |
+  anvaya: गोविन्दः स्वसिद्धां द्वयरहितसंस्थां मधुरिपोः चरमां पद्यां जगत् चारं चारं
+    विश, अस्मिन् परे ब्रह्मणि पृथुमहितसत्त्वे ध्रुवपदे बहुविधमहामोहगहनाः अध्वानः पथां
+    गम्यं विलीयन्ते, प्रदिशताम्।
+  pratipadartha: पथां = pathāṃ (of paths); गम्यम् = gamyam (attainable); विलीयन्ते
+    = vilīyante (dissolve); अध्वानः = adhvānaḥ (paths); बहुविधमहामोहगहनाः = bahuvidhamahāmohagahanāḥ
+    (dense with great delusion of many kinds); परे = pare (supreme); ब्रह्मणि = brahmaṇi
+    (in Brahman); अस्मिन् = asmin (in this); पृथुमहितसत्त्वे = pṛthumahitasattve (in
+    the greatly glorious essence); ध्रुवपदे = dhruvapade (in the eternal abode); जगत्
+    = jagat (world); चारं चारं = cāraṃ cāraṃ (again and again); विश = viśa (enter);
+    चरम = carama (final); पद्यां = padyāṃ (foot); मधुरिपोः = madhuripoḥ (of the enemy
+    of Madhu); स्वसिद्धां = svasiddhāṃ (self-attained); गोविन्दः = govindaḥ (Govinda);
+    द्वयरहितसंस्थां = dvayarahitasaṃsthāṃ (state devoid of duality); प्रदिशताम् =
+    pradiśatām (may He grant).
+  rupa_nishpatti: विलीयन्ते — वि+√ली, कर्मणि, लट्, प्रथमपुरुष, बहुवचन; अध्वानः — अध्वन्,
+    प्रथमा, बहुवचन; ब्रह्मणि — ब्रह्मन्, सप्तमी, एकवचन; पद्यां — पद्, द्वितीया, एकवचन;
+    गोविन्दः — गोविन्द, प्रथमा, एकवचन; प्रदिशताम् — प्र+√दिश, लोट्, प्रथमपुरुष, एकवचन
+  sandhi: विलीयन्ते+अध्वानो → विलीयन्तेऽध्वानो (pūrvarūpa sandhi); जगत्+चारं → जगच्चारं
+    (ścutva sandhi); चरं+पद्यां → चरम पद्यां (anusvāra sandhi)
+  samasa: बहुविधमहामोहगहनाः — बहवः विधाः येषु ते बहुविधाः, ते च ते महामोहाः च बहुविधमहामोहाः,
+    तेषु गहनाः बहुविधमहामोहगहनाः (bahuvrīhi-karmadhāraya); पृथुमहितसत्त्वे — पृथु
+    च तत् महितं च पृथुमहितं, तत् सत्त्वं पृथुमहितसत्त्वं (karmadhāraya); द्वयरहितसंस्थां
+    — द्वयेन रहिता द्वयरहिता, द्वयरहिता संस्था यस्याः सा द्वयरहितसंस्था (bahuvrīhi)
+  bhavartha_en: May Govinda grant us the self-attained state devoid of duality, allowing
+    us to enter the final footstep of the enemy of Madhu, traversing the world again
+    and again. In this supreme Brahman, in the eternal abode of greatly glorious essence,
+    the paths dense with great delusion of many kinds dissolve, making the attainable
+    path accessible.
+  commentary: This verse beautifully encapsulates the journey of the soul towards
+    liberation. The 'footstep of Madhuripu' symbolizes the ultimate refuge in the
+    divine. The dissolution of 'paths dense with delusion' signifies the transcendence
+    of worldly attachments and ignorance, leading to the realization of the non-dual
+    Brahman, where the true self is established. The grace of Govinda is invoked to
+    bestow this profound state of being.
+  verse_num: 6
+- mula: 'श्यामवर्णेन न प्रेयानयं मेघश्यामो यदि भवति सौन्दर्यरसिकः।
+
+    तदा कृष्णो वर्णः किमुत भवतात् मोहकतमः।
+
+    प्रियस्संकर्षत्वात् स तु भवति वर्णेन न भवन्
+
+    स्वसिद्धां गोविन्दो द्वयरहित संस्थां प्रदिशताम्।।'
+  padavibhaga: श्यामवर्णेन | न | प्रेयान् | अयम् | मेघश्यामः | यदि | भवति | सौन्दर्यरसिकः
+    | तदा | कृष्णः | वर्णः | किमुत | भवतात् | मोहकतमः | प्रियः | सङ्कर्षत्वात् | सः
+    | तु | भवति | वर्णेन | न | भवन् | स्वसिद्धां | गोविन्दः | द्वयरहित | संस्थाम्
+    | प्रदिशताम्
+  anvaya: यदि अयम् मेघश्यामः श्यामवर्णेन प्रेयान् न भवति, तदा कृष्णः वर्णः किमुत मोहकतमः
+    भवतात्? प्रियः सङ्कर्षत्वात् सः तु वर्णेन भवन् न (भवति)। गोविन्दः स्वसिद्धां द्वयरहित
+    संस्थाम् प्रदिशताम्।
+  pratipadartha: श्यामवर्णेन = śyāmavarṇena (by dark color); न = na (not); प्रेयान्
+    = preyān (dearer); अयम् = ayam (this); मेघश्यामः = meghaśyāmaḥ (cloud-dark); यदि
+    = yadi (if); भवति = bhavati (becomes); सौन्दर्यरसिकः = saundaryarasikaḥ (one who
+    enjoys beauty); तदा = tadā (then); कृष्णः = kṛṣṇaḥ (dark, black); वर्णः = varṇaḥ
+    (color); किमुत = kimuta (how much more); भवतात् = bhavatāt (let it be); मोहकतमः
+    = mohakatamaḥ (most enchanting); प्रियः = priyaḥ (dear); सङ्कर्षत्वात् = saṅkarṣatvāt
+    (due to attraction); सः = saḥ (he); तु = tu (but); भवति = bhavati (becomes); वर्णेन
+    = varṇena (by color); न = na (not); भवन् = bhavan (existing); स्वसिद्धां = svasiddhāṃ
+    (self-established); गोविन्दः = govindaḥ (Govinda); द्वयरहित = dvayarahita (free
+    from duality); संस्थाम् = saṃsthām (state); प्रदिशताम् = pradiśatām (may he grant)
+  rupa_nishpatti: श्यामवर्णेन — śyāma varṇa, tṛtīyā vibhakti, eka vacana; प्रेयान्
+    — priya, su vibhakti, ekavacana; मेघश्यामः — megha iva śyāmaḥ, bahuvrīhi samāsa,
+    prathamā vibhakti, eka vacana; सौन्दर्यरसिकः — saundarye rasikaḥ, saptamī tatpuruṣa
+    samāsa, prathamā vibhakti, eka vacana; कृष्णः — √kṛṣ, nak pratyaya, prathamā vibhakti,
+    eka vacana; वर्णः — √vṛ, ṇa pratyaya, prathamā vibhakti, eka vacana; मोहकतमः —
+    mohaka + tama, prathamā vibhakti, eka vacana; सङ्कर्षत्वात् — saṅkarṣa + tva,
+    pañcamī vibhakti, eka vacana; स्वसिद्धां — sva siddha, karmadhāraya samāsa, dvitīyā
+    vibhakti, eka vacana; गोविन्दः — govindati iti govindaḥ, prathamā vibhakti, eka
+    vacana; द्वयरहित — dvayena rahita, tṛtīyā tatpuruṣa samāsa; संस्थाम् — sam + √sthā,
+    dvitīyā vibhakti, eka vacana; प्रदिशताम् — pra + √diś, lot lakāra, prathama puruṣa,
+    eka vacana
+  sandhi: प्रेयान्+अयम् → प्रेयानयम् (yaṇ sandhi); सः+तु → स तु (visarga lopa); किमुत+भवतात्
+    → किमुत भवतात् (no sandhi)
+  samasa: मेघश्यामः — मेघ इव श्यामः (meghaḥ iva śyāmaḥ), upamāna pūrvapada karmadhāraya;
+    सौन्दर्यरसिकः — सौन्दर्ये रसिकः (saundarye rasikaḥ), saptamī tatpuruṣa; द्वयरहित
+    — द्वयेन रहित (dvayena rahitaḥ), tṛtīyā tatpuruṣa
+  bhavartha_en: If this cloud-dark Lord is not dear due to His dark color, then how
+    much more enchanting should the dark color of Krishna be? The beloved Lord, being
+    attractive by nature, is not bound by color. May Govinda bestow upon us that self-established
+    state free from duality.
+  commentary: This verse beautifully contrasts the perceived limitation of dark color
+    with the boundless attraction of Krishna. It suggests that Krishna's allure transcends
+    physical attributes, arising from His inherent nature. The prayer seeks the attainment
+    of a state beyond duality, implying a union with the divine, where distinctions
+    of color and form cease to matter, and only pure, unadulterated love remains.
+  verse_num: 7
+- mula: 'सुवर्णविमानम्
+
+    विमानं सौवर्णं किमिह कुरुते बोधमनिशं
+
+    न चैते भावास्ते ऽमितपरिमितौ मानसुशकाः।
+
+    न वृद्धिह्रासौ सुच्छविरयिमतस्स्वात्मसुनिधेः
+
+    स्वसिद्धां गोविन्दो द्वयरहित संस्थां प्रदिशताम्।।'
+  padavibhaga: विमानम् | सौवर्णम् | किम् | इह | कुरुते | बोधम् | अनिशम् | न | च |
+    एते | भावाः | ते | अमितपरिमितौ | मानसुशकाः | न | वृद्धिह्रासौ | सुच्छविः | अयि
+    | अतः | स्वात्मसुनिधेः | स्वसिद्धां | गोविन्दः | द्वयरहित | संस्थाम् | प्रदिशताम्
+  anvaya: अयि सुच्छविः! सौवर्णं विमानम् इह किम् अनिशं बोधं कुरुते? च एते भावाः ते
+    अमितपरिमितौ मानसुशकाः न। अतः स्वात्मसुनिधेः वृद्धिह्रासौ न। गोविन्दः स्वसिद्धां
+    द्वयरहित संस्थाम् प्रदिशताम्।
+  pratipadartha: विमानम् = vimānam (airplane/chariot); सौवर्णम् = sauvarṇam (golden);
+    किम् = kim (what/why); इह = iha (here); कुरुते = kurute (does/makes); बोधम् =
+    bodham (knowledge/understanding); अनिशम् = aniśam (constantly); न = na (not);
+    च = ca (and); एते = ete (these); भावाः = bhāvāḥ (feelings/states); ते = te (those);
+    अमितपरिमितौ = amitaparimitau (immeasurable/measurable); मानसुशकाः = mānasuśakāḥ
+    (easily understood by the mind); न = na (not); वृद्धिह्रासौ = vṛddhihrāsau (increase
+    and decrease); सुच्छविः = succhaviḥ (O beautiful one); अयि = ayi (O); अतः = ataḥ
+    (therefore); स्वात्मसुनिधेः = svātmasunidheḥ (of the treasure of one's own self);
+    स्वसिद्धां = svasiddhāṃ (self-established); गोविन्दः = govindaḥ (Govinda); द्वयरहित
+    = dvayarahita (free from duality); संस्थाम् = saṃsthām (state/condition); प्रदिशताम्
+    = pradiśatām (may He grant)
+  rupa_nishpatti: विमानम् — √mā + lyuṭ, napuṃsaka, prathamā-ekavacana; सौवर्णम् —
+    suvarṇa + aṇ, napuṃsaka, prathamā-ekavacana; कुरुते — √kṛ, Ātm., lat, prathama-ekavacana;
+    बोधम् — √budh + ghञ्, puṃlliṅga, dvitīyā-ekavacana; अनिशम् — na + niśā, avyaya;
+    भावाः — √bhū + ghañ, puṃlliṅga, prathamā-bahuvacana; मानसुशकाः — mānasa + suśaka,
+    puṃlliṅga, prathamā-bahuvacana; वृद्धिह्रासौ — vṛddhi + hrāsa, puṃlliṅga, prathamā-dvivacana;
+    सुच्छविः — su + chavi, sambodhana-ekavacana; स्वात्मसुनिधेः — sva + ātma + sunidhi,
+    ṣaṣṭhī-ekavacana; स्वसिद्धां — sva + siddha, strīliṅga, dvitīyā-ekavacana; गोविन्दः
+    — go + vinda, puṃlliṅga, prathamā-ekavacana; द्वयरहित — dvaya + rahita, viśeṣaṇa;
+    संस्थाम् — √sthā + saṃ + kvip, strīliṅga, dvitīyā-ekavacana; प्रदिशताम् — pra
+    + √diś, lot, prathama-ekavacana
+  sandhi: कुरुते + बोधम् → कुरुते बोधम् (visarga sandhi); न + च → न च (ścuttva sandhi);
+    ते + अमित → ते ऽमित (pūrvarūpa sandhi); अतः + स्वात्म → अतस्स्वात्म (visarga sandhi)
+  samasa: अमितपरिमितौ — amitaḥ ca parimitaḥ ca, dvandva samāsa; स्वात्मसुनिधेः — svaḥ
+    eva ātmā, tasya sunidhiḥ, karmadhāraya-tatpuruṣa; वृद्धिह्रासौ — vṛddhiḥ ca hrāsaḥ
+    ca, dvandva samāsa; द्वयरहित — dvayena rahitaḥ, tṛtīyā-tatpuruṣa
+  bhavartha_en: O beautiful one, why does this golden chariot constantly create awareness
+    here? These feelings are not easily understood by the mind as measurable or immeasurable.
+    Therefore, there is no increase or decrease in the treasure of one's own self.
+    May Govinda grant us the self-established state that is free from duality.
+  commentary: This verse emphasizes the futility of seeking ultimate knowledge through
+    external means or sensory experiences. The 'golden chariot' symbolizes worldly
+    pursuits and the mind's attempts to grasp the infinite. True realization lies
+    within, in the self-established state of non-duality, which is beyond the fluctuations
+    of increase and decrease. The grace of Govinda is invoked to bestow this profound
+    understanding.
+  verse_num: 8
+- mula: 'सर्वधर्मपरित्यागस्त्यजेर्धर्माधर्मौ शरणमहमस्मीति वचनात्।
+
+    न कर्तव्यं किञ्चित् प्रभुरवति चेत्ते तव मतिः।
+
+    अनालस्याद्देवं भज निरतमात्मार्पणधिया
+
+    स्वसिद्धां गोविन्दो द्वयरहितसंस्थां प्रदिशताम्।।'
+  padavibhaga: सर्वधर्म | परित्यागः | त्यजेः | धर्म | अधर्मौ | शरणम् | अहम् | अस्मि
+    | इति | वचनात् | न | कर्तव्यम् | किञ्चित् | प्रभुः | अवति | चेत् | ते | तव | मतिः
+    | अनालस्यात् | देवम् | भज | निरतम् | आत्मार्पणधिया | स्व | सिद्धाम् | गोविन्दः
+    | द्वयरहित | संस्थाम् | प्रदिशताम्
+  anvaya: सर्वधर्मपरित्यागः (कुरु) । धर्माधर्मौ त्यजेः । अहम् शरणम् अस्मि इति वचनात्
+    (तथा कुरु) । प्रभुः अवति चेत् ते तव मतिः (अस्ति) किञ्चित् न कर्तव्यम् । अनालस्यात्
+    आत्मार्पणधिया निरतम् देवम् भज । गोविन्दः स्वसिद्धां द्वयरहितसंस्थां प्रदिशताम्
+    ।
+  pratipadartha: सर्वधर्मपरित्यागः = sarva-dharma-parityāgaḥ (abandonment of all duties);
+    त्यजेः = tyajeḥ (you should abandon); धर्म = dharma (righteousness); अधर्मौ =
+    adharmau (and unrighteousness); शरणम् = śaraṇam (refuge); अहम् = aham (I); अस्मि
+    = asmi (am); इति = iti (thus); वचनात् = vacanāt (from the words); न = na (not);
+    कर्तव्यम् = kartavyam (to be done); किञ्चित् = kiñcit (anything); प्रभुः = prabhuḥ
+    (the Lord); अवति = avati (protects); चेत् = cet (if); ते = te (your); तव = tava
+    (your); मतिः = matiḥ (mind/intention); अनालस्यात् = anālasyāt (without laziness);
+    देवम् = devam (the Lord); भज = bhaja (worship); निरतम् = niratam (constantly);
+    आत्मार्पणधिया = ātma-arpaṇa-dhiyā (with the mind of self-surrender); स्व = sva
+    (own); सिद्धाम् = siddhām (perfected); गोविन्दः = govindaḥ (Govinda); द्वयरहितसंस्थां
+    = dvaya-rahita-saṃsthām (state free from duality); प्रदिशताम् = pradiśatām (may
+    He grant)
+  rupa_nishpatti: 'त्यजेः — √tyaj (to abandon), lot, madhyama-puruṣa, eka-vacana
+
+    अस्मि — √as (to be), lat, uttama-puruṣa, eka-vacana
+
+    कर्तव्यम् — √kṛ (to do), tavya-pratyaya, neuter, prathamā-vibhakti, eka-vacana
+
+    अवत‍ि — √ava (to protect), lat, prathama-puruṣa, eka-vacana
+
+    भज — √bhaj (to worship), lot, tvam-madhyama-puruṣa, eka-vacana
+
+    प्रदिशताम् — √diś (to show), lot, prathama-puruṣa, eka-vacana'
+  sandhi: 'सर्वधर्म + परित्यागः → सर्वधर्मपरित्यागः (savarṇa-dīrgha)
+
+    चेत् + ते → चेत्ते (elision)
+
+    धर्म + अधर्मौ → धर्माधर्मौ (savarṇa-dīrgha)'
+  samasa: 'सर्वधर्मपरित्यागः — सर्वेषां धर्माणाम् परित्यागः, ṣaṣṭhī-tatpuruṣa
+
+    आत्मार्पणधिया — आत्मनः अर्पणम्, तेन धिया, ṣaṣṭhī-tatpuruṣa followed by tṛtīyā-tatpuruṣa
+
+    द्वयरहितसंस्थां — द्वयेन रहिता संस्था, tṛtīyā-tatpuruṣa'
+  bhavartha_en: Abandon all your prescribed duties. Forsake both righteousness and
+    unrighteousness, understanding that 'I am your refuge' is the Lord's promise.
+    If you have the conviction that the Lord protects, then there is nothing else
+    to be done. Without laziness, constantly worship the Lord with a mind dedicated
+    to self-surrender. May Govinda bestow upon you the perfected state free from duality.
+  commentary: This verse emphasizes complete surrender (śaraṇāgati) to the Lord. By
+    relinquishing all dharmas and adharmas, one transcends the duality of good and
+    bad, right and wrong. The verse advocates unwavering devotion and self-surrender
+    as the means to attain a state of non-duality (advaita), where the individual
+    self merges with the divine. The grace of Govinda is invoked to grant this ultimate
+    realization.
+  verse_num: 9
+- mula: 'इयं सुभ्रूस्तन्वी जनयति मुदं मोहकुतुकं
+
+    युवा स्निग्धो वा तौ तरुणरसिकावेष तु पुनः।
+
+    पतिस्सौन्दर्याणा-मतनुतत-माप्नुष्व मनसा
+
+    स्वसिद्धां गोविन्दो द्वयरहित संस्थां प्रदिशताम्।।'
+  padavibhaga: इयं | सुभ्रूः | तन्वी | जनयति | मुदं | मोहकुतुकं | युवा | स्निग्धः
+    | वा | तौ | तरुणरसिकावेषः | तु | पुनः | पतिः | सौन्दर्याणां | अतनुततं | आप्नुष्व
+    | मनसा | स्वसिद्धां | गोविन्दः | द्वयरहित | संस्थां | प्रदिशताम्
+  anvaya: इयं सुभ्रूः तन्वी मुदं मोहकुतुकं जनयति। युवा स्निग्धः वा तौ पुनः तरुणरसिकावेषः
+    तु। सौन्दर्याणां पतिः अतनुततं मनसा आप्नुष्व। गोविन्दः स्वसिद्धां द्वयरहित संस्थां
+    प्रदिशताम्।
+  pratipadartha: इयं = iyam (this); सुभ्रूः = subhrūḥ (beautiful-browed woman); तन्वी
+    = tanvī (slender); जनयति = janayati (generates); मुदं = mudaṃ (joy); मोहकुतुकं
+    = mohakutukaṃ (delusion and curiosity); युवा = yuvā (young man); स्निग्धः = snigdhaḥ
+    (affectionate); वा = vā (or); तौ = tau (those two); तरुणरसिकावेषः = taruṇarasikāveṣaḥ
+    (appearance of young enjoyers); तु = tu (but); पुनः = punaḥ (again); पतिः = patiḥ
+    (lord); सौन्दर्याणां = saundaryāṇāṃ (of beauties); अतनुततं = atanutataṃ (very
+    extensive); आप्नुष्व = āpnuṣva (attain); मनसा = manasā (by mind); स्वसिद्धां =
+    svasiddhāṃ (self-realized); गोविन्दः = govindaḥ (Govinda); द्वयरहित = dvayarahita
+    (free from duality); संस्थां = saṃsthāṃ (state); प्रदिशताम् = pradiśatām (may
+    bestow)
+  rupa_nishpatti: सुभ्रूः — सुष्ठु भ्रुवौ यस्याः सा, बहुव्रीहिः, स्त्रीलिङ्गः, प्रथमा
+    विभक्तिः, एकवचनम्; तन्वी — तनु + ङीप्, स्त्रीलिङ्गः, प्रथमा विभक्तिः, एकवचनम्;
+    जनयति — √जन्, हेतुमण्णिच्, लट्, प्रथमपुरुषः, एकवचनम्; गोविन्दः — √गम् + इन् +
+    ड, उपपदसमासः, प्रथमा विभक्तिः, एकवचनम्; प्रदिशताम् — प्र + √दिश, लोट्, प्रथमपुरुषः,
+    एकवचनम्
+  sandhi: सुभ्रूः+तन्वी → सुभ्रूस्तन्वी (visarga stva sandhi); सौन्दर्याणां+अतनुतत
+    → सौन्दर्याणा-मतनुतत (pūrvarūpa sandhi)
+  samasa: मोहकुतुकं — मोहस्य कुतुकं, षष्ठी तत्पुरुषः; तरुणरसिकावेषः — तरुणः रसिकः,
+    तरुणरसिकः, तरुणरसिकस्य वेषः, षष्ठी तत्पुरुषः; द्वयरहित — द्वयेन रहितः, तृतीया
+    तत्पुरुषः
+  bhavartha_en: This beautiful-browed, slender woman generates joy and curious delusion.
+    The young man, affectionate, or those two appearing as young enjoyers, but again.
+    Attain with your mind the very extensive lord of beauties. May Govinda bestow
+    the self-realized state free from duality.
+  commentary: This verse describes the allure of beauty and the potential for delusion
+    it creates. It then directs the mind towards attaining the ultimate beauty, the
+    divine, which transcends duality. The verse suggests that true fulfillment lies
+    not in fleeting worldly attractions but in the self-realized state bestowed by
+    Govinda, a state free from the illusion of separation.
+  verse_num: 10
+map_status: draft
 ---

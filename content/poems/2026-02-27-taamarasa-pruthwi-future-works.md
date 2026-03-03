@@ -71,4 +71,28 @@ translation_te: '1. ఇతి వద తామరసం నజ్జాద్య
   ఆ హరియే లోకాలకు గతి. స్మరణ, స్తుతి, వినయపూర్వక ప్రార్థనల ద్వారా సంతోషింపజేయబడినవాడై,
   మనవంటి వారి పాపభారాన్ని తొలగించును గాక!'
 translation_status: approved
+map:
+- mula: इति वद तामरसं नजजाद्यः।
+  padavibhaga: इति | वद | तामरसं | नजजाद्यः |
+  anvaya: नजजाद्यः तामरसं इति वद ।
+  pratipadartha: इति = iti (thus); वद = vada (speak); तामरसं = tāmarasaṃ (lotus);
+    नजजाद्यः = najajādyaḥ (Najjādya)
+  rupa_nishpatti: वद — √vad (to speak), imperative, second person, singular; तामरसं
+    — tāmarasa (lotus), accusative, singular; नजजाद्यः — najajādyaḥ, proper noun,
+    nominative, singular
+  sandhi: ''
+  samasa: ''
+  bhavartha_en: Najjādya speaks thus about the lotus. Najjādya is saying something
+    that involves or concerns the lotus.
+  commentary: This verse is a simple statement. The name 'Najjādya' is unusual and
+    may carry a specific significance within the larger work. The verse sets the stage
+    for further elaboration on the lotus, potentially exploring its symbolism or qualities.
+  verse_num: 1
+- mula: "स्फुटसुषमा मकरन्द मनोज्ञं\tव्रजललना नयनालिनिपीतम्।\nतव मुखतामरसं मुरशत्रो\t\
+    \tहृदय तडाग विकाशि ममास्तु।\nहरिहर धातृ समाहृत रूपम्।\nजसौ जसयला वसुग्रहयतिश्च\
+    \ पृथ्वी गुरुः।\nदुरन्तदनुजेश्वर - प्रकर दुस्थ पृथ्वीभरम्।\nजहार निजलीलया - यदुकुलेवतीर्याशु\
+    \ यः।\nस एष जगतां गतिः - दुरित भार मस्मादृशाम्\nहरिष्यति हरि स्स्मृति - स्तवन\
+    \ चाटुभिस्तोषितः।।"
+  error: API call failed
+map_status: draft
 ---

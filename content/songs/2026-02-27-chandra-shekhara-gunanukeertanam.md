@@ -2,7 +2,7 @@
 title: अभोगि राग कीर्तनम् – चन्द्रशेखर गुण
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A devotional kīrtanam (sung narrative hymn) dedicated to Śiva in his form
   as Candraśekhar (the moon-crowned god), structured as a daily recitative praising
   his virtues and seeking liberation from worldly suffering. The composition interweaves
@@ -46,5 +46,5 @@ translation_te: "1. శివ శివ హర హర\n   చంద్రశే�
   \ గాక!\n\n2. నీలకంఠుని శుభపాద సేవనము\n   దురితములన్నిటిని తొలగించును గాక!\n\n3.\
   \ కాలకాలుని అనునిత్యము చింతించెదను;\n   నాకు శివ సంతతిని అనుగ్రహించును గాక!\n\n\
   4. సాంబమూర్తిని ఇక్కడ స్మరించెదను;\n   భవబంధ విముక్తి పరమమగు గాక!"
-translation_status: draft
+translation_status: approved
 ---

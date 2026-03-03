@@ -2,7 +2,7 @@
 title: "त्रिशतिनुता\t\tत्रिदशमता\t\tत्रिभिरनिता\t\tत्रिपुटगता"
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A bilingual devotional composition in Sanskrit and Telugu that celebrates
   the Divine Mother through repetitive invocational phrases structured around the
   number three (tri-), a sacred numeral in Hindu metaphysics. The work demonstrates
@@ -74,5 +74,5 @@ translation_te: '1. మూడు వందల నామాలతో కీర్
   మాకు శుభము కలుగజేయుగాక;
 
   6. సత్ చిత్ ఆనందములను ప్రసాదించునది, సత్ చిత్ ఆనందములను ప్రసాదించునది.'
-translation_status: draft
+translation_status: approved
 ---

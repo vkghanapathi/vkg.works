@@ -2,7 +2,7 @@
 title: गुरु सिद्धि स्तोत्रम्
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: Guru Siddhi Stotram is a devotional hymn celebrating the eight supernatural
   perfections (ashta-siddhis) embodied in the spiritual preceptor. Organized as a
   series of prayers addressing each siddhi—starting with Garima (weightiness/majesty),
@@ -222,5 +222,5 @@ translation_te: 'గురు సిద్ధి స్తోత్రమ్
   వారి కోసం, తన స్వంత పనులను నెరవేర్చుతాడు. ఈ విధంగా, సద్గురువు యొక్క ప్రాప్తి సిద్ధి
   యొక్క స్వాధీనం ప్రకాశిస్తుంది. గురువు, ప్రభువు, మాచే స్తుతించబడి, సత్-చిత్-ఆనందమును
   రక్షించువాడు అగుగాక.'
-translation_status: draft
+translation_status: approved
 ---

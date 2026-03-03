@@ -2,7 +2,7 @@
 title: "तालप्रवाहः 3.1 - \tअटतालम् – तिस्रजातिः \tमलहरि रागः"
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: This composition in Mālahari rāga set to Aṭatāla in tisra-jāti presents
   a devotional song structured in pallavi-anupallavi-caraṇa form with elaborate sāraṇgati
   (melodic notation) and rhythmic specifications. The work celebrates guru-sevā (discipleship
@@ -116,5 +116,5 @@ translation_te: "## తాళప్రవాహః 3.1 - ఆటతాళం – 
   \ కష్టాల గుంపు, మలహరి గురువుల సేవలో ఎల్లప్పుడూ శ్రద్ధగా ఉండాలి. మనస్సులో మోసపూరితమైన\
   \ ఆనందం ఉండకూడదు. ఓ శిష్యా! గురువుల సేవ యొక్క భారాన్ని మోయుము. గురువుల మార్గం, గురువుల\
   \ మార్గం, ఉత్తమ మార్గం, ఉత్తమ మార్గం చేరుకో. ఈ మార్గంలో శాశ్వతంగా సుఖాన్ని పొందుదువు.*"
-translation_status: draft
+translation_status: approved
 ---

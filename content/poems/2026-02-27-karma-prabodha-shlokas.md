@@ -2,7 +2,7 @@
 title: कर्मप्रबोध ग्रन्थविषयः
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: Karmaprabodha Granthavishayah is a didactic poem on the hidden principles
   (tattva) of Vedic ritual practice, particularly the relationship between ritual
   performance (karma) and ultimate spiritual attainment. The work proposes that the
@@ -66,5 +66,5 @@ translation_te: '1. బ్రాహ్మణస్పతి, జ్ఞాని�
   పదే పదే తర్కమును ఉపయోగించి, స్థాపితమైన సిద్ధాంతము అద్భుతంగా ఉద్భవించుచున్నది. శ్రుతి
   యొక్క పూర్వ భాగములోని కర్మ విధులను వేదాంతమును సూచించుచున్నవి. పరోక్షముగా అనేక విధాలుగా
   మనలను మేల్కొల్పుచున్నవి. కావున ఆ సత్యమును వెతకుదము.'
-translation_status: draft
+translation_status: approved
 ---

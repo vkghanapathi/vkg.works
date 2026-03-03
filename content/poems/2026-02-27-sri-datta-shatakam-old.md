@@ -2,7 +2,7 @@
 title: अवधूत दत्तपीठाधीश्वराणां परमपूज्यानां
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: The Śrī Datta Śatakam is a devotional hymnic composition of one hundred
   Sanskrit verses (ślokas) dedicated to Lord Dattātreya, composed by Vamshi Krishna
   Ghanapāṭhī and consecrated during the Devī Śaraṇ Navratri festival and Sarasvatī
@@ -242,5 +242,5 @@ translation_te: "పరమ పూజ్యులైన అవధూత దత్
   \ దత్తుని భజిస్తున్నాను, నా హృదయంలో ఎల్లప్పుడూ దయతో ఉండువాడు,\n    కొండచిలువకు తక్కువగా\
   \ లేదా ఎక్కువగా ఆహారం లభించినా సంతోషంగా ఉండును,\n    తాను తెచ్చిన ఆహారంతో సంతోషంగా\
   \ ఉండును, వ్రతమును ఆచరించువాడు."
-translation_status: draft
+translation_status: approved
 ---

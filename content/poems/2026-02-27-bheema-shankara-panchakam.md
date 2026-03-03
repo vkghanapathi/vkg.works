@@ -2,7 +2,7 @@
 title: भीमशङ्कर पञ्चकम्
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: Bhīmaśaṅkar Pañcakam is a devotional stotra (hymn) of five verses composed
   by Vaṃśī Kṛṣṇa Ghanapāṭhī in praise of Bhīmaśaṅkara, one of the twelve principal
   Jyotirliṅgas of Śiva. The work employs classical Sanskrit poetic conventions to
@@ -476,7 +476,7 @@ map:
     in the forest associated with his name signifies his accessibility and continued
     grace.
   verse_num: 10
-map_status: draft
+map_status: approved
 translation_en: '1. I worship Bhima Shankara, bestower of dense bliss and majestic
   glory; I seek refuge in Bhima Shankara, the non-dual destroyer of the fear of enemies.
   I contemplate Bhima Shankara for the increase of supreme consciousness; I sacrifice
@@ -544,5 +544,5 @@ translation_te: '1. ఘన సౌఖ్య వైభవ దాయకుడగు
   దర్శన సిద్ధి కలుగును.
 
   ఓం నమశ్శివాయ'
-translation_status: draft
+translation_status: approved
 ---

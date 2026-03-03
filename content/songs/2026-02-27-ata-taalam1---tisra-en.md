@@ -2,7 +2,7 @@
 title: "tālapravāhaḥ 3.1 - \taṭatālam – tisrajātiḥ \tmalahari rāgaḥ"
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A devotional composition in Malahari rāga set to āṭa tāla with tisrajāti
   rhythmic structure, demonstrating the integration of musical notation with Sanskrit
   devotional poetry. The work presents a structured three-part song form (pallavi,
@@ -70,5 +70,5 @@ translation_te: "1.  **భావార్థః:**\n    ఉపచరణం ప�
   \n    *భావము:* ఓ శిష్యుడా! నీవు ఎంతటి సుఖమైన ప్రదేశములో ఉన్నప్పటికి గురువు సేవ చేయుటకు\
   \ ఆసక్తి కలిగి ఉండు. గురువు సేవను భారముగా భావించకు. గురువు యొక్క గొప్ప పదవిని, శుభకరమైన\
   \ పదవిని పొంది శాశ్వత సుఖమును పొందుదువు గాక!"
-translation_status: draft
+translation_status: approved
 ---

@@ -2,7 +2,7 @@
 title: "तालप्रवाहः 3.2 - \tअटतालम् – चतुरस्रजातिः \tबिलहरि रागः"
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: This is a complete musical composition (kriti) in Bilhari raga, set in Ata
   tala with Chaturasra jati metre. The work exemplifies Dr. Vamshi Krishna's systematic
   approach to Carnatic music pedagogy through his Tālapravāha series, presenting a
@@ -135,5 +135,5 @@ translation_te: "## తాళప్రవాహః 3.2 - అటతాళం – 
   \ ఈ విధముగా, నిరంతరము.\nకరిగించు నేర్పు, మూడు లోకముల తేలికదనము.\nసులభమైన ప్రవేశము\
   \ యొక్క గొప్పతనము, సమాన రక్షణ యొక్క గౌరవము.\nవివేచించండి, అర్థం చేసుకోండి, ఈ గొప్ప\
   \ ఆనందమును."
-translation_status: draft
+translation_status: approved
 ---

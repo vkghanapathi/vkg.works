@@ -2,7 +2,7 @@
 title: मनुष्यगन्धदोष निवारणम्
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: This liturgical composition by Dr. Vamshi Krishna Ghanapāṭhī draws upon
   Rigvedic and Dharmaśāstra sources to construct a ritual remedy (निवारणम्) for the
   spiritual impurity termed 'human odour' (मनुष्यगन्धदोष). The work assembles Vedic
@@ -141,5 +141,5 @@ translation_te: '1. తపశ్శక్తి ప్రభావమున మ�
 
   1) ఐతరేయ బ్రాహ్మణము 3.13.30, 2) శా.సం.మ.4.5.50 ఏవా పిత్రే, శా.సం.10.5.63 యేభ్యో
   మాతా, మనుష్యగంధదోషనివారణవిధిః – ధర్మ సింధుః।'
-translation_status: draft
+translation_status: approved
 ---

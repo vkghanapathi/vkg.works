@@ -2,7 +2,7 @@
 title: 25 श्रीनिवासाष्टकम्
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A devotional Sanskrit and Telugu octet (aṣṭakam) composed by Dr. Vamshi
   Krishna Ghanapāṭhī that celebrates Śrīnivāsa (Viṣṇu) through philosophical and theological
   reflection. The poem integrates Vedantic metaphysics with Vaiṣṇava bhakti, exploring
@@ -152,5 +152,5 @@ translation_te: '1. బృహత్తు మహావిష్ణు మధ్�
 
   ఫలశ్రుతి: ఇది శ్రీనివాసాష్టకం విష్ణు తత్త్వ ప్రబోధాత్మకం, పఠించిన పుణ్యకర్ములకు
   దైహికార్ధములు, అజస్ర ప్రశస్తత, ఘనప్రజ్ఞత, సచ్చిదానందత కలుగును.'
-translation_status: draft
+translation_status: approved
 ---

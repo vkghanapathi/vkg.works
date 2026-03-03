@@ -2,7 +2,7 @@
 title: अवधूत दत्त पीठाधिपतीनां जगद्गुरूणां
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A Sanskrit encomium composed by Dr. Vamshi Krishna Ghanapāṭhī in honour
   of Shri Kuppa Venkata Krishnamurthy on the occasion of his sixtieth-birthday celebration
   (shashtiyabda-pūrti). The three-verse poem praises Krishnamurthy's mastery of Vedic
@@ -107,5 +107,5 @@ translation_te: '1. కౌండిన్యాన్వయ సుప్రద�
   మీ శిష్యుడు,
 
   వంశీకృష్ణ ఘనపాఠీ'
-translation_status: draft
+translation_status: approved
 ---

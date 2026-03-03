@@ -2,7 +2,7 @@
 title: కాసారత్రయ మధ్యదేశ లసితం సన్మార్గ సన్ధాయకం
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A devotional verse in Telugu and Sanskrit composed by Dr. Vamshi Krishna
   Ghanapāṭhī celebrating the establishment of a Sri Venkateswara temple in Detroit,
   North America. The work exemplifies the diaspora transmission of Vedic-Puranic devotional
@@ -43,7 +43,7 @@ translation_te: "1. కాసారత్రయ మధ్యదేశమున �
   \   దట్టమైన శరీరము గలవాడు, పాపముల సమూహమును నాశనము చేయువాడు, డెట్రాయిట్ నగరమున నివసించువాడు;\n\
   2. ఉత్తర అమెరికాను తన పాదాలతో అలంకరించిన శ్రీ వేంకటేశ్వరుడు,\n   వరముల నొసంగువాడు,\
   \ ఉత్తమోత్తమ గురువు, సచ్చిదానంద స్వరూపుడు, అట్టి ప్రభువును నేను కొనియాడుచున్నాను."
-translation_status: draft
+translation_status: approved
 map:
 - mula: 'कासारत्रय मध्यदेश लसितं सन्मार्ग सन्धायकम्।
 
@@ -93,5 +93,5 @@ map:
     ''सच्चिदानन्ददम्'', encapsulates the ultimate goal of spiritual practice: the
     attainment of truth, consciousness, and bliss through the grace of the Lord.'
   verse_num: 1
-map_status: draft
+map_status: approved
 ---

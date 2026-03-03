@@ -2,7 +2,7 @@
 title: चर्करीति सृष्टमलीकं
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A devotional song sequence composed in Sanskrit, invoking the divine feminine
   principle as Kālīkā (the Dark Mother). The work employs rhythmic syllabic patterns
   and anaphoric repetition of the refrain 'Mātṛkā mama Kālīkā' (My Mother Kālīkā)
@@ -67,5 +67,5 @@ translation_te: '1. చర్కరీతి సృష్టమలీకం త�
   4. గ్రాహయామి తన్మయభావం సాధ్యతాం తు సచ్చిదానందా
 
   మాత్రిక మమ కాలిక'
-translation_status: draft
+translation_status: approved
 ---

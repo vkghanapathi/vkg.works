@@ -2,7 +2,7 @@
 title: व्याकरणरूप वाग्देवता स्तुतिः
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A devotional hymn in Sanskrit verse that personifies grammar (vyākaraṇa)
   as a form of the goddess Vāg Devī (the Goddess of Speech). The poem celebrates the
   generative power of grammatical rules and word-formation, demonstrating how the
@@ -48,5 +48,5 @@ translation_te: 1. ఎవరి ద్వారా వ్యాకరణ రూ�
   యొక్క పుష్టిని పొందుతాయో, మరియు ఎవరు, అంతరంగ ఆలోచన మరియు వాక్కుల కలయిక ద్వారా అనేక
   విధాలుగా, ఈ పదాలకు ఏకార్థ భావాన్ని కలిగిస్తారో - ఆమె వ్యాకరణం, అన్ని శాస్త్రాల రాజు,
   ఆమె నుండి తద్ధితాలు, తత్-కృతులు మరియు వాక్కు యొక్క అన్ని రూపాంతరాలు ప్రవహిస్తాయి.
-translation_status: draft
+translation_status: approved
 ---

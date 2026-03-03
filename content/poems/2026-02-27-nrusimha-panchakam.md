@@ -2,7 +2,7 @@
 title: पञ्चकम्
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: Pañcakam is a Sanskrit devotional hymn of five stanzas addressed to Narasiṃha,
   the Man-Lion avatar of Viṣṇu, structured around a repeated refrain of obeisance.
   Each verse petitions the deity for specific spiritual blessings—removal of worldly
@@ -81,5 +81,5 @@ translation_te: '1. ఓ మహాప్రభూ, లోకములోని �
 
   సచ్చిదానంద పూర్ణత్వమును పొందగోరి, నృహరి యొక్క ఈ పంచకమును భక్తితో పఠించినవాడు తప్పక
   పొందును.'
-translation_status: draft
+translation_status: approved
 ---

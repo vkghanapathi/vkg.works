@@ -2,7 +2,7 @@
 title: अकाल मोक्षस्तूप पूजा मन्त्रः
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A ritual mantra composed by Dr. Vamshi Krishna Ghanapāṭhī invoking divine
   intervention and liberation (mokṣa) for those who die prematurely or inauspiciously.
   The mantra addresses the suffering of those afflicted by divine calamities, untimely
@@ -71,7 +71,7 @@ map:
     and making donations to liberate these suffering souls from their ghostly existence,
     allowing them to attain a better state.
   verse_num: 1
-map_status: draft
+map_status: approved
 translation_en: '1. May those who have perished from afflictions caused by divine
   forces, or from obstacles, struck down by untimely death, bitten by Time wandering
   according to destiny;
@@ -85,5 +85,5 @@ translation_te: '1. ఎవరైతే దైవిక శక్తుల వల
 
   2. మరియు సంస్కారం లేనివారై ప్రేత రూపంలో బాధపడుతున్నారో, వారందరూ నాచే సమర్పించబడిన
   ఈ పూజ ద్వారా తరింపబడగలరు.'
-translation_status: draft
+translation_status: approved
 ---

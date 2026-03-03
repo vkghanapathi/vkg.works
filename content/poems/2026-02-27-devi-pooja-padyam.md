@@ -2,7 +2,7 @@
 title: षोडश दीपः
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: Ṣoḍaśa Dīpaḥ (The Sixteen Lamps) is a devotional poem cycle composed by
   Dr. Vamshi Krishna Ghanapāṭhī that celebrates the divine feminine principle through
   luminous imagery. The work presents a series of meditative verses invoking Umā/Devī
@@ -117,7 +117,7 @@ map:
     The 'darśana' aspect emphasizes a deeper, experiential understanding rather than
     mere intellectual knowledge.
   verse_num: 3
-map_status: draft
+map_status: approved
 translation_en: "1.  The light that is the very form of the blessed field bestowed\
   \ by the grace of the Ṣoḍaśī mantra, shines forth exceedingly. Śrī Mātā, auspicious\
   \ to behold, is radiantly manifest.\n\n2.  (Behold the Light of the Stars)\n   Her\
@@ -128,5 +128,5 @@ translation_te: "1. షోడశీ మంత్రము యొక్క అన
   \n2. (నక్షత్ర దీప దర్శనం)\n   జ్యోతిర్మయురాలు, దేవతలచే పూజింపబడేది, పుణ్యవంతుల లోకాన్ని\
   \ ప్రసాదించేది అయిన ఉమాదేవిని, నక్షత్రాల వంటి కాంతులతో ప్రకాశించే దీపాలతో ఎల్లప్పుడూ\
   \ చూద్దాము."
-translation_status: draft
+translation_status: approved
 ---

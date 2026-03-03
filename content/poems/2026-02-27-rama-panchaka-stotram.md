@@ -2,7 +2,7 @@
 title: राम पञ्चक स्तोत्रम्  Rama Panchaka Stotram
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: Rāma Pañcaka Stotram is a devotional hymn composed by Dr. Vamshi Krishna
   Ghanapāṭhī in Sanskrit, consisting of five verses (pañcaka) honouring Lord Rāma.
   Composed specifically for the inaugural Rāma Navamī celebration at the new Ayodhya
@@ -87,5 +87,5 @@ translation_te: "1. జయము జయము రాముడు ధర్మ �
   \ పఠింతురుగాక మహాశయుల్!\nజయ జయ శ్రీరామ!\n- వంశీకృష్ణ ఘనపాఠీ, మైసూరు\nఅయోధ్య - శ్రీరామ\
   \ జన్మక్షేత్రమున నూతన దేవాలయమున ప్రథమ శ్రీరామనవమి శుభావసరమున\nశ్రీరామచరణారవింద యుగళమునకు\
   \ సమర్పితము."
-translation_status: draft
+translation_status: approved
 ---

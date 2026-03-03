@@ -2,7 +2,7 @@
 title: సుబ్రహ్మణ్య ప్రార్థనమ్
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A devotional prayer composition in Telugu and Sanskrit honouring Subrahmanya
   (Murugan/Skanda), the six-faced son of Śiva, followed by an invocational hymn to
   Gāyatrī Devī. The work combines personal petitionary prayers with recitation of
@@ -83,5 +83,5 @@ translation_te: '1. సుబ్రహ్మణ్య ప్రార్థన�
   3. తేజస్సు కొరకు, శక్తి కొరకు, మరియు దేవతల నివాసము కొరకు,
 
   బలము కొరకు, ప్రకాశము కొరకు, లోక శ్రేయస్సు కొరకు దేవిని భజింతును.'
-translation_status: draft
+translation_status: approved
 ---

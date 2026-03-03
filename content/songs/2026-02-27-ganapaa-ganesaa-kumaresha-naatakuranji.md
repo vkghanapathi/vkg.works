@@ -2,7 +2,7 @@
 title: Naatakuranji - Kumaaresha
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: This is a devotional song sequence from the Naatakuranji collection dedicated
   to Kumaresha (a form of Lord Shiva). The work employs swarita notation (syllabic
   solmization patterns using sa-ri-ga-ma-pa-dha-ni-sa) interwoven with Sanskrit devotional
@@ -63,5 +63,5 @@ translation_te: "1. మగసా, మగసా, సనిదనిప, దాన
   \ సనిదమా, దనిసరిగా!\n గణపతిగురో, సుగుణదా, గుణగణ మణే, శమధనం, మనసి కురు తా!\n\nగమనిదనిసా\
   \ దనిసరి గమా, మగస నిదమగసా, గసనిద మగసా!\nదుపకృతిమహో, దినదిన మిమాం, విమల విపులతమం,\
   \ సులలిత సుభగం!\n\nసనిద మగసా నిద మగ సా దమగసా!\nవిబుధ మహితం, దిశ హృది మే ఘనముదమ్!"
-translation_status: draft
+translation_status: approved
 ---

@@ -2,7 +2,7 @@
 title: नष्टद्रव्य लाभस्तोत्रम् (कार्तवीर्यार्जुन अष्टकम्)
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: An eight-verse devotional hymn (aṣṭaka) addressed to Kārtavīrya Arjuna,
   the legendary Haihaya king and an avatāra of Viṣṇu, petitioning him for the recovery
   of lost wealth and possessions. Composed in Sanskrit with a Telugu recension, the
@@ -121,5 +121,5 @@ translation_te: 'నష్ట ద్రవ్య లాభ స్తోత్ర
   స్వనష్టవస్తు లాభాయ కార్తవీర్యార్జునాష్టకమ్।
 
   అష్టవారం పఠేద్భక్త్యా దత్తమంత్రపరాయణః।।'
-translation_status: draft
+translation_status: approved
 ---

@@ -2,7 +2,7 @@
 title: 11. ओम्
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A devotional hymn of four stanzas composed in Sanskrit with a parallel Telugu
   rendering, addressing the Divine Mother (Bhagavatī) and invoking her grace through
   the sacred syllable Hrīṃ. The poem synthesizes Tantric philosophy with Advaitic
@@ -83,7 +83,7 @@ translation_te: '1. కల్యాణియు, పరమేశ్వరున�
   ధనమును పొందుటకు, ఆమె రాజసి. హ్రీం బీజాక్షర తత్త్వమును శీఘ్రముగా పొందుదురు గాక; సాత్విక
   వాక్కు వృద్ధి చెందును గాక; ఓం, ఉమ, త్రిగుణాత్మిక, సచ్చిదానంద స్వరూపిణి నన్ను చేయుదు
   గాక!'
-translation_status: draft
+translation_status: approved
 map:
 - mula: "11. ओम्\nकल्याणीं परमेश्वरस्य  करुणां यस्संस्मरेत् सर्वदा\nएधेतैष  नवस्वहस्सु\
     \ नियमै-राराधयेत्  श्रद्धया\nईक्षित्री भविता(आ)श्रितेषु जननी प्रेमादरालंबना\n\
@@ -97,5 +97,5 @@ map:
     \ मे त्वर्थाप्तये राजसी।\nह्रींबीजा(अ)क्षर तत्त्व.माप्तु मचिरं वाक् सात्विकी श्रीयते\n\
     ओं कुर्यादथ मा.मुमा त्रिगुणका श्री सच्चिदानन्दने \t4"
   error: API call failed
-map_status: draft
+map_status: approved
 ---

@@ -2,7 +2,7 @@
 title: वेदनिधिप्रशस्ति ग्रहणम् - अन्तरङ्गाविष्कारः
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A devotional praise poem (stotra) commemorating Dr. Vamshi Krishna's engagement
   with the Veda-Nidhis (collections of Vedic knowledge) and his spiritual journey
   under the guidance of his guru, Śrī Datta Vijayānanda-tīrtha. The work celebrates
@@ -87,5 +87,5 @@ translation_te: '1. వేదనిధి ప్రశస్తిని పొ�
 
   6. అనంత విద్య, వేదముల నుండి తెలుసుకోవలసినది చాలా ఉంది, గురువు నుండి ప్రేరణ లభిస్తుంది;
   నేను ఆ మార్గములో స్థిరముగా ఉందును గాక, మరియు సత్ చిత్ ఆనందమును పొందుదును గాక.'
-translation_status: draft
+translation_status: approved
 ---

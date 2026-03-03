@@ -2,7 +2,7 @@
 title: जन्मोत्सव शुभाशंसनम्
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A Sanskrit verse composition celebrating the thirty-fourth birth anniversary
   of an honoured individual, composed in the classical stotram (laudatory hymn) tradition.
   The poem invokes blessings from celestial beings and philosophical principles, requesting
@@ -49,5 +49,5 @@ translation_te: '1. ముప్పైమూడు దేవతల స్తు�
   నిండిన ఈ సందర్భంలో, మీకు పర్వత శిఖరం వలె స్థిరమైన, పరిపూర్ణమైన బ్రహ్మస్థితిని ప్రసాదించుగాక.
 
   వికృతి సంవత్సరం, పుష్య శుక్ల అష్టమి, 12.1.2011'
-translation_status: draft
+translation_status: approved
 ---

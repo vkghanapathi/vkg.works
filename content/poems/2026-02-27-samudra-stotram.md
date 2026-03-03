@@ -2,7 +2,7 @@
 title: समुद्रस्तोत्रम्
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: Samudra-stotram is a devotional hymn of ten verses addressing the Ocean
   (Samudra) as a divine entity worthy of worship and propitiation. The composition
   celebrates the Ocean's cosmological significance, beneficent qualities, and role
@@ -102,5 +102,5 @@ translation_te: "1. నమో సముద్రదేవాయ జలధీశ�
   \ మరల నమస్కారములు.\n\n10. సముద్రస్య స్నానకాలే స్తోత్రమేతత్ పఠన్ నరః। పుణ్యసంచయముద్వర్ధ్య\
   \ పూతాత్మా భవతి ధ్రువమ్।।\n   సముద్ర స్నానము చేయునప్పుడు ఈ స్తోత్రమును పఠించిన మానవుడు\
   \ పుణ్యమును వృద్ధి చేసుకొని పవిత్రుడగును, నిశ్చయముగా."
-translation_status: draft
+translation_status: approved
 ---

@@ -2,7 +2,7 @@
 title: श्री गणपति सच्चिदानन्द वेद पाठशा..ला...
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A devotional song cycle in Sanskrit and Telugu honouring Śrī Gaṇapati Saccidānanda
   Veda Pāṭhaśālā (a Vedic school), comprising three numbered verses that invoke blessings
   for the institution's prosperity and articulate the cosmological and soteriological
@@ -63,5 +63,5 @@ translation_te: '1. శ్రీ గణపతి సచ్చిదానంద 
 
   3. అన్నం, ఆశ్రయం, వస్త్రం, ఔషధం గౌరవంగా అందించబడే చోట, ముగ్ధ బాలకులు బుద్ధి కౌశలాన్ని,
   సచ్చిదానంద కారకమైన పాండిత్యాన్ని పొందుతారు.'
-translation_status: draft
+translation_status: approved
 ---

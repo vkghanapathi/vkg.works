@@ -2,7 +2,7 @@
 title: अवतारोद्देशः
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: Sri Datta Śatakam is a devotional hymnic composition of one hundred verses
   (śatakam) in Sanskrit dedicated to Dattātreya, the unified form of the Hindu trinity
   (Brahmā, Viṣṇu, Śiva). Composed by Dr. Vamshi Krishna Ghanapāṭhī and reissued on
@@ -340,7 +340,7 @@ translation_te: 'పరమ పూజ్య శ్రీ గణపతి సచ�
   23. కొండచిలువ గురువు, తక్కువైనా, ఎక్కువైనా, రుచికరమైనా, రుచిలేనిదైనా దొరికిన దానితో
   తృప్తిగా ఉంటుంది, ఆహారం కోసం ఎదురుచూస్తూ సంతోషంగా ఉంటుంది, వచ్చిన ఆహారంతో తృప్తి
   చెందాలని తెలుపు సచ్చిదానంద దత్తుని నా హృదయమున భజింతును.'
-translation_status: draft
+translation_status: approved
 map:
 - mula: अवधूतदत्तपीठाधीश्वराणां परमपूज्यानां श्रीगणपतिसच्चिदानन्दस्वामिश्रीचरणानां
     दिव्याशीर्भिः प्रणीय श्रीसन्निधाने समर्पितम्। श्रीदत्तशतकम् खरनाम संवत् दत्तात्रेयजयन्तीमहोत्सवे
@@ -809,5 +809,5 @@ map:
     connection with this divine form, inviting the reader to cultivate a similar devotion
     within their own heart.
   verse_num: 10
-map_status: draft
+map_status: approved
 ---

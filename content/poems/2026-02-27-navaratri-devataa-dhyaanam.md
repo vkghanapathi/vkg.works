@@ -2,7 +2,7 @@
 title: गौरी
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A collection of devotional verses in Sanskrit, Telugu, and Kannada celebrating
   ten manifestations of the Divine Feminine principle (Śakti), each associated with
   a major Hindu goddess. The work presents parallel compositions in three Dravidian
@@ -118,5 +118,5 @@ translation_te: '1. గౌరీ, ఆదిశక్తి, మంచుకొ�
 
   10. నిత్యమైనది, సంపూర్ణమైనది, అన్ని శుభ కళలను కలిగినది, ఆ రాజరాజేశ్వరి ప్రతి దిక్కులో
   ఆశీస్సులు ప్రసాదించుగాక, తల్లిగా ఎల్లప్పుడూ మమ్ములను రక్షించుగాక.'
-translation_status: draft
+translation_status: approved
 ---

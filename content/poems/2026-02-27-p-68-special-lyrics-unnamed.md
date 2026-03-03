@@ -2,7 +2,7 @@
 title: श्रीराम
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: This work presents a systematic phonetic and rhythmic inventory of Sanskrit
   word-endings and verbal stems, organized alphabetically by terminal sounds and phonetic
   clusters. The list exemplifies Dr. Ghanapāṭhī's pedagogical method of isolating
@@ -157,5 +157,5 @@ translation_te: '1. ఆమ్: అవును, నిశ్చయముగా �
   30. క్షేమ్: ఆయనే సంక్షేమము మరియు శ్రేయస్సు!
 
   31. క్లోమ్: ఆయనే కరుణకు మూలము!'
-translation_status: draft
+translation_status: approved
 ---

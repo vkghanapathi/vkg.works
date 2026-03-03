@@ -2,7 +2,7 @@
 title: नीरजा चिन्मय विवाहावसरे  साशीर्कं प्रस्तुतः
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A wedding benediction composed by Dr. Vamshi Krishna Ghanapāṭhī for the
   marriage of Nīrajā and Chiṁmaya Datta, rendered in three stanzas of Mandākrānta
   metre in Sanskrit with a parallel Telugu version and detailed commentary. The work
@@ -76,5 +76,5 @@ translation_te: '1. హరి గురువుల పాదాలను పద
 
 
   వంశీకృష్ణ ఘనపాఠీ, సభ్యులు - వేదవిజ్ఞానవిష్టరం 06-12-19'
-translation_status: draft
+translation_status: approved
 ---

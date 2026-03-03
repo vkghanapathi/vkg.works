@@ -2,7 +2,7 @@
 title: श्रीगणपति सच्चिदानन्द वेदपाठशाला बृन्देन विहिताः  कल्याण शुभाशिषः
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A benedictory poem composed by Vamshi Krishna Ghanapāṭhī on the occasion
   of the Sri Ganesha Saccidananda Vedapatha School's auspicious functions. The verse
   invokes blessings upon the institution and its patrons, particularly Sri Datta Venkatesha,
@@ -62,5 +62,5 @@ translation_te: '1.  నీవు సకల జనులకు ఆధారమ�
 
 
   *వంశీ కృష్ణ ఘనపాఠీ, శ్రావణ కృష్ణ తృతీయా, 27-8-2010*'
-translation_status: draft
+translation_status: approved
 ---

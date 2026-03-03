@@ -2,7 +2,7 @@
 title: इति वद तामरसं नजजाद्यः।। (तामरस वृत्तम्)
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: The Gurudattāṣṭakam is an eight-stanza devotional hymn composed in the tāmarasavṛtti
   metre, addressed to a guru-deity identified with Hari-Hara (Viṣṇu-Śiva) and characterised
   as the bestower of spiritual grace and liberation. Each verse praises the guru's
@@ -127,5 +127,5 @@ translation_te: '1. హరి, హరుడు, ధాతలచే సమకూ�
   ఓ మురారి శత్రువా, వ్యక్తమైన అందం మరియు ఆనందకరమైన తేనెతో అందంగా ఉన్న నీ కమలం వంటి
   ముఖం, వ్రజ యువతుల కన్నులచే త్రాగబడినది, నా హృదయ సరస్సులో వికసించుగాక. ఓ మిత్రమా,
   గురువుచే ఇవ్వబడిన ప్రభువు యొక్క కమలముల వంటి పాదాలను సేవించు.'
-translation_status: draft
+translation_status: approved
 ---

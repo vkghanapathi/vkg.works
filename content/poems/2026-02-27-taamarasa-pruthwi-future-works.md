@@ -2,7 +2,7 @@
 title: इति वद तामरसं नजजाद्यः।।
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A devotional lyric poem addressed to Lord Krishna (Hari), celebrating the
   lotus-like beauty of his face and the nectar of his divine form. The composition
   employs classical Sanskrit poetic conventions to express the speaker's yearning
@@ -70,5 +70,5 @@ translation_te: '1. ఇతి వద తామరసం నజ్జాద్య
   భూభారాన్ని తన దివ్యమైన లీల ద్వారా తొలగించినవాడు, అట్టి శ్రీహరి యదు వంశములో అవతరించినాడు.
   ఆ హరియే లోకాలకు గతి. స్మరణ, స్తుతి, వినయపూర్వక ప్రార్థనల ద్వారా సంతోషింపజేయబడినవాడై,
   మనవంటి వారి పాపభారాన్ని తొలగించును గాక!'
-translation_status: draft
+translation_status: approved
 ---

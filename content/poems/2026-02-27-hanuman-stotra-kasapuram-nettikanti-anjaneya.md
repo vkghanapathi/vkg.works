@@ -2,7 +2,7 @@
 title: నెట్టికంటి ఆంజనేయ స్వామి స్తోత్రమ్
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A devotional stotra (hymn of praise) to Hanuman composed by Dr. Vamshi Krishna
   Ghanapāṭhī, structured as eight verses of salutation followed by a phalaśruti (statement
   of benefits) and a closing invocation. The work emphasizes Hanuman's protection
@@ -140,5 +140,5 @@ translation_te: 'నెట్టికంటి ఆంజనేయస్వా�
 
 
   ప్లవ సంవత్సర మాఘ శుద్ధ దశమి వంశీకృష్ణ ఘనపాఠీ 11-02-2022 మైసూరు'
-translation_status: draft
+translation_status: approved
 ---

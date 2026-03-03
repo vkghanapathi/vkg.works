@@ -2,7 +2,7 @@
 title: Go Seva - Sankalpa
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A ritual sankalpa (vow/intention) and devotional hymn sequence dedicated
   to cow veneration (go seva) as an offering to Parameśvara. The text comprises a
   structured vow formula naming the ritualist and their intention, followed by eight
@@ -185,7 +185,7 @@ translation_te: 'గో సేవా సంకల్పం
 
 
   అనేన వేదోక్త-ఆయుష్యాభివృద్ధিরస్తు। సర్వం సంపూర్ణమ్।। గోదేవతా ప్రీతామ్। శ్రీపరమేశ్వరార్పణమస్తు।'
-translation_status: draft
+translation_status: approved
 map:
 - mula: परमेश्वरमुद्दिश्य श्रीपरमेश्वरप्रीत्यर्थं नक्षत्रे राशौ जातायाः गोत्रायाः
     नाम्न्याः
@@ -543,5 +543,5 @@ map:
     and serenity associated with Go Seva, suggesting that it not only benefits the
     individual but also contributes to the overall well-being of the world.
   verse_num: 10
-map_status: draft
+map_status: approved
 ---

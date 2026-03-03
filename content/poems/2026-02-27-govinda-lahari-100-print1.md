@@ -2,7 +2,7 @@
 title: गोविन्द लहरी
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: Govinda Laharī is a devotional lyric poem composed by Vamshi Krishna Ghanapāṭhī,
   structured in the śikhariṇī metre and dedicated to Lord Viṣṇu (Govinda). The work
   comprises devotional verses celebrating divine attributes, cosmic functions, and
@@ -720,5 +720,5 @@ translation_te: 'గోవింద లహరి
   30. గరుడాద్రి
 
   సుపర్ణస్తే'
-translation_status: draft
+translation_status: approved
 ---

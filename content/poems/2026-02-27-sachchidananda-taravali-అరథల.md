@@ -2,7 +2,7 @@
 title: సచ్చిదానంద తారావలి
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: Sachchidānanda Tāravali is a devotional stotra (hymn) of 27 Sanskrit verses
   composed by Dr. Vamshi Krishna Ghanapāṭhī in praise of Sri Ganapath Sachchidānanda
   Sadguru, a twentieth-century spiritual preceptor of the Datta Sampradāya. Each verse
@@ -199,5 +199,5 @@ translation_te: '1. దత్తాత్రేయ విభూతుల అవ�
 
   27. సచ్చిదానంద సద్గురువైన శ్రీ గణపతి విజయం పొందుగాక! దర్శనము, స్మరణము, స్పర్శ ద్వారా
   దత్తానుగ్రహ భావన కలిగించువాడు!'
-translation_status: draft
+translation_status: approved
 ---

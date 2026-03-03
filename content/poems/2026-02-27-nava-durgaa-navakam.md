@@ -2,7 +2,7 @@
 title: शैलपुत्री
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A Sanskrit devotional hymn comprising nine distinct stanzas, each devoted
   to one of the nine forms of Durgā (Śailaputrī, Brahmacharinī, Chandraghantā, Kūshmandā,
   Skandamātā, Kātyāyanī, Kālarātrī, Mahāgaurī, and Siddhidā). The work employs classical
@@ -149,5 +149,5 @@ translation_te: '1.  ఎవరి స్వభావము ఆనందమయమ
   10. తన పాదములను సేవించే మంచివారి కోరికలను నిరంతరము తీర్చే తల్లి, తనను ఆశ్రయించిన
   వారిని భయంకరమైన కష్టముల నుండి రక్షించే దేవత, ఎవరి ఆనందమయమైన చైతన్యములో ఈ స్తోత్రము
   పఠించబడుతుందో, ఆ దుర్గను నేను భజిస్తున్నాను.'
-translation_status: draft
+translation_status: approved
 ---

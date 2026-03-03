@@ -2,7 +2,7 @@
 title: సచ్చిదానంద రూపాయ సత్కామ ఫల దాయినే।
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: The Chintāmaṇi Gaṇeśa Pañcakam is a five-verse devotional hymn dedicated
   to Gaṇeśa (Vināyaka), presented bilingually in Telugu and Sanskrit with ritual instructions.
   Each verse invokes Gaṇeśa with epithets emphasizing his role as the remover of obstacles,
@@ -92,7 +92,7 @@ translation_te: 'చింతామణి గణేశ పంచకమ్
 
   చింతామణి గణేశుని స్తుతి పంచకమును ఆదరముతో పఠించిన సదభీష్టములు సిద్ధింపగలవు, సందేహము
   లేదు.'
-translation_status: draft
+translation_status: approved
 map:
 - mula: 'सच्चिदानन्दरूपाय सत्कामफलदायिने।
 
@@ -268,5 +268,5 @@ map:
     fulfillment of their genuine aspirations. The assurance that there is no doubt
     about this outcome underscores the unwavering faith and efficacy of the prayer.
   verse_num: 6
-map_status: draft
+map_status: approved
 ---

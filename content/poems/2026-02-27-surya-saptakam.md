@@ -2,7 +2,7 @@
 title: सूर्य सप्तकम् - विकृतिः छन्दः - अश्वललित वृत्तम्
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A devotional composition on the sun deity (Sūrya) structured in the Aśvalalita
   metre, a classical Sanskrit prosodic form. This work exemplifies Dr. Vamshi Krishna's
   scholarly engagement with both metrical theory and religious poetry, demonstrating
@@ -134,5 +134,5 @@ translation_te: '1. ఓ సూర్యుడా, రవికి, దినా�
 
   ఫలశ్రుతి: వేదాల అర్థాన్ని తెలిపే ఈ సూర్య సప్తకాన్ని అశ్వలలిత మీటరులో రచించిన వారిని
   దీర్ఘాయువు పొందుతారు.'
-translation_status: draft
+translation_status: approved
 ---

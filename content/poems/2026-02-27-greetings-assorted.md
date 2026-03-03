@@ -2,7 +2,7 @@
 title: याज्ञवल्क्य उवाच
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A devotional and protective composition attributed to Yājñavalkya that presents
   the Gāyatrī Kavaca (Armour of Gāyatrī), a mantra-based protective formula mapping
   the syllables of the sacred Gāyatrī mantra to different parts and directions of
@@ -141,5 +141,5 @@ translation_te: "యాజ్ఞవల్క్య ఉవాచ:\n\n1. ఓ మ�
   \ ||\n\nఅద్య దీపావళీ భద్రా జ్ఞానజ్యోతిఃప్రకాశికా |\nభూయాత్ వేశ్మని యుష్మాకమానందఘనదాయికా\
   \ ||\n\nఈ రోజు దీపావళి, శుభకరమైనది మరియు జ్ఞానజ్యోతిని ప్రకాశింపజేయునది.\nఇది మీ\
   \ ఇంట ఆనందమును నింపుగాక."
-translation_status: draft
+translation_status: approved
 ---

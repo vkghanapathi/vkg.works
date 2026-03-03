@@ -2,7 +2,7 @@
 title: गमन श्रम
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: Gaman Śrama is a devotional song composition that employs intricate phonetic
   and semantic play through repetition and permutation of Sanskrit syllables and roots.
   The work demonstrates advanced techniques of word-sound correlation characteristic
@@ -94,5 +94,5 @@ translation_te: '1.  **గమన శ్రమ**
   *సమాధానిపదనీ.*
 
   సచ్చిదానంద ఘన గమనుడు అతడు.'
-translation_status: draft
+translation_status: approved
 ---

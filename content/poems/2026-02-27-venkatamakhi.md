@@ -2,7 +2,7 @@
 title: యస్తు శాస్త్రీయ సంగీత సుధార్ణవ మతీతరత్।
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A devotional poetic composition celebrating Śrī Veṅkaṭa Makhī, a renowned
   classical Indian music theorist and scholar. The work employs multilingual verse
   in Sanskrit and Telugu, praising Makhī's enduring intellectual legacy and his authoritative
@@ -44,5 +44,5 @@ translation_en: '1. He who has verily crossed the ocean of nectar that is classi
 translation_te: "1. శాస్త్రీయ సంగీత సుధార్ణవమును దాటినవాడు,\n   శ్రీ వేంకట మఖి ధీమాన్\
   \ నిత్యము జేగీయతే ధ్రువమ్!\n2. శాస్త్రీయ సంగీత మహార్ణవమును దాటినవాడు,\n   శ్రీ వేంకట\
   \ మఖి ధీమాన్ లోకే జేగీయతే ధ్రువమ్!"
-translation_status: draft
+translation_status: approved
 ---

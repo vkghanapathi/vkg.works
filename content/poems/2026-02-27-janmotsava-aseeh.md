@@ -2,7 +2,7 @@
 title: जन्मोत्सव शुभाशंसनम्
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A Sanskrit benedictory poem (śubhāśaṃsana) composed on the thirty-fourth
   birth anniversary of the subject, invoking auspicious blessings through the register
   of Vedic ritual and philosophical devotion. The work employs the classical Sanskrit
@@ -52,5 +52,5 @@ translation_te: '1. ముప్పైమూడు దేవతల స్తు�
 
 
   వికృతి సంవత్సరం, పుష్య శుక్లాష్టమి, 12.1.2011'
-translation_status: draft
+translation_status: approved
 ---

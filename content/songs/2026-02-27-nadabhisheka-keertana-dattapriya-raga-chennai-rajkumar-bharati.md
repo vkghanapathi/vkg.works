@@ -2,7 +2,7 @@
 title: दत्तप्रिय रागः – नादाभिषेकः
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A multilingual devotional composition in the Dattapriyan raga dedicated
   to Sri Ganapatī Saccidānanda, the presiding deity of the Datta Pitha tradition.
   The work demonstrates sophisticated poetic and musical construction across Sanskrit,
@@ -216,5 +216,5 @@ translation_te: 'దత్తప్రియ రాగః – నాదాభి
   10. లససి మనసి- సదయ… విమల ధిషణ వితను… నాదాభిషేకం
 
   రుచిర గీత సుభగం – లలిత భావ సుధియం… నాదాభిషేకం'
-translation_status: draft
+translation_status: approved
 ---

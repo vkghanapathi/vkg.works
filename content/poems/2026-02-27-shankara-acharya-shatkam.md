@@ -2,7 +2,7 @@
 title: शङ्कर गुरु षट्कम्
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A devotional hymn of six stanzas in Sanskrit, Telugu, and Kannada composed
   by Dr. Vamshi Krishna Ghanapāṭhī in praise of Śaṅkara, the preeminent Advaita Vedānta
   philosopher and guru. The work celebrates Śaṅkara's role as the restorer of Vedic
@@ -97,5 +97,5 @@ translation_te: '౧. వేదధర్మ ప్రతిష్ఠాపన �
   ౬. ఈ స్తోత్రము ద్వారా గురువు యొక్క గొప్ప ఆశ్రయము లభిస్తుంది. శంకరుని యొక్క మాటలను
   భక్తితో వినాలి. ఆయన దయతో ఉత్తమమైన భావన సులభంగా లభిస్తుంది. అట్టి గురు శంకరుని, భూమిపై
   శంకరుని, నా శంకరుని ఆశ్రయించెదను.'
-translation_status: draft
+translation_status: approved
 ---

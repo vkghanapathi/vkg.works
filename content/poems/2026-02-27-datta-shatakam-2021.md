@@ -2,7 +2,7 @@
 title: अवतारोद्देशः
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: Śrī Datta Śatakam is a devotional hymnic composition of one hundred stanzas
   (śataka) celebrating the incarnate form and salvific grace of Dattātreya, the Vedic
   teacher-deity of Advaita Vedānta tradition. Each verse employs the classical refrain
@@ -357,7 +357,7 @@ translation_te: 'పరమ పూజ్యులైన అవధూత దత్
   23. తక్కువగా తిన్నను ఎక్కువగా తిన్నను ఏది దొరికితే దానితో తృప్తి చెందువాడు, ఆహారము
   కొరకు కష్టపడకుండా సుఖముగా ఉండువాడు, వచ్చిన ఆహారముతో తృప్తి చెందమని చెప్పిన సచ్చిదానంద
   దత్తుని నా హృదయములో దయతో సేవించెదను.'
-translation_status: draft
+translation_status: approved
 map:
 - mula: अवधूतदत्तपीठाधीश्वराणां परमपूज्यानां श्रीगणपतिसच्चिदानन्दस्वामिश्रीचरणानां
     दिव्याशीर्भिः प्रणीय श्रीसन्निधाने समर्पितम्। श्रीदत्तशतकम् खरनाम संवत् दत्तात्रेयजयन्तीमहोत्सवे
@@ -775,5 +775,5 @@ map:
     his heart as a source of compassion and spiritual fulfillment, embodying existence,
     consciousness, and bliss.
   verse_num: 10
-map_status: draft
+map_status: approved
 ---

@@ -2,7 +2,7 @@
 title: 6 श्रीहरि पञ्चश्लोकी
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A devotional poem of five Sanskrit verses (with Telugu transliteration)
   dedicated to the grace and protection of Hari (Viṣṇu). Each verse employs anaphoric
   repetition of the relative pronoun yayā ('by which') to enumerate the divine attributes
@@ -78,5 +78,5 @@ translation_te: "1. ఏ యొక్క అంశముచే పరమపుర
   \ యందు యోగులు లీనమగుచున్నారో,\n   ఆ శ్రీహరి పాదతేజస్సు నా హృదయమున నిరంతరముండుగాక!\n\
   \nఫలశ్రుతి: ఎవడు నిత్యము వాసుదేవుని యొక్క భక్తుడై ఈ శ్రీహరి యొక్క పంచశ్లోకిని పఠించునో,\n\
   సచ్చిదానంద స్వరూపుడైన వంశీకృష్ణ ఘనశ్యామమూర్తి అన్నిటిని ప్రసాదించును."
-translation_status: draft
+translation_status: approved
 ---

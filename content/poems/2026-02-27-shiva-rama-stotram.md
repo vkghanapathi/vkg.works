@@ -2,7 +2,7 @@
 title: देव द्वादशी स्तोत्रम्
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: Deva Dvādaśī Stotram is a twelve-fold hymnic composition dedicated to Lord
   Śiva, structured as a liturgical prayer incorporating invocation, sacred geography,
   worship procedures, mythological narrative, and benedictory conclusions. The work
@@ -178,5 +178,5 @@ translation_te: '1. ఓ దేవా, దేవదేవా, శంకరా, �
   13. ఏ ప్రజలైతే ఉనికి, చైతన్యము మరియు ఆనంద రూపమును అనుభవించాలనుకుంటున్నారో, వారు
   ఈ స్తుతిని పఠిస్తారు, ఇది రామ-నామము యొక్క సారాంశము మరియు రుద్ర దైవమునకు అంకితము
   చేయబడింది.'
-translation_status: draft
+translation_status: approved
 ---

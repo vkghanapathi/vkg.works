@@ -2,7 +2,7 @@
 title: "189 \t\tवेद बोधितम्\t\tशुद्धसावेरी\tभजनम्"
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A devotional bhajana (song of worship) in the Śuddhā Sāverī rāga that exhorts
   the practitioner toward dharma, truthful speech, and virtue as taught by the Vedas.
   The work combines Sanskrit liturgical elements with structured musical form (pallavi
@@ -59,5 +59,5 @@ translation_te: '1.  *పల్లవి:*
 
 
   (ఈ భజన పరమేశ్వరుని సన్నిధిలో 7-8-2023న జరిగిన యజుర్వేద మహాయాగ సందర్భంగా కూర్చబడింది.)'
-translation_status: draft
+translation_status: approved
 ---

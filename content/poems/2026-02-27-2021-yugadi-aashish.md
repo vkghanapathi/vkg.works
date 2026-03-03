@@ -2,7 +2,7 @@
 title: प्लवसंवत्सर शुभाशिषः
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A devotional poem composed for the Plava Saṃvat (year 2021 CE) by Dr. Vamshi
   Krishna Ghanapāṭhī, offering benedictions and spiritual guidance for the new year.
   The work invokes divine protection from suffering and planetary malevolence while
@@ -89,7 +89,7 @@ map:
     of unwavering faith and constant prayer. The imagery of floating over the ocean
     of sorrow suggests a transcendence of worldly afflictions through spiritual practice.
   verse_num: 1
-map_status: draft
+map_status: approved
 translation_en: '1.  In this year of Plava, may all people float and swim across the
   ocean of disease and sorrow. May there be no suffering for you from the changes
   wrought by the planets, nor from the Earth itself.
@@ -104,5 +104,5 @@ translation_te: '1. ప్లవ సంవత్సరమున రోగదు�
 
   2. దేవదేవుల పాదపద్మములందు మనస్సును స్థిరముగా నిలిపిన భక్తులు, నిరంతర ప్రార్థనల ద్వారా
   గొప్ప సంపదలను, సుఖములను, శాంతిని, తేజస్సును పొందుదురు గాక!'
-translation_status: draft
+translation_status: approved
 ---

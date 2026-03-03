@@ -2,7 +2,7 @@
 title: तं विन्दै महितार्थबोधमनिशं श्रीराम योगेश्वर।।
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A devotional poem sequence of fourteen verses addressed to Śrī Rāma as Yogeśvara
   (the Lord of Yoga), systematically addressing the stages of yogic practice and the
   eventual dissolution of the physical body. The work guides the practitioner through
@@ -482,5 +482,5 @@ translation_te: 'ఓం శ్రీరామ యోగీశ్వర, మహ�
   అగ్ని ద్వారా కర్మ చేయబడింది, మరియు మిగిలినది ఏదైతే ఉందో, ఎముకల సేకరణ, దానిలో కొంచెం
   కూడా విడిచిపెట్టవద్దు; సూక్ష్మమైన, ఆనందించే రూపంలో ప్రవేశించండి. ఆ రూపాన్ని సేకరించి
   నీటిలో ప్రవేశించండి...'
-translation_status: draft
+translation_status: approved
 ---

@@ -2,7 +2,7 @@
 title: గురు సప్తకమ్
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: Guru Saptakam is a seven-stanza devotional hymn in Sanskrit composed by
   Dr. Vamshi Krishna Ghanapāṭhī that venerates Gaṇapati Guru, identified as the embodiment
   of Saccidānanda (Existence-Consciousness-Bliss), and celebrates his role as a spiritual
@@ -133,5 +133,5 @@ translation_te: '1. సచ్చిదానంద స్వరూపుడు, 
 
   9. సద్గురువు యొక్క కీర్తిని, ఇటువంటి దివ్యమైన చరిత్రను స్మరించువాడు, ఎల్లప్పుడూ
   అభివృద్ధి చెందుతాడు, గురువు యొక్క అనుగ్రహమునకు పాత్రుడగుతాడు.'
-translation_status: draft
+translation_status: approved
 ---

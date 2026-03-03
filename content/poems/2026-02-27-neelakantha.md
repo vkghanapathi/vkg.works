@@ -2,7 +2,7 @@
 title: नीलकण्ठ स्तोत्रम्
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A Sanskrit devotional hymn of four verses composed by Dr. Vamshi Krishna
   Ghanapāṭhī on 11 July 2021 at Mysore, invoking Lord Śiva in his form as Nīlakaṇṭha
   (the blue-throated one). The stotra addresses contemporary environmental degradation
@@ -87,5 +87,5 @@ translation_te: 'నీలకంఠ స్తోత్రమ్
 
 
   ఆషాఢ శుద్ధ పాడ్యమి ఉదయం 11-7-21 మైసూర్ - వంశీకృష్ణ ఘనపాఠీ'
-translation_status: draft
+translation_status: approved
 ---

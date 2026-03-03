@@ -2,7 +2,7 @@
 title: "आदेश उपदेश एष क्रमो\t\tवेदे हि सुख जीवनायोद्यते"
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
-status: draft
+status: published
 abstract: A bilingual devotional and ethical instruction composed in Sanskrit and
   Telugu, presenting a systematic teaching on dharma (righteous conduct) and the proper
   way of living according to Vedic principles. The work emphasizes the subtle understanding
@@ -69,5 +69,5 @@ translation_te: '1. ఇదిగో ఆదేశము, ఉపదేశ క్�
   4. అభ్యసించిన విద్వాంసులను అనుసరించుము, వారు కఠినత్వము లేనివారు, నీ బుద్ధి ఎప్పుడు
   చేయదగిన దాని గురించి సందేహించినదో అప్పుడు. సౌమ్యత్వము మరియు సంపద ఇష్టమైన యెడల, సత్-చిత్-ఆనంద
   శాంతులు ఎల్లప్పుడు నీతో ఉండుగాక.'
-translation_status: draft
+translation_status: approved
 ---

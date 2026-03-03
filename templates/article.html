@@ -4,6 +4,32 @@
 {% block description %}{{ abstract if abstract else excerpt }}{% endblock %}
 {% set active_section = section_name %}
 
+{% block head_extra %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "name": {{ title | tojson }},
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Vamśīkṛṣṇa Ghanapāṭhī",
+    "sameAs": "https://orcid.org/0009-0007-3852-0158"
+  },
+  {% if date %}"datePublished": {{ date | string | tojson }},{% endif %}
+  {% if abstract %}"description": {{ abstract | tojson }},{% endif %}
+  {% if keywords %}"keywords": {{ keywords | join(', ') | tojson }},{% endif %}
+  {% if language %}"inLanguage": {{ language | tojson }},{% endif %}
+  {% if uid %}"identifier": {{ uid | tojson }},{% endif %}
+  "url": {{ page_url | tojson }},
+  "publisher": {
+    "@type": "Organization",
+    "name": "vkg.works",
+    "url": "https://vkg.works"
+  }
+}
+</script>
+{% endblock %}
+
 {% block content %}
 <div class="page-container">
   <article class="full-article">

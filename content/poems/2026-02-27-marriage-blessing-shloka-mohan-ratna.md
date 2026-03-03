@@ -36,32 +36,31 @@ topic:
 - benedictory verse
 - institutional patronage
 translation_en: '1.  May you attain the most excellent stage of life (the householder
-  ashram), a source of great joy and support for all people.
+  stage), a source of great joy and support for all people.
 
-  May you become a householder, capable of performing the many auspicious deeds prescribed
-  by the Vedas, a home filled with happiness.
+  May you become a householder, abounding in happiness, capable in performing deeds
+  prescribed by the Vedas.
 
-  Having accepted Ratna, a jewel among women, in the sacred marriage rite, dispelling
+  Having accepted Ratna, a jewel among women, in the rite of marriage, dispelling
   all delusion,
 
   May Śrī Datta and Veṅkaṭeśa, through the grace of your own Guru, lead you to their
-  divine presence.
+  presence.
 
 
   *Vaṃśī Kṛṣṇa Ghanapāṭhī, Śrāvaṇa Kṛṣṇa Tṛtīyā, 27-8-2010*'
-translation_te: '1.  నీవు సకల జనులకు ఆధారమై, అత్యంత ఆనందమును కలిగించు గృహస్థాశ్రమమనే
-  శ్రేష్ఠమైన ఆశ్రమమును పొందుదువు గాక!
+translation_te: '1.  నీవు సకల జనులకు ఆధారమై, అత్యంత ఆనందమును కలిగించు శ్రేష్ఠమైన ఆశ్రమమును
+  (గృహస్థాశ్రమమును) పొందుదువు గాక!
 
-  వేదములచే విధింపబడిన శుభకరమైన కర్మలను చేయుటకు సమర్థుడవై, సుఖముల నిలయమైన గృహస్థుడ
-  వగుదువు గాక!
+  వేదములచే విధింపబడిన కర్మలను చేయుటకు సమర్థుడవై, సుఖములకు నిలయమైన గృహస్థుడవు అగుదువు
+  గాక!
 
-  మోహమును తొలగించునట్టి రత్నముల వంటి శ్రేష్ఠురాలైన రత్న అను నామెను వివాహ విధి ద్వారా
-  స్వీకరించి,
+  మోహమును పోగొట్టునట్టి రత్న అను పేరుగల శ్రేష్ఠురాలైన కన్యను వివాహ విధానమున స్వీకరించి,
 
-  శ్రీ దత్తుడు మరియు వేంకటేశ్వరుడు, మీ గురువుగారి కరుణా కటాక్షముతో, వారి సన్నిధికి
-  నిన్ను చేర్చుదురు గాక!
+  శ్రీ దత్తుడు మరియు వేంకటేశుడు, నీ గురువు యొక్క కరుణా సన్నిధి ద్వారా నిన్ను వారి
+  సన్నిధికి చేర్చుదురు గాక!
 
 
-  *వంశీ కృష్ణ ఘనపాఠీ, శ్రావణ కృష్ణ తృతీయ, 27-8-2010*'
+  *వంశీ కృష్ణ ఘనపాఠీ, శ్రావణ కృష్ణ తృతీయా, 27-8-2010*'
 translation_status: draft
 ---

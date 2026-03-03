@@ -35,4 +35,29 @@ topic:
 - dharma
 - Vedic ethics
 - bhajana
+translation_en: '1.  *Refrain:*
+
+  Practise Dharma as taught by the Vedas; speak the truth always, for your own good.
+
+  Let truth-speaking be your vow; may divine wealth bring you auspiciousness in the
+  future.
+
+
+  2.  In Bhārat, in the assembly of Gurus, may you always be the best among the best.
+
+
+  (This bhajan was composed during the Yajurveda Mahāyāga in the presence of Parameśvara
+  on 7-8-2023.)'
+translation_te: '1.  *పల్లవి:*
+
+  వేదబోధిత ధర్మమాచర; సత్య భాషణం సంతతం శ్రేయసే।
+
+  సత్య భాషణం భాతు తే వ్రతం; దైవ సంపదా సౌభగం భావి తే॥
+
+
+  2.  భారతే గురు మండితే పున రుత్తమో భవ సర్వదా।
+
+
+  (ఈ భజన పరమేశ్వరుని సన్నిధిలో 7-8-2023న జరిగిన యజుర్వేద మహాయాగ సందర్భంగా కూర్చబడింది.)'
+translation_status: draft
 ---

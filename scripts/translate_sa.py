@@ -224,7 +224,7 @@ def translate_item(uid: str, info: dict, client: GeminiClient,
     prompt = TRANSLATE_PROMPT.format(title=title, sanskrit_text=sa_text)
     print(f'  Translating…', end=' ', flush=True)
 
-    result = client.generate_json(SYSTEM_PROMPT, prompt, max_tokens=3000)
+    result = client.generate_json(SYSTEM_PROMPT, prompt, max_tokens=8000)
     if result is None:
         print('FAILED')
         return False

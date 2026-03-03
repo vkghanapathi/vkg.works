@@ -34,24 +34,14 @@ topic:
 - temple consecration
 - Vaishnava devotion
 - Hindu diaspora
-translation_en: '1.  Him who shines in the land between the three lakes, the guide
-  to the righteous path,
-
-  Dwelling in the city of Detroit, dense of form, destroyer of the multitude of sins;
-
-
-  2.  Him, the Lord Śrī Veṅkaṭeśa, whose feet adorn the northern lands of America,
-
-  I praise, the giver of boons, the supreme Guru, bestower of Being, Consciousness,
-  and Bliss.'
-translation_te: '1. మూడు సరస్సుల నడుమ ప్రకాశించువాడు, సన్మార్గమును చూపువాడు,
-
-  డెట్రాయిట్ నగరమున నివసించువాడు, దట్టమైన శరీరము కలవాడు, పాపముల సమూహమును నాశనము చేయువాడు;
-
-
-  2. ఉత్తర అమెరికాను అలంకరించిన పాదములు కలవాడు, శ్రీ వేంకటేశ్వరుడు, సర్వశక్తుడు,
-
-  వరముల నొసంగువాడు, ఉత్తమోత్తమ గురువు, సచ్చిదానంద స్వరూపుడు, అట్టి ప్రభువును నేను
-  కొనియాడుచున్నాను.'
+translation_en: "1. Him who shines in the land amidst three lakes, who bestows the\
+  \ righteous path,\n   Him, of dense form, destroyer of sins' multitude, residing\
+  \ in the city of Detroit;\n2. Him, the Lord Śrī Veṅkaṭeśa, whose feet adorn North\
+  \ America,\n   I praise, granter of boons, the highest Guru, bestower of Being,\
+  \ Consciousness, and Bliss."
+translation_te: "1. కాసారత్రయ మధ్యదేశమున వెలుగొందువాడు, సన్మార్గమును ప్రసాదించువాడు,\n\
+  \   దట్టమైన శరీరము గలవాడు, పాపముల సమూహమును నాశనము చేయువాడు, డెట్రాయిట్ నగరమున నివసించువాడు;\n\
+  2. ఉత్తర అమెరికాను తన పాదాలతో అలంకరించిన శ్రీ వేంకటేశ్వరుడు,\n   వరముల నొసంగువాడు,\
+  \ ఉత్తమోత్తమ గురువు, సచ్చిదానంద స్వరూపుడు, అట్టి ప్రభువును నేను కొనియాడుచున్నాను."
 translation_status: draft
 ---

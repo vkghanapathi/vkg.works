@@ -38,83 +38,85 @@ topic:
 - Devi
 - Gaurī
 - Śākta tradition
-translation_en: '1.  Gaurī, the Primal One, daughter of the Snow Mountain, She who
-  abides on Śambhu''s left, I adore Her, who lifts us across the ocean of worldly
+translation_en: '1.  Gaurī, the Primal One, daughter of the Snow-Mountain, She who
+  dwells on Śambhu''s left, I adore Her, who lifts us across the ocean of worldly
   existence.
 
 
-  2.  The Queen of Queens, Her sovereignty pervades this stable universe, extending
-  from the primal sound ''Ha'' to its outer limits, may She ever protect us.
+  2.  The Queen of Queens, Her sovereignty pervades this entire stable and moving
+  universe, from the first syllable ''Ha'' to the outer limit, may She, ever-present,
+  protect us.
 
 
-  3.  She is Durgā, veiled by intricate desires, difficult to attain; and She is Lakṣmī,
-  drawing to Herself all the prosperity of throngs of people.
+  3.  Durgā, difficult to attain due to the veiling of deep-seated desires, and Lakṣmī,
+  who draws to Herself the wealth of all multitudes of people.
 
 
-  4.  With eyes that flutter like darting fish, and whose mind animates all consciousness,
-  She is Mīnākṣī, dwelling in the inner heart''s cavity, the Mother who shines in
-  all.
+  4.  With eyes that dance like darting fish, and whose mind stirs within all consciousness,
+  Mīnākṣī, dwelling in the inner space of the heart, shines as the Mother in all.
 
 
-  5.  Wielding the power of projection and veiling, setting this world in motion,
-  the perfect Śaivī, the venerable Supreme Power, eternally shines forth.
+  5.  She who sets the world in motion, through the powers of projection and veiling,
+  may that perfect, auspicious Śakti, the Supreme Power, worthy of praise, eternally
+  shine.
 
 
   6.  Having relinquished all that is measurable, O Mother, Your eyes are filled with
-  love; surely You always protect the universe, O Viśālākṣī Devī.
+  love. Surely, You always protect the universe, O Viśālākṣī, Goddess with expansive
+  eyes.
 
 
-  7.  Pure knowledge is indeed the essence of Your being, O Bestower of Speech; drinking
-  it in, a blissful experience arises, that is the essence of Sarasvatī.
+  7.  Pure knowledge is indeed the essence of Your being, O Bestower of Speech. Drinking
+  it in, I experience a joy that shines forth as the essence of Sarasvatī.
 
 
-  8.  Destroyer of heaps of sins, with fierce deeds and wrathful eyes, the Great Goddess,
+  8.  Destroyer of heaps of sins, with actions firm and eyes of wrath, the Great Goddess,
   may She, the auspicious Caṇḍī, ever protect me from the impurities in my heart.
 
 
-  9.  Though Her inherent power is all-pervading and unimpeded, may Śakti-Durgī, by
-  Her nature as Durgā, always guide and protect me.
+  9.  Though Her inherent power is all-pervading and unimpeded, may Śakti Durgā, by
+  Her nature as Durgā, always lead me to realize that power.
 
 
-  10. Eternal, complete, possessing all auspicious arts, She is the Queen of Queens;
-  may the Mother bestow blessings in every direction, ever protecting us here.'
-translation_te: '1. గౌరీ, ఆదిశక్తి, మంచుకొండ కుమార్తె, శంభువు ఎడమవైపున వెలుగొందునది,
-  సంసార సాగరమును దాటించు తల్లిని నేను భక్తితో కొలుతును.
+  10. Eternal, complete, possessing all auspicious arts, may that Queen of Queens
+  bestow blessings in every direction, ever protecting us as the Mother.'
+translation_te: '1. గౌరీ, ఆదిశక్తి, మంచుకొండ కుమార్తె, శంభువు ఎడమవైపున నివసించే తల్లి,
+  మమ్ములను సంసార సాగరమునుండి దాటించు తల్లిని భజించెదను.
 
 
-  2. రాజరాజేశ్వరి, ఈ స్థిరమైన విశ్వమంతటా ఆమె ఆధిపత్యం వ్యాపించి ఉంది, ఆది అక్షరమైన
-  ''హ'' నుండి దాని పరిధుల వరకు విస్తరించి, ఆమె ఎల్లప్పుడూ మమ్మల్ని రక్షించుగాక.
+  2. రాజరాజేశ్వరి, ఈ స్థిర మరియు కదిలే విశ్వమంతటా ఆమె ఆధిపత్యం వ్యాపించి ఉంది, ''హ''
+  అనే మొదటి అక్షరం నుండి చివరి వరకు నిండి ఉన్నది, ఆమె ఎల్లప్పుడూ ఉండి మమ్ములను రక్షించుగాక.
 
 
-  3. ఆమె దుర్గ, దుర్భేద్యమైన కోరికలతో కప్పబడి, పొందటానికి కష్టమైనది; మరియు ఆమె లక్ష్మి,
-  ప్రజల సమూహాల నుండి సమస్త శ్రేయస్సును తన వైపుకు ఆకర్షిస్తుంది.
+  3. దుర్గ, గహనమైన కోరికల వలన పొందడానికి కష్టమైనది, మరియు లక్ష్మి, ప్రజలందరి సంపదను
+  తన వైపుకు ఆకర్షించే తల్లి.
 
 
-  4. కదులుతున్న చేపలవలె చంచలమైన కన్నులు కలిగి, మనస్సును చైతన్యవంతం చేసేది, ఆమె మీనాక్షి,
-  హృదయ కుహరంలో నివసించే తల్లి, అందరిలో ప్రకాశిస్తుంది.
+  4. కదులుతున్న చేపలవలె కదిలే కన్నులు గలది, మరియు ఆమె మనస్సు అన్ని చైతన్యాలలో కదలుచున్నది,
+  మీనాక్షి, హృదయము యొక్క లోపలి ప్రదేశములో నివసించుచున్నది, అందరిలో తల్లిగా ప్రకాశించుచున్నది.
 
 
-  5. విక్షేపణ మరియు ఆవరణ శక్తులను కలిగి, ఈ లోకాన్ని కదిలిస్తూ, పరిపూర్ణమైన శైవి, ఆరాధనీయమైన
-  పరాశక్తి, శాశ్వతంగా ప్రకాశిస్తుంది.
+  5. విక్షేపము మరియు ఆవరణ శక్తుల ద్వారా ఈ లోకాన్ని కదిలించునది, పరిపూర్ణమైన, శుభకరమైన
+  శక్తి, పరాశక్తి, స్తుతించదగినది, శాశ్వతంగా ప్రకాశించుగాక.
 
 
-  6. కొలవదగిన వాటినన్నిటినీ విడిచిపెట్టి, ఓ తల్లి, నీ కన్నులు ప్రేమతో నిండి ఉన్నాయి;
-  నిశ్చయంగా నీవు ఎల్లప్పుడూ విశ్వాన్ని రక్షిస్తావు, ఓ విశాలాక్షి దేవి.
+  6. కొలవదగినది విడిచిపెట్టిన తల్లి, మీ కన్నులు ప్రేమతో నిండి ఉన్నాయి. ఓ విశాలాక్షి,
+  విశాలమైన కన్నులు గల దేవి, మీరు ఎల్లప్పుడూ విశ్వాన్ని రక్షిస్తారు.
 
 
-  7. స్వచ్ఛమైన జ్ఞానమే నీ స్వరూపము, ఓ వాగ్దేవి; దానిని గ్రోలుతూ, ఒక ఆనందానుభూతి కలుగుతుంది,
-  అదే సరస్వతి యొక్క సారం.
+  7. స్వచ్ఛమైన జ్ఞానమే మీ స్వరూపము, ఓ వాగ్దేవి. దానిని త్రాగుతూ, నేను ఆనందాన్ని అనుభవిస్తున్నాను,
+  అది సరస్వతి యొక్క సారాంశంగా ప్రకాశిస్తుంది.
 
 
-  8. పాపాలన్నిటినీ నాశనం చేసేది, కఠినమైన క్రియలు మరియు కోపముతో కూడిన కన్నులు కలది,
-  మహేశ్వరి, శుభమైన చండి, నా హృదయములోని మలినాలనుండి ఎల్లప్పుడూ నన్ను రక్షించుగాక.
+  8. పాపాల సమూహాన్ని నాశనం చేసేది, దృఢమైన చర్యలు మరియు కోపంతో కూడిన కన్నులు గలది,
+  గొప్ప దేవత, శుభకరమైన చండి, నా హృదయంలోని మలినాలనుండి ఎల్లప్పుడూ నన్ను రక్షించుగాక.
 
 
-  9. ఆమె శక్తి సర్వత్రా వ్యాపించి, అడ్డంకులు లేనిది అయినప్పటికీ, శక్తి దుర్గి, దుర్గగా
-  తన స్వభావం ద్వారా, ఎల్లప్పుడూ నన్ను నడిపించుగాక మరియు రక్షించుగాక.
+  9. ఆమె సహజ శక్తి సర్వత్రా వ్యాపించి అడ్డులేనిది అయినప్పటికీ, శక్తి దుర్గ, దుర్గగా
+  తన స్వభావం ద్వారా, ఆ శక్తిని గ్రహించడానికి ఎల్లప్పుడూ నన్ను నడిపించుగాక.
 
 
-  10. నిత్యమైనది, పరిపూర్ణమైనది, సమస్త శుభ కళలను కలిగినది, ఆమె రాజరాజేశ్వరి; తల్లి
-  అన్ని దిక్కులలో శుభాలను ప్రసాదించుగాక, ఎల్లప్పుడూ మమ్మల్ని రక్షిస్తూ ఉండుగాక.'
+  10. నిత్యమైనది, సంపూర్ణమైనది, అన్ని శుభ కళలను కలిగినది, ఆ రాజరాజేశ్వరి ప్రతి దిక్కులో
+  ఆశీస్సులు ప్రసాదించుగాక, తల్లిగా ఎల్లప్పుడూ మమ్ములను రక్షించుగాక.'
 translation_status: draft
 ---

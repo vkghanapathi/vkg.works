@@ -40,58 +40,57 @@ topic:
 translation_en: 'Chiṇtāmaṇi Gaṇeśa Pañcakam
 
 
-  1.  Unto Him who is the very form of Existence, Consciousness, and Bliss, unto Him
-  who grants the fruits of righteous desires, to that Chiṇtāmaṇi Gaṇeśa, I offer my
-  prostrations.
+  1.  Unto Him who embodies Existence, Consciousness, and Bliss, unto Him who grants
+  the fruits of righteous desires, to that Chiṇtāmaṇi Gaṇeśa, I offer my prostrations.
 
 
-  2.  Unto the Son of Gaurī, the Youthful One, unto Him whose intellect is supremely
+  2.  Unto the Son of Gaurī, the youthful one, unto Him whose intellect is supremely
   great, to that Chiṇtāmaṇi Gaṇeśa, I offer my prostrations.
 
 
-  3.  Unto Vināyaka, the God, unto Him who is ever filled with the essence of Śiva,
+  3.  Unto Vināyaka, the Lord, unto Him who is ever filled with the essence of Śiva,
   to that Chiṇtāmaṇi Gaṇeśa, I offer my prostrations.
 
 
-  4.  Unto the first-born of Kumāra, unto Him who destroys obstacles and misfortunes,
+  4.  Unto the firstborn of Kumāra, unto Him who destroys obstacles and misfortunes,
   to that Chiṇtāmaṇi Gaṇeśa, I offer my prostrations.
 
 
-  5.  Unto Him who illuminates the sacred region of Kāśī, unto Him who bestows purity
+  5.  Unto Him who illuminates the sacred realm of Kāśī, unto Him who bestows purity
   of mind, to that Chiṇtāmaṇi Gaṇeśa, I offer my prostrations.
 
 
-  By reciting this hymn of five verses to Chiṇtāmaṇi Gaṇeśa with reverence, one shall
-  undoubtedly accomplish all cherished desires.'
+  Whosoever recites this hymn of five verses to Chiṇtāmaṇi Gaṇeśa with reverence,
+  shall undoubtedly accomplish all cherished desires.'
 translation_te: 'చింతామణి గణేశ పంచకమ్
 
 
-  1. సచ్చిదానంద రూపునకు, సత్కామ ఫలదాయకునకు,
+  1. సచ్చిదానంద రూపునకు, సత్కామ ఫల దాతకు,
 
-  చింతామణి గణేశునకు ప్రణతులు సమర్పించెదన్.
+  చింతామణి గణేశునకు ప్రణతులు అర్పింతున్.
 
 
   2. గౌరీ సుతునకు, బాలునకు, బుద్ధి మత్త గరిష్ఠునకు,
 
-  చింతామణి గణేశునకు ప్రణతులు సమర్పించెదన్.
+  చింతామణి గణేశునకు ప్రణతులు అర్పింతున్.
 
 
   3. వినాయకునకు, దేవునకు, సదా శివ మయునకు,
 
-  చింతామణి గణేశునకు ప్రణతులు సమర్పించెదన్.
+  చింతామణి గణేశునకు ప్రణతులు అర్పింతున్.
 
 
-  4. కుమారునకు అగ్రజునకు, బాధారిష్ట వినాశకునకు,
+  4. కుమారుని అగ్రజునకు, బాధారిష్ట వినాశకునకు,
 
-  చింతామణి గణేశునకు ప్రణతులు సమర్పించెదన్.
-
-
-  5. కాశీ క్షేత్ర విభాసునకు, చిత్త శుద్ధి ప్రదాయకునకు,
-
-  చింతామణి గణేశునకు ప్రణతులు సమర్పించెదన్.
+  చింతామణి గణేశునకు ప్రణతులు అర్పింతున్.
 
 
-  చింతామణి గణేశుని స్తుతి పంచకమును ఆదరముతో పఠించిన సదభీష్టములు సిద్దించును, సందేహము
+  5. కాశీ క్షేత్ర విభాసకునకు, చిత్త శుద్ధి ప్రదాయకునకు,
+
+  చింతామణి గణేశునకు ప్రణతులు అర్పింతున్.
+
+
+  చింతామణి గణేశుని స్తుతి పంచకమును ఆదరముతో పఠించిన సదభీష్టములు సిద్ధింపగలవు, సందేహము
   లేదు.'
 translation_status: draft
 ---

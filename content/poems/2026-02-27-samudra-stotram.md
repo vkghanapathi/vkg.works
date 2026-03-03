@@ -38,104 +38,69 @@ topic:
 - pūjā (ritual worship)
 - purification ritual
 translation_en: '1.  Salutations to the God of the Ocean, salutations to Thee, Lord
-  of the Waters! Salutations, again and again, to Thee, the Lord of Rivers, eternally!
+  of the Waters! To Thee, the Lord of Rivers, salutations, again and again!
 
 
-  2.  Verily, by merely beholding Thee, sinful thoughts are destroyed. Salutations,
-  again and again, to Thee, who increases the accumulation of merit and grants desires!
+  2.  Verily, by the mere sight of whom, sinful thoughts are destroyed, who increases
+  the accumulation of merit, to the fulfiller of desires, salutations, again and again!
 
 
-  3.  Grant me the pacification of great sins by touching Thee on sacred days. Salutations,
-  again and again, to Thee, who causes the pacification of minor sins!
+  3.  Grant me the pacification of great sins by touching Thee on sacred days. Salutations
+  to Thee, who art the cause of the pacification of minor sins!
 
 
-  4.  Salutations, again and again, to Thee, who bears the force of the river currents.
-  Salutations, again and again, to Thee, the eternally peaceful God, the pacifier!
+  4.  Salutations to Thee, who holdest the force of the river currents. Salutations
+  to the eternally peaceful God, the pacifier!
 
 
-  5.  Salutations, again and again, to Thee, the abode of auspiciousness, the remover
-  of great diseases and skin ailments, the giver of a comfortable dwelling, the destroyer
-  of sins!
+  5.  For knowledge, for the appeasement of great diseases and skin diseases, the
+  giver of auspicious abode, the destroyer of sins, to Thee, salutations, again and
+  again!
 
 
-  6.  Salutations to Thee, the abode of salty waters, who also takes the form of the
-  Ocean of Milk. Salutations, again and again, to Thee, the bed of the Great Vishnu,
-  the father-in-law (of Lakshmi)!
+  6.  Salutations to Thee, the abode of saline waters, who art also in the form of
+  the Ocean of Milk, the bed of the Great Vishnu, the father-in-law, salutations!
 
 
-  7.  Salutations to Thee, who in the Tretā Yuga, provided support to Maināka and
-  others, born of noble lineage, for the construction of Śrī Rāma''s bridge!
+  7.  In the Tretā Yuga, for the cause of the construction of Rāma''s bridge, the
+  support of Maināka and other lineages, to Thee, salutations!
 
 
-  8.  Salutations to Thee, in whose womb the sacred city of Dvārakā is situated. Salutations
-  to Thee, the beloved of Śrī Kṛṣṇa, the Lord of the Seas!
+  8.  The sacred city of Dvārakā is well-situated in whose womb, to the beloved of
+  Śrī Kṛṣṇa, the Lord of the Seas, salutations!
 
 
-  9.  Salutations to Thee, the womb of precious gems, conches, and invaluable jewels.
-  Salutations, again and again, to Thee, who nourishes with salt and is the place
-  of cooking!
+  9.  Salutations to Thee, whose womb is filled with jewels, conches, and precious
+  gems. Salutations to Thee, who nourishes with salt, the establisher of cooking!
 
 
-  10. A person who recites this hymn at the time of bathing in the ocean, undoubtedly
-  increases his accumulation of merit and becomes pure in spirit.'
-translation_te: '1. నమో సముద్రదేవాయ జలధీశాయ తే నమః। నదీనాం పతయే తుభ్యం నిత్యమేవ నమోనమః।।
-
-  ఓ సముద్ర దేవా, నీకు నమస్కారము. జలములకు ప్రభువైన నీకు వందనములు. నదులకు అధిపతివైన
-  నీకు ఎల్లప్పుడూ నమస్కారములు.
-
-
-  2. నూనం దర్శనమాత్రేణ పాపబుద్ధ్వినాశినే। పుణ్యరాశిం వర్ధయతే కామదాయ నమో నమః।।
-
-  నిజంగా, నీ దర్శన మాత్రము చేతనే పాపపు ఆలోచనలు నశిస్తాయి. పుణ్యరాశిని వృద్ధి చేసేవాడివి,
-  కోరికలను తీర్చేవాడివి అయిన నీకు మరల మరల నమస్కారములు.
-
-
-  3. మహా పాతక శాంతిం మే పర్వణి స్పృశతః కురు। ఉపపాతక శాంతిం చ కుర్వాణాయ నమో నమః।।
-
-  పవిత్రమైన రోజులలో నిన్ను తాకిన నాకు మహా పాపముల నుండి శాంతిని ప్రసాదించు. చిన్న పాపములను
-  కూడా శాంతింపచేయు నీకు మరల మరల నమస్కారములు.
-
-
-  4. నదీస్రోతోవేగపీడా ధారయిత్రే నమో నమః। నిత్యశాంతాయ దేవాయ శమయిత్రే నమో నమః।।
-
-  నదీ ప్రవాహ వేగము యొక్క బాధను భరించే నీకు నమస్కారములు. ఎల్లప్పుడూ శాంతంగా ఉండే దేవుడివి,
-  శాంతింపజేసే నీకు మరల మరల నమస్కారములు.
-
-
-  5. వయునాయ మహారోగ-చర్మరోగోపశాంతయే। స్యోనస్థానప్రదాయాస్తు- పాపఘ్నే తే నమోనమః।।
-
-  శుభములకు నిలయమైనవాడివి, గొప్ప రోగాలను, చర్మ రోగాలను శాంతింపజేయువాడివి, మంచి నివాస
-  స్థానాన్ని ప్రసాదించువాడివి, పాపాలను నశింపజేయు నీకు మరల మరల నమస్కారములు.
-
-
-  6. క్షారాంబునిధయే తుభ్యం క్షీరసాగర రూపిణే। శయనాయ మహావిష్ణోః శ్వశురాయ నమో నమః।।
-
-  ఉప్పు నీటి సముద్రానివి, క్షీరసాగర రూపుడవు, మహావిష్ణువుకు శయనమైనవాడివి, (లక్ష్మీదేవికి)
-  మామగారైన నీకు నమస్కారములు.
-
-
-  7. త్రేతాయుగే చ శ్రీరామ-సేతు నిర్మాణహేతవే। మైనాకాదిగోత్రజాత- సమాధారాయ తే నమః।।
-
-  త్రేతాయుగములో శ్రీరాముని వారధి నిర్మాణమునకు మైనాకుడు మొదలైన వారికి ఆధారమైన నీకు
-  నమస్కారములు.
-
-
-  8. పురీ ద్వారవతీ పుణ్యా యస్య గర్భే సమాస్థితా। శ్రీకృష్ణప్రేమపాత్రాయ సింధూనాం పతయే
-  నమః।।
-
-  పుణ్యమైన ద్వారకా నగరము నీ గర్భములో ఉంది. శ్రీకృష్ణుని ప్రేమకు పాత్రుడవైన సింధువులకు
-  అధిపతివైన నీకు నమస్కారములు.
-
-
-  9. మణిశంఖమహానర్ఘ-రత్నగర్భాయ తే నమః। లవణేభ్యః పోషయిత్రే పాకస్థామ్నే నమోనమః।।
-
-  మణులు, శంఖాలు, విలువైన రత్నాలు నీ గర్భంలో ఉన్నాయి. ఉప్పు ద్వారా పోషించేవాడివి, వంటకు
-  స్థానమైన నీకు మరల మరల నమస్కారములు.
-
-
-  10. సముద్రస్య స్నానకాలే స్తోత్రమేతత్ పఠన్ నరః। పుణ్యసంచయముద్వర్ధ్య పూతాత్మా భవతి
-  ధ్రువమ్।।
-
-  సముద్ర స్నానం చేసే సమయంలో ఈ స్తోత్రాన్ని పఠించే వ్యక్తి పుణ్యాన్ని పొంది పవిత్రుడవుతాడు.'
+  10. During the bathing time in the ocean, a person who recites this hymn, increasing
+  the accumulation of merit, undoubtedly becomes purified in soul.'
+translation_te: "1. నమో సముద్రదేవాయ జలధీశాయ తే నమః। నదీనాం పతయే తుభ్యం నిత్యమేవ నమోనమః।।\n\
+  \   ఓ సముద్ర దేవా, నీకు నమస్కారము. జలములకు అధిపతివైన నీకు నమస్కారము. నదులకు ప్రభువైన\
+  \ నీకు ఎల్లప్పుడూ నమస్కారములు.\n\n2. నూనం దర్శనమాత్రేణ పాపబుద్ధ వినాశినే। పుణ్యరాశిం\
+  \ వర్ధయతే కామదాయ నమో నమః।।\n   నిజంగా, దర్శన మాత్రమున పాపపు ఆలోచనలను నశింపజేయువాడవు,\
+  \ పుణ్యరాశిని వృద్ధి చేయువాడవు, కోరికలను తీర్చువాడవు అయిన నీకు మరల మరల నమస్కారములు.\n\
+  \n3. మహా పాతక శాంతిం మే పర్వణి స్పృశతః కురు। ఉపపాతక శాంతిం చ కుర్వాణాయ నమో నమః।।\n\
+  \   పవిత్ర దినములలో నిన్ను తాకిన నాకు మహా పాపముల నుండి శాంతిని ప్రసాదించుము. ఉపపాతకములను\
+  \ శాంతింపజేయు నీకు మరల మరల నమస్కారములు.\n\n4. నదీస్రోతో వేగపీడా ధారయిత్రే నమో నమః।\
+  \ నిత్యశాంతాయ దేవాయ శమయిత్రే నమో నమః।।\n   నదీ ప్రవాహ వేగము యొక్క బాధను భరించు నీకు\
+  \ నమస్కారములు. శాశ్వత శాంతి స్వరూపుడవైన దేవుడవు, శాంతింపజేయువాడవు అయిన నీకు నమస్కారములు.\n\
+  \n5. వయునాయ మహారోగ చర్మరోగోపశాంతయే। స్యోనస్థాన ప్రదాయాస్తు పాపఘ్నే తే నమోనమః।।\n\
+  \   జ్ఞానము కొరకు, గొప్ప రోగములు మరియు చర్మ రోగముల ఉపశమనము కొరకు, శుభకరమైన స్థానమును\
+  \ ప్రసాదించువాడవు, పాపములను నశింపజేయువాడవు అయిన నీకు మరల మరల నమస్కారములు.\n\n6.\
+  \ క్షారాంబునిధయే తుభ్యం క్షీరసాగర రూపిణే। శయనాయ మహావిష్ణోః శ్వశురాయ నమో నమః।।\n\
+  \   ఉప్పు నీటి సముద్రుడవైన నీకు, క్షీరసాగర రూపమున ఉన్న నీకు, మహావిష్ణువుకు శయనమైన\
+  \ నీకు, మామగారికి నమస్కారములు.\n\n7. త్రేతాయుగే చ శ్రీరామ సేతు నిర్మాణ హేతవే। మైనాకాది\
+  \ గోత్రజాత సమాధారాయ తే నమః।।\n   త్రేతాయుగములో శ్రీరాముని వారధి నిర్మాణమునకు కారణమైనవాడవు,\
+  \ మైనాకుడు మొదలైన వంశముల వారికి ఆధారమైన నీకు నమస్కారము.\n\n8. పురీ ద్వారవతీ పుణ్యా\
+  \ యస్య గర్భే సమాస్థితా। శ్రీకృష్ణ ప్రేమపాత్రాయ సింధూనాం పతయే నమః।।\n   పుణ్యమైన\
+  \ ద్వారకా నగరము నీ గర్భమునందు చక్కగా నెలకొని ఉన్నది. శ్రీకృష్ణుని ప్రేమకు పాత్రుడవైన\
+  \ సింధువులకు అధిపతివైన నీకు నమస్కారము.\n\n9. మణి శంఖ మహానర్ఘ రత్న గర్భాయ తే నమః।\
+  \ లవణేభ్యః పోషయిత్రే పాకస్థామ్నే నమోనమః।।\n   మణులు, శంఖువులు, విలువైన రత్నములు\
+  \ గల గర్భము కల నీకు నమస్కారము. ఉప్పు ద్వారా పోషించువాడవు, వంటకు స్థానమైన నీకు మరల\
+  \ మరల నమస్కారములు.\n\n10. సముద్రస్య స్నానకాలే స్తోత్రమేతత్ పఠన్ నరః। పుణ్యసంచయముద్వర్ధ్య\
+  \ పూతాత్మా భవతి ధ్రువమ్।।\n   సముద్ర స్నానము చేయునప్పుడు ఈ స్తోత్రమును పఠించిన మానవుడు\
+  \ పుణ్యమును వృద్ధి చేసుకొని పవిత్రుడగును, నిశ్చయముగా."
 translation_status: draft
 ---

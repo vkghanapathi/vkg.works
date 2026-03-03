@@ -36,15 +36,13 @@ topic:
 - śāstrīya saṅgīta
 - Chaturdaṇḍī Prakāśikā
 - saṅgīta śāstra
-translation_en: '1. He who has crossed beyond the ocean of nectar that is classical
-  music, that wise Śrī Venkata Makhī, verily, is eternally victorious.
+translation_en: '1. He who has verily crossed the ocean of nectar that is classical
+  music, that wise Śrī Veṅkaṭa Makhī, may he be eternally victorious and steadfast.
 
-  2. He who has crossed beyond the great ocean that is classical music, that wise
-  Śrī Venkata Makhī, verily, is victorious in the world.'
-translation_te: '1. శాస్త్రీయ సంగీతమనే అమృతసాగరమును దాటినవాడు, ఆ వివేకవంతుడైన శ్రీ
-  వేంకట మఖి నిత్యము విజయము పొందును, నిశ్చయముగా.
-
-  2. శాస్త్రీయ సంగీతమనే గొప్ప సాగరమును దాటినవాడు, ఆ వివేకవంతుడైన శ్రీ వేంకట మఖి లోకములో
-  విజయము పొందును, నిశ్చయముగా.'
+  2. He who has verily crossed the great ocean that is classical music, that wise
+  Śrī Veṅkaṭa Makhī, may he be victorious in the world, assuredly.'
+translation_te: "1. శాస్త్రీయ సంగీత సుధార్ణవమును దాటినవాడు,\n   శ్రీ వేంకట మఖి ధీమాన్\
+  \ నిత్యము జేగీయతే ధ్రువమ్!\n2. శాస్త్రీయ సంగీత మహార్ణవమును దాటినవాడు,\n   శ్రీ వేంకట\
+  \ మఖి ధీమాన్ లోకే జేగీయతే ధ్రువమ్!"
 translation_status: draft
 ---

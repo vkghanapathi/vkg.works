@@ -36,22 +36,18 @@ topic:
 - stotram
 - śubhāśaṃsana
 - Advaita Vedānta
-translation_en: '1. May Śrī Datta, the Self of Consciousness, the cosmic form who
-  grants auspicious intellect, victory, and bliss to those who take refuge in Him,
-  He who is praised by the thirty-three celestial hosts with their hymns, may He,
-  in this your thirty-fourth birthday celebration, filled with widespread joy and
-  auspiciousness, grant you a complete and unwavering state of Brahman, firm as a
-  mountain peak.
+translation_en: '1. May Śrī Datta, the self-effulgent consciousness, the cosmic form
+  of those who take refuge in Him, He who bestows auspicious intellect, victory, and
+  bliss, be propitiated by the thirty-three celestial hosts; may He, in this your
+  thirty-fourth birthday celebration, filled with widespread joy and auspiciousness,
+  grant you a complete and unwavering state of Brahman, firm as the peak of a mountain.
 
+  Vikriti Samvatsara, Pushya Shukla Ashtami, 12.1.2011'
+translation_te: '1. ముప్పైమూడు దేవతల స్తుతులతో ప్రసన్నుడైన వాడు, తనను ఆశ్రయించిన వారికి
+  విరాట్ స్వరూపుడు, జ్ఞాన స్వరూపుడు, శుభ బుద్ధిని, విజయాన్ని, ఆనందాన్ని ప్రసాదించే
+  శ్రీ దత్తుడు; మీ ముప్పై నాల్గవ జన్మదిన వేడుకలో, విస్తారమైన ఆనందముతో మరియు శుభములతో
+  నిండిన ఈ సందర్భంలో, మీకు పర్వత శిఖరం వలె స్థిరమైన, పరిపూర్ణమైన బ్రహ్మస్థితిని ప్రసాదించుగాక.
 
-  Vikṛti Samvatsara, Puṣya Śuklāṣṭamī, 12.1.2011'
-translation_te: '1. ముప్పైమూడు దేవతల స్తోత్రములచే కొనియాడబడినవాడు, తనను ఆశ్రయించిన
-  విరాట్ స్వరూపులకు శుభ బుద్ధిని, విజయమును, ఆనందమును ప్రసాదించు చిదాత్మ స్వరూపుడైన
-  శ్రీ దత్తుడు, ఈ మీ ముప్పది నాల్గవ జన్మదిన వేడుకలో, విస్తారమైన ఆనందముతో మరియు శుభములతో
-  నిండిన ఈ సందర్భములో, మీకు పర్వత శిఖరము వలె స్థిరమైన, పరిపూర్ణమైన బ్రహ్మీ స్థితిని
-  ప్రసాదించుగాక!
-
-
-  వికృతి సంవత్సరం, పుష్య శుక్లాష్టమి, 12.1.2011'
+  వికృతి సంవత్సరం, పుష్య శుక్ల అష్టమి, 12.1.2011'
 translation_status: draft
 ---

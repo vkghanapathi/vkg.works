@@ -54,34 +54,34 @@ translation_en: '1.  Subrahmanya Prārthanam
 
   Her of eight syllables, of three feet, served by the multitude of the twice-born,
 
-  The Gayatri, foremost among meters, Savitri, the Mother of the Vedas.
+  The Gayatri, excellent among meters, Savitri, the mother of the Vedas.
 
 
-  3.  For brilliance, for strength, and for the abode of the Gods,
+  3.  For brilliance, for strength, and also for the abode of the Gods,
 
   For power, for splendor, I worship the Goddess for the welfare of the world.'
 translation_te: '1. సుబ్రహ్మణ్య ప్రార్థనమ్
 
 
-  కోరిన వరములొసఁగు నేర్పరి సుబ్రహ్మణ్యుని శుభవృద్ధికిన్
+  కోరిన వరముల నొసగు నేర్పరియును, శుభముల వృద్ధిని గూర్చు సుబ్రమణ్యుని భజింతున్,
 
-  సేనానీయు నశేష శత్రు దళనున్ రోగోపశాంతిన్ భజింతున్
+  సేనల కధిపతి, అఖిల వైరుల ద్రుంచు వాడు, రోగముల శాంతి కొరకు భజింతున్,
 
-  వల్లీనాథు ననంత పుణ్య ఫలదున్ బ్రహ్మణ్యతన్ గొల్చెదన్
+  వల్లి నాథుడు, అనంత పుణ్య ఫలముల నిచ్చువాడు, బ్రహ్మత్వము కొరకు భజింతున్,
 
-  షణ్మాతృసుతు నీశపుత్రు ననిశం జ్ఞానైక కామిన్ భజే.
+  ఆరుగురు తల్లుల తనయుడు, భగవంతుని పుత్రుడు, జ్ఞానైక కాముని నిరతము భజింతున్.
 
 
   2. గాయత్రీ ప్రార్థనమ్
 
 
-  అష్టాక్షరి త్రిపాది ద్విజ బృంద నిషేవితన్
+  అష్టాక్షరియు, త్రిపదయు, ద్విజ బృందములచే సేవింపబడునదియు,
 
-  ఛందోవరేణ్య గాయత్రి సావిత్రి వేదమాతనున్.
+  ఛందస్సులలో శ్రేష్ఠమైనది, గాయత్రి, సావిత్రి, వేదమాత.
 
 
-  3. ఓజస్సు సహస్సు దేవతల ధామమునన్
+  3. తేజస్సు కొరకు, శక్తి కొరకు, మరియు దేవతల నివాసము కొరకు,
 
-  బలమునకు భ్రాజస్సునకు దేవిని లోక శ్రేయమునకు భజింతున్.'
+  బలము కొరకు, ప్రకాశము కొరకు, లోక శ్రేయస్సు కొరకు దేవిని భజింతును.'
 translation_status: draft
 ---

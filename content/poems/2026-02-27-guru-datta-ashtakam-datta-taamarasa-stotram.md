@@ -41,90 +41,91 @@ topic:
 - Hari-Hara
 - bhakti
 - tāmarasavṛtti
-translation_en: '1.  That form, assembled from Hari, Hara, and Dhatṛ, is indeed mine,
-  of virtuous conduct, for the world''s benefit. O friend, adore the lotus-like feet
-  of the Lord, bestowed by the Guru, which destroys heaps of great sins.
+translation_en: '1.  That form, assembled from Hari, Hara, and Dhatṛ, is for the world''s
+  benefit, of virtuous disposition, and mine. O friend, adore the lotus-like feet
+  of the Lord, given by the Guru, which destroys heaps of great sins.
 
 
   2.  That which diminishes the sixteen-fold divine imperfections, is skilled in granting
-  manifold desired boons, and bears the rank of the Guru; O friend, adore the lotus-like
-  feet of the Lord, bestowed by the Guru.
+  manifold desired boons, and bears the Guru''s path. O friend, adore the lotus-like
+  feet of the Lord, given by the Guru.
 
 
   3.  That which tears apart the sorrow inflicted by the six internal enemies, is
-  skilled in subduing desire, and is fearless; O friend, adore the lotus-like feet
-  of the Lord, bestowed by the Guru, which eradicates the three-fold miseries.
+  skilled in subduing desire, and is fearless, the abode where the three afflictions
+  are dissolved. O friend, adore the lotus-like feet of the Lord, given by the Guru.
 
 
-  4.  That which is extensive, ancient, pure, and delightful, is wise in purifying
-  wicked deeds, and has dispelled sins and enemies; O friend, adore the lotus-like
-  feet of the Lord, bestowed by the Guru.
+  4.  That which is extensive, ancient, pure, and pleasing, is wise in purifying wicked
+  deeds, and removes sins and enemies. O friend, adore the lotus-like feet of the
+  Lord, given by the Guru.
 
 
-  5.  That which protects the path following the Vedas and beneficial dharma, is the
-  target of the culture of meritorious minds, and is beneficial for the ultimate human
-  purpose; O friend, adore the lotus-like feet of the Lord, bestowed by the Guru.
+  5.  That which protects the path following the Vedas'' beneficial dharma, is the
+  goal of the culture of meritorious minds, and is beneficial for the ultimate purpose
+  of man. O friend, adore the lotus-like feet of the Lord, given by the Guru.
 
 
   6.  That which is exceedingly pure, endowed with wondrous marks, and worthy of worship
-  by all moving and unmoving beings, is a raft for crossing the ocean of existence;
-  O friend, adore the lotus-like feet of the Lord, bestowed by the Guru.
+  by all moving and unmoving beings, is a raft for crossing the ocean of existence.
+  O friend, adore the lotus-like feet of the Lord, given by the Guru.
 
 
   7.  If you desire unsurpassed joy, having pacified the hosts of internal enemies,
-  then with unwavering vigilance; O friend, adore the lotus-like feet of the Lord,
-  bestowed by the Guru.
+  then be ever vigilant. O friend, adore the lotus-like feet of the Lord, given by
+  the Guru.
 
 
-  8.  This, which bestows the wealth of abundant speed, always protects those devoted
-  to its praise, and is a flowing stream of nectar; O friend, adore the lotus-like
-  feet of the Lord, bestowed by the Guru.
+  8.  This, which bestows a wealth of abundant speed, always protects those devoted
+  to its praise, and is a flowing stream of nectar. O friend, adore the lotus-like
+  feet of the Lord, given by the Guru.
 
 
   May that lotus-like face of Yours, O enemy of Mura, beautiful with manifest loveliness
-  and delightful nectar, drunk by the bee-like eyes of the Vraja maidens, blossom
-  in the lake of my heart. O friend, adore the lotus-like feet of the Lord, bestowed
-  by the Guru.'
-translation_te: '1. హరి, హరుడు, ధాతలచే సమకూర్చబడిన రూపం, ఇదిగో నాది, జగత్తు ఉపకారము
-  కొరకు, మంచి శీలముతో నిండినది. ఓ మిత్రుడా, గురువుచే ఇవ్వబడిన ప్రభువు పాద పద్మమును
-  సేవించు, అది గొప్ప పాప సమూహమును నశింపజేయును.
+  and delightful nectar, drunk by the eyes of the Vraja maidens, blossom in the lake
+  of my heart. O friend, adore the lotus-like feet of the Lord, given by the Guru.'
+translation_te: '1. హరి, హరుడు, ధాతలచే సమకూర్చబడిన రూపం, జగత్తు ఉపకారానికి, మంచి స్వభావం
+  కలది, మరియు నాది. ఓ మిత్రమా, గురువుచే ఇవ్వబడిన ప్రభువు యొక్క కమలముల వంటి పాదాలను
+  సేవించు, అది గొప్ప పాపాల సమూహాలను నాశనం చేస్తుంది.
 
 
-  2. పదహారు దివ్య రూపముల దోషములను తగ్గించునది, అనేక విధములైన కోరికలను తీర్చుటకు సమర్థమైనది,
-  గురువు పదవిని ధరించినది; ఓ మిత్రుడా, గురువుచే ఇవ్వబడిన ప్రభువు పాద పద్మమును సేవించు.
+  2. పదహారు విధాల దివ్యమైన లోపాలను తగ్గించేది, అనేక విధాలుగా కోరిన వరాలను ఇవ్వడంలో
+  నేర్పరి, మరియు గురువు మార్గాన్ని ధరించేది. ఓ మిత్రమా, గురువుచే ఇవ్వబడిన ప్రభువు
+  యొక్క కమలముల వంటి పాదాలను సేవించు.
 
 
-  3. ఆరు శత్రువులచే కలిగిన దుఃఖమును తొలగించునది, మనస్సును నిగ్రహించుటకు సమర్థమైనది,
-  ధైర్యవంతుడు; ఓ మిత్రుడా, గురువుచే ఇవ్వబడిన ప్రభువు పాద పద్మమును సేవించు, అది మూడు
-  విధములైన బాధలను తొలగించును.
+  3. ఆరు అంతర్గత శత్రువులచే కలిగే దుఃఖాన్ని తొలగించేది, కోరికను అదుపు చేయడంలో సమర్థుడు,
+  మరియు ధైర్యవంతుడు, మూడు బాధలు తొలగిపోయే నివాసం. ఓ మిత్రమా, గురువుచే ఇవ్వబడిన ప్రభువు
+  యొక్క కమలముల వంటి పాదాలను సేవించు.
 
 
-  4. విస్తారమైనది, పురాతనమైనది, పవిత్రమైనది, మనోహరమైనది, దుష్ట చరిత్రలను శుద్ధి చేయుటలో
-  తెలివైనది, పాపములను, శత్రువులను తొలగించినది; ఓ మిత్రుడా, గురువుచే ఇవ్వబడిన ప్రభువు
-  పాద పద్మమును సేవించు.
+  4. విస్తారమైనది, పురాతనమైనది, పవిత్రమైనది మరియు ఆహ్లాదకరమైనది, దుష్ట క్రియలను శుద్ధి
+  చేయడంలో తెలివైనది, మరియు పాపాలను మరియు శత్రువులను తొలగిస్తుంది. ఓ మిత్రమా, గురువుచే
+  ఇవ్వబడిన ప్రభువు యొక్క కమలముల వంటి పాదాలను సేవించు.
 
 
-  5. వేదాలను, ధర్మమును అనుసరించు మార్గమును రక్షించునది, పుణ్యాత్ముల మనస్సుల సంస్కృతికి
-  లక్ష్యమైనది, అంతిమ పురుషార్థమునకు హితమైనది; ఓ మిత్రుడా, గురువుచే ఇవ్వబడిన ప్రభువు
-  పాద పద్మమును సేవించు.
+  5. వేదాల యొక్క ప్రయోజనకరమైన ధర్మాన్ని అనుసరించే మార్గాన్ని రక్షించేది, పుణ్యాత్ముల
+  మనస్సుల సంస్కృతికి లక్ష్యం, మరియు మానవుని యొక్క అంతిమ లక్ష్యానికి ప్రయోజనకరమైనది.
+  ఓ మిత్రమా, గురువుచే ఇవ్వబడిన ప్రభువు యొక్క కమలముల వంటి పాదాలను సేవించు.
 
 
-  6. మిక్కిలి పవిత్రమైనది, అద్భుతమైన చిహ్నములతో కూడినది, చరాచర జీవులచే పూజింపదగినది,
-  సంసార సాగరమును దాటుటకు తెప్ప వంటిది; ఓ మిత్రుడా, గురువుచే ఇవ్వబడిన ప్రభువు పాద పద్మమును
+  6. అత్యంత పవిత్రమైనది, అద్భుతమైన గుర్తులను కలిగి ఉంది, మరియు కదిలే మరియు కదలని జీవులందరిచే
+  పూజించదగినది, ఉనికి యొక్క సముద్రాన్ని దాటడానికి ఒక తెప్ప. ఓ మిత్రమా, గురువుచే ఇవ్వబడిన
+  ప్రభువు యొక్క కమలముల వంటి పాదాలను సేవించు.
+
+
+  7. నీవు అంతర్గత శత్రువుల సమూహాలను శాంతింపజేసి, అసమానమైన ఆనందాన్ని కోరుకుంటే, ఎల్లప్పుడూ
+  అప్రమత్తంగా ఉండు. ఓ మిత్రమా, గురువుచే ఇవ్వబడిన ప్రభువు యొక్క కమలముల వంటి పాదాలను
   సేవించు.
 
 
-  7. నీవు శాశ్వతమైన ఆనందమును కోరుకుంటే, లోపలి శత్రువుల సమూహమును శాంతింపజేసి, అప్పుడు
-  స్థిరమైన జాగరూకతతో; ఓ మిత్రుడా, గురువుచే ఇవ్వబడిన ప్రభువు పాద పద్మమును సేవించు.
+  8. ఇది సమృద్ధిగా వేగవంతమైన సంపదను ఇస్తుంది, దాని స్తుతికి అంకితమైన వారిని ఎల్లప్పుడూ
+  రక్షిస్తుంది మరియు అమృత ప్రవాహం. ఓ మిత్రమా, గురువుచే ఇవ్వబడిన ప్రభువు యొక్క కమలముల
+  వంటి పాదాలను సేవించు.
 
 
-  8. ఇది గొప్ప వేగము యొక్క సంపదను ఇచ్చునది, దీనిని స్తుతించువారిని ఎల్లప్పుడూ రక్షించును,
-  మరియు అమృత ధారను స్రవించునది; ఓ మిత్రుడా, గురువుచే ఇవ్వబడిన ప్రభువు పాద పద్మమును
-  సేవించు.
-
-
-  ఓ మురారి, నీ ముఖ పద్మము, స్పష్టమైన అందముతో, మనోహరమైన మకరందముతో, వ్రజ యువతుల కన్నులనే
-  తుమ్మెదలచే త్రాగబడినది, నా హృదయమనే చెరువులో వికసించుగాక. ఓ మిత్రుడా, గురువుచే ఇవ్వబడిన
-  ప్రభువు పాద పద్మమును సేవించు.'
+  ఓ మురారి శత్రువా, వ్యక్తమైన అందం మరియు ఆనందకరమైన తేనెతో అందంగా ఉన్న నీ కమలం వంటి
+  ముఖం, వ్రజ యువతుల కన్నులచే త్రాగబడినది, నా హృదయ సరస్సులో వికసించుగాక. ఓ మిత్రమా,
+  గురువుచే ఇవ్వబడిన ప్రభువు యొక్క కమలముల వంటి పాదాలను సేవించు.'
 translation_status: draft
 ---

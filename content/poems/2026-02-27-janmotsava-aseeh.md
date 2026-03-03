@@ -37,16 +37,18 @@ topic:
 - śubhāśaṃsana
 - Advaita Vedānta
 - ghanapāṭha
-translation_en: "1. May Śrī Datta, the self-effulgent consciousness, the cosmic form\
-  \ indwelling in his devotees, the giver of auspicious intellect, victory, and bliss,\
-  \ who is praised by the thirty-three celestial hosts with their hymns, may He, on\
-  \ this your thirty-fourth birthday, abundant with joy, grant you a state of Brahman,\
-  \ complete and unwavering, like the steadfast peak of a mountain. \n\nVikruti Samvatsara,\
-  \ Pushya Shukla Ashtami, 12.1.2011"
-translation_te: '1. ముప్పైమూడు దేవతల స్తోత్రములచే కొనియాడబడినవాడు, తన భక్తుల హృదయాలలో
-  విరాట్ స్వరూపుడై వెలుగొందువాడు, జ్ఞానము, విజయము, ఆనందము ప్రసాదించువాడు ఐన శ్రీ దత్తుడు,
-  ఈ నీ ముప్పది నాల్గవ జన్మదినమున, సంతోషముతో నిండిన నీకు, పర్వత శిఖరమువలె స్థిరమైన,
-  పరిపూర్ణమైన బ్రహ్మస్థితిని ప్రసాదించుగాక.
+translation_en: '1. May Śrī Datta, the self-effulgent consciousness, the cosmic form
+  of those who take refuge in Him, He who bestows auspicious intellect, victory, and
+  bliss, be propitiated by the thirty-three celestial hosts; may He, in this your
+  thirty-fourth birthday celebration, grant auspiciousness and establish you in the
+  complete, unwavering, and supreme state of Brahman.
+
+
+  Vikruti Samvatsara, Pushya Shukla Ashtami, 12.1.2011'
+translation_te: '1. ముప్పైమూడు దేవతల స్తుతులతో ప్రసన్నుడైనవాడు, తనను ఆశ్రయించినవారికి
+  విరాట్ స్వరూపుడు, జ్ఞానస్వరూపుడు, శ్రీ దత్తుడు, మంచి బుద్ధిని, విజయాన్ని, ఆనందాన్ని
+  ప్రసాదించేవాడు; అట్టివాడు నీ ముప్పై నాల్గవ జన్మదిన వేడుకలో శుభములను కలిగించుగాక
+  మరియు నిన్ను సంపూర్ణమైన, నిశ్చలమైన, బ్రహ్మస్థితిలో నిలుపుగాక.
 
 
   వికృతి సంవత్సరం, పుష్య శుక్లాష్టమి, 12.1.2011'

@@ -39,105 +39,107 @@ topic:
 - Rigveda
 - Āditya
 - Pitṛ
-translation_en: '1.  Through the power of their asceticism, humans attain divinity;
-  by the grace of Prajāpati, they become renowned by the name Ṛbhu.
+translation_en: '1. Through the power of their asceticism, humans attain divinity
+  and become renowned as the Ṛbhus, by the grace of Prajāpati.
 
 
-  2.  Agni, Indra, and the Viśvadevas excluded them from the Soma-drinking. Then,
-  impelled by the preceptor Savitṛ, Prajāpati himself,
+  2. Agni, Indra, and the Viśvadevas initially refused them the Soma drink. Then,
+  impelled by the inspirer, the preceptor Savitṛ himself,
 
 
-  3.  Drank Soma from both of them. Thus, the Ṛbhus attained companionship with the
-  Gods and shared in their joyous feasts.
+  3. Prajāpati drank Soma along with them. Thus, the Ṛbhus attained fellowship (Sadhamaadatas)
+  with the gods.
 
 
-  4.  Why did they abhor them somewhat due to the human scent? Therefore, let us strive
-  for the removal of the taint of that mortal scent.
+  4. Since the gods abhorred them somewhat due to the human scent, let us strive to
+  remove that taint of mortal fragrance.
 
 
-  5.  Here, let there be remembrance of the Father, and of the words ''Mother'' and
-  ''Father''. May Heaven and Earth, as declared by the Śruti, be aware of this, and
-  Savitṛ, the Guru.
+  5. Here, remembrance of the progenitor is fitting, and of the words ''mother'' and
+  ''father.'' May Heaven and Earth, as declared by the Śruti, be aware, and Savitṛ,
+  the preceptor.
 
 
-  6.  (For those to whom the Mother)
+  6. (For those to whom the Mother)
 
-  The Earth, the creatrix, is the Mother, who swells with milk for them. The unyielding
-  Heaven, supporting the mountains, swells with the nectarous honey.
-
-
-  7.  We praise those Ādityas, possessing the strength of hymns, removers of rain.
-  May the taint of human scent vanish from me; may there be well-being for us.
+  The Earth, the creatrix, is the mother, and she swells with milk for them. The unyielding
+  Heaven, with its mountain heights, swells with the nectarous honey.
 
 
-  8.  (Thus, to the Father)
-
-  Thus, through sacrifice, with oblations and reverence, let us worship. To this Father,
-  the All-God, the protector, the leader.
-
-
-  9.  O Bṛhaspati, showering God, may we be by your grace. May we be endowed with
-  heroes, blessed with good progeny, and ever lords of riches.
+  7. May we praise those Ādityas, possessors of the strength of hymns, removers of
+  drought. May the taint of human scent vanish from me, and may there be well-being
+  for us.
 
 
-  10. May the taint of human scent vanish from me; may there be well-being for us.
+  8. (Thus to the Father)
+
+  Thus, through sacrifice, with oblations and reverence, may we serve. To this Father,
+  the all-god, the protector, the leader.
+
+
+  9. O Bṛhaspati, showerer of blessings, O God, may we be by your grace, possessors
+  of heroes, with excellent progeny, ever lords of riches.
+
+
+  10. May the taint of human scent vanish from me, and may there be well-being for
+  us.
 
 
   Vamśīkṛṣṇa Ghanapāṭhī
 
-  Ref: Ṛgvedaḥ, Dharma Sindhuḥ
+  Ref: Ṛgveda, Dharma Sindhu
 
   1) Aitareya Brāhmaṇam 3.13.30, 2) Śā.Saṁ.Ma.4.5.50 evā pitre, Śā.Saṁ.10.5.63 yebhyo
-  mātā, manuṣyagandhadoṣanivāraṇavidhiḥ – Dharma Sindhuḥ.'
+  mātā, Manuṣyagandhadoṣanivāraṇavidhiḥ – Dharma Sindhu.'
 translation_te: '1. తపశ్శక్తి ప్రభావమున మానవులు దేవత్వమును పొంది, ప్రజాపతి అనుగ్రహము
   వలన ఋభువులన ప్రసిద్ధి చెందుచున్నారు.
 
 
-  2. అగ్ని, ఇంద్రుడు, విశ్వదేవులు వారిని సోమపానము నుండి తొలగించిరి. అప్పుడు, గురువు
-  ఐన సవితృనిచే ప్రేరేపింపబడిన ప్రజాపతి స్వయముగా,
+  2. అగ్ని, ఇంద్రుడు, విశ్వదేవులు మొదట వారిని సోమపానమునకు నిరాకరించారు. తరువాత, గురువు,
+  ప్రేరకుడు అయిన సవితృ స్వయముగా ప్రేరేపించగా,
 
 
-  3. వారిరువురి నుండి సోమమును త్రాగెను. ఈ విధముగా ఋభులు దేవతలతో స్నేహమును పొంది, వారి
-  సంతోషకరమైన విందులలో పాలుపంచుకొనిరి.
+  3. ప్రజాపతి వారితో కలిసి సోమమును పానము చేసెను. ఈ విధముగా ఋభువులు దేవతలతో సమానత్వమును
+  (సధమాదత) పొందిరి.
 
 
-  4. మానవ వాసన కారణముగా వారు వారిని ఎందుకు అసహ్యించుకున్నారు? కావున, ఆ మర్త్య గంధ
-  దోషమును తొలగించుటకు మనము ప్రయత్నించెదము గాక.
+  4. మానవ వాసన కారణముగా దేవతలు వారిని కొంత అసహ్యించుకున్నారు. కావున ఆ మర్త్య గంధ దోషమును
+  తొలగించుటకు ప్రయత్నిద్దాము.
 
 
-  5. ఇక్కడ, తండ్రిని, మరియు ''తల్లి'' మరియు ''తండ్రి'' అను పదములను స్మరించుకొందము.
-  శ్రుతిచే ప్రకటింపబడిన స్వర్గము మరియు భూమి దీనిని తెలుసుకొనుగాక, మరియు గురువు ఐన
-  సవితృడు కూడా తెలుసుకొనుగాక.
+  5. ఇక్కడ సృష్టికర్తను స్మరించుట యుక్తము, మరియు ''తల్లి'' మరియు ''తండ్రి'' అను పదములను
+  స్మరించుట యుక్తము. శ్రుతి ప్రకారము ద్యవాపృథివులు తెలుసుకొందురు గాక, మరియు సవితృ
+  గురువు తెలుసుకొను గాక.
 
 
   6. (ఎవరి కొరకు తల్లి)
 
-  సృష్టికర్త ఐన భూమి తల్లి, ఎవరి కొరకు పాలతో నిండి ఉండునో. పర్వతములను మోయుచున్న దృఢమైన
-  స్వర్గము, మకరందపు తేనెతో నిండి ఉండును.
+  భూమి, సృష్టికర్త, తల్లి, మరియు ఆమె వారి కొరకు పాలతో నిండి ఉండును. పర్వత శిఖరములు
+  కలిగిన ఆకాశము మధువుతో నిండి ఉండును.
 
 
-  7. స్తుతుల బలము కలిగిన, వర్షమును తొలగించు ఆదిత్యులను మనము స్తుతించెదము. నా నుండి
-  మానవ గంధ దోషము తొలగిపోవుగాక; మనకు శుభము కలుగుగాక.
+  7. స్తుతుల బలము కలిగిన, కరువును తొలగించే ఆ ఆదిత్యులను స్తుతిద్దాము. నా నుండి మానవ
+  గంధ దోషము తొలగిపోవు గాక, మరియు మనకు శుభము కలుగు గాక.
 
 
   8. (ఈ విధముగా తండ్రికి)
 
-  ఈ విధముగా, యజ్ఞము ద్వారా, హవిస్సు మరియు భక్తితో మనము ఆరాధించెదము. ఈ తండ్రికి, సర్వదేవునికి,
+  ఈ విధముగా యజ్ఞము ద్వారా, హవిస్సు మరియు భక్తితో సేవ చేద్దాము. ఈ తండ్రికి, విశ్వదేవునికి,
   రక్షకునికి, నాయకునికి.
 
 
-  9. ఓ బృహస్పతి, వర్షించే దేవుడా, నీ దయ వలన మనము ఉందుము గాక. మనము వీరులతో, మంచి సంతానముతో,
-  మరియు ఎల్లప్పుడూ సంపదల ప్రభువులముగా ఉందుము గాక.
+  9. ఓ బృహస్పతీ, వరముల వర్షము కురిపించువాడా, ఓ దేవా, నీ దయ వలన మేము వీరులను కలిగిన
+  వారముగా, మంచి సంతానము కలిగిన వారముగా, ఎల్లప్పుడూ సంపదలకు అధిపతులుగా ఉందుము గాక.
 
 
-  10. నా నుండి మానవ గంధ దోషము తొలగిపోవుగాక; మనకు శుభము కలుగుగాక.
+  10. నా నుండి మానవ గంధ దోషము తొలగిపోవు గాక, మరియు మనకు శుభము కలుగు గాక.
 
 
   వంశీకృష్ణ ఘనపాఠీ
 
-  సూచన: ఋగ్వేదః, ధర్మ సింధుః
+  సూచన: ఋగ్వేదము, ధర్మ సింధువు
 
-  1) ఐతరేయ బ్రాహ్మణం 3.13.30, 2) శా.సం.మ.4.5.50 ఏవా పిత్రే, శా.సం.10.5.63 యేభ్యో మాతా,
-  మనుష్యగంధదోషనివారణవిధిః – ధర్మ సింధుః।'
+  1) ఐతరేయ బ్రాహ్మణము 3.13.30, 2) శా.సం.మ.4.5.50 ఏవా పిత్రే, శా.సం.10.5.63 యేభ్యో
+  మాతా, మనుష్యగంధదోషనివారణవిధిః – ధర్మ సింధుః।'
 translation_status: draft
 ---

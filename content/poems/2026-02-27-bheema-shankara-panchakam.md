@@ -478,67 +478,71 @@ map:
   verse_num: 10
 map_status: draft
 translation_en: '1. I worship Bhima Shankara, bestower of dense bliss and majestic
-  glory; I seek refuge in Bhima Shankara, the peerless destroyer of the fear of enemies.
+  glory; I seek refuge in Bhima Shankara, the non-dual destroyer of the fear of enemies.
   I contemplate Bhima Shankara for the increase of supreme consciousness; I sacrifice
-  to Bhima Shankara for the complete cleansing of sins.
+  to Bhima Shankara for the complete cleansing of sinful deeds.
 
 
-  2. To slay the flesh-eating demons of old, those named Tripura, Shiva, the great
-  charioteer, with an arrow imbued with the power of Hari, Soma, and Agni, assumed
-  a terrifying form, wielding a mighty, fierce bow. We worship Him, the Lord of eight
+  2. In ancient times, to slay the flesh-eating demons named Tripura, that Shiva,
+  with an arrow imbued with the power of Hari, Soma, and Agni, assumed a terrifying
+  form, wielding a fierce bow, a great warrior. We worship Him, the Lord of eight
   perfections, who dispelled the fear of the world!
 
 
-  3. With a single, well-aimed arrow, He slew the multitude of demons; He burned the
-  three cities—one of gold, one of silver, and one of iron. But, assuming compassion
-  for the wives of the slain demons, He dwells in the forest named after them, the
-  sole sovereign of the world, shining forth!
+  3. With a single arrow, He destroyed the multitude of demons; He burned the three
+  cities of gold, silver, and iron. But, having compassion on the wives of the slain
+  demons, that sole sovereign of the world dwells in the forest named after them,
+  shining forth.
 
 
-  4. He shines, the Lord of the mountain, the great Lord Maheshwara, the sovereign
-  of magnificent treasures, bestowing prosperity upon His devotees, a veritable ocean
-  of grace. He abides in the region of the source of the river named Bhima, the cause
-  of all fitness for the abode of ever-new glories.
+  4. He shines, the Lord of the mountain, the great Lord, the sovereign of magnificent
+  treasures, bestowing wealth upon His devotees, an ocean of merciful boons. He abides
+  in the region of the origin of the river named Bhima, the cause of all fitness for
+  the abode of ever-new glories.
 
 
-  5. In the month of Shravana, He is served by hundreds of thousands of attendants;
-  the Lord of the universe ever grants desired, timely rain. Bhima Shankara Deva,
-  the dispeller of fear, the breaker of worldly bonds, worshipped in secret by preceptors,
-  is thus adored by me with devoted mind.
+  5. Verily, in the month of Shravana, He is served by hundreds of thousands of attendants;
+  the Lord of the universe always grants desired timely rain. Bhima Shankara Deva,
+  the destroyer of fear, worshipped with secret devotion by preceptors, the breaker
+  of worldly bonds, is thus adored by me with cherished devotion.
 
 
-  *Fruit of Recitation:*
+  Phala Darshanam (Fruit of the Vision):
 
-  By worshipping Bhimashankara, the Jyotirlinga Mahadeva, those who recite this hymn
-  attain the merit of visiting the sacred shrine. Om Namah Shivaya.'
-translation_te: '1. ఘన సౌఖ్య వైభవ దాయకుడగు భీమ శంకరు నర్చించెదన్; శత్రుభీతి నాశకుడైన
-  అద్వితీయుడగు భీమ శంకరు నాశ్రయించెదన్. పరసంవిత్పరివృద్ధికి భీమ శంకరు ననువదించెదన్;
-  దురితముల నిర్మూలనకు భీమ శంకరు నా యజించెదన్.
+  By worshipping Bhimashankara, the Jyotirlinga Mahadeva, and reciting this hymn,
+  one attains the fulfillment of visiting the sacred site.
 
-
-  2. పూర్వము త్రిపురాసురులను పేరుగల రాక్షసుల, మాంస భక్షకుల సంహరించుటకు, హరి సోమ వహ్ని
-  మయ తేజస్సుగల బాణముతో, శివుడు భీకర రూపము దాల్చి, గొప్ప ధనుస్సును ధరించి, లోక భీతిని
-  పోగొట్టెను. అష్టభూతి స్వరూపుడగు ఆ శివుని ఉపాసించెదము!!
+  Om Namah Shivaya'
+translation_te: '1. ఘన సౌఖ్య వైభవ దాయకుడగు భీమ శంకరుని అర్చింతును; శత్రుభీతి నాశకుడైన
+  అద్వితీయుడగు భీమ శంకరుని ఆశ్రయింతును. పరసంవిత్తు వృద్ధి కొరకు భీమ శంకరుని ధ్యానింతును;
+  పాపముల నుండి పరిశుద్ధికై భీమ శంకరుని పూజింతును.
 
 
-  3. ఒక్క బాణముతో రాక్షస సమూహమును సంహరించెను; బంగారు, వెండి, ఇనుముతో నిర్మితమైన మూడు
-  పురములను దహించెను. కాని, సంహరింపబడిన రాక్షసుల భార్యల యెడ కరుణ కలిగి, ఆ పేరుతో అడవిలో
-  నివసించుచున్నాడు, ఆయనే భువనైక రాట్!
+  2. పూర్వము త్రిపురాసురులను రాక్షసులను సంహరించుటకు, హరి సోమ వహ్నుల తేజస్సు గల బాణముతో
+  శివుడు భీకర రూపమును దాల్చి, గొప్ప ధనుస్సును ధరించి, లోక భయమును పోగొట్టెను. అష్టసిద్ధుల
+  ప్రభువైన ఆ స్వామిని ఉపాసింతుము!
 
 
-  4. గిరిశుడైన మహేశ్వరుడు, గొప్ప నిధుల ప్రభువు ప్రకాశించుచున్నాడు; కృపా సముద్రుడైన
-  గిరీశుడు భక్త గణమునకు సంపదను ప్రసాదించును. భీమ అను నది ఉద్భవించు ప్రదేశమున నివసించుచు,
+  3. ఒక్క బాణముతో రాక్షస సమూహమును సంహరించెను; బంగారు, వెండి, ఇనుప నగరములను దహించెను.
+  కాని, మరణించిన రాక్షసుల భార్యల యెడ కరుణ కలిగి, ఆ పేరుతో అడవిలో నివసించుచు, ఆ ఏకైక
+  జగత్ప్రభువు ప్రకాశించుచున్నాడు.
+
+
+  4. ఆ పర్వత ప్రభువు, మహేశ్వరుడు, గొప్ప నిధుల రాజు ప్రకాశించుచున్నాడు; కృపా సముద్రుడైన
+  ఆ గిరీశుడు భక్తులకు సంపదలను ప్రసాదించును. భీమా నది ఉద్భవించిన ప్రదేశమున నివసించుచు,
   నిత్య నూతన వైభవములకు ఆధారమైన యోగ్యతకు కారణభూతుడు.
 
 
-  5. శ్రావణ మాసములో లక్షలాది పరిచారకులతో సేవింపబడుచున్నాడు; జగదీశ్వరుడు కోరిన సమయములో
-  వర్షము కురిపించును. భయమును పోగొట్టువాడు, గురువులచే రహస్యముగా అర్చింపబడినవాడు, భవబంధాలను
-  తొలగించువాడు అగు భీమశంకర దేవుని నా ఇష్టముతో పూజిస్తున్నాను.
+  5. శ్రావణ మాసములో లక్షలాది పరిచారకులు ఆయనను సేవింతురు; జగదీశ్వరుడు కోరిన సమయములో
+  వర్షము కురిపించును. భయమును పోగొట్టువాడు, గురువులచే రహస్యముగా అర్చింపబడినవాడు, సంసార
+  బంధములను తొలగించువాడు అయిన భీమశంకర దేవుని నేను ఇష్టభావముతో పూజింతును.
 
 
-  *ఫల దర్శనము:*
+  ఫల దర్శనము:
 
-  జ్యోతిర్లింగ మహాదేవుడైన భీమాశంకరుని పూజలో, ఈ స్తోత్రమును పఠించిన వారికి క్షేత్ర
-  దర్శన సిద్ధి కలుగును. ఓం నమశ్శివాయ.'
+  జ్యోతిర్లింగ మహాదేవుడైన భీమాశంకరుని పూజించి, ఈ స్తోత్రమును పఠించిన వారికి క్షేత్ర
+  దర్శన సిద్ధి కలుగును.
+
+  ఓం నమశ్శివాయ'
 translation_status: draft
 ---

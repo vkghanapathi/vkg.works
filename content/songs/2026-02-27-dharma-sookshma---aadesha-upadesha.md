@@ -36,4 +36,38 @@ topic:
 - upadeśa
 - śiṣṭācāra
 - sat-chit-ānanda
+translation_en: '1.  This is the order, the instruction: the Veda strives for a life
+  of happiness. Know the subtlety of Dharma, for its understanding is essential.
+
+
+  2.  Faultless deeds, those which are among the virtuous, let one cultivate them
+  here, and never the others. Whatever good conduct is in the class of teachers, surely
+  that must be revered by you, for it is beneficial to you.
+
+
+  3.  Among the excellent, the learned, the virtuous, quickly let your inclination
+  be given, and supreme consciousness. May modesty be present, may reverence be present,
+  always in giving; salutations, prostrations with a staff, are for well-being.
+
+
+  4.  Follow the learned who are diligent, who are without harshness, when your intellect
+  is doubtful about what is to be done. If gentleness and prosperity are desired here,
+  then may Existence-Consciousness-Bliss and Peace be ever with you.'
+translation_te: '1. ఇదిగో ఆదేశము, ఉపదేశ క్రమము; వేదము సుఖజీవనమునకై పాటుపడుచున్నది.
+  ధర్మము యొక్క సూక్ష్మమును తెలుసుకొనుము, ఏలయన దాని విజ్ఞానము ఆవశ్యకము.
+
+
+  2. నిందారహిత కర్మలు, ఏవి శిష్టులందు గలవో, వాటిని ఇక్కడ సేవించవలెను, ఇతరములను కాదు.
+  ఆచార్యవర్గమునందు ఏది సదాచారమో, అది నిశ్చయముగా నీచే ఉపాసింపదగినది, అది నీకు హితము.
+
+
+  3. శ్రేష్ఠులందు, విద్వాంసులందు, శిష్టులందు శీఘ్రముగా నీ ఆసక్తి ఇవ్వబడవలెను, మరియు
+  పరమమైన సంవిత్తును. సిగ్గు ఉండుగాక, భయము ఉండుగాక, దానములందు నిత్యము; అభివాదములు,
+  దండ ప్రణామములు హితము కొరకు.
+
+
+  4. అభ్యసించిన విద్వాంసులను అనుసరించుము, వారు కఠినత్వము లేనివారు, నీ బుద్ధి ఎప్పుడు
+  చేయదగిన దాని గురించి సందేహించినదో అప్పుడు. సౌమ్యత్వము మరియు సంపద ఇష్టమైన యెడల, సత్-చిత్-ఆనంద
+  శాంతులు ఎల్లప్పుడు నీతో ఉండుగాక.'
+translation_status: draft
 ---

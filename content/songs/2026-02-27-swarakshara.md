@@ -34,4 +34,65 @@ topic:
 - ghanapāṭha
 - mantra phonetics
 - samādhāna
+translation_en: '1.  **Weariness of Journeying**
+
+  The presence of coming and going,
+
+  The presence of that which is with coming and going,
+
+  The presence of that which is near coming and going,
+
+
+  2.  *Nidha nipa*
+
+  *Nidhani samasamaagaamada.*
+
+  *Sasaadhaani saadhani nidhanipadada.*
+
+
+  3.  *Sama ssamapadada*
+
+  (The same)
+
+  *Sssama daani padada samam samdhaanipadada.*
+
+  (He, Ma)
+
+
+  4.  *Sari sani nidhanee*
+
+  *Samaadhaanipadanee.*
+
+  He whose movement is the dense bliss of Being, Consciousness, and Bliss.'
+translation_te: '1.  **గమన శ్రమ**
+
+  రాకపోకల సన్నిధి,
+
+  రాకపోకలతో కూడిన సన్నిధి,
+
+  రాకపోకలకు దగ్గరగా ఉన్న సన్నిధి.
+
+
+  2.  *నిధ నిప*
+
+  *నిధని సమసమాగామద.*
+
+  *ససాధాని సాధని నిధనిపదద.*
+
+
+  3.  *సమ స్సమపదద*
+
+  (సమాః)
+
+  *స్సమ దాని పదద సమం సంధానిపదద.*
+
+  (సః మా)
+
+
+  4.  *సరి సని నిధనీ*
+
+  *సమాధానిపదనీ.*
+
+  సచ్చిదానంద ఘన గమనుడు అతడు.'
+translation_status: draft
 ---

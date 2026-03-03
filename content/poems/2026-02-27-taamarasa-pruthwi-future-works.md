@@ -39,48 +39,36 @@ topic:
 translation_en: '1. Thus speaks the lotus-born Brahma:
 
   May that lotus of your face, O foe of Mura, whose manifest beauty is delightful
-  with nectar, and which is drunk by the lotus-eyes of the milkmaids of Vraja, blossom
-  in the lake of my heart.
+  with nectar, and which is drunk by the lotus-like eyes of the maidens of Vraja,
+  blossom in the lake of my heart.
 
 
-  2. He whose form is gathered together by Hari, Hara, and Dhatṛ (Brahmā); (Here follows
-  a description of the Pṛthvī meter)
+  2. He whose form is a confluence of Hari, Hara, and Dhatṛ (Brahmā); (Meter: Pṛthvī)
 
-  He who, descending swiftly in the Yadu lineage, removed with his effortless play
-  the burden of the earth, distressed by the multitude of terrible demon lords;
+  He who, descending swiftly into the Yadu lineage, removed with his effortless play
+  the unbearable burden of the earth distressed by the multitude of wicked demon lords;
 
-  He, that Hari, is the refuge of the worlds; being propitiated by remembrance, hymns,
-  and flattering words, may He remove the burden of sins from those like us.'
-translation_te: '1. ఇతి వద తామరసం నజజాద్యః
+  He, that Hari, is the refuge of the worlds; when propitiated with remembrance, hymns,
+  and endearing praises, may He remove the burden of sins from those like us.'
+translation_te: '1. ఇతి వద తామరసం నజ్జాద్యః
 
-  స్ఫుటసుషమా మకరంద మనోజ్ఞం వ్రజలలనా నయనాలినీపీతమ్ |
-
-  తవ ముఖతామరసం మురశత్రో హృదయ తడాగ వికాశి మమాస్తు ||
-
-  తామరసమున బుట్టిన బ్రహ్మ ఇట్లు పలికెను:
-
-  ఓ మురవైరి! నీ ముఖపద్మము, వికసించిన సొంపుతో మకరంద మాధుర్యమును వెదజల్లుచు, వ్రజకాంతల
-  కన్నులనెడి పద్మములచే గ్రోలబడుచు, నా హృదయమనెడి కొలనులో వికసించుగాక!
+  వికసిత సౌందర్య మకరంద మనోజ్ఞమై, వ్రజ లలనల నయనాలనే కలువలకు తేనె వంటిది, ఓ మురవైరీ!
+  అట్టి నీ ముఖ పద్మము నా హృదయమనే తటాకములో వికసించుగాక!
 
 
-  2. హరిహర ధాతృ సమాహృత రూపమ్ |
+  2. హరిహర ధాతృ సమాహృత రూపమ్ (వృత్తం: పృథ్వీ)
 
-  జసౌ జసయలా వసుగ్రహయతిశ్చ పృథ్వీ గురుః |
+  దురంత దనుజేశ్వర ప్రకర దుస్థ పృథ్వీభరమ్
 
-  దురంతదనుజేశ్వర - ప్రకర దుస్థ పృథ్వీభరమ్ |
+  జహార నిజలీలయా యదుకులేऽవతీర్యాశు యః
 
-  జహార నిజలీలయా - యదుకులేऽవతీర్యాశు యః |
+  స ఏష జగతాం గతిః దురిత భార మస్మాదృశామ్
 
-  స ఏష జగతాం గతిః - దురిత భార మస్మాదృశామ్ |
+  హరిష్యతి హరి స్స్మృతి స్తవన చాటుభిస్తోషితః
 
-  హరిష్యతి హరి స్స్మృతి - స్తవన చాటుభిస్తోషితః ||
-
-  హరి, హరుడు, బ్రహ్మలచే కూర్చబడిన రూపము గలవాడు; (ఇక్కడ పృథ్వీ వృత్త లక్షణములు చెప్పబడినవి)
-
-  ఎవ్వడు యదుకులమునందు శీఘ్రముగా అవతరించి, తన లీలచే భయంకరమైన రాక్షస ప్రభువుల సమూహముచే
-  దుస్థితిలోనున్న భూభారమును తొలగించెనో;
-
-  అట్టి హరియే లోకములకు గతి; స్మరణ, స్తుతి, ప్రియవచనములచే సంతోషింపజేయబడినవాడై, మనవంటి
-  వారి పాపభారమును హరించును గాక!'
+  హరి, హరుడు, బ్రహ్మల రూపాల సమ్మేళనమైనవాడు, భయంకర రాక్షస ప్రభువుల సమూహముచే పీడింపబడిన
+  భూభారాన్ని తన దివ్యమైన లీల ద్వారా తొలగించినవాడు, అట్టి శ్రీహరి యదు వంశములో అవతరించినాడు.
+  ఆ హరియే లోకాలకు గతి. స్మరణ, స్తుతి, వినయపూర్వక ప్రార్థనల ద్వారా సంతోషింపజేయబడినవాడై,
+  మనవంటి వారి పాపభారాన్ని తొలగించును గాక!'
 translation_status: draft
 ---

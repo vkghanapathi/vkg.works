@@ -118,18 +118,15 @@ map:
     mere intellectual knowledge.
   verse_num: 3
 map_status: draft
-translation_en: "1.  The light that is the splendor of the sacred ground bestowed\
-  \ by the auspicious Sodashi Mantra, shines forth exceedingly. There, Śrī Mātā is\
-  \ beheld, supremely auspicious.\n\n2.  Beholding the Light of the Stars:\n   We\
-  \ ever gaze upon that Goddess Umā, radiant with light, revered by the gods, bestowing\
-  \ the world of the virtuous, with lamps resembling the stars in their multitude."
-translation_te: '1. షోడశీ మంత్రముచే లభించినట్టి శుభకర క్షేత్ర స్వరూప కాంతియై, ప్రకాశించుచున్నది.
-  అచ్చట శ్రీమాత మిక్కిలి శుభముగా దర్శనమిచ్చుచున్నది.
-
-
-  2. నక్షత్ర దీప దర్శనము:
-
-  జ్యోతిర్మయి, దేవతలచే పూజింపబడునది, పుణ్యలోకములను ప్రసాదించునది అయిన ఉమాదేవిని, నక్షత్రములవంటి
-  దీపముల సమూహములతో ఎల్లప్పుడు చూచుచుందుము.'
+translation_en: "1.  The light that is the very form of the blessed field bestowed\
+  \ by the grace of the Ṣoḍaśī mantra, shines forth exceedingly. Śrī Mātā, auspicious\
+  \ to behold, is radiantly manifest.\n\n2.  (Behold the Light of the Stars)\n   Her\
+  \ who is radiant with light, revered by the gods, bestower of the world of the virtuous,\
+  \ Umā; that Goddess we ever behold with lamps resembling the stars in their brilliance."
+translation_te: "1. షోడశీ మంత్రము యొక్క అనుగ్రహముచే ఇవ్వబడిన శుభకరమైన క్షేత్ర స్వరూప\
+  \ కాంతి ప్రకాశించుచున్నది. చూడడానికి శుభమైన శ్రీమాత ప్రకాశవంతంగా వ్యక్తమవుతుంది.\n\
+  \n2. (నక్షత్ర దీప దర్శనం)\n   జ్యోతిర్మయురాలు, దేవతలచే పూజింపబడేది, పుణ్యవంతుల లోకాన్ని\
+  \ ప్రసాదించేది అయిన ఉమాదేవిని, నక్షత్రాల వంటి కాంతులతో ప్రకాశించే దీపాలతో ఎల్లప్పుడూ\
+  \ చూద్దాము."
 translation_status: draft
 ---

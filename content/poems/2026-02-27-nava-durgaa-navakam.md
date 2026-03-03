@@ -37,234 +37,117 @@ topic:
 - Navaratri
 - Śaktism
 - Nava-rūpā
-translation_en: '1.  She who is Śailaputrī:
+translation_en: '1.  She, whose nature is bliss, profound, immense, and glorious,
+  finds Her own virtue stifled, intellect dulled, and wisdom silenced like a stone.
+  She who, as the Mother of the worlds, was born from the mountain, source of concentrated
+  joy, that Durga, Śailaputrī, whose feet are placed upon me, I worship.
 
-  My nature is bliss, yet sorrow and dejection arose, vast and intense;
 
-  My intellect became dull, like a stone, and my wisdom was silenced.
+  2.  Having obtained a human birth, esteemed and proper, without seeking union with
+  Brahman, those who turn away from the path to Brahman-bliss and delight in virtuous
+  celibacy, She who protects them by bestowing the power of asceticism, that Durga,
+  Śrī Brahmacāryeśvarī, whose feet are placed upon me.
 
-  She who was born from the mountain, the Mother of the worlds, the source of concentrated
-  bliss,
 
-  That Durgā, whose feet are placed upon me, Śrī Śailaputrī, I worship.
+  3.  She who brings complete joy to the path of life for all beings, by whom the
+  sorrows of body and mind are dissolved, and life is made full, by whose compassionate
+  glance liberation blossoms forth, that Durga, Śrī Chandraghaṇṭā, whose feet are
+  placed upon me, I worship.
 
 
-  2.  She who is Brahmacāriṇī:
+  4.  She who constantly and causelessly creates both desired and undesired circumstances,
+  I take refuge in Her to avert sins from all people in all lands. To Her, the Primal
+  One, I offer prayers for the fulfillment of desires born of my own intelligence,
+  Kūṣmāṇḍā, that Durga, the Supreme Sovereign, whose feet are placed upon me, I worship.
 
-  Having obtained human birth, if one does not seek Brahman,
 
-  And strays from the path to the bliss of Brahman, but delights in good Brahmacharya;
+  5.  From Skanda, the heavens advance, and from his mother''s womb, the earth and
+  the rising sprouts; from Skanda comes all life, the multitude of cultivated and
+  uncultivated herbs. She who, as the Mother of all, pervades Skanda with Her own
+  primordial nature, that Durga, Skandamātā, Mother of Skanda, whose feet are placed
+  upon me, I worship.
 
-  She, the beautiful ascetic, protects those who meditate on the cessation of worldly
-  power,
 
-  That Durgā, whose feet are placed upon me, Śrī Brahmacaryeśvarī, I worship.
+  6.  Even a particle of whose resolve accumulates ever-increasing merit, by which
+  a person performs acts of piety and benevolence, transcending violence, attaining
+  a gentle disposition, a boon of pure wisdom, the fruit of austerity, that Durga,
+  Kātyāyanī, whose feet are placed upon me, I worship.
 
 
-  3.  She who is Chandraghaṇṭā:
+  7.  She who equally enlivens all beings with the process of nightly sleep, in whom
+  Lord Madhuhā sleeps at the end of the aeon, overcome by Her sleep, from whose darkness,
+  intense and powerful, this unborn universe arose, that Durga, Śrī Kālarātrī, whose
+  feet are placed upon me, I worship.
 
-  She brings complete joy to the path of life for all people;
 
-  By Her, the sorrows of the body and mind vanish, and life becomes full.
+  8.  Gaurī, whose face expresses gentle and virtuous qualities, the abode of modesty
+  and discernment, whose deer-like eyes are captivating with a great sense of shame,
+  She who bestows auspiciousness, beauty, and beloved qualities when remembered, that
+  Durga, Mahāgaurī, the virtuous one, whose greatness is established in me, I worship.
 
-  By the power of Her auspicious glance, liberation arises,
 
-  That Durgā, whose feet are placed upon me, Śrī Chandraghaṇṭā, I worship.
+  9.  He who is virtuous, tasting the sweetness of honey flowing from Her lotus feet,
+  undertakes many good works, filled with resolute desires, and perfectly accomplishes
+  those begun with zeal by Her power, that Durga, Śrī Siddhidātrī, whose feet are
+  placed upon me, I worship.
 
 
-  4.  She who is Kuṣmāṇḍā:
+  10. She, the Mother, who constantly grants the desires of good people who serve
+  Her feet, She, the Goddess, who delivers those who take refuge in Her from hosts
+  of terrible sufferings, in whose blissful, conscious, and joyous self this excellent
+  hymn is recited, I worship that ever-new form of the Goddess Durgā.'
+translation_te: '1.  ఎవరి స్వభావము ఆనందమయమో, గొప్పదో, అపరిమితమైనదో, మహిమాన్వితమైనదో,
+  అట్టి నా శీలము శిలవలె స్తంభించి, బుద్ధి నశించి, జ్ఞానము మూగబోయినది. లోకములకు తల్లియైన
+  ఆ దేవి పర్వతము నుండి జన్మించినది, ఆమె సాంద్రమైన ఆనందమునకు ఉదయము. అట్టి దుర్గ, శైలపుత్రి,
+  ఎవరి పాదములు నాపై నిలిపినవో, ఆమెను నేను భజిస్తున్నాను.
 
-  She constantly creates desirable and undesirable things without cause,
 
-  I take refuge in Her to turn away sins from all people in all lands.
+  2.  ఉత్తమమైన, తగిన మానవ జన్మను పొంది, బ్రహ్మతో ఐక్యము కాకుండా, బ్రహ్మానంద పదమును
+  వీడి, ఉత్తమ బ్రహ్మచర్యమునందు ఆసక్తి గలవారిని, తపస్సు యొక్క శక్తిని ప్రసాదించి రక్షించు
+  ఆ దుర్గ, శ్రీ బ్రహ్మచర్యేశ్వరి, ఎవరి పాదములు నాపై నిలిపినవో.
 
-  To fulfill the cherished desires born of my own wisdom, I pray to Her,
 
-  Kuṣmāṇḍā, whose feet are placed upon me, Durgā, the Supreme Goddess, I worship.
+  3.  ఎవరు ప్రజలందరి జీవిత మార్గమును ఆనందముతో నింపుతారో, ఎవరి ద్వారా శరీర, మనస్సుల
+  దుఃఖములు తొలగిపోతాయో, జీవితము పరిపూర్ణమవుతుందో, ఎవరి దయా దృష్టి వలన మోక్షము వికసిస్తుందో,
+  ఆ దుర్గ, శ్రీ చంద్రఘంట, ఎవరి పాదములు నాపై నిలిపినవో, ఆమెను నేను భజిస్తున్నాను.
 
 
-  5.  She who is Skandamātā:
+  4.  ఎవరు కోరికలు, కోరికలు లేని పరిస్థితులను నిరంతరము, కారణము లేకుండా సృష్టిస్తారో,
+  సమస్త దేశముల ప్రజల పాపములను తొలగించుటకు ఆమెను ఆశ్రయిస్తున్నాను. నా బుద్ధి యొక్క
+  పరిణామము ద్వారా కోరికలను నెరవేర్చుటకు ఆ ఆదిశక్తిని ప్రార్థిస్తున్నాను, కూష్మాండ,
+  ఆ దుర్గ, పరమేశ్వరి, ఎవరి పాదములు నాపై నిలిపినవో, ఆమెను నేను భజిస్తున్నాను.
 
-  From Skanda, the heavens expand, and from the womb, the earth and the growth of
-  plants arise;
 
-  From Skanda comes all people, through the multitude of cultivated and uncultivated
-  herbs.
+  5.  స్కందుని నుండి స్వర్గము ముందుకు సాగుతుంది, అతని తల్లి గర్భము నుండి భూమి, మొలకలు
+  ఉద్భవిస్తాయి; సాగు చేయబడిన, సాగు చేయని మూలికల సమూహము, ప్రజలందరూ స్కందుని నుండి వచ్చారు.
+  ఎవరు తన మూల ప్రకృతి ద్వారా స్కందుని నింపుతారో, ఆ దుర్గ, స్కందమాత, ఎవరి పాదములు నాపై
+  నిలిపినవో, ఆమెను నేను భజిస్తున్నాను.
 
-  She who pervades Skanda, the Mother of all, through Her own original nature,
 
-  That Durgā, whose feet are placed upon me, Skanda''s Mother, I worship.
+  6.  ఎవరి సంకల్పములో కొద్ది భాగమైనా వృద్ధి చెందుతున్న పుణ్యమును సమకూరుస్తుందో, దాని
+  ద్వారా మనుష్యుడు హింసను అధిగమించి పుణ్య కార్యములు చేస్తాడో, శాంత స్వభావమును పొందుతాడో,
+  స్వచ్ఛమైన జ్ఞానము యొక్క వరము, తపస్సు యొక్క ఫలము లభిస్తుందో, ఆ దుర్గ, కాత్యాయని,
+  ఎవరి పాదములు నాపై నిలిపినవో, ఆమెను నేను భజిస్తున్నాను.
 
 
-  6.  She who is Kātyāyanī:
+  7.  రాత్రి నిద్ర ద్వారా ప్రజలందరినీ సమానంగా జీవింపచేసేది, కల్పాంతమునందు ఎవని నిద్రచే
+  భగవంతుడు మధుహుడు నిద్రించునో, ఎవరి చీకటి నుండి ఈ సృష్టి ఉద్భవించినదో, ఆ దుర్గ, శ్రీ
+  కాలరాత్రి, ఎవరి పాదములు నాపై నిలిపినవో, ఆమెను నేను భజిస్తున్నాను.
 
-  Even a fraction of whose resolve brings about ever-increasing auspiciousness,
 
-  And enables humans to perform desired and fulfilled actions, transcending violence;
+  8.  గౌరి, ఎవరి ముఖము మృదువైన, సద్గుణములను వ్యక్తపరుస్తుందో, వినయము, వివేకమునకు నిలయమో,
+  ఎవరి జింక కన్నుల వంటి చూపు సిగ్గుతో ఆకర్షణీయంగా ఉంటుందో, ఎవరు శుభత్వమును, అందమును,
+  ప్రియమైన గుణములను ప్రసాదిస్తారో, ఆ దుర్గ, మహా గౌరి, సతి, ఎవరి గొప్పతనము నాలో స్థిరపడినదో,
+  ఆమెను నేను భజిస్తున్నాను.
 
-  She who has attained a gentle disposition, a boon of excellent intellect, the pure
-  fruit of penance,
 
-  That Durgā, whose feet are placed upon me, Kātyāyanī, the Mother, I worship.
+  9.  ఎవరు పుణ్యాత్ముడో, ఆమె పద్మ పాదముల నుండి ప్రవహించే తేనెను రుచి చూస్తాడో, సంకల్పముతో
+  నిండిన మంచి పనులు చేస్తాడో, ఆమె శక్తితో ప్రారంభించిన పనులను సంపూర్ణంగా నెరవేరుస్తాడో,
+  ఆ దుర్గ, శ్రీ సిద్ధిధాత్రి, ఎవరి పాదములు నాపై నిలిపినవో, ఆమెను నేను భజిస్తున్నాను.
 
 
-  7.  She who is Kālarātrī:
-
-  She equally enlivens all beings with the process of nightly sleep;
-
-  At the end of the kalpa, the Lord Madhuhā sleeps, overcome by Her sleep.
-
-  Even a spark of Her darkness can swallow the unborn, the ancient.
-
-  That Durgā, whose feet are placed upon me, Śrī Kālarātrī, I worship.
-
-
-  8.  She who is Mahāgaurī:
-
-  Gaurī, whose face expresses gentle and affectionate qualities, the abode of modesty
-  and discernment,
-
-  Whose deer-like eyes bring great joy with their glances, removing sorrow and desire.
-
-  She who grants auspiciousness, beauty, and beloved things when remembered,
-
-  That Durgā, whose feet are placed upon me, Mahāgaurī, the virtuous one, I worship.
-
-
-  9.  She who is Siddhidā:
-
-  The virtuous one, whose feet are bathed in the nectar of honey,
-
-  Undertakes many good works, filled with resolve and desires.
-
-  By Her power, those works that are begun with great zeal are perfectly accomplished,
-
-  That Durgā, whose feet are placed upon me, Śrī Siddhidātrī, I worship.
-
-
-  10. The Fruit of Hearing:
-
-  The Mother who constantly grants the desires of good people who serve Her feet,
-
-  The Goddess who rescues those who take refuge in Her from multitudes of terrible
-  sufferings.
-
-  I worship that Goddess Durgā, who, in this excellent hymn, is the embodiment of
-  ever-new forms,
-
-  immersed in Her own existence, consciousness, and bliss.'
-translation_te: '1. శైలపుత్రీ:
-
-  నా స్వభావం ఆనందం, అయినప్పటికీ దుఃఖం మరియు నిరాశ కలిగాయి, విస్తారంగా మరియు తీవ్రంగా;
-
-  నా బుద్ధి రాయిలా మొద్దుబారింది, మరియు నా జ్ఞానం మౌనమైపోయింది.
-
-  పర్వతం నుండి జన్మించిన ఆమె, లోకాల తల్లి, కేంద్రీకృత ఆనందం యొక్క మూలం,
-
-  ఆ దుర్గ, ఎవరి పాదాలు నాపై ఉంచబడ్డాయో, శ్రీ శైలపుత్రిని నేను పూజిస్తాను.
-
-
-  2. బ్రహ్మచారిణి:
-
-  మానవ జన్మ పొందిన తరువాత, ఒకరు బ్రహ్మను వెతకకపోతే,
-
-  మరియు బ్రహ్మానందం యొక్క మార్గం నుండి తప్పిపోయి, మంచి బ్రహ్మచర్యం లో ఆనందిస్తే;
-
-  ఆమె, అందమైన సన్యాసిని, లౌకిక శక్తి యొక్క విరమణను ధ్యానించే వారిని రక్షిస్తుంది,
-
-  ఆ దుర్గ, ఎవరి పాదాలు నాపై ఉంచబడ్డాయో, శ్రీ బ్రహ్మచర్యేశ్వరిని నేను పూజిస్తాను.
-
-
-  3. చంద్రఘంట:
-
-  ఆమె ప్రజలందరికీ జీవిత మార్గానికి సంపూర్ణ ఆనందాన్ని తెస్తుంది;
-
-  ఆమె ద్వారా, శరీరం మరియు మనస్సు యొక్క దుఃఖాలు తొలగిపోతాయి, మరియు జీవితం నిండుగా మారుతుంది.
-
-  ఆమె శుభ దృష్టి యొక్క శక్తి ద్వారా, విముక్తి కలుగుతుంది,
-
-  ఆ దుర్గ, ఎవరి పాదాలు నాపై ఉంచబడ్డాయో, శ్రీ చంద్రఘంటను నేను పూజిస్తాను.
-
-
-  4. కూష్మాండ:
-
-  ఆమె కారణం లేకుండా కోరదగిన మరియు కోరదగని విషయాలను నిరంతరం సృష్టిస్తుంది,
-
-  అన్ని దేశాలలోని ప్రజల నుండి పాపాలను తొలగించడానికి నేను ఆమెను ఆశ్రయిస్తాను.
-
-  నా స్వంత జ్ఞానం నుండి పుట్టిన కోరికలను నెరవేర్చడానికి, నేను ఆమెను ప్రార్థిస్తాను,
-
-  కూష్మాండ, ఎవరి పాదాలు నాపై ఉంచబడ్డాయో, దుర్గ, సర్వోన్నత దేవత, నేను పూజిస్తాను.
-
-
-  5. స్కందమాత:
-
-  స్కందుడి నుండి, స్వర్గాలు విస్తరిస్తాయి, మరియు గర్భం నుండి, భూమి మరియు మొక్కల పెరుగుదల
-  కలుగుతాయి;
-
-  సాగు చేసిన మరియు సాగు చేయని మూలికల సమూహం ద్వారా స్కందుడి నుండి ప్రజలందరూ వస్తారు.
-
-  తన స్వంత అసలు స్వభావం ద్వారా స్కందుడిని ఆవహించే ఆమె, అందరికీ తల్లి,
-
-  ఆ దుర్గ, ఎవరి పాదాలు నాపై ఉంచబడ్డాయో, స్కంద తల్లిని నేను పూజిస్తాను.
-
-
-  6. కాత్యాయని:
-
-  ఎవరి సంకల్పంలో కొంచెం భాగం కూడా ఎల్లప్పుడూ పెరుగుతున్న శుభాన్ని తెస్తుంది,
-
-  మరియు హింసను అధిగమించి, కోరుకున్న మరియు నెరవేర్చిన చర్యలను చేయడానికి మానవులను అనుమతిస్తుంది;
-
-  ఆమె, సున్నితమైన స్వభావాన్ని పొందినది, అద్భుతమైన మేధస్సు యొక్క వరం, తపస్సు యొక్క
-  స్వచ్ఛమైన ఫలం,
-
-  ఆ దుర్గ, ఎవరి పాదాలు నాపై ఉంచబడ్డాయో, కాత్యాయని, తల్లి, నేను పూజిస్తాను.
-
-
-  7. కాలరాత్రి:
-
-  ఆమె రాత్రి నిద్ర ప్రక్రియతో జీవులందరినీ సమానంగా సజీవంగా చేస్తుంది;
-
-  కల్పం చివరలో, భగవంతుడు మధుహా ఆమె నిద్రతో నిండి నిద్రిస్తాడు.
-
-  ఆమె చీకటి యొక్క ఒక చిన్న నిప్పురవ్వ కూడా పుట్టని, పురాతనమైన వాటిని మింగగలదు.
-
-  ఆ దుర్గ, ఎవరి పాదాలు నాపై ఉంచబడ్డాయో, శ్రీ కాలరాత్రిని నేను పూజిస్తాను.
-
-
-  8. మహాగౌరి:
-
-  గౌరి, ఎవరి ముఖం సున్నితమైన మరియు ఆప్యాయమైన లక్షణాలను వ్యక్తం చేస్తుందో, వినయం మరియు
-  వివేకం యొక్క నివాసం,
-
-  ఎవరి జింక వంటి కళ్ళు తమ చూపులతో గొప్ప ఆనందాన్ని కలిగిస్తాయి, దుఃఖాన్ని మరియు కోరికను
-  తొలగిస్తాయి.
-
-  ఆమె, గుర్తు చేసుకున్నప్పుడు శుభాన్ని, అందాన్ని మరియు ప్రియమైన వస్తువులను ఇస్తుంది,
-
-  ఆ దుర్గ, ఎవరి పాదాలు నాపై ఉంచబడ్డాయో, మహాగౌరి, సద్గుణవంతురాలు, నేను పూజిస్తాను.
-
-
-  9. సిద్ధిద:
-
-  తేనె యొక్క అమృతంతో కడుగుతున్న పాదాలు కలిగిన పుణ్యాత్ముడు,
-
-  సంకల్పం మరియు కోరికలతో నిండిన అనేక మంచి పనులు చేపడతాడు.
-
-  ఆమె శక్తి ద్వారా, గొప్ప ఉత్సాహంతో ప్రారంభించిన పనులు సంపూర్ణంగా నెరవేరుతాయి,
-
-  ఆ దుర్గ, ఎవరి పాదాలు నాపై ఉంచబడ్డాయో, శ్రీ సిద్ధిధాత్రిని నేను పూజిస్తాను.
-
-
-  10. ఫలశ్రుతి:
-
-  తన పాదాలను సేవించే మంచి వ్యక్తుల కోరికలను నిరంతరం ఇచ్చే తల్లి,
-
-  తనను ఆశ్రయించిన వారిని భయంకరమైన బాధల నుండి రక్షించే దేవత.
-
-  నేను ఆ దుర్గాదేవిని పూజిస్తాను, ఈ శ్రేష్ఠమైన స్తోత్రంలో, ఆమె ఎల్లప్పుడూ కొత్త రూపాల
-  సారాంశం,
-
-  ఆమె స్వంత ఉనికి, చైతన్యం మరియు ఆనందంలో మునిగిపోయింది.'
+  10. తన పాదములను సేవించే మంచివారి కోరికలను నిరంతరము తీర్చే తల్లి, తనను ఆశ్రయించిన
+  వారిని భయంకరమైన కష్టముల నుండి రక్షించే దేవత, ఎవరి ఆనందమయమైన చైతన్యములో ఈ స్తోత్రము
+  పఠించబడుతుందో, ఆ దుర్గను నేను భజిస్తున్నాను.'
 translation_status: draft
 ---

@@ -36,59 +36,56 @@ topic:
 - guru-bhakti
 - Veda-Nidhis
 - sat-cit-ānanda
-translation_en: '1.  My mind is exceedingly gladdened by the Vedanidhi Prasasti (the
-  laudatory citation bestowing the title ''Vedanidhi''). I am drenched and consecrated
-  by the nectarous stream of Śrī Saccidānanda Guru''s grace.
+translation_en: '1.  My mind is exceedingly gladdened by this Vedanidhi Prasasti (treasure
+  of Vedic praise) that I have now received. I am drenched, as if anointed, in the
+  nectarous cascade of Śrī Saccidānanda Guru''s grace.
 
 
-  2.  Entering my fiftieth year, may this (Prasasti), obtained through the grace of
-  my parents and the acceptance of my Guru, be expressed fully by my speech and heart.
-  Oh, if only speech, being pleased, could be attained today!
+  2.  Entering my fiftieth year, with this acquisition inherited from my parents and
+  the abode of my Guru, would that speech, if gracious, be available today, capable
+  of expressing it through word and heart.
 
 
   3.  The friendship of Śrī Datta Vijayānanda-Tīrtha Varya, his words of praise, truthful,
   pleasing, and auspicious, are delightful.
 
 
-  4.  By affection, by the wisdom of long-lasting grace, by words ever auspicious
-  and truthful, the learned Kuppa Venkata Krishna Murthy, with his blessings, makes
-  me blessed. The words of the Guru, like a crest jewel, ever increase and adorn my
-  body of fame.
+  4.  By affection, by the wisdom of enduring grace, by the auspicious and truthful
+  words that ever bless me, the words of blessing from Kuppa Venkata Krishna Murthy,
+  the learned one, my Guru, flourish here, adorning my body of fame, a crest jewel
+  upon my head.
 
 
-  5.  Having the complete association of the Datta family and the auspicious inner
-  being of the assembly of fellow students, what more could be desired here? I declare
-  that all devotees should become those whose actions are never in vain.
+  5.  From the complete association with the family of Datta, from the auspicious
+  inner being of the assembly of fellow students, what more could be desired here?
+  I declare that all devotees may become those whose actions are never in vain.
 
 
-  6.  Infinite is the knowledge, much is to be known from the Vedas, from whose (the
-  Guru''s) inspiration I obtain (guidance), may I be well-established on that path,
-  and may I constantly experience the bliss of Sat-Chit (Being-Consciousness).'
-translation_te: '1. వేదనిధి ప్రశస్తి ద్వారా నా మనస్సు అత్యంత ఆనందభరితమైనది. శ్రీ సచ్చిదానంద
-  గురువుల కృపామృత ప్రవాహంలో తడిసి, అభిషిక్తుడనయ్యాను.
+  6.  Infinite knowledge, much to be known from the Veda, whose inspiration comes
+  from the Guru; may I be well-established on that path, and may I partake of the
+  bliss of existence, consciousness, and joy.'
+translation_te: '1. వేదనిధి ప్రశస్తిని పొందిన నేను మనస్సుతో ఆనందించుచున్నాను. శ్రీ
+  సచ్చిదానంద గురు కరుణాధారలో అభిషిక్తుడనై, తడిసి ముద్దయినాను.
 
 
-  2. నా యాభైదవ సంవత్సరంలో ప్రవేశిస్తూ, నా తల్లిదండ్రుల దయతో మరియు నా గురువు అంగీకారంతో
-  పొందిన ఈ (ప్రశస్తి), నా వాక్కు మరియు హృదయం ద్వారా పూర్తిగా వ్యక్తమవుగాక. ఓహో, వాక్కు
-  సంతోషించి, ఈ రోజు లభిస్తే ఎంత బాగుంటుంది!
+  2. నా యేబది సంవత్సరాల వయస్సులో, తల్లిదండ్రుల ద్వారా పొందిన ఈ గురుగ్రహణముతో, వాక్కు
+  అనుగ్రహముతో లభించినచో, మాట మరియు హృదయము ద్వారా వ్యక్తపరచుటకు సమర్థుడనవుతాను.
 
 
-  3. శ్రీ దత్త విజయానంద-తీర్థ వర్యుల స్నేహం, ఆయన ప్రశంసా వచనాలు, సత్యమైనవి, ఆహ్లాదకరమైనవి
-  మరియు శుభప్రదమైనవి, ఎంతో ఆనందాన్ని కలిగిస్తున్నాయి.
+  3. శ్రీ దత్త విజయనంద తీర్థ వర్యుల స్నేహము, వారి స్తుతి వచనములు సత్యముతో, రుచికరముగా,
+  శుభముగా నున్నవి.
 
 
-  4. వాత్సల్యంతో, శాశ్వతమైన దయ యొక్క జ్ఞానంతో, ఎల్లప్పుడూ శుభకరమైన మరియు సత్యమైన మాటలతో,
-  విద్వాంసుడు కుప్పా వెంకట కృష్ణ మూర్తి, తన ఆశీస్సులతో నన్ను ధన్యుడిని చేశాడు. గురువు
-  యొక్క మాటలు, శిరోజాలం వలె, ఎల్లప్పుడూ నా కీర్తి శరీరాన్ని పెంచి అలంకరిస్తాయి.
+  4. వాత్సల్యముతో, శాశ్వతమైన అనుగ్రహ జ్ఞానముతో, ఎల్లప్పుడూ మంగళకరమైన సత్య వచనములతో
+  నన్ను ధన్యునిగా చేయుచున్న కుప్పా వేంకట కృష్ణ మూర్తి విద్వాంసుడు, గురువుగారు, వారి
+  ఆశీర్వాద వచనములు నా కీర్తి శరీరమును అలంకరించుచున్నవి, శిరస్సున శిఖామణి వలె ప్రకాశించుచున్నవి.
 
 
-  5. దత్త కుటుంబం యొక్క సంపూర్ణ సహవాసం మరియు తోటి విద్యార్థుల సభ యొక్క శుభకరమైన అంతరంగం
-  కలిగి ఉండగా, ఇక్కడ ఇంకా ఏమి కోరాలి? భక్తులందరూ ఎన్నటికీ వ్యర్థం కాని క్రియలు కలవారుగా
-  ఉండాలని నేను ప్రకటిస్తున్నాను.
+  5. దత్త కుటుంబము యొక్క సంపూర్ణ సాంగత్యము నుండి, సహాధ్యాయుల శుభమైన అంతరంగము నుండి,
+  ఇక్కడ ఏమి ఆశించవలెను? భక్తులందరు అమోఘ కార్యములు చేయుదురు గాక అని నేను చెప్పుచున్నాను.
 
 
-  6. అనంతమైనది జ్ఞానం, వేదాల నుండి తెలుసుకోవలసినది చాలా ఉంది, ఎవరి (గురువు) ప్రేరణ
-  నుండి నేను (మార్గదర్శకత్వం) పొందుతున్నానో, నేను ఆ మార్గంలో స్థిరంగా ఉండాలని, మరియు
-  నేను సత్-చిత్ (ఉనికి-చైతన్యం) యొక్క ఆనందాన్ని నిరంతరం అనుభవించాలని కోరుకుంటున్నాను.'
+  6. అనంత విద్య, వేదముల నుండి తెలుసుకోవలసినది చాలా ఉంది, గురువు నుండి ప్రేరణ లభిస్తుంది;
+  నేను ఆ మార్గములో స్థిరముగా ఉందును గాక, మరియు సత్ చిత్ ఆనందమును పొందుదును గాక.'
 translation_status: draft
 ---

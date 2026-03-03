@@ -37,4 +37,14 @@ topic:
 - kīrtanam
 - Śaiva bhakti
 - Carnatic rāga
+translation_en: "1.  *Śiva Śiva Hara Hara*\n    May the daily singing of the virtues\
+  \ of Chandrashekhara be auspicious!\n\n2.  Service to the blue-throated, auspicious-footed\
+  \ Lord\n    Releases one from all miseries!\n\n3.  I constantly contemplate the\
+  \ Destroyer of Time;\n    May He grant me a lineage of Śiva!\n\n4.  Here, I remember\
+  \ the form of Sāmba;\n    May liberation from worldly existence be supreme!"
+translation_te: "1. శివ శివ హర హర\n   చంద్రశేఖరుని గుణముల కీర్తనము దినదినము శుభమగు\
+  \ గాక!\n\n2. నీలకంఠుని శుభపాద సేవనము\n   దురితములన్నిటిని తొలగించును గాక!\n\n3.\
+  \ కాలకాలుని అనునిత్యము చింతించెదను;\n   నాకు శివ సంతతిని అనుగ్రహించును గాక!\n\n\
+  4. సాంబమూర్తిని ఇక్కడ స్మరించెదను;\n   భవబంధ విముక్తి పరమమగు గాక!"
+translation_status: draft
 ---

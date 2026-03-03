@@ -40,86 +40,86 @@ topic:
 translation_en: 'Lost Object Retrieval Hymn (Kārtavīryārjuna Aṣṭakam)
 
 
-  1.  O Kārtavīryārjuna, Lord, radiant scion of the Haihaya lineage, blessed by the
-  true Guru and a devotee of the virtuous, grant that I recover my lost object.
+  1.  O Kārtavīryārjuna, Lord, radiant sun of the Haihaya lineage, bestowed by the
+  true Guru, beloved of the virtuous, grant that I recover my lost possession.
 
 
   2.  O Kārtavīryārjuna, Lord, servitor of Datta, whose form is Existence, Consciousness,
-  and Bliss, grant that I recover my lost object.
+  and Bliss, grant that I recover my lost possession.
 
 
   3.  O Kārtavīryārjuna, Lord, who dwells in the realm of Vaikuntha, O Sudarśana,
-  the king of weapons, grant that I recover my lost object.
+  the radiant discus weapon, grant that I recover my lost possession.
 
 
-  4.  O Kārtavīryārjuna, Lord, possessor of a thousand arms, radiant with effulgence,
-  supreme sovereign of the earth, grant that I recover my lost object.
+  4.  O Kārtavīryārjuna, Lord, possessor of a thousand arms, radiant with splendor,
+  supreme sovereign of the earth, grant that I recover my lost possession.
 
 
-  5.  O Kārtavīryārjuna, Lord, who wanders observing a pure vow, for the sake of attaining
-  all happiness with ease, grant that I recover my lost object.
+  5.  O Kārtavīryārjuna, Lord, who wanders observing a pure vow, for the attainment
+  of all happiness and prosperity, grant that I recover my lost possession.
 
 
-  6.  O Kārtavīryārjuna, Lord, recipient of Datta Deva''s grace, initiated into the
-  vow of righteous deeds, grant that I recover my lost object.
+  6.  O Kārtavīryārjuna, Lord, recipient of the grace of Lord Datta, initiated into
+  the vow of righteous deeds, grant that I recover my lost possession.
 
 
   7.  O Kārtavīryārjuna, Lord, possessor of immeasurable power, who subdued mighty
-  heroes like Rāvaṇa, grant that I recover my lost object.
+  warriors like Rāvaṇa, grant that I recover my lost possession.
 
 
-  8.  O Kārtavīryārjuna, Lord, supremely learned in all the scriptures, devoted to
-  the protection of Dharma, grant that I recover my lost object.
+  8.  O Kārtavīryārjuna, Lord, supremely learned in all scriptures, devoted to the
+  protection of Dharma, grant that I recover my lost possession.
 
 
-  For the recovery of one''s lost object, this Kārtavīryārjuna Aṣṭakam,
+  For the recovery of lost objects, this Aṣṭakam to Kārtavīryārjuna,
 
-  Should be recited eight times with devotion, by one devoted to the mantra of Datta.'
+  a devotee should recite eight times with devotion, devoted to the mantra of Datta.'
 translation_te: 'నష్ట ద్రవ్య లాభ స్తోత్రం (కార్తవీర్యార్జున అష్టకం)
 
 
-  1. దత్త సద్గురు సద్భక్త హైహయాన్వయ భాస్కరా,
+  1. దత్త సద్గురు సద్భక్త హైహయాన్వయ భాస్కర।
 
-  ద్రవ్యమాపయ నష్టం మే కార్తవీర్యార్జున ప్రభో!
-
-
-  2. సచ్చిదానందరూపస్య దత్తస్య పరిసేవక,
-
-  ద్రవ్యమాపయ నష్టం మే కార్తవీర్యార్జున ప్రభో!
+  ద్రవ్యమాపయ నష్టం మే కార్తవీర్యార్జున ప్రభో।।
 
 
-  3. వైకుంఠ లోక వాసోసి హేతిరాజ సుదర్శన,
+  2. సచ్చిదానందరూపస్య దత్తస్య పరిసేవక।
 
-  ద్రవ్యమాపయ నష్టం మే కార్తవీర్యార్జున ప్రభో!
-
-
-  4. సహస్రబాహో దీప్తాంశో భూమండల మహాధిప,
-
-  ద్రవ్యమాపయ నష్టం మే కార్తవీర్యార్జున ప్రభో!
+  ద్రవ్యమాపయ నష్టం మే కార్తవీర్యార్జున ప్రభో।।
 
 
-  5. సర్వసౌఖ్య సులభార్థ మనఘావ్రత చారణ,
+  3. వైకుంఠ లోక వాసోసి హేతిరాజ సుదర్శన।
 
-  ద్రవ్యమాపయ నష్టం మే కార్తవీర్యార్జున ప్రభో!
-
-
-  6. దత్తదేవ కృపాపాత్ర సత్కార్యవ్రత దీక్షిత,
-
-  ద్రవ్యమాపయ నష్టం మే కార్తవీర్యార్జున ప్రభో!
+  ద్రవ్యమాపయ నష్టం మే కార్తవీర్యార్జున ప్రభో।।
 
 
-  7. రావణాది మహావీర నిగ్రహామిత శక్తిమన్,
+  4. సహస్రబాహో దీప్తాంశో భూమండల మహాధిప।
 
-  ద్రవ్యమాపయ నష్టం మే కార్తవీర్యార్జున ప్రభో!
-
-
-  8. సర్వశాస్త్ర మహావిద్వన్ ధర్మరక్షా పరాయణ,
-
-  ద్రవ్యమాపయ నష్టం మే కార్తవీర్యార్జున ప్రభో!
+  ద్రవ్యమాపయ నష్టం మే కార్తవీర్యార్జున ప్రభో।।
 
 
-  స్వనష్టవస్తు లాభాయ కార్తవీర్యార్జునాష్టకమ్,
+  5. సర్వసౌఖ్య సులభార్థ మనఘావ్రత చారణ।
 
-  అష్టవారం పఠేద్భక్త్యా దత్తమంత్రపరాయణః।'
+  ద్రవ్యమాపయ నష్టం మే కార్తవీర్యార్జున ప్రభో।।
+
+
+  6. దత్తదేవ కృపాపాత్ర సత్కార్యవ్రతదీక్షిత।
+
+  ద్రవ్యమాపయ నష్టం మే కార్తవీర్యార్జున ప్రభో।।
+
+
+  7. రావణాది మహావీర నిగ్రహామిత శక్తిమన్।
+
+  ద్రవ్యమాపయ నష్టం మే కార్తవీర్యార్జున ప్రభో।।
+
+
+  8. సర్వశాస్త్ర మహావిద్వన్ ధర్మరక్షా పరాయణ।
+
+  ద్రవ్యమాపయ నష్టం మే కార్తవీర్యార్జున ప్రభో।।
+
+
+  స్వనష్టవస్తు లాభాయ కార్తవీర్యార్జునాష్టకమ్।
+
+  అష్టవారం పఠేద్భక్త్యా దత్తమంత్రపరాయణః।।'
 translation_status: draft
 ---

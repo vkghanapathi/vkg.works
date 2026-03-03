@@ -40,4 +40,39 @@ topic:
 - mantra
 - triguṇa
 - Śakti
+translation_en: '1.  She who is praised by three hundred names, revered by the thirty
+  deities, unblemished by the three guṇas, and abiding in the three worlds;
+
+  2.  She who is praised by three hundred names, revered by the thirty deities, unblemished
+  by the three guṇas, and transcends the three qualities;
+
+  3.  She who is praised by three hundred names, revered by the thirty deities, unblemished
+  by the three guṇas, and is the fruit of the three states (waking, dreaming, and
+  deep sleep);
+
+  4.  She who shines as the three-eyed one (Śiva), the benefactor of the three sons,
+  the beloved of Hara, and the cause of ''ditaditi'' sounds;
+
+  5.  May She, the unborn, the supreme, ever auspicious, eternal, subtle, grant us
+  well-being;
+
+  6.  She who bestows Existence, Consciousness, and Bliss, She who bestows Existence,
+  Consciousness, and Bliss.'
+translation_te: '1. మూడు వందల నామాలతో కీర్తించబడినది, ముప్పది మంది దేవతలచే పూజింపబడినది,
+  మూడు గుణములచే అంటబడనిది, మూడు లోకములలో నివసించునది;
+
+  2. మూడు వందల నామాలతో కీర్తించబడినది, ముప్పది మంది దేవతలచే పూజింపబడినది, మూడు గుణములచే
+  అంటబడనిది, మూడు గుణములను అతిక్రమించినది;
+
+  3. మూడు వందల నామాలతో కీర్తించబడినది, ముప్పది మంది దేవతలచే పూజింపబడినది, మూడు గుణములచే
+  అంటబడనిది, మూడు అవస్థల ఫలము (మెలకువ, కల, నిద్ర);
+
+  4. మూడు కన్నులదానిగా (శివుడు) ప్రకాశించునది, ముగ్గురు కుమారులకు మేలు చేయునది, హరునికి
+  ప్రియురాలు, ''దితదితి'' శబ్దములకు కారణమైనది;
+
+  5. ఆమె, పుట్టుక లేనిది, సర్వోత్తమమైనది, ఎల్లప్పుడూ శుభమైనది, శాశ్వతమైనది, సూక్ష్మమైనది,
+  మాకు శుభము కలుగజేయుగాక;
+
+  6. సత్ చిత్ ఆనందములను ప్రసాదించునది, సత్ చిత్ ఆనందములను ప్రసాదించునది.'
+translation_status: draft
 ---

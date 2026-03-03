@@ -68,29 +68,25 @@
     {% endif %}
 
     {% if map %}
-    <section class="map-analysis" id="map-analysis">
-      <button class="map-toggle" aria-expanded="false" aria-controls="map-body"
-              onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded')==='true'?'false':'true'); document.getElementById('map-body').classList.toggle('map-open')">
-        Mūla Artha Pratipatti (MAP) Analysis
+    {# ── MAP Group 1 — Literary Analysis (Segments 2, 3, 8, 9) ──────── #}
+    <section class="map-analysis" id="map-group1">
+      <button class="map-toggle" aria-expanded="false" aria-controls="map-body-1"
+              onclick="mapToggle(this,'map-body-1')">
+        MAP — Literary Analysis
+        <span class="map-group-hint">Padavibhāga · Anvaya · Bhāvārtha · Commentary</span>
         <span class="map-toggle-icon">&#9660;</span>
       </button>
-      <div id="map-body" class="map-body">
+      <div id="map-body-1" class="map-body">
+        {% set g1 = [('padavibhaga','पदविभागः — Padavibhāga'),
+                     ('anvaya',     'अन्वयः — Anvaya'),
+                     ('bhavartha_en','Bhāvārtha (English)'),
+                     ('commentary', 'तात्पर्यम् — Commentary')] %}
         {% for verse in map %}
+        {% if verse.mula or verse.padavibhaga or verse.anvaya or verse.bhavartha_en or verse.commentary %}
         <div class="map-verse">
-          <h4 class="map-verse-heading">Verse {{ verse.verse_num or loop.index }}</h4>
+          <div class="map-mula vedic-text">{{ verse.mula or '' }}</div>
           <table class="map-table">
-            {% set labels = [
-              ('mula',           'मूलम् (Mūla)'),
-              ('padavibhaga',    'पदविभागः (Padavibhāga)'),
-              ('anvaya',         'अन्वयः (Anvaya)'),
-              ('pratipadartha',  'प्रतिपदार्थः (Pratipadārtha)'),
-              ('rupa_nishpatti', 'रूपनिष्पत्तिः (Rūpa Niṣpatti)'),
-              ('sandhi',         'सन्धिः (Sandhi)'),
-              ('samasa',         'समासः (Samāsa)'),
-              ('bhavartha_en',   'Bhāvārtha (English)'),
-              ('commentary',     'तात्पर्यम् (Commentary)'),
-            ] %}
-            {% for key, label in labels %}
+            {% for key, label in g1 %}
             {% if verse[key] %}
             <tr>
               <th class="map-label">{{ label }}</th>
@@ -100,9 +96,50 @@
             {% endfor %}
           </table>
         </div>
+        {% endif %}
         {% endfor %}
       </div>
     </section>
+
+    {# ── MAP Group 2 — Grammatical Analysis (Segments 4, 5, 6, 7) ───── #}
+    <section class="map-analysis" id="map-group2">
+      <button class="map-toggle" aria-expanded="false" aria-controls="map-body-2"
+              onclick="mapToggle(this,'map-body-2')">
+        MAP — Grammatical Analysis
+        <span class="map-group-hint">Pratipadārtha · Rūpa Niṣpatti · Sandhi · Samāsa</span>
+        <span class="map-toggle-icon">&#9660;</span>
+      </button>
+      <div id="map-body-2" class="map-body">
+        {% set g2 = [('pratipadartha', 'प्रतिपदार्थः — Pratipadārtha'),
+                     ('rupa_nishpatti','रूपनिष्पत्तिः — Rūpa Niṣpatti'),
+                     ('sandhi',        'सन्धिः — Sandhi'),
+                     ('samasa',        'समासः — Samāsa')] %}
+        {% for verse in map %}
+        {% if verse.pratipadartha or verse.rupa_nishpatti or verse.sandhi or verse.samasa %}
+        <div class="map-verse">
+          <div class="map-mula vedic-text">{{ verse.mula or '' }}</div>
+          <table class="map-table">
+            {% for key, label in g2 %}
+            {% if verse[key] %}
+            <tr>
+              <th class="map-label">{{ label }}</th>
+              <td class="map-value vedic-text">{{ verse[key] }}</td>
+            </tr>
+            {% endif %}
+            {% endfor %}
+          </table>
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+    <script>
+    function mapToggle(btn, bodyId) {
+      var body = document.getElementById(bodyId);
+      var open = body.classList.toggle('map-open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+    </script>
     <style>
     .map-analysis {
       margin-top: 2.5rem;
@@ -126,10 +163,27 @@
     }
     .map-toggle:hover { color: var(--color-text, #222); }
     .map-toggle[aria-expanded="true"] .map-toggle-icon { transform: rotate(180deg); }
-    .map-toggle-icon { transition: transform 0.2s; margin-left: auto; }
+    .map-toggle-icon { transition: transform 0.2s; margin-left: auto; flex-shrink: 0; }
+    .map-group-hint {
+      font-size: 0.75rem;
+      font-weight: 400;
+      color: var(--color-muted, #999);
+      letter-spacing: 0;
+      text-transform: none;
+    }
     .map-body { display: none; }
     .map-body.map-open { display: block; }
-    .map-verse { margin: 1.5rem 0; }
+    .map-verse { margin: 1.5rem 0; border-bottom: 1px solid var(--color-border, #eee); padding-bottom: 1rem; }
+    .map-verse:last-child { border-bottom: none; }
+    .map-mula {
+      font-size: 1rem;
+      line-height: 1.9;
+      margin-bottom: 0.75rem;
+      padding: 0.5rem 0.75rem;
+      background: var(--color-surface, #f8f3ec);
+      border-left: 3px solid var(--color-accent, #7b3f00);
+      border-radius: 0 3px 3px 0;
+    }
     .map-verse-heading {
       font-size: 0.85rem;
       color: var(--color-muted, #777);

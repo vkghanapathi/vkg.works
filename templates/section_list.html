@@ -1,7 +1,69 @@
 {% extends "base.html" %}
-
 {% block title %}{{ section_title }}{% if active_category %} — {{ active_category | title }}{% endif %} — vkg.works{% endblock %}
 {% set active_section = section_name %}
+
+{% block head_extra %}
+<style>
+/* ── Mūla popup anchor ─────────────────────────────────────────────── */
+.mula-anchor {
+  display: inline-block;
+  margin-left: 0.6rem;
+  font-size: 0.72rem;
+  font-family: var(--font-ui);
+  color: var(--color-muted);
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+  padding: 1px 6px;
+  cursor: pointer;
+  vertical-align: middle;
+  user-select: none;
+  text-decoration: none;
+}
+.mula-anchor:hover { color: var(--color-accent); border-color: var(--color-accent); }
+.mula-anchor .arrow { font-size: 0.65rem; margin-left: 2px; transition: transform 0.2s; display: inline-block; }
+.mula-anchor.open .arrow { transform: rotate(90deg); }
+
+.mula-popup {
+  display: none;
+  margin: 0.6rem 0 0.4rem 0;
+  padding: 0.75rem 1rem;
+  background: var(--color-surface, #f8f3ec);
+  border-left: 3px solid var(--color-accent);
+  border-radius: 0 4px 4px 0;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  line-height: 2;
+  color: var(--color-text);
+}
+.mula-popup.open { display: block; }
+.mula-verse-sep { margin: 0.5rem 0; border: none; border-top: 1px solid var(--color-border); }
+
+/* ── Pagination ─────────────────────────────────────────────────────── */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 1.5rem 1.5rem 2.5rem;
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+}
+.page-btn {
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background: var(--color-bg);
+  color: var(--color-text);
+  cursor: pointer;
+  min-width: 2.2rem;
+  text-align: center;
+}
+.page-btn:hover { border-color: var(--color-accent); color: var(--color-accent); }
+.page-btn.active { background: var(--color-accent); color: #fff; border-color: var(--color-accent); font-weight: 700; }
+.page-btn:disabled { opacity: 0.35; cursor: default; }
+.page-info { color: var(--color-muted); padding: 0 0.3rem; }
+</style>
+{% endblock %}
 
 {% block content %}
 <div class="page-container">
@@ -20,12 +82,16 @@
   {% endif %}
 
   {% if items %}
-  <ul class="item-list">
+  <ul class="item-list" id="item-list">
     {% for item in items %}
-    <li>
+    <li class="paged-item" data-idx="{{ loop.index0 }}">
       <p class="item-title">
         <a href="/{{ section_name }}/{{ item.slug }}/">{{ item.title }}</a>
         {% if item.category and not active_category %}<span class="category-badge">{{ item.category }}</span>{% endif %}
+        {%- if item.map and item.map_status == 'approved' -%}
+        <span class="mula-anchor" id="mula-btn-{{ loop.index }}"
+              onclick="toggleMula({{ loop.index }})">मूलम् <span class="arrow">▶</span></span>
+        {%- endif -%}
       </p>
       <p class="item-meta">
         {% if item.ref %}<span class="item-ref">{{ item.ref }}</span>{% endif %}
@@ -33,11 +99,84 @@
         {% if item.author %} &bull; {{ item.author }}{% endif %}
       </p>
       {% if item.excerpt %}<p class="item-excerpt">{{ item.excerpt }}</p>{% endif %}
+      {% if item.map and item.map_status == 'approved' %}
+      <div class="mula-popup vedic-text" id="mula-{{ loop.index }}">
+        {%- for verse in item.map -%}
+        {%- if verse.mula -%}
+        {%- if not loop.first %}<hr class="mula-verse-sep">{%- endif -%}
+        {{ verse.mula }}
+        {%- endif -%}
+        {%- endfor -%}
+      </div>
+      {% endif %}
     </li>
     {% endfor %}
   </ul>
+  <div class="pagination" id="pagination"></div>
+
   {% else %}
   <p style="color: var(--color-muted);">No content yet. Check back soon.</p>
   {% endif %}
 </div>
+
+{% if items %}
+<script>
+(function () {
+  const PAGE_SIZE = 20;
+  const items = Array.from(document.querySelectorAll('.paged-item'));
+  const total  = items.length;
+  let   page   = 0;
+
+  function totalPages() { return Math.ceil(total / PAGE_SIZE); }
+
+  function show(p) {
+    page = p;
+    items.forEach((el, i) => {
+      el.style.display = (i >= p * PAGE_SIZE && i < (p + 1) * PAGE_SIZE) ? '' : 'none';
+    });
+    renderPager();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function renderPager() {
+    const pg = document.getElementById('pagination');
+    const tp = totalPages();
+    if (tp <= 1) { pg.innerHTML = ''; return; }
+
+    let html = '';
+    html += `<button class="page-btn" onclick="goPage(${page-1})" ${page===0?'disabled':''}>&#8592; Prev</button>`;
+
+    // window of page buttons
+    const win = 2;
+    for (let i = 0; i < tp; i++) {
+      if (i === 0 || i === tp-1 || (i >= page-win && i <= page+win)) {
+        html += `<button class="page-btn ${i===page?'active':''}" onclick="goPage(${i})">${i+1}</button>`;
+      } else if (i === page-win-1 || i === page+win+1) {
+        html += `<span class="page-info">…</span>`;
+      }
+    }
+
+    html += `<button class="page-btn" onclick="goPage(${page+1})" ${page===tp-1?'disabled':''}>Next &#8594;</button>`;
+    html += `<span class="page-info">${page*PAGE_SIZE+1}–${Math.min((page+1)*PAGE_SIZE, total)} of ${total}</span>`;
+    pg.innerHTML = html;
+  }
+
+  window.goPage = function(p) {
+    if (p < 0 || p >= totalPages()) return;
+    show(p);
+  };
+
+  window.toggleMula = function(idx) {
+    const popup = document.getElementById('mula-' + idx);
+    const btn   = document.getElementById('mula-btn-' + idx);
+    if (!popup) return;
+    const isOpen = popup.classList.toggle('open');
+    btn.classList.toggle('open', isOpen);
+  };
+
+  // Init
+  show(0);
+})();
+</script>
+{% endif %}
 {% endblock %}

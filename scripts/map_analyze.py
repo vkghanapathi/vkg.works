@@ -203,11 +203,19 @@ def build_uid_index() -> dict[str, dict]:
             if not docx_path.exists():
                 docx_path = None
 
+            language = ''
+            try:
+                post = frontmatter.load(str(md_path))
+                language = str(post.metadata.get('language', ''))
+            except Exception:
+                pass
+
             uid_index[uid] = {
                 'section': section,
                 'slug': slug,
                 'md_path': md_path,
                 'docx_path': docx_path,
+                'language': language,
             }
 
     return uid_index
@@ -329,6 +337,10 @@ def main() -> None:
                         help='Show what would be processed without calling the API')
     parser.add_argument('--print', action='store_true',
                         help='Print stored MAP data for the given UIDs (no API calls)')
+    parser.add_argument('--limit', type=int, default=999,
+                        help='Max items to process in a batch (default: no limit)')
+    parser.add_argument('--force', action='store_true',
+                        help='Re-analyze even if map already present')
     parser.add_argument('--max-verses', type=int, default=10,
                         help='Max verses per poem to analyze (default 10)')
     parser.add_argument('--model', default='gemini-2.0-flash-001',
@@ -350,13 +362,36 @@ def main() -> None:
     print('Building UID index…')
     uid_index = build_uid_index()
 
-    # Section-based selection
+    # Section-based selection — filter by section AND Sanskrit language
     if args.section:
-        target_uids = [
+        target_uids = sorted([
             uid for uid, info in uid_index.items()
-            if info['section'] == args.section
-        ]
-        print(f'Found {len(target_uids)} items in section "{args.section}"')
+            if info['section'] == args.section and 'sa' in info.get('language', '')
+        ])
+        print(f'Found {len(target_uids)} Sanskrit items in section "{args.section}"')
+
+    # Skip already-analyzed unless --force
+    if not getattr(args, 'force', False) and not args.print:
+        before = len(target_uids)
+        def _has_map(uid: str) -> bool:
+            info = uid_index.get(uid)
+            if info is None:
+                return False
+            import frontmatter as _fm
+            try:
+                meta = _fm.load(str(info['md_path'])).metadata
+                return bool(meta.get('map'))
+            except Exception:
+                return False
+        target_uids = [u for u in target_uids if not _has_map(u)]
+        skipped_existing = before - len(target_uids)
+        if skipped_existing:
+            print(f'  Skipping {skipped_existing} already-analyzed items (use --force to redo)')
+
+    # Apply limit
+    if len(target_uids) > args.limit:
+        target_uids = target_uids[:args.limit]
+        print(f'Limiting to {args.limit} items')
 
     if not target_uids:
         print('No UIDs to process.')
@@ -384,6 +419,8 @@ def main() -> None:
             continue
         ok = analyze_poem(uid, info, client,
                           args.dry_run, args.max_verses)
+        if not args.dry_run:
+            time.sleep(1.5)
         if ok:
             succeeded += 1
         else:

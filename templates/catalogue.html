@@ -7,141 +7,289 @@
 {% block head_extra %}
 <style>
 /* ── Catalogue page ─────────────────────────────────────────────────── */
-.catalogue-header {
-  padding: 2rem 1.5rem 1rem;
-  max-width: 1200px;
+.cat-header {
+  padding: 2rem 1.5rem 0.75rem;
+  max-width: 1280px;
   margin: 0 auto;
 }
-.catalogue-header h1 { margin-bottom: 0.25rem; }
-.catalogue-header p  { color: var(--color-muted); margin: 0; }
+.cat-header h1 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--color-heading);
+  margin-bottom: 0.2rem;
+}
+.cat-header .orcid-line {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  font-family: var(--font-ui);
+}
+.cat-header .orcid-line a { color: var(--color-accent); }
 
-.catalogue-filters {
-  max-width: 1200px;
+/* ── Stats strip ────────────────────────────────────────────────────── */
+.cat-stats {
+  background: var(--color-surface, #f5ede0);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  padding: 0.7rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 2rem;
+  align-items: center;
+  max-width: 100%;
+}
+.cat-stats-total {
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  letter-spacing: 0.05em;
+  margin-right: 0.5rem;
+}
+.cat-stats-item {
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  color: var(--color-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.cat-stats-item .cnt {
+  font-weight: 700;
+  color: var(--color-text);
+}
+.cat-stats-dot {
+  color: var(--color-border);
+  margin: 0 0.2rem;
+}
+
+/* ── Filter bar ─────────────────────────────────────────────────────── */
+.cat-filters {
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0.75rem 1.5rem 1rem;
+  padding: 0.9rem 1.5rem;
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem;
-  align-items: center;
+  align-items: flex-end;
 }
-.catalogue-filters select,
-.catalogue-filters input[type="search"] {
-  padding: 0.35rem 0.65rem;
-  border: 1px solid var(--color-border, #ddd);
+.cat-filters .filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.cat-filters label {
+  font-size: 0.7rem;
+  font-family: var(--font-ui);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+.cat-filters select,
+.cat-filters input[type="search"] {
+  padding: 0.38rem 0.7rem;
+  border: 1px solid var(--color-border);
   border-radius: 4px;
-  font-size: 0.85rem;
-  background: var(--color-bg, #fff);
-  color: var(--color-text, #222);
+  font-size: 0.84rem;
+  font-family: var(--font-ui);
+  background: var(--color-bg);
+  color: var(--color-text);
   min-width: 140px;
 }
-.catalogue-filters input[type="search"] { min-width: 200px; }
-.catalogue-filters label { font-size: 0.8rem; color: var(--color-muted); }
-
-.catalogue-count {
+.cat-filters input[type="search"] { min-width: 220px; }
+.cat-filters select:focus,
+.cat-filters input[type="search"]:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+.cat-count-badge {
   margin-left: auto;
-  font-size: 0.8rem;
+  align-self: flex-end;
+  font-size: 0.78rem;
+  font-family: var(--font-ui);
   color: var(--color-muted);
   white-space: nowrap;
+  padding-bottom: 0.4rem;
 }
 
-.catalogue-table-wrap {
-  max-width: 1200px;
+/* ── Table ──────────────────────────────────────────────────────────── */
+.cat-table-wrap {
+  max-width: 1280px;
   margin: 0 auto 3rem;
   padding: 0 1.5rem;
   overflow-x: auto;
 }
-table.catalogue {
+table.cat {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.85rem;
+  font-size: 0.84rem;
 }
-table.catalogue th {
+table.cat thead tr {
+  background: var(--color-surface);
+  border-bottom: 2px solid var(--color-border);
+}
+table.cat th {
+  padding: 0.55rem 0.75rem;
   text-align: left;
-  padding: 0.5rem 0.75rem;
-  border-bottom: 2px solid var(--color-border, #ddd);
   white-space: nowrap;
   cursor: pointer;
   user-select: none;
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   color: var(--color-muted);
-  font-weight: 600;
 }
-table.catalogue th:hover { color: var(--color-text, #222); }
-table.catalogue th .sort-icon { margin-left: 4px; opacity: 0.4; font-style: normal; }
-table.catalogue th.sort-asc  .sort-icon,
-table.catalogue th.sort-desc .sort-icon { opacity: 1; }
-table.catalogue td {
-  padding: 0.45rem 0.75rem;
-  border-bottom: 1px solid var(--color-border, #eee);
-  vertical-align: top;
-}
-table.catalogue tr:hover td { background: var(--color-hover, #f9f9f9); }
-table.catalogue tr.hidden { display: none; }
+table.cat th:hover { color: var(--color-accent); }
+table.cat th .si { margin-left: 3px; opacity: 0.35; }
+table.cat th.sort-asc  .si,
+table.cat th.sort-desc .si { opacity: 1; color: var(--color-accent); }
 
-.uid-cell  { font-family: monospace; font-size: 0.78rem; white-space: nowrap; color: var(--color-muted); }
-.sect-badge {
-  display: inline-block;
-  font-size: 0.7rem;
-  padding: 1px 6px;
-  border-radius: 3px;
-  background: var(--color-badge-bg, #e8e8e8);
-  color: var(--color-badge-text, #555);
+table.cat td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: middle;
+}
+table.cat tbody tr:hover td { background: color-mix(in srgb, var(--color-accent) 4%, transparent); }
+table.cat tbody tr.hidden { display: none; }
+
+/* ── Cell types ─────────────────────────────────────────────────────── */
+.uid-cell {
+  font-family: monospace;
+  font-size: 0.75rem;
+  color: var(--color-muted);
   white-space: nowrap;
 }
-.sect-badge.articles { background:#dbeafe; color:#1e40af; }
-.sect-badge.poems    { background:#fce7f3; color:#9d174d; }
-.sect-badge.songs    { background:#d1fae5; color:#065f46; }
-.sect-badge.books    { background:#fef3c7; color:#92400e; }
-.lang-cell  { font-size: 0.78rem; white-space: nowrap; font-family: monospace; }
-.subj-cell  { font-size: 0.78rem; }
-.topic-cell { font-size: 0.75rem; color: var(--color-muted); }
-.title-link { color: var(--color-link, inherit); text-decoration: none; }
-.title-link:hover { text-decoration: underline; }
-.date-cell  { white-space: nowrap; font-size: 0.78rem; color: var(--color-muted); }
-.doi-cell a { font-size: 0.75rem; font-family: monospace; }
+.title-link {
+  color: var(--color-text);
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+.title-link:hover { color: var(--color-accent); text-decoration: underline; }
+
+/* Section badges */
+.sect-badge {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-family: var(--font-ui);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+.sect-badge.articles  { background: #dbeafe; color: #1e40af; }
+.sect-badge.poems     { background: #fce7f3; color: #9d174d; }
+.sect-badge.songs     { background: #d1fae5; color: #065f46; }
+.sect-badge.books     { background: #fef3c7; color: #92400e; }
+.sect-badge.audio     { background: #ede9fe; color: #5b21b6; }
+.sect-badge.video     { background: #fee2e2; color: #991b1b; }
+.sect-badge.projects  { background: #e0f2fe; color: #075985; }
+.sect-badge.queue     { background: #f3f4f6; color: #6b7280; }
+
+/* Language badges */
+.lang-badge {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-family: monospace;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin: 1px 2px 1px 0;
+  white-space: nowrap;
+}
+.lang-badge.sa { background: #fef3c7; color: #92400e; }
+.lang-badge.te { background: #d1fae5; color: #065f46; }
+.lang-badge.kn { background: #ede9fe; color: #5b21b6; }
+.lang-badge.en { background: #dbeafe; color: #1e40af; }
+.lang-badge.other { background: #f3f4f6; color: #374151; }
+
+.subj-cell { font-size: 0.78rem; color: var(--color-text); }
+.topic-cell { font-size: 0.73rem; color: var(--color-muted); line-height: 1.4; }
+.date-cell { white-space: nowrap; font-size: 0.75rem; color: var(--color-muted); font-family: var(--font-ui); }
+.doi-cell a { font-size: 0.72rem; font-family: monospace; color: var(--color-accent); }
+
+/* ── Responsive ─────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .cat-stats { gap: 0.4rem 1rem; }
+  .cat-filters { flex-direction: column; }
+  .cat-filters select,
+  .cat-filters input[type="search"] { min-width: unset; width: 100%; }
+  .cat-count-badge { margin-left: 0; }
+  table.cat th:nth-child(n+5),
+  table.cat td:nth-child(n+5) { display: none; }
+}
 </style>
 {% endblock %}
 
 {% block content %}
-<div class="catalogue-header">
+<div class="cat-header">
   <h1>Catalogue</h1>
-  <p>{{ total }} works by Dr. Vamshi Krishna Ghanapāṭhī &nbsp;·&nbsp;
-     <a href="https://orcid.org/0009-0007-3852-0158" target="_blank" rel="noopener">ORCID 0009-0007-3852-0158</a></p>
+  <p class="orcid-line">
+    Works of Dr. Vamshi Krishna Ghanapāṭhī &nbsp;&bull;&nbsp;
+    <a href="https://orcid.org/0009-0007-3852-0158" target="_blank" rel="noopener">ORCID 0009-0007-3852-0158</a>
+  </p>
 </div>
 
-<div class="catalogue-filters">
-  <label>Section
+<!-- Stats strip -->
+<div class="cat-stats">
+  <span class="cat-stats-total">{{ total }} Works</span>
+  <span class="cat-stats-dot">·</span>
+  {% set ordered_sections = ['articles','poems','songs','books','audio','video','projects'] %}
+  {% for s in ordered_sections %}
+  {% if section_counts[s] %}
+  <span class="cat-stats-item">
+    <span class="cnt">{{ section_counts[s] }}</span> {{ s | title }}
+  </span>
+  {% if not loop.last %}<span class="cat-stats-dot">·</span>{% endif %}
+  {% endif %}
+  {% endfor %}
+</div>
+
+<!-- Filter bar -->
+<div class="cat-filters">
+  <div class="filter-group">
+    <label for="f-section">Section</label>
     <select id="f-section">
       <option value="">All sections</option>
       {% for s in sections_available %}<option value="{{ s }}">{{ s | title }}</option>{% endfor %}
     </select>
-  </label>
-  <label>Language
+  </div>
+  <div class="filter-group">
+    <label for="f-language">Language</label>
     <select id="f-language">
       <option value="">All languages</option>
       {% for l in languages_available %}<option value="{{ l }}">{{ l }}</option>{% endfor %}
     </select>
-  </label>
-  <label>Subject
+  </div>
+  <div class="filter-group">
+    <label for="f-subject">Subject</label>
     <select id="f-subject">
       <option value="">All subjects</option>
       {% for s in subjects_available %}<option value="{{ s }}">{{ s }}</option>{% endfor %}
     </select>
-  </label>
-  <input type="search" id="f-search" placeholder="Search title, topic, keyword…" autocomplete="off">
-  <span class="catalogue-count" id="cat-count">{{ total }} works</span>
+  </div>
+  <div class="filter-group">
+    <label for="f-search">Search</label>
+    <input type="search" id="f-search" placeholder="Title, topic, keyword…" autocomplete="off">
+  </div>
+  <span class="cat-count-badge" id="cat-count">{{ total }} works</span>
 </div>
 
-<div class="catalogue-table-wrap">
-<table class="catalogue" id="cat-table">
+<!-- Table -->
+<div class="cat-table-wrap">
+<table class="cat" id="cat-table">
   <thead>
     <tr>
-      <th data-col="uid">UID <i class="sort-icon">↕</i></th>
-      <th data-col="title">Title <i class="sort-icon">↕</i></th>
-      <th data-col="section">Section <i class="sort-icon">↕</i></th>
-      <th data-col="language">Language <i class="sort-icon">↕</i></th>
-      <th data-col="subject">Subject <i class="sort-icon">↕</i></th>
+      <th data-col="uid">UID <span class="si">↕</span></th>
+      <th data-col="title">Title <span class="si">↕</span></th>
+      <th data-col="section">Type <span class="si">↕</span></th>
+      <th data-col="language">Language <span class="si">↕</span></th>
+      <th data-col="subject">Subject <span class="si">↕</span></th>
       <th data-col="topic">Topics / Keywords</th>
-      <th data-col="date">Date <i class="sort-icon">↕</i></th>
+      <th data-col="date">Date <span class="si">↕</span></th>
       <th data-col="doi">DOI</th>
     </tr>
   </thead>
@@ -152,7 +300,7 @@ table.catalogue tr.hidden { display: none; }
     data-section="{{ item.section }}"
     data-language="{{ item.language or '' }}"
     data-subject="{{ item.subject or '' }}"
-    data-search="{{ item.title | lower }} {{ (item.topic | join(' ')) | lower }} {{ (item.keywords | join(' ')) | lower }} {{ (item.subject or '') | lower }}"
+    data-search="{{ item.title | lower }} {{ (item.topic | join(' ')) | lower if item.topic else '' }} {{ (item.keywords | join(' ')) | lower if item.keywords else '' }} {{ (item.subject or '') | lower }}"
     data-date="{{ item.date or '' }}"
   >
     <td class="uid-cell">{{ item.uid or '—' }}</td>
@@ -160,11 +308,19 @@ table.catalogue tr.hidden { display: none; }
       {% if item.section in ('articles','poems','songs','books','audio','video','projects') %}
       <a class="title-link" href="/{{ item.section }}/{{ item.slug }}/">{{ item.title }}</a>
       {% else %}
-      {{ item.title }}
+      <span class="title-link">{{ item.title }}</span>
       {% endif %}
     </td>
-    <td><span class="sect-badge {{ item.section }}">{{ item.section | title }}</span></td>
-    <td class="lang-cell">{{ item.language or '—' }}</td>
+    <td>
+      <span class="sect-badge {{ item.section }}">{{ item.section | title }}</span>
+    </td>
+    <td>
+      {% if item.language %}
+        {% for lang in item.language.split(';') %}
+        <span class="lang-badge {{ lang.strip() if lang.strip() in ('sa','te','kn','en') else 'other' }}">{{ lang.strip() }}</span>
+        {% endfor %}
+      {% else %}—{% endif %}
+    </td>
     <td class="subj-cell">{{ item.subject or '—' }}</td>
     <td class="topic-cell">
       {% set all_terms = (item.topic or []) + (item.keywords[:3] if item.keywords and not item.topic else []) %}
@@ -184,7 +340,7 @@ table.catalogue tr.hidden { display: none; }
 (function () {
   const table   = document.getElementById('cat-table');
   const tbody   = table.querySelector('tbody');
-  const count   = document.getElementById('cat-count');
+  const countEl = document.getElementById('cat-count');
   const fSect   = document.getElementById('f-section');
   const fLang   = document.getElementById('f-language');
   const fSubj   = document.getElementById('f-subject');
@@ -202,39 +358,35 @@ table.catalogue tr.hidden { display: none; }
     let visible  = 0;
     rows().forEach(r => {
       const show =
-        (!sect   || r.dataset.section   === sect) &&
-        (!lang   || r.dataset.language  === lang) &&
-        (!subj   || r.dataset.subject   === subj) &&
+        (!sect   || r.dataset.section  === sect) &&
+        (!lang   || r.dataset.language.includes(lang)) &&
+        (!subj   || r.dataset.subject  === subj) &&
         (!search || r.dataset.search.includes(search));
       r.classList.toggle('hidden', !show);
       if (show) visible++;
     });
-    count.textContent = visible + ' work' + (visible === 1 ? '' : 's');
+    countEl.textContent = visible + ' work' + (visible === 1 ? '' : 's');
+  }
+
+  function colIndex(col) {
+    return ['uid','title','section','language','subject','topic','date','doi'].indexOf(col);
   }
 
   function sort(col) {
     if (sortCol === col) { sortDir *= -1; }
     else { sortCol = col; sortDir = 1; }
-
-    // Update header icons
     table.querySelectorAll('th').forEach(th => {
       th.classList.remove('sort-asc', 'sort-desc');
       if (th.dataset.col === col) th.classList.add(sortDir === 1 ? 'sort-asc' : 'sort-desc');
-      const icon = th.querySelector('.sort-icon');
-      if (icon) icon.textContent = th.dataset.col === col ? (sortDir === 1 ? '↑' : '↓') : '↕';
+      const si = th.querySelector('.si');
+      if (si) si.textContent = (th.dataset.col === col) ? (sortDir === 1 ? '↑' : '↓') : '↕';
     });
-
     const sorted = rows().sort((a, b) => {
-      let va = a.dataset[col] || a.cells[colIndex(col)].textContent.trim();
-      let vb = b.dataset[col] || b.cells[colIndex(col)].textContent.trim();
+      const va = a.dataset[col] || a.cells[colIndex(col)].textContent.trim();
+      const vb = b.dataset[col] || b.cells[colIndex(col)].textContent.trim();
       return va.localeCompare(vb, undefined, {numeric: true}) * sortDir;
     });
     sorted.forEach(r => tbody.appendChild(r));
-  }
-
-  function colIndex(col) {
-    const cols = ['uid','title','section','language','subject','topic','date','doi'];
-    return cols.indexOf(col);
   }
 
   table.querySelectorAll('th[data-col]').forEach(th => {

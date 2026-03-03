@@ -346,6 +346,10 @@ def _render_catalogue(sections: dict, queue_items: list, env: Environment) -> No
     languages_available = sorted({i.language for i in catalogue_items if getattr(i, 'language', None)})
     subjects_available  = sorted({i.subject  for i in catalogue_items if getattr(i, 'subject',  None)})
 
+    # Per-section counts for stats strip
+    from collections import Counter
+    section_counts = Counter(i.section for i in catalogue_items if i.section)
+
     cat_tmpl = env.get_template('catalogue.html')
     cat_dir  = SITE_DIR / 'catalogue'
     cat_dir.mkdir(parents=True, exist_ok=True)
@@ -356,6 +360,7 @@ def _render_catalogue(sections: dict, queue_items: list, env: Environment) -> No
             sections_available=sections_available,
             languages_available=languages_available,
             subjects_available=subjects_available,
+            section_counts=section_counts,
         ),
         encoding='utf-8'
     )

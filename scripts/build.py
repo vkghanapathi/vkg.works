@@ -62,6 +62,7 @@ SECTION_TITLES = {
 }
 
 QUEUE_STATUSES = {'planned', 'draft', 'in-progress', 'in progress', 'incomplete'}
+PUBLISHED_STATUS = 'published'
 
 
 # ─── Registry ───────────────────────────────────────────────────────────────
@@ -216,7 +217,9 @@ def render_site(sections: dict[str, list[ArticleData]], site_url: str, env: Envi
     for section_name in list(sections.keys()):
         regular, queued = [], []
         for item in sections[section_name]:
-            if item.status and item.status.lower() in QUEUE_STATUSES:
+            status = (item.status or '').strip().lower()
+            # Queue: draft/incomplete/blank/unknown — only 'published' stays live
+            if status != PUBLISHED_STATUS:
                 queued.append(item)
             else:
                 regular.append(item)
@@ -327,12 +330,11 @@ def render_site(sections: dict[str, list[ArticleData]], site_url: str, env: Envi
 
 
 def _render_catalogue(sections: dict, queue_items: list, env: Environment) -> None:
-    """Render the master catalogue page — all published + queued items."""
-    # Collect all items across all sections (published + queued)
+    """Render the master catalogue page — published items only."""
+    # Catalogue shows only published items (sections dict at this point is already filtered)
     all_items: list[ArticleData] = []
     for items in sections.values():
         all_items.extend(items)
-    all_items.extend(queue_items)
 
     # Sort by uid (natural numeric order), falling back to date then title
     def _sort_key(item: ArticleData):

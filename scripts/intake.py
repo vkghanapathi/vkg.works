@@ -133,6 +133,30 @@ def _extract_docx_text(docx_path: Path, limit: int = BODY_LIMIT) -> str:
         return ''
 
 
+def _extract_pdf_text(pdf_path: Path, limit: int = BODY_LIMIT) -> str:
+    try:
+        import pdfplumber
+        text_parts = []
+        with pdfplumber.open(str(pdf_path)) as pdf:
+            for page in pdf.pages[:12]:   # first 12 pages is enough for context
+                t = page.extract_text()
+                if t:
+                    text_parts.append(t.strip())
+                if sum(len(p) for p in text_parts) >= limit:
+                    break
+        return '\n'.join(text_parts)[:limit]
+    except Exception as e:
+        print(f'    WARN: could not read PDF text ({e})', file=sys.stderr)
+        return ''
+
+
+def _extract_text(path: Path, limit: int = BODY_LIMIT) -> str:
+    """Extract text from DOCX or PDF."""
+    if path.suffix.lower() == '.pdf':
+        return _extract_pdf_text(path, limit)
+    return _extract_docx_text(path, limit)
+
+
 def _extract_title_from_docx(docx_path: Path) -> str:
     """Quick title extraction — fallback before Claude runs."""
     try:
@@ -248,7 +272,7 @@ def process_one(
         return False
 
     # Extract text and call Claude
-    body = _extract_docx_text(docx_path)
+    body = _extract_text(docx_path)
     print(f'  → Calling Claude for: {stem[:60]}')
     parsed = _call_claude(body, stem, section, client, model)
     time.sleep(API_DELAY)
@@ -299,13 +323,15 @@ def process_one(
     # Write sidecar
     _write_sidecar(dest_dir, dest_base, meta, dry_run)
 
-    # Copy DOCX and PDF companion
+    # Copy source file and PDF companion
     if not dry_run:
         dest_dir.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(docx_path, dest_dir / f'{dest_base}.docx')
-        pdf_src = pdf_companions.get(stem)
-        if pdf_src and pdf_src.exists():
-            shutil.copy2(pdf_src, dest_dir / f'{dest_base}.pdf')
+        ext = docx_path.suffix.lower()
+        shutil.copy2(docx_path, dest_dir / f'{dest_base}{ext}')
+        if ext != '.pdf':
+            pdf_src = pdf_companions.get(stem)
+            if pdf_src and pdf_src.exists():
+                shutil.copy2(pdf_src, dest_dir / f'{dest_base}.pdf')
 
     tag = 'DRY' if dry_run else 'OK'
     print(f'  {tag}: [{section}] {uid}  {dest_base}')
@@ -341,14 +367,22 @@ def ingest_zip(
             p.stem: p for p in tmp_path.rglob('*.pdf')
         }
 
-        docx_files = sorted(tmp_path.rglob('*.docx'))
-        if not docx_files:
-            print('  WARN: no DOCX files found in ZIP')
+        source_files = sorted(
+            [f for f in tmp_path.rglob('*')
+             if f.suffix.lower() in ('.docx', '.pdf')
+             and not f.name.startswith(('.', '~'))]
+        )
+        # Don't double-process PDFs that are companions to a DOCX
+        docx_stems = {f.stem for f in source_files if f.suffix.lower() == '.docx'}
+        source_files = [
+            f for f in source_files
+            if not (f.suffix.lower() == '.pdf' and f.stem in docx_stems)
+        ]
+        if not source_files:
+            print('  WARN: no DOCX or PDF files found in ZIP')
             return 0, 0
 
-        for docx in docx_files:
-            if docx.name.startswith('.') or docx.name.startswith('~'):
-                continue
+        for docx in source_files:
             ok = process_one(docx, section, date_str, client, model,
                              registry, pdf_companions, dry_run)
             if ok:
@@ -366,8 +400,9 @@ def main() -> None:
         description='Intake DOCX/ZIP → AI metadata → .md sidecar → /queue/'
     )
     src = parser.add_mutually_exclusive_group(required=True)
-    src.add_argument('--zip',  type=Path, metavar='PATH', help='ZIP archive of DOCX files')
+    src.add_argument('--zip',  type=Path, metavar='PATH', help='ZIP archive of DOCX/PDF files')
     src.add_argument('--docx', type=Path, metavar='PATH', help='Single DOCX file')
+    src.add_argument('--pdf',  type=Path, metavar='PATH', help='Single PDF file')
 
     parser.add_argument('--section', required=True, choices=sorted(KNOWN_SECTIONS),
                         help='Target section (articles, poems, songs…)')
@@ -420,11 +455,12 @@ def main() -> None:
             client, args.model, registry, args.dry_run,
         )
     else:
-        if not args.docx.exists():
-            print(f'ERROR: DOCX not found: {args.docx}', file=sys.stderr)
+        single = args.docx or args.pdf
+        if not single.exists():
+            print(f'ERROR: File not found: {single}', file=sys.stderr)
             sys.exit(1)
         ok = process_one(
-            args.docx, args.section, args.date,
+            single, args.section, args.date,
             client, args.model, registry,
             pdf_companions={}, dry_run=args.dry_run,
         )

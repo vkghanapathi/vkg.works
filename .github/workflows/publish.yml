@@ -36,18 +36,41 @@ jobs:
       - name: Install dependencies
         run: pip install -r scripts/requirements.txt
 
-      # ── INGEST ZIP FILES ───────────────────────────────────────────────────
-      - name: Ingest ZIP files from content/inbox (if any)
+      # ── INTAKE: AI-powered batch import from inbox ─────────────────────────
+      # Looks for section-named ZIPs: books.zip, articles.zip, poems.zip, etc.
+      # Calls Claude to infer title, language, subject, abstract, keywords.
+      # Outputs .md sidecars with full metadata → status: draft → appears in /queue/
+      - name: Intake ZIP files from content/inbox (if any)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "ANTHROPIC_API_KEY not set — skipping AI intake."
+            exit 0
+          fi
           shopt -s nullglob
           zips=(content/inbox/*.zip)
-          if [ ${#zips[@]} -gt 0 ]; then
-            python scripts/ingest.py
-            git config user.name "vkg-publisher[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add content/
-            git diff --staged --quiet || (git commit -m "chore: ingest content from inbox [skip ci]" && git push)
+          if [ ${#zips[@]} -eq 0 ]; then
+            echo "No ZIPs in content/inbox/ — skipping intake."
+            exit 0
           fi
+          git config user.name "vkg-publisher[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for zip in "${zips[@]}"; do
+            basename="${zip##*/}"      # e.g. books.zip
+            section="${basename%.zip}" # e.g. books
+            valid_sections="articles poems songs books audio video projects coverage"
+            if echo "$valid_sections" | grep -qw "$section"; then
+              echo "── Intaking $basename → section: $section"
+              python scripts/intake.py --zip "$zip" --section "$section"
+            else
+              echo "WARN: $basename — filename must match a section name (e.g. books.zip). Skipping."
+            fi
+            # Move processed ZIP out of inbox so it doesn't re-run
+            mv "$zip" "content/inbox/processed-$(date +%Y%m%d-%H%M%S)-$basename"
+          done
+          git add content/ state/registry.json
+          git diff --staged --quiet || (git commit -m "chore: intake batch from inbox [skip ci]" && git push)
 
       # ── TEST GATE ──────────────────────────────────────────────────────────
       - name: Run build validation tests

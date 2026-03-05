@@ -1,9 +1,9 @@
 """
-enrich.py — AI enrichment of vkg.works content using Claude.
+enrich.py — AI enrichment of vkg.works content using Gemini (Vertex AI).
 
 For each draft .md sidecar that lacks an `abstract` field, this script:
   1. Reads the title + body text from the companion DOCX (or .md content)
-  2. Calls Claude to generate English scholarly metadata
+  2. Calls Gemini to generate English scholarly metadata
   3. Writes three new fields to the .md sidecar:
        abstract  — 2–3 sentence scholarly summary
        preamble  — 1 paragraph situating the work in its tradition
@@ -24,7 +24,7 @@ Usage:
     python scripts/enrich.py --section poems --dry-run
 
 Requires:
-    ANTHROPIC_API_KEY environment variable (set via GitHub Secrets or .env)
+    gcloud CLI authenticated (gcloud auth login) — uses Vertex AI via ADC token
 """
 from __future__ import annotations
 
@@ -162,9 +162,9 @@ def _get_body_text(md_path: Path) -> str:
     return _extract_body_from_md(md_path)
 
 
-def _call_claude(title: str, section: str, category: str | None,
-                 body: str, client, model: str) -> dict | None:
-    """Call Claude and return parsed JSON dict, or None on failure."""
+def _call_gemini(title: str, section: str, category: str | None,
+                 body: str, client) -> dict | None:
+    """Call Gemini and return parsed JSON dict, or None on failure."""
     category_line = f'Category     : {category}' if category else ''
     prompt = USER_PROMPT_TEMPLATE.format(
         title=title,
@@ -172,24 +172,7 @@ def _call_claude(title: str, section: str, category: str | None,
         category_line=category_line,
         body_excerpt=body or '(body text not available)',
     )
-    try:
-        message = client.messages.create(
-            model=model,
-            max_tokens=600,
-            system=SYSTEM_PROMPT,
-            messages=[{'role': 'user', 'content': prompt}],
-        )
-        raw = message.content[0].text.strip()
-        # Strip markdown fences if model adds them despite instructions
-        raw = re.sub(r'^```(?:json)?\s*', '', raw)
-        raw = re.sub(r'\s*```$', '', raw)
-        return json.loads(raw)
-    except json.JSONDecodeError as e:
-        print(f'    WARN: JSON parse error — {e}', file=sys.stderr)
-        return None
-    except Exception as e:
-        print(f'    WARN: API error — {e}', file=sys.stderr)
-        return None
+    return client.generate_json(SYSTEM_PROMPT, prompt, max_tokens=600)
 
 
 def _write_enrichment(md_path: Path, enrichment: dict) -> None:
@@ -217,8 +200,8 @@ def _write_enrichment(md_path: Path, enrichment: dict) -> None:
 
 
 def _call_classify(title: str, section: str, abstract: str,
-                   keywords: list, client, model: str) -> dict | None:
-    """Call Claude to classify language / subject / topic. Returns dict or None."""
+                   keywords: list, client) -> dict | None:
+    """Call Gemini to classify language / subject / topic. Returns dict or None."""
     prompt = CLASSIFY_PROMPT_TEMPLATE.format(
         title=title,
         section=section,
@@ -226,23 +209,7 @@ def _call_classify(title: str, section: str, abstract: str,
         keywords=', '.join(keywords) if keywords else '(not available)',
         subjects=', '.join(SUBJECT_CHOICES),
     )
-    try:
-        message = client.messages.create(
-            model=model,
-            max_tokens=200,
-            system=SYSTEM_PROMPT,
-            messages=[{'role': 'user', 'content': prompt}],
-        )
-        raw = message.content[0].text.strip()
-        raw = re.sub(r'^```(?:json)?\s*', '', raw)
-        raw = re.sub(r'\s*```$', '', raw)
-        return json.loads(raw)
-    except json.JSONDecodeError as e:
-        print(f'    WARN: JSON parse error — {e}', file=sys.stderr)
-        return None
-    except Exception as e:
-        print(f'    WARN: API error — {e}', file=sys.stderr)
-        return None
+    return client.generate_json(SYSTEM_PROMPT, prompt, max_tokens=200)
 
 
 def _write_classification(md_path: Path, classification: dict) -> None:
@@ -270,7 +237,7 @@ def _write_classification(md_path: Path, classification: dict) -> None:
 
 
 def classify_section(section: str, limit: int, dry_run: bool,
-                     client, model: str) -> tuple[int, int, int]:
+                     client) -> tuple[int, int, int]:
     """
     Second-pass classification: add language/subject/topic to enriched items.
     Skips items that already have a language field.
@@ -315,7 +282,7 @@ def classify_section(section: str, limit: int, dry_run: bool,
             continue
 
         print(f'  Classifying [{section}] {md_path.name}  — "{title[:60]}"')
-        result = _call_classify(title, section, abstract, keywords, client, model)
+        result = _call_classify(title, section, abstract, keywords, client)
 
         if result:
             _write_classification(md_path, result)
@@ -332,7 +299,7 @@ def classify_section(section: str, limit: int, dry_run: bool,
 
 
 def enrich_section(section: str, limit: int, dry_run: bool,
-                   client, model: str) -> tuple[int, int, int]:
+                   client) -> tuple[int, int, int]:
     """
     Enrich draft items in one section.
     Returns (enriched, skipped, errors).
@@ -376,7 +343,7 @@ def enrich_section(section: str, limit: int, dry_run: bool,
             continue
 
         print(f'  Enriching [{section}] {md_path.name}  — "{title[:60]}"')
-        result = _call_claude(title, section, category, body, client, model)
+        result = _call_gemini(title, section, category, body, client)
 
         if result:
             _write_enrichment(md_path, result)
@@ -406,31 +373,23 @@ def main() -> None:
                         help='Show what would be processed without calling API')
     parser.add_argument('--classify', action='store_true',
                         help='Second pass: add language/subject/topic (requires existing abstract)')
-    parser.add_argument('--model', default='claude-haiku-4-5-20251001',
-                        choices=['claude-haiku-4-5-20251001', 'claude-sonnet-4-6'],
-                        help='Claude model to use (default: haiku — fast and cost-effective)')
     args = parser.parse_args()
-
-    api_key = os.environ.get('ANTHROPIC_API_KEY')
-    if not api_key and not args.dry_run:
-        print('ERROR: ANTHROPIC_API_KEY environment variable not set.', file=sys.stderr)
-        print('Set it via: set ANTHROPIC_API_KEY=sk-ant-...  (Windows)', file=sys.stderr)
-        sys.exit(1)
 
     client = None
     if not args.dry_run:
-        import anthropic
-        client = anthropic.Anthropic(api_key=api_key)
+        sys.path.insert(0, str(Path(__file__).parent))
+        from _gemini_rest import GeminiClient
+        client = GeminiClient()
 
     sections_to_process = SECTIONS if args.all else [args.section]
     total_done = total_skipped = total_errors = 0
 
     for section in sections_to_process:
         if args.classify:
-            d, s, err = classify_section(section, args.limit, args.dry_run, client, args.model)
+            d, s, err = classify_section(section, args.limit, args.dry_run, client)
             label = 'classified'
         else:
-            d, s, err = enrich_section(section, args.limit, args.dry_run, client, args.model)
+            d, s, err = enrich_section(section, args.limit, args.dry_run, client)
             label = 'enriched'
         total_done += d
         total_skipped += s

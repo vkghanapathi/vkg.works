@@ -2,9 +2,9 @@
 intake.py — Unified batch intake pipeline for vkg.works.
 
 Chains in one command:
-  1. Extract DOCX/PDF files from a ZIP (or process a single DOCX)
+  1. Extract DOCX/PDF files from a ZIP (or process a single DOCX/PDF)
   2. Read full document text
-  3. Call Claude API → infer title (if unclear), language, subject, topic,
+  3. Call Gemini API (via gcloud ADC) → infer title, language, subject, topic,
      abstract, preamble, keywords — all in a SINGLE API call per document
   4. Write complete .md sidecar with ALL metadata fields populated
   5. Assign VKG-X-### UID from state/registry.json
@@ -13,18 +13,18 @@ Chains in one command:
 Usage:
     python scripts/intake.py --zip inbox/batch.zip --section articles
     python scripts/intake.py --docx path/to/essay.docx --section poems
+    python scripts/intake.py --pdf  path/to/book.pdf  --section books
     python scripts/intake.py --zip batch.zip --section songs --date 2026-03-01
     python scripts/intake.py --zip batch.zip --section articles --dry-run
 
 Requires:
-    ANTHROPIC_API_KEY environment variable
-    pip install anthropic python-frontmatter python-docx pyyaml
+    gcloud CLI authenticated (gcloud auth login / application-default login)
+    pip install python-frontmatter python-docx pyyaml pdfplumber
 """
 from __future__ import annotations
 
 import argparse
 import json
-import os
 import re
 import shutil
 import sys
@@ -36,6 +36,10 @@ from pathlib import Path
 
 import frontmatter
 import yaml
+
+# Gemini client (uses gcloud ADC — no API key file needed)
+sys.path.insert(0, str(Path(__file__).parent))
+from _gemini_rest import GeminiClient
 
 # ── Force UTF-8 output on Windows ────────────────────────────────────────────
 if hasattr(sys.stdout, 'reconfigure'):
@@ -69,7 +73,7 @@ SUBJECT_CHOICES = [
     'Contemporary Commentary',
 ]
 
-BODY_LIMIT = 4000   # characters sent to Claude
+BODY_LIMIT = 4000   # characters sent to Gemini
 
 # ── Prompts ───────────────────────────────────────────────────────────────────
 
@@ -192,10 +196,10 @@ def _save_registry(registry: dict) -> None:
     )
 
 
-# ── Claude API call ───────────────────────────────────────────────────────────
+# ── Gemini API call ───────────────────────────────────────────────────────────
 
-def _call_claude(body: str, filename: str, section: str,
-                 client, model: str) -> dict | None:
+def _call_gemini(body: str, filename: str, section: str,
+                 client: GeminiClient) -> dict | None:
     prompt = PARSE_PROMPT.format(
         char_limit=BODY_LIMIT,
         body=body or '(text could not be extracted)',
@@ -203,23 +207,7 @@ def _call_claude(body: str, filename: str, section: str,
         section=section,
         subjects=', '.join(SUBJECT_CHOICES),
     )
-    try:
-        msg = client.messages.create(
-            model=model,
-            max_tokens=800,
-            system=SYSTEM_PROMPT,
-            messages=[{'role': 'user', 'content': prompt}],
-        )
-        raw = msg.content[0].text.strip()
-        raw = re.sub(r'^```(?:json)?\s*', '', raw)
-        raw = re.sub(r'\s*```$', '', raw)
-        return json.loads(raw)
-    except json.JSONDecodeError as e:
-        print(f'    WARN: JSON parse error — {e}', file=sys.stderr)
-        return None
-    except Exception as e:
-        print(f'    WARN: API error — {e}', file=sys.stderr)
-        return None
+    return client.generate_json(SYSTEM_PROMPT, prompt, max_tokens=1024)
 
 
 # ── Sidecar writer ────────────────────────────────────────────────────────────
@@ -247,20 +235,19 @@ def process_one(
     docx_path: Path,
     section: str,
     date_str: str,
-    client,
-    model: str,
+    client: GeminiClient,
     registry: dict,
     pdf_companions: dict[str, Path],
     dry_run: bool,
     verbose: bool = True,
 ) -> bool:
     """
-    Full intake pipeline for a single DOCX file.
+    Full intake pipeline for a single DOCX/PDF file.
     Returns True on success.
     """
     stem = docx_path.stem
 
-    # Quick fallback title before Claude
+    # Quick fallback title before AI call
     quick_title = _extract_title_from_docx(docx_path) or stem
     slug = _slugify(stem)
     dest_base = f'{date_str}-{slug}'
@@ -271,14 +258,14 @@ def process_one(
         print(f'  SKIP (exists): {dest_base}.md')
         return False
 
-    # Extract text and call Claude
+    # Extract text and call Gemini
     body = _extract_text(docx_path)
-    print(f'  → Calling Claude for: {stem[:60]}')
-    parsed = _call_claude(body, stem, section, client, model)
+    print(f'  → Calling Gemini for: {stem[:60]}')
+    parsed = _call_gemini(body, stem, section, client)
     time.sleep(API_DELAY)
 
     if parsed is None:
-        print(f'  WARN: Claude returned no data — using filename as title')
+        print(f'  WARN: Gemini returned no data — using filename as title')
         parsed = {}
 
     # Build metadata — Claude fills most fields, we fill the rest
@@ -347,8 +334,7 @@ def ingest_zip(
     zip_path: Path,
     section: str,
     date_str: str,
-    client,
-    model: str,
+    client: GeminiClient,
     registry: dict,
     dry_run: bool,
 ) -> tuple[int, int]:
@@ -383,7 +369,7 @@ def ingest_zip(
             return 0, 0
 
         for docx in source_files:
-            ok = process_one(docx, section, date_str, client, model,
+            ok = process_one(docx, section, date_str, client,
                              registry, pdf_companions, dry_run)
             if ok:
                 ingested += 1
@@ -408,27 +394,12 @@ def main() -> None:
                         help='Target section (articles, poems, songs…)')
     parser.add_argument('--date', default=str(date.today()),
                         metavar='YYYY-MM-DD', help='Publication date (default: today)')
-    parser.add_argument('--model', default='claude-haiku-4-5-20251001',
-                        choices=['claude-haiku-4-5-20251001', 'claude-sonnet-4-6'],
-                        help='Claude model (default: haiku — fast + cheap)')
     parser.add_argument('--dry-run', action='store_true',
                         help='Preview without writing files or updating registry')
     args = parser.parse_args()
 
-    # Validate API key
-    api_key = os.environ.get('ANTHROPIC_API_KEY')
-    if not api_key:
-        print('ERROR: ANTHROPIC_API_KEY not set.', file=sys.stderr)
-        print('  Windows: set ANTHROPIC_API_KEY=sk-ant-...', file=sys.stderr)
-        print('  Linux:   export ANTHROPIC_API_KEY=sk-ant-...', file=sys.stderr)
-        sys.exit(1)
-
-    try:
-        import anthropic
-        client = anthropic.Anthropic(api_key=api_key)
-    except ImportError:
-        print('ERROR: pip install anthropic', file=sys.stderr)
-        sys.exit(1)
+    # Create Gemini client (uses gcloud ADC — no API key needed)
+    client = GeminiClient()
 
     # Load registry
     if REGISTRY_FILE.exists():
@@ -440,7 +411,7 @@ def main() -> None:
     print(f'\n── VKG Intake Pipeline ──────────────────────────────────────')
     print(f'  Section  : {args.section}')
     print(f'  Date     : {args.date}')
-    print(f'  Model    : {args.model}')
+    print(f'  Engine   : Gemini 2.0 Flash (gcloud ADC)')
     print(f'  Dry run  : {args.dry_run}')
     print()
 
@@ -452,7 +423,7 @@ def main() -> None:
             sys.exit(1)
         ingested, skipped = ingest_zip(
             args.zip, args.section, args.date,
-            client, args.model, registry, args.dry_run,
+            client, registry, args.dry_run,
         )
     else:
         single = args.docx or args.pdf
@@ -461,7 +432,7 @@ def main() -> None:
             sys.exit(1)
         ok = process_one(
             single, args.section, args.date,
-            client, args.model, registry,
+            client, registry,
             pdf_companions={}, dry_run=args.dry_run,
         )
         ingested = 1 if ok else 0

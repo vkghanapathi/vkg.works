@@ -1,7 +1,6 @@
 {% extends "base.html" %}
-
 {% block title %}{{ title }} — vkg.works{% endblock %}
-{% block description %}{{ excerpt }}{% endblock %}
+{% block description %}{{ abstract or excerpt }}{% endblock %}
 {% set active_section = "books" %}
 
 {% block content %}
@@ -12,20 +11,46 @@
       <p class="article-meta">
         {% if date_display %}{{ date_display }}{% endif %}
         {% if author %} &bull; {{ author }}{% endif %}
+        {% if uid %} &bull; <span class="uid-badge">{{ uid }}</span>{% endif %}
       </p>
     </header>
 
-    <div class="article-body">
-      {{ body_html | safe }}
+    {% if abstract %}
+    <div class="article-abstract">
+      <p>{{ abstract }}</p>
     </div>
+    {% endif %}
 
-    <div style="margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.75rem;">
+    {% if chapters %}
+    <nav class="book-toc" aria-label="Table of contents">
+      <h2>Contents</h2>
+      <ol class="toc-list">
+        {% for ch in chapters %}
+        <li><a href="/books/{{ slug }}/{{ ch.slug }}/">{{ ch.title }}</a></li>
+        {% endfor %}
+      </ol>
+    </nav>
+    {% endif %}
+
+    {% if body_html %}
+    <div class="article-body">{{ body_html | safe }}</div>
+    {% endif %}
+
+    <div style="margin-top:1.5rem; display:flex; flex-wrap:wrap; gap:0.75rem;">
+      {% if chapters %}
+      <a href="/books/{{ slug }}/ch-01/"
+         style="display:inline-block; background:var(--color-accent); color:#fff;
+                padding:0.6rem 1.4rem; border-radius:4px; text-decoration:none;
+                font-family:var(--font-ui); font-size:0.9rem;">
+        Read Book &rarr;
+      </a>
+      {% endif %}
       {% if pdf_url %}
       <a href="{{ pdf_url }}" download
-         style="display:inline-block; background:var(--color-accent); color:#fff;
+         style="display:inline-block; border:1px solid var(--color-accent); color:var(--color-accent);
                 padding:0.6rem 1.2rem; border-radius:4px; text-decoration:none;
                 font-family:var(--font-ui); font-size:0.9rem;">
-        Download Book (PDF)
+        Download PDF
       </a>
       {% endif %}
       {% if audio_url %}

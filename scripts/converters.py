@@ -56,6 +56,7 @@ class ArticleData:
     translation_en: Optional[str] = None              # English literary translation
     translation_te: Optional[str] = None              # Telugu literary translation
     translation_status: Optional[str] = None          # 'draft' | 'approved'
+    chapters: list = field(default_factory=list)      # For books: [{title, slug, body_html}, …]
 
 
 _md = MarkdownIt()
@@ -418,6 +419,149 @@ def convert_txt(path: Path, section: str) -> ArticleData:
         date=date_str, date_display=_fmt_date(date_str),
         excerpt=_truncate(excerpt), author='Dr. Vamshi Krishna Ghanapāṭhī',
         body_html=body_html,
+    )
+
+
+def _split_docx_chapters(path: Path, book_slug: str) -> tuple[list[dict], list[tuple]]:
+    """Split a DOCX into chapters by Heading 1. Returns (chapters, extracted_images)."""
+    from docx import Document
+    from docx.oxml.ns import qn as _qn
+    doc = Document(str(path))
+    chapters: list[dict] = []
+    current: dict | None = None
+    img_idx = 0
+    all_images: list[tuple] = []
+
+    def _flush():
+        nonlocal current
+        if current is not None:
+            current['body_html'] = '\n'.join(current.pop('_parts'))
+            chapters.append(current)
+            current = None
+
+    for para in doc.paragraphs:
+        style = para.style.name if para.style else ''
+        for drawing in para._p.findall('.//' + _qn('w:drawing')):
+            for blip in drawing.findall('.//' + _qn('a:blip')):
+                r_embed = blip.get(_qn('r:embed'))
+                if r_embed:
+                    try:
+                        img_part = doc.part.related_parts[r_embed]
+                        ext = img_part.partname.rpartition('.')[-1].lower() or 'png'
+                        if ext not in ('png', 'jpg', 'jpeg', 'gif', 'bmp', 'webp'):
+                            ext = 'png'
+                        fname = f'{book_slug}-img-{img_idx:03d}.{ext}'
+                        all_images.append((fname, img_part.blob))
+                        if current is not None:
+                            current['_parts'].append(
+                                f'<figure class="article-figure">'
+                                f'<img src="../{fname}" alt="Figure {img_idx+1}" loading="lazy">'
+                                f'</figure>'
+                            )
+                        img_idx += 1
+                    except Exception:
+                        pass
+        text = para.text.strip()
+        if style in ('Heading 1', 'Title') and text:
+            _flush()
+            ch_num = len(chapters) + 1
+            current = {'title': text, 'slug': f'ch-{ch_num:02d}', '_parts': []}
+        elif current is not None:
+            if not text:
+                continue
+            if style.startswith('Heading'):
+                m = re.search(r'\d', style)
+                level = min(int(m.group()), 4) if m else 2
+                current['_parts'].append(f'<h{level}>{text}</h{level}>')
+            else:
+                current['_parts'].append(f'<p>{text}</p>')
+
+    _flush()
+    return chapters, all_images
+
+
+def convert_book_folder(folder: Path, section: str) -> ArticleData:
+    """Convert a book folder (index.md + book.docx or *.pdf) to ArticleData."""
+    slug = folder.name
+    title = slug.replace('-', ' ').title()
+    date_str = None
+    excerpt = ''
+    status = None
+    category = None
+    featured = False
+    abstract = None
+    preamble = None
+    keywords: list = []
+    uid = None
+    orcid = None
+    doi = None
+    language = None
+    subject = None
+    topic: list = []
+    pdf_file = None
+
+    index_md = folder / 'index.md'
+    if index_md.exists():
+        try:
+            post = frontmatter.load(str(index_md))
+            meta = post.metadata
+            if meta.get('title'):
+                title = str(meta['title'])
+            if meta.get('date'):
+                date_str = str(meta['date'])
+            status = meta.get('status') or None
+            category = meta.get('category') or None
+            featured = bool(meta.get('featured', False))
+            if meta.get('excerpt'):
+                excerpt = str(meta['excerpt'])
+            abstract = str(meta['abstract']).strip() if meta.get('abstract') else None
+            preamble = str(meta['preamble']).strip() if meta.get('preamble') else None
+            keywords = [str(k).strip() for k in meta['keywords'] if k] if isinstance(meta.get('keywords'), list) else []
+            uid = str(meta['uid']).strip() if meta.get('uid') else None
+            orcid = str(meta['orcid']).strip() if meta.get('orcid') else None
+            doi = str(meta['doi']).strip() if meta.get('doi') else None
+            language = str(meta['language']).strip() if meta.get('language') else None
+            subject = str(meta['subject']).strip() if meta.get('subject') else None
+            topic = [str(t).strip() for t in meta['topic'] if t] if isinstance(meta.get('topic'), list) else []
+            if meta.get('pdf_file'):
+                pdf_file = str(meta['pdf_file'])
+        except Exception:
+            pass
+
+    chapters: list = []
+    extracted_images: list = []
+    docx_files = sorted(folder.glob('*.docx'))
+    if docx_files:
+        try:
+            chapters, extracted_images = _split_docx_chapters(docx_files[0], slug)
+            if chapters and not excerpt:
+                from html.parser import HTMLParser
+                class _Text(HTMLParser):
+                    result = ''
+                    def handle_data(self, d): self.result += d
+                p = _Text()
+                p.feed(chapters[0]['body_html'][:500])
+                excerpt = _truncate(p.result)
+        except Exception:
+            pass
+
+    if not pdf_file:
+        pdf_files = sorted(folder.glob('*.pdf'))
+        if pdf_files:
+            pdf_file = pdf_files[0].name
+
+    if not excerpt:
+        excerpt = abstract or title
+
+    return ArticleData(
+        slug=slug, section=section, title=title,
+        date=date_str, date_display=_fmt_date(date_str),
+        excerpt=excerpt, author='Dr. Vamshi Krishna Ghanapāṭhī',
+        body_html='',
+        status=status, category=category, featured=featured,
+        pdf_file=pdf_file, chapters=chapters, extracted_images=extracted_images,
+        abstract=abstract, preamble=preamble, keywords=keywords,
+        uid=uid, orcid=orcid, doi=doi, language=language, subject=subject, topic=topic,
     )
 
 

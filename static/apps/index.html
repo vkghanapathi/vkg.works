@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VKG App Registry — vkg.works</title>
+  <meta name="description" content="Registry of all web apps, mobile apps, and digital tools developed by the VKG Technology Initiative — Sanskrit, Vedic, Finance, Health, and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    @font-face {
+      font-family: 'VijayaDV';
+      src: url('/assets/fonts/VijayaDV.woff2') format('woff2');
+      font-display: swap;
+      unicode-range: U+0900-U+097F, U+0966-U+096F, U+1CD0-U+1CFF, U+E000-U+F8FF;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      background: #0e0e0e;
+      color: #e8e0d0;
+      min-height: 100vh;
+      padding: 2rem 1rem 4rem;
+    }
+    .page-header {
+      text-align: center;
+      max-width: 980px;
+      margin: 0 auto 2.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid rgba(232, 200, 112, 0.2);
+    }
+    .back-link {
+      display: inline-block;
+      font-size: 0.78rem;
+      color: rgba(232, 200, 112, 0.55);
+      text-decoration: none;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 1.2rem;
+    }
+    .back-link:hover { color: #e8c870; }
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: #e8c870;
+      letter-spacing: 0.03em;
+      margin-bottom: 0.4rem;
+    }
+    .subtitle {
+      font-size: 0.88rem;
+      color: rgba(232, 224, 208, 0.45);
+      letter-spacing: 0.08em;
+    }
+
+    /* Filter bar */
+    .filter-bar {
+      max-width: 980px;
+      margin: 0 auto 2rem;
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .filter-btn {
+      padding: 0.3rem 0.85rem;
+      border: 1px solid rgba(232, 200, 112, 0.2);
+      background: transparent;
+      color: rgba(232, 224, 208, 0.55);
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: all 0.2s;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: rgba(232, 200, 112, 0.1);
+      border-color: rgba(232, 200, 112, 0.5);
+      color: #e8c870;
+    }
+
+    /* Section divider */
+    .section-divider {
+      max-width: 980px;
+      margin: 2.5rem auto 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .section-divider h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: rgba(232, 200, 112, 0.4);
+      white-space: nowrap;
+    }
+    .section-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: rgba(232, 200, 112, 0.1);
+    }
+
+    /* Cards grid */
+    .cards-grid {
+      max-width: 980px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+      gap: 1.2rem;
+    }
+
+    .app-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(232, 200, 112, 0.1);
+      border-radius: 4px;
+      padding: 1.3rem 1.4rem 1.2rem;
+      transition: border-color 0.2s, background 0.2s;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    .app-card:hover {
+      border-color: rgba(232, 200, 112, 0.25);
+      background: rgba(232, 200, 112, 0.03);
+    }
+
+    .card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+    .card-code {
+      font-family: 'Courier New', monospace;
+      font-size: 0.65rem;
+      color: rgba(232, 200, 112, 0.35);
+      letter-spacing: 0.08em;
+      margin-top: 0.15rem;
+      white-space: nowrap;
+    }
+    .card-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #e8d8b8;
+      line-height: 1.3;
+    }
+    .card-type {
+      font-size: 0.72rem;
+      color: rgba(232, 224, 208, 0.38);
+      letter-spacing: 0.04em;
+      margin-top: 0.15rem;
+    }
+    .card-desc {
+      font-size: 0.82rem;
+      color: rgba(232, 224, 208, 0.62);
+      line-height: 1.65;
+    }
+    .card-bottom {
+      margin-top: auto;
+      padding-top: 0.8rem;
+      border-top: 1px solid rgba(232, 200, 112, 0.08);
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-bottom: 0.5rem;
+    }
+    .tag {
+      display: inline-block;
+      font-size: 0.62rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.12rem 0.5rem;
+      border-radius: 2px;
+    }
+    .cat-vedic    { background: rgba(180,120,60,0.18);  color: #c89a60; border: 1px solid rgba(180,120,60,0.28); }
+    .cat-finance  { background: rgba(60,140,100,0.18);  color: #70b890; border: 1px solid rgba(60,140,100,0.28); }
+    .cat-exam     { background: rgba(100,100,200,0.18); color: #9090d8; border: 1px solid rgba(100,100,200,0.28); }
+    .cat-publish  { background: rgba(160,80,160,0.18);  color: #c080c0; border: 1px solid rgba(160,80,160,0.28); }
+    .cat-audio    { background: rgba(60,160,160,0.18);  color: #60c0c0; border: 1px solid rgba(60,160,160,0.28); }
+    .cat-health   { background: rgba(200,80,80,0.18);   color: #d08080; border: 1px solid rgba(200,80,80,0.28); }
+    .cat-home     { background: rgba(140,160,60,0.18);  color: #a8b870; border: 1px solid rgba(140,160,60,0.28); }
+    .cat-astro    { background: rgba(80,60,180,0.18);   color: #9080d8; border: 1px solid rgba(80,60,180,0.28); }
+    .cat-dharma   { background: rgba(200,140,40,0.18);  color: #d4a840; border: 1px solid rgba(200,140,40,0.28); }
+
+    .status-badge {
+      display: inline-block;
+      font-size: 0.62rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.12rem 0.5rem;
+      border-radius: 2px;
+    }
+    .status-live        { background: rgba(60,180,80,0.14);   color: #70d890; border: 1px solid rgba(60,180,80,0.28); }
+    .status-beta        { background: rgba(230,180,40,0.14);  color: #e8c870; border: 1px solid rgba(230,180,40,0.28); }
+    .status-active      { background: rgba(80,160,220,0.14);  color: #80b8e8; border: 1px solid rgba(80,160,220,0.28); }
+    .status-improvement { background: rgba(180,100,220,0.14); color: #c080e8; border: 1px solid rgba(180,100,220,0.28); }
+    .status-dev         { background: rgba(160,160,160,0.1);  color: #909090; border: 1px solid rgba(160,160,160,0.22); }
+
+    .card-url {
+      font-size: 0.73rem;
+    }
+    .card-url a {
+      color: rgba(130,180,220,0.75);
+      text-decoration: none;
+      word-break: break-all;
+      line-height: 1.7;
+      display: inline-block;
+    }
+    .card-url a:hover { color: #80b8e8; text-decoration: underline; }
+    .url-tbc { color: rgba(232,224,208,0.2); font-style: italic; font-size: 0.72rem; }
+
+    .updated-note {
+      max-width: 980px;
+      margin: 3rem auto 0;
+      text-align: right;
+      font-size: 0.7rem;
+      color: rgba(232,224,208,0.2);
+    }
+    .updated-note a { color: rgba(232,200,112,0.25); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 1.6rem; }
+      .cards-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-header">
+    <a href="/" class="back-link">← vkg.works</a>
+    <h1>VKG App Registry</h1>
+    <p class="subtitle">Web apps &nbsp;·&nbsp; Mobile apps &nbsp;·&nbsp; Digital tools &nbsp;·&nbsp; 2025–2026</p>
+  </div>
+
+  <div class="filter-bar">
+    <button class="filter-btn active" onclick="filterCards('all', this)">All</button>
+    <button class="filter-btn" onclick="filterCards('vedic', this)">Vedic &amp; Sanskrit</button>
+    <button class="filter-btn" onclick="filterCards('publish', this)">Publishing</button>
+    <button class="filter-btn" onclick="filterCards('exam', this)">Examination</button>
+    <button class="filter-btn" onclick="filterCards('finance', this)">Finance</button>
+    <button class="filter-btn" onclick="filterCards('audio', this)">Audio</button>
+    <button class="filter-btn" onclick="filterCards('health', this)">Health</button>
+    <button class="filter-btn" onclick="filterCards('home', this)">Household</button>
+    <button class="filter-btn" onclick="filterCards('astro', this)">Astrology</button>
+    <button class="filter-btn" onclick="filterCards('dharma', this)">Dharma</button>
+  </div>
+
+  <!-- ═══ NEW BUILDS ═══ -->
+  <div class="section-divider" id="sec-new"><h2>New Builds</h2></div>
+  <div class="cards-grid" id="grid-new">
+
+    <div class="app-card" data-cat="vedic">
+      <div class="card-top">
+        <div>
+          <div class="card-name">Shabda</div>
+          <div class="card-type">Flutter Mobile + Web</div>
+        </div>
+        <span class="card-code">VKG-01</span>
+      </div>
+      <p class="card-desc">A gamified learning ecosystem for Sanskrit phonology and Vedic linguistics, spanning 8 modules — letter recognition, Māheśvara Sūtras, Pratyāhāras, articulation analysis, Sandhi, Samāsa, and derivations — with weekly challenges and certification support.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="tag cat-vedic">Vedic &amp; Sanskrit</span>
+          <span class="status-badge status-beta">Beta</span>
+        </div>
+        <div class="card-url">
+          <a href="https://shabda-404772120601.asia-south1.run.app" target="_blank">shabda-404772120601.asia-south1.run.app</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="app-card" data-cat="vedic">
+      <div class="card-top">
+        <div>
+          <div class="card-name">Varṇa Krama</div>
+          <div class="card-type">Flutter Mobile + Web</div>
+        </div>
+        <span class="card-code">VKG-02</span>
+      </div>
+      <p class="card-desc">Phonetic analysis tool providing five variants of Sanskrit phonological description — Śuddha, Svara, Mātrā, Aṅga, and Varṇa-Sāra — with structured tokenization, syllable processing, and specialized formatters for Vedic text analysis.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="tag cat-vedic">Vedic &amp; Sanskrit</span>
+          <span class="status-badge status-beta">Beta</span>
+        </div>
+        <div class="card-url">
+          <a href="https://varnakrama-web.web.app" target="_blank">varnakrama-web.web.app</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="app-card" data-cat="vedic">
+      <div class="card-top">
+        <div>
+          <div class="card-name">MAP — Mūla-Artha-Pratipatti</div>
+          <div class="card-type">Flutter Mobile · Śrī Rudram viewer</div>
+        </div>
+        <span class="card-code">VKG-03</span>
+      </div>
+      <p class="card-desc">A structured learning framework for Śrī Rudram (Taittirīya Saṃhitā) presenting Mantra, Annotation, and Presentation in a three-tier interactive viewer with Vedic accent marks, multilingual translations, grammar analysis, and audio synchronisation.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="tag cat-vedic">Vedic &amp; Sanskrit</span>
+          <span class="status-badge status-active">Active</span>
+        </div>
+        <div class="card-url">
+          <a href="https://map-ocr-644387042032.asia-south1.run.app/viewer/" target="_blank">map-ocr…asia-south1.run.app/viewer/</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="app-card" data-cat="exam">
+      <div class="card-top">
+        <div>
+          <div class="card-name">Pareeksha Portal</div>
+          <div class="card-type">Web Full-Stack · Exam management</div>
+        </div>
+        <span class="card-code">VKG-04</span>
+      </div>
+      <p class="card-desc">End-to-end examination management for Vedic knowledge assessments: Aadhaar-linked registration, guru/school approval, hall tickets, question papers, answer sheets, tabulation, result publication, and certificate issuance and registry.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="tag cat-exam">Examination</span>
+          <span class="status-badge status-active">Active</span>
+        </div>
+        <div class="card-url"><span class="url-tbc">URL — coming soon</span></div>
+      </div>
+    </div>
+
+    <div class="app-card" data-cat="publish">
+      <div class="card-top">
+        <div>
+          <div class="card-name">Pranetaa Publisher</div>
+          <div class="card-type">Web + Flutter + FastAPI</div>
+        </div>
+        <span class="card-code">VKG-05</span>
+      </div>
+      <p class="card-desc">Academic publishing pipeline for Sanskrit and Vedic scholarship: DOCX upload → AI-assisted metadata extraction → Zenodo DOI registration + ORCID linkage, supporting peer-reviewed dissemination of Vedic research.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="tag cat-publish">Publishing</span>
+          <span class="status-badge status-active">Active</span>
+        </div>
+        <div class="card-url">
+          <a href="https://pranetaa-backend-sq7sy4rwza-el.a.run.app" target="_blank">pranetaa-backend (Cloud Run)</a><br>
+          <a href="https://pranetaa-frontend-sq7sy4rwza-el.a.run.app" target="_blank">pranetaa-frontend (Cloud Run)</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="app-card" data-cat="publish">
+      <div class="card-top">
+        <div>
+          <div class="card-name">vkg.works</div>
+          <div class="card-type">Static Website · Scholarly hub</div>
+        </div>
+        <span class="card-code">VKG-06</span>
+      </div>
+      <p class="card-desc">The primary scholarly platform of Dr. Vamśīkṛṣṇa Ghanapāṭhī — featuring articles, books, audio, Vedic recitation archives, MAP panels, ORCID-linked publications, and a UID registry for Vedic compositions.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="tag cat-publish">Publishing</span>
+          <span class="status-badge status-live">Live</span>
+        </div>
+        <div class="card-url">
+          <a href="https://vkg.works" target="_blank">vkg.works</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="app-card" data-cat="vedic">
+      <div class="card-top">
+        <div>
+          <div class="card-name">SGS · Vedanidhi</div>
+          <div class="card-type">Data Pipeline + API · Bhajan archive</div>
+        </div>
+        <span class="card-code">VKG-07</span>
+      </div>
+      <p class="card-desc">A digitisation pipeline for 2,226 SGS devotional compositions — SQLite/MySQL with FTS5 full-text search, 12-language AI translations, and a REST API serving the Vedanidhi knowledge platform.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="tag cat-vedic">Vedic &amp; Sanskrit</span>
+          <span class="status-badge status-active">Active</span>
+        </div>
+        <div class="card-url">
+          <a href="https://vedanidhi.in" target="_blank">vedanidhi.in</a> &nbsp;·&nbsp;
+          <a href="https://sgs.vedanidhi.in" target="_blank">sgs.vedanidhi.in</a><br>
+          <a href="https://api.vedanidhi.in" target="_blank">api.vedanidhi.in</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="app-card" data-cat="finance">
+      <div class="card-top">
+        <div>
+          <div class="card-name">Vitta &nbsp;<span style="font-family:'VijayaDV',serif;font-size:1rem;">वित्त</span></div>
+          <div class="card-type">Flutter Mobile + Web + FastAPI</div>
+        </div>
+        <span class="card-code">VKG-08</span>
+      </div>
+      <p class="card-desc">Multi-organisation financial management for 7 entities — 28 screens covering transactions, OCR-based cheque scanning, Payment Advice generation, and Indian-standard reports: Income &amp; Expenditure, Receipts &amp; Payments, Trial Balance, and Balance Sheets.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="tag cat-finance">Finance</span>
+          <span class="status-badge status-active">Active</span>
+        </div>
+        <div class="card-url">
+          <a href="https://vitta-7f675.web.app" target="_blank">vitta-7f675.web.app</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="app-card" data-cat="home">
+      <div class="card-top">
+        <div>
+          <div class="card-name">Viniyoga</div>
+          <div class="card-type">Flutter Web + Mobile</div>
+        </div>
+        <span class="card-code">VKG-09</span>
+      </div>
+      <p class="card-desc">Smart household management — intelligent menu planning, kitchen inventory tracking, family meal requests, and procurement workflows aligned with Vedic dietary and seasonal guidelines.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="tag cat-home">Household</span>
+          <span class="status-badge status-active">Active</span>
+        </div>
+        <div class="card-url"><span class="url-tbc">URL — coming soon</span></div>
+      </div>
+    </div>
+
+    <div class="app-card" data-cat="audio">
+      <div class="card-top">
+        <div>
+          <div class="card-name">CRJ SoundScape</div>
+          <div class="card-type">Python + FastAPI · Audio AI</div>
+        </div>
+        <span class="card-code">VKG-10</span>
+      </div>
+      <p class="card-desc">AI/ML audio processing engine that converts audio frequencies into musical notation across Western and Indian classical systems — pitch detection, svara mapping, gamaka classification, and raga identification for Carnatic, Hindustani, and Sāma Veda traditions.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="tag cat-audio">Audio</span>
+          <span class="status-badge status-active">Active</span>
+        </div>
+        <div class="card-url"><span class="url-tbc">URL — coming soon</span></div>
+      </div>
+    </div>
+
+    <div class="app-card" data-cat="astro">
+      <div class="card-top">
+        <div>
+          <div class="card-name">Viyat</div>
+          <div class="card-type">Flutter + Astro.js</div>
+        </div>
+        <span class="card-code">VKG-11</span>
+      </div>
+      <p class="card-desc">Vedic astrology guide — combining a Firebase-hosted progressive web app with a mobile companion offering jyotiṣa content, planetary calculations, and Vedic knowledge management for practitioners and learners.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="tag cat-astro">Astrology</span>
+          <span class="status-badge status-active">Active</span>
+        </div>
+        <div class="card-url">
+          <a href="https://viyat-3fcf1.web.app" target="_blank">viyat-3fcf1.web.app</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="app-card" data-cat="health">
+      <div class="card-top">
+        <div>
+          <div class="card-name">CBS — Clinical Buddy Suite</div>
+          <div class="card-type">Web Application</div>
+        </div>
+        <span class="card-code">VKG-12</span>
+      </div>
+      <p class="card-desc">Clinical assistant suite for healthcare professionals — MVP features targeting doctors and practitioners with structured documentation, clinical support tools, and streamlined patient workflow management.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="tag cat-health">Health</span>
+          <span class="status-badge status-active">Active</span>
+        </div>
+        <div class="card-url"><span class="url-tbc">URL — coming soon</span></div>
+      </div>
+    </div>
+
+  </div><!-- /grid-new -->
+
+  <!-- ═══ EXISTING — IMPROVED ═══ -->
+  <div class="section-divider" id="sec-improved"><h2>Existing Projects — Improved</h2></div>
+  <div class="cards-grid" id="grid-improved">
+
+    <div class="app-card" data-cat="vedic">
+      <div class="card-top">
+        <div>
+          <div class="card-name">Vākyam</div>
+          <div class="card-type">Vedic sentence corpus</div>
+        </div>
+        <span class="card-code">VKG-13</span>
+      </div>
+      <p class="card-desc">A curated corpus of Vedic sentences in saṃhitā and pada pāṭha forms — providing structured access to sentence-level Vedic text for linguistic analysis, grammatical study, and teaching of complex Sanskrit constructions.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="tag cat-vedic">Vedic &amp; Sanskrit</span>
+          <span class="status-badge status-improvement">Improvement</span>
+        </div>
+        <div class="card-url">
+          <a href="https://vachas.in" target="_blank">vachas.in</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="app-card" data-cat="vedic">
+      <div class="card-top">
+        <div>
+          <div class="card-name">Vikṛti Pāṭha Engine</div>
+          <div class="card-type">Vedic text processing · 11+ methods</div>
+        </div>
+        <span class="card-code">VKG-14</span>
+      </div>
+      <p class="card-desc">Generates eight traditional Vedic recitation variants — Krama, Jaṭā, Ghaṇa, Mālā, Śikhā, Rekhā, Dhvaja, Daṇḍa — from source mantras, supporting authentic Vedic chanting practice, teaching, and preservation of oral tradition.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="tag cat-vedic">Vedic &amp; Sanskrit</span>
+          <span class="status-badge status-improvement">Improvement</span>
+        </div>
+        <div class="card-url">
+          <a href="https://vedictools-server-271345113157.asia-south1.run.app" target="_blank">vedictools-server (Cloud Run)</a><br>
+          <a href="https://vedictools-ui-2025.web.app" target="_blank">vedictools-ui-2025.web.app</a><br>
+          <a href="https://vedictools.in" target="_blank">vedictools.in</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="app-card" data-cat="vedic">
+      <div class="card-top">
+        <div>
+          <div class="card-name">Sandhi Engine</div>
+          <div class="card-type">Phonological rules · Vedictools Server</div>
+        </div>
+        <span class="card-code">VKG-15</span>
+      </div>
+      <p class="card-desc">Production-grade Sanskrit phonological junction processor applying Pāṇinian sandhi rules to word sequences — vowel and consonant transformations, svara accent assignment, pragṛhya and pluta vowel support, with an 8-step svara pipeline.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="tag cat-vedic">Vedic &amp; Sanskrit</span>
+          <span class="status-badge status-improvement">Improvement</span>
+        </div>
+        <div class="card-url">
+          <a href="https://vedictools-server-271345113157.asia-south1.run.app" target="_blank">vedictools-server (Cloud Run)</a><br>
+          <a href="https://vedictools.in" target="_blank">vedictools.in</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="app-card" data-cat="vedic">
+      <div class="card-top">
+        <div>
+          <div class="card-name">DISA</div>
+          <div class="card-type">Devotee Information System · FastAPI</div>
+        </div>
+        <span class="card-code">VKG-16</span>
+      </div>
+      <p class="card-desc">Seva management portal for Avadhoota Datta Peetham — member registration, organisation hierarchy, seva tracking, photo uploads, WhatsApp integration, and certificate generation, built on FastAPI with PostgreSQL and deployed on Cloud Run.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="tag cat-vedic">Vedic &amp; Sanskrit</span>
+          <span class="status-badge status-improvement">Improvement</span>
+        </div>
+        <div class="card-url">
+          <a href="https://sgsdatta.in" target="_blank">sgsdatta.in</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="app-card" data-cat="vedic">
+      <div class="card-top">
+        <div>
+          <div class="card-name">Vachas.in</div>
+          <div class="card-type">Vedic text platform · DRF REST API v2</div>
+        </div>
+        <span class="card-code">VKG-17</span>
+      </div>
+      <p class="card-desc">Vedic vocabulary and text platform rebuilt with 21 DRF REST API endpoints, JWT authentication, Elasticsearch full-text search, and Redis caching — serving scholars and students with structured access to Sanskrit lexical data.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="tag cat-vedic">Vedic &amp; Sanskrit</span>
+          <span class="status-badge status-improvement">Improvement</span>
+        </div>
+        <div class="card-url">
+          <a href="https://vachas.in" target="_blank">vachas.in</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="app-card" data-cat="vedic">
+      <div class="card-top">
+        <div>
+          <div class="card-name">Vedavishtaram.in</div>
+          <div class="card-type">Web Platform · Veda Vijñāna Viṣṭaram</div>
+        </div>
+        <span class="card-code">VKG-18</span>
+      </div>
+      <p class="card-desc">Scholarly web platform dedicated to Vedic education and Sanskrit knowledge — showcasing VKG's research on Vedic texts, with Schema.org JSON-LD structured data, ORCID integration, and a UID registry for Vedic compositions.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="tag cat-vedic">Vedic &amp; Sanskrit</span>
+          <span class="status-badge status-live">Live</span>
+        </div>
+        <div class="card-url">
+          <a href="https://vedavishtaram.in" target="_blank">vedavishtaram.in</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="app-card" data-cat="dharma">
+      <div class="card-top">
+        <div>
+          <div class="card-name">Swadharma Portal</div>
+          <div class="card-type">Web · Knowledge Q&amp;A</div>
+        </div>
+        <span class="card-code">VKG-19</span>
+      </div>
+      <p class="card-desc">Non-commercial knowledge portal with scholar-reviewed Q&amp;A on Dharma, Veda, and Sanskrit heritage — multi-language support, full-text search, and GitHub Actions automation for content publishing.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="tag cat-dharma">Dharma</span>
+          <span class="status-badge status-active">Active</span>
+        </div>
+        <div class="card-url"><span class="url-tbc">URL — coming soon</span></div>
+      </div>
+    </div>
+
+    <div class="app-card" data-cat="vedic">
+      <div class="card-top">
+        <div>
+          <div class="card-name">Pada Anushīlanam</div>
+          <div class="card-type">Grammatical analysis module</div>
+        </div>
+        <span class="card-code">VKG-20</span>
+      </div>
+      <p class="card-desc">Detailed word-level grammatical analysis for Vedic and Classical Sanskrit — providing root form, word type, gender, case, number, and traditional Pāṇinian classification for each word in a given text.</p>
+      <div class="card-bottom">
+        <div class="card-tags">
+          <span class="tag cat-vedic">Vedic &amp; Sanskrit</span>
+          <span class="status-badge status-dev">In Development</span>
+        </div>
+        <div class="card-url"><span class="url-tbc">URL — coming soon</span></div>
+      </div>
+    </div>
+
+  </div><!-- /grid-improved -->
+
+  <p class="updated-note">Last updated: March 2026 &nbsp;·&nbsp; <a href="/">vkg.works</a></p>
+
+  <script>
+    function filterCards(cat, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      document.querySelectorAll('.app-card').forEach(card => {
+        card.style.display = (cat === 'all' || card.dataset.cat === cat) ? '' : 'none';
+      });
+
+      ['sec-new','sec-improved'].forEach(secId => {
+        const sec = document.getElementById(secId);
+        const gridId = secId.replace('sec-', 'grid-');
+        const grid = document.getElementById(gridId);
+        if (!sec || !grid) return;
+        const visible = grid.querySelectorAll('.app-card:not([style*="display: none"])');
+        sec.style.display = visible.length ? '' : 'none';
+        grid.style.display = visible.length ? '' : 'none';
+      });
+    }
+  </script>
+
+</body>
+</html>

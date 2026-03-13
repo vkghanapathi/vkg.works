@@ -16,6 +16,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 from converters import (
     ArticleData, CONVERTERS,
     convert_audio, convert_video_md, convert_coverage, convert_markdown,
+    convert_book_folder,
 )
 import rss as rss_module
 
@@ -147,6 +148,19 @@ def scan_section(section: str) -> list[ArticleData]:
                     processed_slugs.add(data.slug)
             elif entry.suffix.lower() == '.md':
                 data = convert_coverage(entry, section)
+                if data.slug not in processed_slugs:
+                    items.append(data)
+                    processed_slugs.add(data.slug)
+        return _sort_items(items)
+
+    if section == 'books':
+        for entry in sorted(section_dir.iterdir()):
+            if entry.is_dir() and not entry.name.startswith('.'):
+                try:
+                    data = convert_book_folder(entry, section)
+                except Exception as e:
+                    print(f'  WARNING: book {entry.name}: {e}', file=sys.stderr)
+                    continue
                 if data.slug not in processed_slugs:
                     items.append(data)
                     processed_slugs.add(data.slug)
@@ -305,6 +319,37 @@ def render_site(sections: dict[str, list[ArticleData]], site_url: str, env: Envi
 
     print(f'  Rendered {sum(len(v) for v in sections.values())} item pages')
 
+    # Render book chapter pages
+    chapter_tmpl = env.get_template('book_chapter.html')
+    ch_count = 0
+    for item in sections.get('books', []):
+        chs = getattr(item, 'chapters', [])
+        if not chs:
+            continue
+        book_dir = SITE_DIR / 'books' / item.slug
+        for i, ch in enumerate(chs):
+            ch_dir = book_dir / ch['slug']
+            ch_dir.mkdir(parents=True, exist_ok=True)
+            (ch_dir / 'index.html').write_text(
+                chapter_tmpl.render(
+                    title=f"{ch['title']} — {item.title}",
+                    book_title=item.title,
+                    book_slug=item.slug,
+                    chapter_title=ch['title'],
+                    body_html=ch['body_html'],
+                    prev_chapter=chs[i - 1] if i > 0 else None,
+                    next_chapter=chs[i + 1] if i < len(chs) - 1 else None,
+                    chapter_num=i + 1,
+                    total_chapters=len(chs),
+                    author=item.author,
+                    uid=getattr(item, 'uid', None),
+                ),
+                encoding='utf-8',
+            )
+            ch_count += 1
+    if ch_count:
+        print(f'  Rendered {ch_count} book chapter pages')
+
     # Render live page
     _render_live(env)
 
@@ -429,12 +474,23 @@ def _build_context(item: ArticleData, site_url: str) -> dict:
         ctx['translation_en'] = item.translation_en
     if getattr(item, 'translation_te', None) and item.translation_status == 'approved':
         ctx['translation_te'] = item.translation_te
+    if getattr(item, 'chapters', None):
+        ctx['chapters'] = item.chapters
     return ctx
 
 
 def _copy_item_assets(item: ArticleData, item_dir: Path) -> None:
     """Copy binary files (PDF, audio, images) into the built item directory."""
     src_dir = CONTENT_DIR / item.section
+
+    # Books: source files live in content/books/{slug}/
+    if item.section == 'books':
+        book_src = CONTENT_DIR / 'books' / item.slug
+        if item.pdf_file and (book_src / item.pdf_file).exists():
+            shutil.copy2(str(book_src / item.pdf_file), str(item_dir / item.pdf_file))
+        for img_fname, img_bytes in getattr(item, 'extracted_images', []):
+            (item_dir / img_fname).write_bytes(img_bytes)
+        return
 
     # For coverage folders, source is the folder itself
     if item.section == 'coverage':
@@ -575,6 +631,16 @@ def main() -> None:
 
     # 2. Render static site
     render_site(sections, site_url, env)
+
+    # 2b. Copy static pages (e.g. apps/, any hand-authored HTML)
+    static_dir = ROOT / 'static'
+    if static_dir.exists():
+        for item in static_dir.rglob('*'):
+            if item.is_file():
+                dest = SITE_DIR / item.relative_to(static_dir)
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(str(item), str(dest))
+        print(f'  Copied static pages from static/')
 
     # 3. Generate RSS feed
     rss_output = SITE_DIR / 'rss.xml'

@@ -130,6 +130,31 @@
       background: rgba(232, 200, 112, 0.03);
     }
 
+    /* App icon */
+    .card-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      object-fit: cover;
+      flex-shrink: 0;
+      margin-bottom: 0.75rem;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .card-icon-mono {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      flex-shrink: 0;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
     .card-top {
       display: flex;
       align-items: flex-start;
@@ -262,6 +287,7 @@
   <div class="cards-grid" id="grid-new">
 
     <div class="app-card" data-cat="vedic">
+      <img class="card-icon" src="/apps/icons/vkg01-shabda.png" alt="Shabda icon">
       <div class="card-top">
         <div>
           <div class="card-name">Shabda</div>
@@ -282,6 +308,7 @@
     </div>
 
     <div class="app-card" data-cat="vedic">
+      <img class="card-icon" src="/apps/icons/vkg02-varnakrama.png" alt="Varṇa Krama icon">
       <div class="card-top">
         <div>
           <div class="card-name">Varṇa Krama</div>
@@ -302,6 +329,7 @@
     </div>
 
     <div class="app-card" data-cat="vedic">
+      <img class="card-icon" src="/apps/icons/vkg03-map.png" alt="MAP icon">
       <div class="card-top">
         <div>
           <div class="card-name">MAP — Mūla-Artha-Pratipatti</div>
@@ -322,6 +350,7 @@
     </div>
 
     <div class="app-card" data-cat="exam">
+      <div class="card-icon-mono" style="background:rgba(100,100,200,0.15);color:#9090d8;">P</div>
       <div class="card-top">
         <div>
           <div class="card-name">Pareeksha Portal</div>
@@ -340,6 +369,7 @@
     </div>
 
     <div class="app-card" data-cat="publish">
+      <img class="card-icon" src="/apps/icons/vkg05-pranetaa.png" alt="Pranetaa icon">
       <div class="card-top">
         <div>
           <div class="card-name">Pranetaa Publisher</div>
@@ -361,6 +391,7 @@
     </div>
 
     <div class="app-card" data-cat="publish">
+      <div class="card-icon-mono" style="background:rgba(160,80,160,0.15);color:#c080c0;">V</div>
       <div class="card-top">
         <div>
           <div class="card-name">vkg.works</div>
@@ -381,6 +412,7 @@
     </div>
 
     <div class="app-card" data-cat="vedic">
+      <img class="card-icon" src="/apps/icons/vkg07-sgs.png" alt="SGS Vedanidhi icon">
       <div class="card-top">
         <div>
           <div class="card-name">SGS · Vedanidhi</div>
@@ -403,6 +435,7 @@
     </div>
 
     <div class="app-card" data-cat="finance">
+      <img class="card-icon" src="/apps/icons/vkg08-vitta.png" alt="Vitta icon">
       <div class="card-top">
         <div>
           <div class="card-name">Vitta &nbsp;<span style="font-family:'VijayaDV',serif;font-size:1rem;">वित्त</span></div>
@@ -423,6 +456,7 @@
     </div>
 
     <div class="app-card" data-cat="home">
+      <img class="card-icon" src="/apps/icons/vkg09-viniyoga.png" alt="Viniyoga icon">
       <div class="card-top">
         <div>
           <div class="card-name">Viniyoga</div>
@@ -441,6 +475,7 @@
     </div>
 
     <div class="app-card" data-cat="audio">
+      <div class="card-icon-mono" style="background:rgba(60,160,160,0.15);color:#60c0c0;">C</div>
       <div class="card-top">
         <div>
           <div class="card-name">CRJ SoundScape</div>
@@ -459,6 +494,7 @@
     </div>
 
     <div class="app-card" data-cat="astro">
+      <img class="card-icon" src="/apps/icons/vkg11-viyat.png" alt="Viyat icon">
       <div class="card-top">
         <div>
           <div class="card-name">Viyat</div>
@@ -479,6 +515,7 @@
     </div>
 
     <div class="app-card" data-cat="health">
+      <div class="card-icon-mono" style="background:rgba(200,80,80,0.15);color:#d08080;">C</div>
       <div class="card-top">
         <div>
           <div class="card-name">CBS — Clinical Buddy Suite</div>
@@ -503,6 +540,7 @@
   <div class="cards-grid" id="grid-improved">
 
     <div class="app-card" data-cat="vedic">
+      <img class="card-icon" src="/apps/icons/vkg13-vachas.png" alt="Vākyam icon">
       <div class="card-top">
         <div>
           <div class="card-name">Vākyam</div>
@@ -523,6 +561,7 @@
     </div>
 
     <div class="app-card" data-cat="vedic">
+      <img class="card-icon" src="/apps/icons/vkg14-vikruti.png" alt="Vikṛti Pāṭha icon">
       <div class="card-top">
         <div>
           <div class="card-name">Vikṛti Pāṭha Engine</div>
@@ -545,6 +584,7 @@
     </div>
 
     <div class="app-card" data-cat="vedic">
+      <img class="card-icon" src="/apps/icons/vkg15-sandhi.png" alt="Sandhi Engine icon">
       <div class="card-top">
         <div>
           <div class="card-name">Sandhi Engine</div>
@@ -566,6 +606,7 @@
     </div>
 
     <div class="app-card" data-cat="vedic">
+      <div class="card-icon-mono" style="background:rgba(180,120,60,0.15);color:#c89a60;">D</div>
       <div class="card-top">
         <div>
           <div class="card-name">DISA</div>
@@ -586,6 +627,7 @@
     </div>
 
     <div class="app-card" data-cat="vedic">
+      <img class="card-icon" src="/apps/icons/vkg17-vachas.png" alt="Vachas.in icon">
       <div class="card-top">
         <div>
           <div class="card-name">Vachas.in</div>
@@ -606,6 +648,7 @@
     </div>
 
     <div class="app-card" data-cat="vedic">
+      <div class="card-icon-mono" style="background:rgba(180,120,60,0.15);color:#c89a60;">V</div>
       <div class="card-top">
         <div>
           <div class="card-name">Vedavishtaram.in</div>
@@ -626,6 +669,7 @@
     </div>
 
     <div class="app-card" data-cat="dharma">
+      <div class="card-icon-mono" style="background:rgba(200,140,40,0.15);color:#d4a840;">S</div>
       <div class="card-top">
         <div>
           <div class="card-name">Swadharma Portal</div>
@@ -644,6 +688,7 @@
     </div>
 
     <div class="app-card" data-cat="vedic">
+      <div class="card-icon-mono" style="background:rgba(180,120,60,0.15);color:#c89a60;">प</div>
       <div class="card-top">
         <div>
           <div class="card-name">Pada Anushīlanam</div>

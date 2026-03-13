@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block title %}{{ chapter_title }} — {{ book_title }} — vkg.works{% endblock %}
+{% block description %}{{ chapter_title }}, {{ book_title }} by {{ author }}{% endblock %}
+{% set active_section = "books" %}
+
+{% block head_extra %}
+<style>
+.chapter-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--color-border);
+  margin-top: 2.5rem;
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+}
+.chapter-nav a {
+  color: var(--color-accent);
+  text-decoration: none;
+  border: 1px solid var(--color-border);
+  padding: 0.35rem 0.75rem;
+  border-radius: 4px;
+}
+.chapter-nav a:hover { border-color: var(--color-accent); }
+.chapter-nav .nav-center { color: var(--color-muted); }
+.chapter-progress {
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  color: var(--color-muted);
+  margin-bottom: 1.5rem;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="page-container">
+  <article class="full-article">
+    <header>
+      <p class="chapter-progress">
+        <a href="/books/{{ book_slug }}/" style="color:var(--color-muted); text-decoration:none;">{{ book_title }}</a>
+        &rsaquo; Chapter {{ chapter_num }} of {{ total_chapters }}
+      </p>
+      <h1>{{ chapter_title }}</h1>
+      {% if author %}<p class="article-meta">{{ author }}</p>{% endif %}
+    </header>
+
+    <div class="article-body">
+      {{ body_html | safe }}
+    </div>
+
+    <nav class="chapter-nav" aria-label="Chapter navigation">
+      {% if prev_chapter %}
+      <a href="/books/{{ book_slug }}/{{ prev_chapter.slug }}/">&larr; {{ prev_chapter.title }}</a>
+      {% else %}
+      <span></span>
+      {% endif %}
+
+      <a href="/books/{{ book_slug }}/" class="nav-center">&#8679; Contents</a>
+
+      {% if next_chapter %}
+      <a href="/books/{{ book_slug }}/{{ next_chapter.slug }}/">{{ next_chapter.title }} &rarr;</a>
+      {% else %}
+      <span></span>
+      {% endif %}
+    </nav>
+  </article>
+</div>
+{% endblock %}

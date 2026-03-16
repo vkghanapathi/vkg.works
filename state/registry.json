@@ -435,7 +435,25 @@
     "viswaroopa": 163,
     "warangal-varada-datta-devara": 164
   },
-  "books": {},
+  "books": {
+    "adhyayana-praveshika": 1,
+    "charana-vyuha": 2,
+    "datta-prakasha": 3,
+    "hundred-stories": 4,
+    "mahakavyagalu": 5,
+    "navaratri-2024": 6,
+    "nitya-anushtana": 7,
+    "nitya-anushtana-en": 8,
+    "nitya-parayana-mantras": 9,
+    "parayana-shlokas": 10,
+    "rudra-ekadashini": 11,
+    "silver-jubilee-souvenir": 12,
+    "souvenir": 13,
+    "upanishat": 14,
+    "vaiyasika-nyaya-mala": 15,
+    "veda-bhashya-tippani": 16,
+    "veda-en": 17
+  },
   "audio": {},
   "video": {},
   "projects": {

@@ -469,9 +469,9 @@
       <h3>🔐 Sign In</h3>
       <input type="text" placeholder="Username" value="user" id="username">
       <input type="password" placeholder="Password" value="user1" id="password">
-      <button class="btn-login" onclick="handleLogin()">Welcome to Viniyoga →</button>
+      <button class="btn-login" onclick="handleLogin()">Welcome to Viniyoga &rarr;</button>
       <div class="login-footer">
-        <span class="guest-link" onclick="handleLogin()">Explore as Guest</span>
+        <a class="guest-link" href="https://viniyoga-618503459301.asia-south1.run.app">Explore as Guest</a>
         <div class="platforms">
           <span class="platform-badge">🌐 Web</span>
           <span class="platform-badge">📱 Android</span>
@@ -670,8 +670,8 @@
   <section class="cta-section">
     <h2 class="reveal">Ready to Plan Smarter?</h2>
     <p class="reveal">Join thousands of Sattwik kitchens across India</p>
-    <a href="#" class="btn-cta reveal" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">
-      Start Using Viniyoga →
+    <a href="https://viniyoga-618503459301.asia-south1.run.app" class="btn-cta reveal">
+      Start Using Viniyoga &rarr;
     </a>
   </section>
 
@@ -686,10 +686,7 @@
       btn.textContent = 'Signing in...';
       btn.style.opacity = '0.7';
       setTimeout(() => {
-        // Scroll down to features for demo, or redirect to app
-        document.querySelector('.section').scrollIntoView({ behavior: 'smooth' });
-        btn.textContent = 'Welcome to Viniyoga →';
-        btn.style.opacity = '1';
+        window.location.href = 'https://viniyoga-618503459301.asia-south1.run.app';
       }, 800);
     }
 

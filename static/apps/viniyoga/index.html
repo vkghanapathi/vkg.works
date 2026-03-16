@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viniyoga — Your Menu & Inventory Nutrition Manager</title>
+  <meta name="description" content="1035+ Sattwik Hindu vegetarian recipes. Smart meal planner with nutrition tracking, festival menus, cost optimization & family preferences.">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --forest: #1B5E20;
+      --forest-deep: #0D3B0D;
+      --forest-light: #E8F5E9;
+      --saffron: #FF8F00;
+      --saffron-light: #FFF3E0;
+      --white: #FFFFFF;
+      --grey-100: #F5F5F5;
+      --grey-600: #757575;
+      --grey-800: #424242;
+      --text-dark: #1A1A1A;
+      --gold: #F9A825;
+      --radius: 16px;
+    }
+
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+      color: var(--text-dark);
+      background: var(--white);
+      overflow-x: hidden;
+    }
+
+    /* ═══ HERO ═══ */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, var(--forest-deep) 0%, var(--forest) 30%, #2E7D32 70%, var(--forest) 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before, .hero::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.03);
+    }
+    .hero::before { width: 400px; height: 400px; top: -120px; right: -100px; }
+    .hero::after { width: 500px; height: 500px; bottom: -150px; left: -120px; background: rgba(255,143,0,0.05); }
+
+    .hero-icon {
+      width: 120px; height: 120px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.12);
+      border: 2px solid rgba(255,255,255,0.25);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 56px;
+      margin-bottom: 28px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+      animation: fadeScaleIn 1s ease-out;
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 6vw, 56px);
+      font-weight: 900;
+      color: var(--white);
+      letter-spacing: 3px;
+      line-height: 1.1;
+      animation: fadeUp 1s ease-out 0.2s both;
+    }
+
+    .hero .script {
+      font-size: 15px;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 2px;
+      margin-top: 6px;
+      animation: fadeUp 1s ease-out 0.3s both;
+    }
+
+    .hero .tagline {
+      font-size: clamp(16px, 2.5vw, 22px);
+      color: rgba(255,255,255,0.7);
+      font-weight: 300;
+      margin-top: 12px;
+      letter-spacing: 1px;
+      animation: fadeUp 1s ease-out 0.4s both;
+    }
+
+    .hero .subtitle {
+      font-size: 14px;
+      color: rgba(255,255,255,0.4);
+      margin-top: 6px;
+      animation: fadeUp 1s ease-out 0.5s both;
+    }
+
+    /* Stats strip */
+    .stats-strip {
+      display: flex;
+      gap: 0;
+      margin: 36px 0 32px;
+      background: rgba(255,255,255,0.08);
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,0.12);
+      padding: 18px 8px;
+      max-width: 500px;
+      width: 100%;
+      animation: fadeUp 1s ease-out 0.6s both;
+    }
+
+    .stat-item {
+      flex: 1;
+      text-align: center;
+      border-right: 1px solid rgba(255,255,255,0.12);
+    }
+    .stat-item:last-child { border-right: none; }
+
+    .stat-value {
+      font-size: 26px;
+      font-weight: 900;
+      color: var(--saffron);
+    }
+    .stat-label {
+      font-size: 11px;
+      color: rgba(255,255,255,0.5);
+      margin-top: 2px;
+    }
+
+    /* Login card */
+    .login-card {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 20px;
+      padding: 28px;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+      animation: fadeUp 1s ease-out 0.7s both;
+    }
+
+    .login-card h3 {
+      color: var(--white);
+      font-size: 18px;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .login-card input {
+      width: 100%;
+      padding: 13px 16px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.08);
+      color: var(--white);
+      font-size: 15px;
+      outline: none;
+      transition: border-color 0.3s;
+      margin-bottom: 12px;
+    }
+    .login-card input::placeholder { color: rgba(255,255,255,0.4); }
+    .login-card input:focus { border-color: var(--saffron); }
+
+    .btn-login {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 14px;
+      background: var(--saffron);
+      color: var(--white);
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 6px 20px rgba(255,143,0,0.35);
+      margin-top: 6px;
+    }
+    .btn-login:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(255,143,0,0.45); }
+    .btn-login:active { transform: translateY(0); }
+
+    .login-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 14px;
+    }
+
+    .guest-link {
+      color: rgba(255,255,255,0.5);
+      font-size: 13px;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .platforms {
+      display: flex;
+      gap: 6px;
+    }
+    .platform-badge {
+      padding: 4px 8px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.1);
+      font-size: 10px;
+      color: rgba(255,255,255,0.4);
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+
+    .hero-footer {
+      margin-top: 28px;
+      animation: fadeUp 1s ease-out 0.9s both;
+    }
+    .hero-footer p { color: rgba(255,255,255,0.3); font-size: 12px; }
+    .hero-footer p:last-child { font-size: 11px; color: rgba(255,255,255,0.2); }
+
+    /* ═══ FEATURES SECTION ═══ */
+    .section {
+      padding: 80px 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 800;
+      color: var(--forest);
+      margin-bottom: 8px;
+    }
+
+    .section-sub {
+      text-align: center;
+      color: var(--grey-600);
+      font-size: 16px;
+      margin-bottom: 48px;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .feature-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 28px;
+      border: 1px solid #E8E8E8;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+    }
+
+    .feature-emoji { font-size: 36px; margin-bottom: 14px; }
+    .feature-card h3 { font-size: 18px; font-weight: 700; color: var(--text-dark); margin-bottom: 8px; }
+    .feature-card p { font-size: 14px; color: var(--grey-600); line-height: 1.6; }
+
+    /* ═══ MENU CATEGORIES ═══ */
+    .categories-section {
+      background: var(--forest-light);
+      padding: 80px 24px;
+    }
+
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .cat-card {
+      background: var(--white);
+      border-radius: 14px;
+      padding: 20px;
+      text-align: center;
+      border: 1px solid rgba(27,94,32,0.1);
+      transition: transform 0.2s;
+    }
+    .cat-card:hover { transform: translateY(-3px); }
+    .cat-emoji { font-size: 32px; }
+    .cat-card h4 { font-size: 15px; font-weight: 700; margin: 8px 0 4px; color: var(--forest); }
+    .cat-count { font-size: 24px; font-weight: 900; color: var(--saffron); }
+    .cat-label { font-size: 11px; color: var(--grey-600); }
+
+    /* ═══ A LA CARTE & BOUQUET ═══ */
+    .modes-section {
+      padding: 80px 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .modes-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    @media (max-width: 700px) { .modes-grid { grid-template-columns: 1fr; } }
+
+    .mode-card {
+      border-radius: 20px;
+      padding: 36px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .mode-alacarte {
+      background: linear-gradient(135deg, #FFF8E1 0%, #FFF3E0 100%);
+      border: 2px solid rgba(249,168,37,0.3);
+    }
+    .mode-bouquet {
+      background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+      border: 2px solid rgba(27,94,32,0.2);
+    }
+
+    .mode-card .mode-emoji { font-size: 48px; }
+    .mode-card h3 { font-size: 22px; font-weight: 800; margin: 12px 0 8px; }
+    .mode-card p { font-size: 14px; line-height: 1.7; color: var(--grey-800); }
+    .mode-card ul { margin-top: 12px; padding-left: 18px; }
+    .mode-card li { font-size: 13px; color: var(--grey-600); margin-bottom: 4px; line-height: 1.5; }
+
+    /* ═══ REGIONS ═══ */
+    .regions-strip {
+      background: var(--forest);
+      padding: 60px 24px;
+      text-align: center;
+    }
+    .regions-strip h2 { color: var(--white); font-size: 28px; margin-bottom: 24px; }
+
+    .regions-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .region-pill {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 24px;
+      padding: 10px 20px;
+      color: var(--white);
+      font-size: 14px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* ═══ MY MENUS ═══ */
+    .mymenus-section {
+      padding: 80px 24px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .mymenus-card {
+      background: linear-gradient(135deg, #FFF8E1, #FFFDE7);
+      border: 2px solid rgba(249,168,37,0.2);
+      border-radius: 20px;
+      padding: 40px;
+      margin-top: 32px;
+    }
+
+    .mymenus-card h3 { font-size: 22px; color: var(--saffron); margin-bottom: 12px; }
+    .mymenus-card p { font-size: 15px; color: var(--grey-800); line-height: 1.7; }
+
+    .mymenus-features {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      margin-top: 24px;
+      flex-wrap: wrap;
+    }
+
+    .mm-feat {
+      text-align: center;
+    }
+    .mm-feat .mm-icon { font-size: 32px; }
+    .mm-feat .mm-val { font-size: 20px; font-weight: 900; color: var(--forest); margin-top: 4px; }
+    .mm-feat .mm-lbl { font-size: 12px; color: var(--grey-600); }
+
+    /* ═══ CTA FOOTER ═══ */
+    .cta-section {
+      background: linear-gradient(135deg, var(--forest-deep), var(--forest));
+      padding: 60px 24px;
+      text-align: center;
+    }
+    .cta-section h2 { color: var(--white); font-size: 28px; margin-bottom: 12px; }
+    .cta-section p { color: rgba(255,255,255,0.6); font-size: 15px; margin-bottom: 24px; }
+
+    .btn-cta {
+      display: inline-block;
+      padding: 16px 40px;
+      background: var(--saffron);
+      color: var(--white);
+      font-size: 17px;
+      font-weight: 700;
+      border-radius: 14px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 6px 24px rgba(255,143,0,0.35);
+    }
+    .btn-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(255,143,0,0.45); }
+
+    footer {
+      background: var(--forest-deep);
+      padding: 24px;
+      text-align: center;
+      color: rgba(255,255,255,0.3);
+      font-size: 12px;
+    }
+    footer a { color: rgba(255,255,255,0.5); text-decoration: none; }
+
+    /* ═══ ANIMATIONS ═══ */
+    @keyframes fadeScaleIn {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero">
+    <div class="hero-icon">🙏</div>
+    <h1>Viniyoga</h1>
+    <p class="script">विनियोग · వినియోగ · ವಿನಿಯೋಗ</p>
+    <p class="tagline">Your Menu & Inventory Nutrition Manager</p>
+    <p class="subtitle">1035+ Sattwik Hindu Vegetarian Recipes</p>
+
+    <div class="stats-strip">
+      <div class="stat-item"><div class="stat-value">1035+</div><div class="stat-label">Recipes</div></div>
+      <div class="stat-item"><div class="stat-value">7</div><div class="stat-label">Regions</div></div>
+      <div class="stat-item"><div class="stat-value">4</div><div class="stat-label">Languages</div></div>
+      <div class="stat-item"><div class="stat-value">90</div><div class="stat-label">Day Plan</div></div>
+    </div>
+
+    <div class="login-card">
+      <h3>🔐 Sign In</h3>
+      <input type="text" placeholder="Username" value="user" id="username">
+      <input type="password" placeholder="Password" value="user1" id="password">
+      <button class="btn-login" onclick="handleLogin()">Welcome to Viniyoga →</button>
+      <div class="login-footer">
+        <span class="guest-link" onclick="handleLogin()">Explore as Guest</span>
+        <div class="platforms">
+          <span class="platform-badge">🌐 Web</span>
+          <span class="platform-badge">📱 Android</span>
+          <span class="platform-badge">🍎 iOS</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-footer">
+      <p>A VKG Initiative</p>
+      <p>Hindu Vegetarian Sattwik Cuisine</p>
+    </div>
+  </section>
+
+  <!-- ═══ FEATURES ═══ -->
+  <section class="section">
+    <h2 class="section-title reveal">Smart Kitchen Intelligence</h2>
+    <p class="section-sub reveal">5 AI-powered features that make meal planning effortless</p>
+
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-emoji">🧠</div>
+        <h3>Smart Suggestions</h3>
+        <p>AI-ranked menu recommendations based on your cooking history, nutrition gaps, ingredient availability, budget, and time of day.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-emoji">🎉</div>
+        <h3>Festival Awareness</h3>
+        <p>Automatically suggests special menus for 16+ Indian festivals, filtered by your region. Never miss a festive dish!</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-emoji">📊</div>
+        <h3>Nutrition Balancing</h3>
+        <p>Tracks your weekly nutrient intake — protein, iron, calcium, fiber, vitamins — and suggests dishes to fill gaps.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-emoji">💰</div>
+        <h3>Cost Optimization</h3>
+        <p>Ranks menus by cost efficiency. Shows "Free to Cook" items from your pantry and estimates additional spend needed.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-emoji">❤️</div>
+        <h3>Family Preferences</h3>
+        <p>Learns which dishes your family loves by tracking requests, cooking frequency, and declines. Adapts over time.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-emoji">🌿</div>
+        <h3>Seasonal & Regional</h3>
+        <p>Highlights in-season ingredients and region-specific menus across 7 Indian regions with market day awareness.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ MENU CATEGORIES ═══ -->
+  <section class="categories-section">
+    <h2 class="section-title reveal" style="color: var(--forest)">1035+ Recipe Collection</h2>
+    <p class="section-sub reveal">Exhaustive Sattwik vegetarian menu across every meal category</p>
+
+    <div class="categories-grid">
+      <div class="cat-card reveal">
+        <div class="cat-emoji">🌅</div>
+        <h4>Breakfast</h4>
+        <div class="cat-count">150</div>
+        <div class="cat-label">Dosa, Idli, Upma, Paratha, Poha...</div>
+      </div>
+      <div class="cat-card reveal">
+        <div class="cat-emoji">☀️</div>
+        <h4>Lunch</h4>
+        <div class="cat-count">150</div>
+        <div class="cat-label">Thali, Biriyani, Rice varieties...</div>
+      </div>
+      <div class="cat-card reveal">
+        <div class="cat-emoji">🌙</div>
+        <h4>Dinner</h4>
+        <div class="cat-count">150</div>
+        <div class="cat-label">Roti combos, Light meals, Khichdi...</div>
+      </div>
+      <div class="cat-card reveal">
+        <div class="cat-emoji">🍚</div>
+        <h4>Rice Varieties</h4>
+        <div class="cat-count">60</div>
+        <div class="cat-label">Chitrannam, Bhaat, Pulao...</div>
+      </div>
+      <div class="cat-card reveal">
+        <div class="cat-emoji">🍵</div>
+        <h4>Snacks</h4>
+        <div class="cat-count">220</div>
+        <div class="cat-label">100 No-stove + 120 Cooked</div>
+      </div>
+      <div class="cat-card reveal">
+        <div class="cat-emoji">🥤</div>
+        <h4>Beverages</h4>
+        <div class="cat-count">100</div>
+        <div class="cat-label">Chai, Lassi, Juices, Sharbat...</div>
+      </div>
+      <div class="cat-card reveal">
+        <div class="cat-emoji">🍛</div>
+        <h4>Curries & Sides</h4>
+        <div class="cat-count">100</div>
+        <div class="cat-label">Sambar, Rasam, Kootu, Palya...</div>
+      </div>
+      <div class="cat-card reveal">
+        <div class="cat-emoji">🍮</div>
+        <h4>Desserts</h4>
+        <div class="cat-count">80</div>
+        <div class="cat-label">Payasam, Halwa, Laddu, Poli...</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ A LA CARTE & BOUQUET ═══ -->
+  <section class="modes-section">
+    <h2 class="section-title reveal">Choose Your Style</h2>
+    <p class="section-sub reveal">Pick individual dishes or curated meal combos</p>
+
+    <div class="modes-grid">
+      <div class="mode-card mode-alacarte reveal">
+        <div class="mode-emoji">🍽️</div>
+        <h3>A La Carte</h3>
+        <p>Browse and pick individual dishes from our 1035+ collection. Mix and match freely.</p>
+        <ul>
+          <li>Filter by meal type, region, tags</li>
+          <li>Search in 4 languages</li>
+          <li>Check ingredient availability instantly</li>
+          <li>See nutrition profile per dish</li>
+          <li>One-tap "Cook Now" with inventory deduction</li>
+        </ul>
+      </div>
+      <div class="mode-card mode-bouquet reveal">
+        <div class="mode-emoji">💐</div>
+        <h3>Bouquet (Thali)</h3>
+        <p>Curated meal combos — complete thalis designed for regional taste and nutritional balance.</p>
+        <ul>
+          <li>South Karnataka Thali: Sambar + Rasam + Palya + Rice + Payasam</li>
+          <li>Andhra Meal: Pulusu + Pachadi + Podi + Annam + Pappu</li>
+          <li>Kerala Sadya: Avial + Olan + Kootu + Rice + Ada Pradhaman</li>
+          <li>North Indian Thali: Dal + Sabzi + Roti + Raita + Halwa</li>
+          <li>Festival Special: Pongal + Puliyogare + Payasam + Kosambari</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ REGIONS ═══ -->
+  <section class="regions-strip">
+    <h2 class="reveal">7 Regions, One Kitchen</h2>
+    <div class="regions-row reveal">
+      <div class="region-pill">🏛️ South Karnataka</div>
+      <div class="region-pill">🌶️ Andhra / Telangana</div>
+      <div class="region-pill">🌺 Tamil Nadu</div>
+      <div class="region-pill">🥥 Kerala</div>
+      <div class="region-pill">🫓 North India</div>
+      <div class="region-pill">🏙️ Maharashtra</div>
+      <div class="region-pill">🌍 Other</div>
+    </div>
+  </section>
+
+  <!-- ═══ MY MENUS ═══ -->
+  <section class="mymenus-section">
+    <h2 class="section-title reveal">My Menus</h2>
+    <p class="section-sub reveal">Your personal recipe collection, synced everywhere</p>
+
+    <div class="mymenus-card reveal">
+      <h3>⭐ Save Your Favourites</h3>
+      <p>
+        Curate up to 60 favourite menus stored locally on your device for instant access.
+        Need more? Export to your Google Drive as an Excel sheet — unlimited storage,
+        accessible from any device, always backed up.
+      </p>
+      <div class="mymenus-features">
+        <div class="mm-feat">
+          <div class="mm-icon">📱</div>
+          <div class="mm-val">60</div>
+          <div class="mm-lbl">Local favourites</div>
+        </div>
+        <div class="mm-feat">
+          <div class="mm-icon">☁️</div>
+          <div class="mm-val">∞</div>
+          <div class="mm-lbl">Google Drive backup</div>
+        </div>
+        <div class="mm-feat">
+          <div class="mm-icon">📊</div>
+          <div class="mm-val">Excel</div>
+          <div class="mm-lbl">Export format</div>
+        </div>
+        <div class="mm-feat">
+          <div class="mm-icon">🔄</div>
+          <div class="mm-val">Sync</div>
+          <div class="mm-lbl">Cross-device</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA ═══ -->
+  <section class="cta-section">
+    <h2 class="reveal">Ready to Plan Smarter?</h2>
+    <p class="reveal">Join thousands of Sattwik kitchens across India</p>
+    <a href="#" class="btn-cta reveal" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">
+      Start Using Viniyoga →
+    </a>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer>
+    <p>Viniyoga &copy; 2026 &middot; A <a href="https://vkg.works">VKG</a> Initiative &middot; <a href="https://vedavishtaram.in">vedavishtaram.in</a></p>
+  </footer>
+
+  <script>
+    function handleLogin() {
+      const btn = document.querySelector('.btn-login');
+      btn.textContent = 'Signing in...';
+      btn.style.opacity = '0.7';
+      setTimeout(() => {
+        // Scroll down to features for demo, or redirect to app
+        document.querySelector('.section').scrollIntoView({ behavior: 'smooth' });
+        btn.textContent = 'Welcome to Viniyoga →';
+        btn.style.opacity = '1';
+      }, 800);
+    }
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

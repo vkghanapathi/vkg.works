@@ -112,6 +112,21 @@
     .nak-grid .nak-btn:hover { border-color: var(--njm-primary); background: var(--njm-light); }
     .nak-grid .nak-btn.selected { background: var(--njm-primary); color: #fff; border-color: var(--njm-primary); }
 
+    /* City autocomplete */
+    .city-wrap { position: relative; }
+    .city-list {
+      position: absolute; top: 100%; left: 0; right: 0; z-index: 100;
+      background: #fff; border: 1px solid #ddd; border-radius: 0 0 8px 8px;
+      max-height: 200px; overflow-y: auto; display: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+    .city-list .city-item {
+      padding: 8px 12px; cursor: pointer; font-size: 0.85rem;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .city-list .city-item:hover { background: var(--njm-light); }
+    .city-list .city-item .city-sub { font-size: 0.75rem; color: #888; }
+
     /* Footer */
     .njm-footer {
       background: var(--njm-dark); color: rgba(255,255,255,0.6);
@@ -256,7 +271,13 @@
             </div>
             <div class="col-md-4">
               <label class="form-label">Place of Birth</label>
-              <input type="text" class="form-control" id="reg-pob" placeholder="City name">
+              <div class="city-wrap">
+                <input type="text" class="form-control" id="reg-pob" placeholder="Start typing city..." autocomplete="off" oninput="citySearch(this,'reg')">
+                <div class="city-list" id="reg-city-list"></div>
+              </div>
+              <input type="hidden" id="reg-lat">
+              <input type="hidden" id="reg-lon">
+              <input type="hidden" id="reg-tz">
             </div>
 
             <div class="col-12">
@@ -344,7 +365,13 @@
             </div>
             <div class="col-md-4">
               <label class="form-label">Place of Birth</label>
-              <input type="text" class="form-control" id="rel-pob" placeholder="City">
+              <div class="city-wrap">
+                <input type="text" class="form-control" id="rel-pob" placeholder="Start typing city..." autocomplete="off" oninput="citySearch(this,'rel')">
+                <div class="city-list" id="rel-city-list"></div>
+              </div>
+              <input type="hidden" id="rel-lat">
+              <input type="hidden" id="rel-lon">
+              <input type="hidden" id="rel-tz">
             </div>
 
             <div class="col-12">
@@ -411,7 +438,12 @@
             </div>
             <div class="col-md-4">
               <label class="form-label">Place of Event</label>
-              <input type="text" class="form-control" id="evt-place" placeholder="City">
+              <div class="city-wrap">
+                <input type="text" class="form-control" id="evt-place" placeholder="Start typing city..." autocomplete="off" oninput="citySearch(this,'evt')">
+                <div class="city-list" id="evt-city-list"></div>
+              </div>
+              <input type="hidden" id="evt-lat">
+              <input type="hidden" id="evt-lon">
             </div>
 
             <div class="col-12">
@@ -550,6 +582,55 @@ function showSection(id) {
   if (id === 'results' && participantNumber) loadResults();
 }
 
+// ── City Autocomplete (GeoNames free API) ──
+var cityTimer = null;
+function citySearch(input, prefix) {
+  clearTimeout(cityTimer);
+  var q = input.value.trim();
+  var list = document.getElementById(prefix + '-city-list');
+  if (q.length < 2) { list.style.display = 'none'; return; }
+  cityTimer = setTimeout(function() {
+    fetch('https://nominatim.openstreetmap.org/search?q=' + encodeURIComponent(q) +
+          '&format=json&limit=8&featuretype=city&addressdetails=1',
+          { headers: { 'Accept-Language': 'en' } })
+    .then(function(r) { return r.json(); })
+    .then(function(results) {
+      list.innerHTML = '';
+      if (!results || !results.length) { list.style.display = 'none'; return; }
+      results.forEach(function(g) {
+        var addr = g.address || {};
+        var city = addr.city || addr.town || addr.village || g.name || '';
+        var state = addr.state || '';
+        var country = addr.country || '';
+        var display = city + (state ? ', ' + state : '') + ', ' + country;
+        var item = document.createElement('div');
+        item.className = 'city-item';
+        item.innerHTML = '<strong>' + city + '</strong> <span class="city-sub">' +
+          (state ? state + ', ' : '') + country + '</span>';
+        item.onclick = function() {
+          input.value = display;
+          document.getElementById(prefix + '-lat').value = g.lat;
+          document.getElementById(prefix + '-lon').value = g.lon;
+          if (document.getElementById(prefix + '-tz')) {
+            document.getElementById(prefix + '-tz').value = Math.round(parseFloat(g.lon) / 15 * 2) / 2;
+          }
+          list.style.display = 'none';
+        };
+        list.appendChild(item);
+      });
+      list.style.display = 'block';
+    })
+    .catch(function() { list.style.display = 'none'; });
+  }, 400);
+}
+
+// Close city lists when clicking outside
+document.addEventListener('click', function(e) {
+  document.querySelectorAll('.city-list').forEach(function(l) {
+    if (!l.parentElement.contains(e.target)) l.style.display = 'none';
+  });
+});
+
 // ── Nakshatra Grid Builder ──
 function buildNakGrid(containerId, hiddenId) {
   var grid = document.getElementById(containerId);
@@ -623,6 +704,9 @@ function doRegister(e) {
   if (dob) birthDt = dob + (tob ? 'T' + tob + ':00' : 'T00:00:00');
 
   var nak = document.getElementById('reg-nakshatra').value;
+  var lat = document.getElementById('reg-lat').value;
+  var lon = document.getElementById('reg-lon').value;
+  var tz = document.getElementById('reg-tz').value;
   var data = {
     first_name: document.getElementById('reg-fname').value || null,
     last_name: document.getElementById('reg-lname').value || null,
@@ -630,6 +714,9 @@ function doRegister(e) {
     mobile: document.getElementById('reg-mobile').value || null,
     birth_datetime: birthDt,
     birth_place: document.getElementById('reg-pob').value || null,
+    latitude: lat ? parseFloat(lat) : null,
+    longitude: lon ? parseFloat(lon) : null,
+    timezone_offset: tz ? parseFloat(tz) : null,
     birth_nakshatra: nak !== '' ? parseInt(nak) : null,
     consent: document.getElementById('reg-consent').checked,
     join_interest_group: document.getElementById('reg-interest').checked
@@ -678,10 +765,16 @@ function doAddRelation(e) {
   if (dob) birthDt = dob + (tob ? 'T' + tob + ':00' : 'T00:00:00');
 
   var nak = document.getElementById('rel-nakshatra').value;
+  var rlat = document.getElementById('rel-lat').value;
+  var rlon = document.getElementById('rel-lon').value;
+  var rtz = document.getElementById('rel-tz').value;
   var data = {
     relation_name: document.getElementById('rel-name').value || null,
     relation_birth_datetime: birthDt,
     relation_birth_place: document.getElementById('rel-pob').value || null,
+    relation_latitude: rlat ? parseFloat(rlat) : null,
+    relation_longitude: rlon ? parseFloat(rlon) : null,
+    relation_timezone_offset: rtz ? parseFloat(rtz) : null,
     relation_nakshatra: nak !== '' ? parseInt(nak) : null,
     relation_type: document.getElementById('rel-type').value || null,
     relationship_category: document.getElementById('rel-category').value || null
@@ -719,11 +812,15 @@ function doAddEvent(e) {
   if (dt) evtDt = dt + (tm ? 'T' + tm + ':00' : 'T00:00:00');
 
   var nak = document.getElementById('evt-nakshatra').value;
+  var elat = document.getElementById('evt-lat').value;
+  var elon = document.getElementById('evt-lon').value;
   var data = {
     event_type: document.getElementById('evt-type').value || null,
     event_description: document.getElementById('evt-desc').value || null,
     event_datetime: evtDt,
     event_place: document.getElementById('evt-place').value || null,
+    event_latitude: elat ? parseFloat(elat) : null,
+    event_longitude: elon ? parseFloat(elon) : null,
     event_nakshatra: nak !== '' ? parseInt(nak) : null,
     event_category: document.getElementById('evt-category').value || null
   };

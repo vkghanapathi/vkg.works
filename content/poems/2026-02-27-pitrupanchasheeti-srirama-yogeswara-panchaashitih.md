@@ -1,8 +1,9 @@
 ---
-title: तं विन्दै महितार्थबोधमनिशं श्रीराम योगेश्वर।।
+title: Pitru Panchaasheeti — SriRama Yogeswara Panchaashitih
 date: '2026-02-27'
 author: Dr. Vamshi Krishna Ghanapāṭhī
 status: published
+featured: true
 abstract: A devotional poem sequence of fourteen verses addressed to Śrī Rāma as Yogeśvara
   (the Lord of Yoga), systematically addressing the stages of yogic practice and the
   eventual dissolution of the physical body. The work guides the practitioner through

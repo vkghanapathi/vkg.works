@@ -29,6 +29,13 @@
     <img src="/assets/img/vkg-home.jpg"
          alt="Dr. Vamshi Krishna Ghanapāṭhī"
          class="hero-portrait">
+    {% if hero_extra %}
+    <div class="hero-portrait-stack">
+      {% for src in hero_extra %}
+      <img src="{{ src }}" alt="Dr. Vamshi Krishna Ghanapāṭhī" class="hero-portrait-small">
+      {% endfor %}
+    </div>
+    {% endif %}
     <div class="hero-text">
       <p class="hero-ornament">ॐ</p>
       <h1>vkg.works</h1>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="{{ lang or 'sa' }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>{{ title }} — Slideshow — vkg.works</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'VijayaDV';
+      src: url('/assets/fonts/VijayaDV.woff2') format('woff2');
+      font-display: swap;
+      unicode-range: U+0900-U+097F, U+0966-U+096F, U+1CD0-U+1CFF, U+E000-U+F8FF;
+    }
+    :root {
+      --bg: #1e1008;
+      --fg: #fbf5e6;
+      --muted: #b9a184;
+      --gold: #e8c870;
+      --border: rgba(232, 200, 112, 0.28);
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0; height: 100%;
+      background: var(--bg); color: var(--fg);
+      font-family: 'VijayaDV', Georgia, serif;
+      overscroll-behavior: none;
+    }
+    body { -webkit-text-size-adjust: 100%; }
+
+    /* Stage: fills the viewport, verse centred */
+    #stage {
+      position: fixed; inset: 0;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      padding: 5vh 4vw 9vh;
+      cursor: pointer;
+      user-select: none; -webkit-user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+    #heading {
+      font-size: clamp(1rem, 3.2vh, 2.1rem);
+      font-weight: 400;
+      color: var(--gold);
+      letter-spacing: 0.02em;
+      margin: 0 0 3.5vh;
+      text-align: center;
+      line-height: 1.35;
+      max-width: 92vw;
+    }
+    #verse {
+      /* Big by default; the script shrinks it only when a verse would overflow. */
+      font-size: clamp(1.5rem, 6.4vh, 4.6rem);
+      line-height: 1.62;
+      text-align: center;
+      max-width: 94vw;
+      margin: 0;
+      white-space: pre-wrap;
+      word-break: normal;
+      overflow-wrap: break-word;
+    }
+    /* Landscape is the intended orientation — go larger still. */
+    @media (orientation: landscape) and (min-width: 900px) {
+      #verse { font-size: clamp(2rem, 7.4vh, 5.4rem); }
+    }
+
+    /* Chrome: counter, jump box, arrows */
+    .bar {
+      position: fixed; left: 0; right: 0;
+      display: flex; align-items: center; gap: 1rem;
+      padding: 0.7rem 1.2rem;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      z-index: 5;
+      transition: opacity 0.4s ease;
+    }
+    .bar.top { top: 0; justify-content: space-between; }
+    .bar.bottom { bottom: 0; justify-content: center; }
+    .bar a, .bar button, .bar input {
+      font-family: inherit; color: var(--fg);
+      background: rgba(251, 245, 230, 0.06);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.35rem 0.8rem;
+      font-size: 1rem;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .bar button:hover, .bar a:hover { background: rgba(232, 200, 112, 0.18); }
+    .bar button[disabled] { opacity: 0.3; cursor: default; }
+    .work-title {
+      font-size: 1.05rem; color: var(--muted);
+      overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+      max-width: 45vw;
+      border: 0; background: none; padding-left: 0;
+    }
+    .jump-group { display: flex; gap: 0.6rem; align-items: center; }
+    .jump-label { color: var(--muted); font-family: 'Cormorant Garamond', Georgia, serif; }
+    #counter {
+      font-size: 1.15rem; color: var(--gold);
+      letter-spacing: 0.06em; min-width: 7ch; text-align: center;
+      border: 0; background: none;
+    }
+    #jump { width: 5.5rem; text-align: center; background: rgba(251, 245, 230, 0.1); }
+    /* Chrome fades while reciting; any pointer move or key brings it back. */
+    body.idle .bar { opacity: 0; pointer-events: none; }
+    @media print { .bar { display: none; } }
+  </style>
+</head>
+<body>
+
+  <div class="bar top">
+    <a href="/{{ section_name }}/{{ slug }}/" class="work-title" title="Back to the full text">&#8592; {{ title }}</a>
+    <div class="jump-group">
+      <label for="jump" class="jump-label">Go to</label>
+      <input id="jump" type="number" min="1" max="{{ verses | length }}" inputmode="numeric"
+             aria-label="Jump to verse number" placeholder="1">
+      <button id="fs" title="Full screen (F)">&#9974;</button>
+    </div>
+  </div>
+
+  <div id="stage" role="button" tabindex="0" aria-label="Tap for the next verse">
+    <h2 id="heading"></h2>
+    <div id="verse"></div>
+  </div>
+
+  <div class="bar bottom">
+    <button id="prev" title="Previous — Backspace or left arrow">&#8592; Previous</button>
+    <span id="counter"></span>
+    <button id="next" title="Next — tap, space or right arrow">Next &#8594;</button>
+  </div>
+
+<script>
+(function () {
+  "use strict";
+
+  var VERSES = {{ verses_json | safe }};
+  var TOTAL  = VERSES.length;
+
+  var stage   = document.getElementById('stage');
+  var headEl  = document.getElementById('heading');
+  var verseEl = document.getElementById('verse');
+  var counter = document.getElementById('counter');
+  var jump    = document.getElementById('jump');
+  var prevBtn = document.getElementById('prev');
+  var nextBtn = document.getElementById('next');
+
+  var idx = 0;   // zero-based slide position
+
+  // Where the work prints its own verse numbers, those are the numbers a
+  // reciter will ask for — so "Go to 42" means verse 42, not the 42nd slide.
+  var numToIdx = {};
+  var maxNum = 0;
+  VERSES.forEach(function (v, i) {
+    if (v.num) {
+      if (!(v.num in numToIdx)) { numToIdx[v.num] = i; }
+      if (v.num > maxNum) { maxNum = v.num; }
+    }
+  });
+  var NUMBERED = Object.keys(numToIdx).length >= 2;
+
+  // Resolve a typed number: a printed verse number first, else slide position.
+  function resolve(n) {
+    if (NUMBERED && (n in numToIdx)) { return numToIdx[n]; }
+    if (n >= 1 && n <= TOTAL) { return n - 1; }
+    return -1;
+  }
+
+  // The number shown for the current slide, and used in the URL hash.
+  function labelOf(i) {
+    var v = VERSES[i];
+    if (NUMBERED) { return v.num ? String(v.num) : '•'; }
+    return String(i + 1);
+  }
+
+  // Fit the verse to the stage: start big, shrink only if it overflows.
+  function fit() {
+    if (!TOTAL) return;
+    verseEl.style.fontSize = '';
+    var size = parseFloat(window.getComputedStyle(verseEl).fontSize);
+    var guard = 0;
+    while (guard++ < 40) {
+      var tooTall = stage.scrollHeight > stage.clientHeight + 1;
+      var tooWide = verseEl.scrollWidth > verseEl.clientWidth + 1;
+      if (!tooTall && !tooWide) break;
+      size *= 0.94;
+      if (size < 12) break;
+      verseEl.style.fontSize = size + 'px';
+    }
+  }
+
+  function render() {
+    if (!TOTAL) {
+      headEl.style.display = 'none';
+      verseEl.textContent = 'No verses found in this work.';
+      counter.textContent = '0 / 0';
+      prevBtn.disabled = nextBtn.disabled = true;
+      return;
+    }
+    if (idx < 0) { idx = 0; }
+    if (idx > TOTAL - 1) { idx = TOTAL - 1; }
+    var v = VERSES[idx];
+    headEl.textContent = v.heading || '';
+    headEl.style.display = v.heading ? '' : 'none';
+    verseEl.textContent = v.text || '';
+    var label = labelOf(idx);
+    counter.textContent = label + ' / ' + (NUMBERED ? maxNum : TOTAL);
+    counter.title = 'Slide ' + (idx + 1) + ' of ' + TOTAL;
+    jump.value = '';
+    jump.placeholder = label;
+    prevBtn.disabled = (idx === 0);
+    nextBtn.disabled = (idx === TOTAL - 1);
+    document.title = label + '/' + (NUMBERED ? maxNum : TOTAL) +
+                     ' — {{ title | e }} — vkg.works';
+    // Deep link: .../slideshow/#42 opens on verse 42.
+    if (('#' + label) !== window.location.hash && label !== '•') {
+      history.replaceState(null, '', '#' + label);
+    }
+    fit();
+  }
+
+  function go(n)  { idx = n; render(); }
+  function next() { if (idx < TOTAL - 1) { go(idx + 1); } }
+  function prev() { if (idx > 0) { go(idx - 1); } }
+
+  // Tap or click on the stage: left quarter goes back, the rest advances.
+  stage.addEventListener('click', function (e) {
+    if (e.clientX < window.innerWidth * 0.25) { prev(); } else { next(); }
+  });
+
+  prevBtn.addEventListener('click', function (e) { e.stopPropagation(); prev(); });
+  nextBtn.addEventListener('click', function (e) { e.stopPropagation(); next(); });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.target === jump) {
+      // Never steal Backspace while a number is being typed.
+      if (e.key === 'Enter') {
+        var target = resolve(parseInt(jump.value, 10));
+        if (target >= 0) { go(target); }
+        jump.blur();
+        e.preventDefault();
+      } else if (e.key === 'Escape') {
+        jump.blur();
+      }
+      return;
+    }
+    switch (e.key) {
+      case 'ArrowRight': case 'ArrowDown': case ' ': case 'Enter':
+      case 'PageDown': case 'n': case 'N':
+        next(); e.preventDefault(); break;
+      case 'Backspace': case 'ArrowLeft': case 'ArrowUp':
+      case 'PageUp': case 'p': case 'P':
+        prev(); e.preventDefault(); break;
+      case 'Home': go(0); e.preventDefault(); break;
+      case 'End':  go(TOTAL - 1); e.preventDefault(); break;
+      case 'f': case 'F': toggleFs(); e.preventDefault(); break;
+      default:
+        // Typing a digit anywhere drops straight into the Go-to box.
+        if (/^[0-9]$/.test(e.key)) {
+          jump.focus(); jump.value = e.key; e.preventDefault();
+        }
+    }
+  });
+
+  jump.addEventListener('click', function (e) { e.stopPropagation(); });
+  jump.addEventListener('change', function () {
+    var target = resolve(parseInt(jump.value, 10));
+    if (target >= 0) { go(target); }
+  });
+
+  // Swipe on a phone or tablet.
+  var x0 = null;
+  stage.addEventListener('touchstart', function (e) {
+    x0 = e.changedTouches[0].clientX;
+  }, {passive: true});
+  stage.addEventListener('touchend', function (e) {
+    if (x0 === null) { return; }
+    var dx = e.changedTouches[0].clientX - x0;
+    if (Math.abs(dx) > 45) { if (dx < 0) { next(); } else { prev(); } }
+    x0 = null;
+  }, {passive: true});
+
+  function toggleFs() {
+    if (document.fullscreenElement) {
+      document.exitFullscreen();
+    } else if (document.documentElement.requestFullscreen) {
+      document.documentElement.requestFullscreen().catch(function () {});
+    }
+  }
+  document.getElementById('fs').addEventListener('click', function (e) {
+    e.stopPropagation(); toggleFs();
+  });
+
+  // Hide the chrome while reciting.
+  var idleTimer;
+  function wake() {
+    document.body.classList.remove('idle');
+    clearTimeout(idleTimer);
+    idleTimer = setTimeout(function () { document.body.classList.add('idle'); }, 3500);
+  }
+  ['mousemove', 'touchstart', 'keydown', 'click'].forEach(function (ev) {
+    document.addEventListener(ev, wake, {passive: true});
+  });
+  wake();
+
+  window.addEventListener('resize', fit);
+  window.addEventListener('orientationchange', function () { setTimeout(fit, 120); });
+  window.addEventListener('hashchange', function () {
+    var target = resolve(parseInt(window.location.hash.replace('#', ''), 10));
+    if (target >= 0 && target !== idx) { go(target); }
+  });
+  if (document.fonts && document.fonts.ready) { document.fonts.ready.then(fit); }
+
+  // Open on the verse named in the URL (#42), else the first.
+  var start = resolve(parseInt(window.location.hash.replace('#', ''), 10));
+  idx = start >= 0 ? start : 0;
+  render();
+})();
+</script>
+</body>
+</html>

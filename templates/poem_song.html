@@ -37,6 +37,11 @@
         {% if date_display %}{{ date_display }}{% endif %}
         {% if author %} &bull; {{ author }}{% endif %}
       </p>
+      {% if has_slideshow %}
+      <p class="recite-link">
+        <a href="/{{ section_name }}/{{ slug }}/slideshow/">&#9655; Recite — full-screen slideshow</a>
+      </p>
+      {% endif %}
     </header>
 
     {% if audio_url %}

@@ -4,7 +4,9 @@ Usage: python scripts/build.py --site-url https://vkg.works [--social]
 """
 from __future__ import annotations
 import argparse
+import html as html_mod
 import json
+import re
 import shutil
 import sys
 from datetime import datetime, timezone
@@ -62,6 +64,9 @@ SECTION_TITLES = {
     'contact':  'Contact',
 }
 
+# Sections that get a full-screen recitation slideshow at /{section}/{slug}/slideshow/
+SLIDESHOW_SECTIONS = {'poems', 'songs'}
+
 QUEUE_STATUSES = {'planned', 'draft', 'in-progress', 'in progress', 'incomplete'}
 PUBLISHED_STATUS = 'published'
 
@@ -106,6 +111,22 @@ def _make_env() -> Environment:
     # urlencode filter for pdf_embed template
     from urllib.parse import quote
     env.filters['urlencode'] = lambda s: quote(str(s), safe='/:')
+
+    # author cross-linking: resolve a display name -> /authors/<slug>/ (or #slug).
+    # Lazy per-call read of the map emitted by build_authors.py, so order is irrelevant.
+    def _author_url(name):
+        if not name:
+            return None
+        rf = REGISTRY_FILE.parent / 'authors_resolved.json'
+        if not rf.exists():
+            return None
+        try:
+            m = json.loads(rf.read_text(encoding='utf-8'))
+        except Exception:
+            return None
+        e = m.get(str(name))
+        return e['url'] if e else None
+    env.filters['author_url'] = _author_url
     return env
 
 
@@ -247,12 +268,20 @@ def render_site(sections: dict[str, list[ArticleData]], site_url: str, env: Envi
         [i for i in all_items if i.date],
         key=lambda x: x.date, reverse=True
     )[:7]
+    # Extra hero portraits: any assets/img/vkg-hero-*.jpg|jpeg|png, in name order.
+    # Drop a file in and it appears on the home page — no code change needed.
+    hero_extra = sorted(
+        f'/assets/img/{p.name}'
+        for p in ASSETS_DIR.glob('img/vkg-hero-*')
+        if p.suffix.lower() in ('.jpg', '.jpeg', '.png', '.webp')
+    )
     home_tmpl = env.get_template('home.html')
     (SITE_DIR / 'index.html').write_text(
         home_tmpl.render(
             sections=sections,
             featured_items=featured_items,
             latest_items=latest_items,
+            hero_extra=hero_extra,
             site_url=site_url,
         ),
         encoding='utf-8'
@@ -295,6 +324,8 @@ def render_site(sections: dict[str, list[ArticleData]], site_url: str, env: Envi
                 )
 
     # Render individual item pages
+    show_tmpl = env.get_template('slideshow.html')
+    show_count = 0
     for section_name, items in sections.items():
         tmpl_name = SECTION_TEMPLATES.get(section_name)
         if not tmpl_name:
@@ -303,8 +334,15 @@ def render_site(sections: dict[str, list[ArticleData]], site_url: str, env: Envi
             item_dir = SITE_DIR / section_name / item.slug
             item_dir.mkdir(parents=True, exist_ok=True)
 
+            # Recitation slideshow — one shloka per full-screen slide.
+            # Split first, so the item page knows whether to show the link.
+            verses = []
+            if section_name in SLIDESHOW_SECTIONS and not item.is_pdf:
+                verses = split_verses(item.body_html)
+
             item_tmpl = env.get_template('pdf_embed.html' if item.is_pdf else tmpl_name)
             ctx = _build_context(item, site_url)
+            ctx['has_slideshow'] = bool(verses)
             html = item_tmpl.render(**ctx)
             (item_dir / 'index.html').write_text(html, encoding='utf-8')
 
@@ -314,10 +352,28 @@ def render_site(sections: dict[str, list[ArticleData]], site_url: str, env: Envi
                 alias_dir.mkdir(parents=True, exist_ok=True)
                 (alias_dir / 'index.html').write_text(html, encoding='utf-8')
 
+            if verses:
+                show_dir = item_dir / 'slideshow'
+                show_dir.mkdir(parents=True, exist_ok=True)
+                (show_dir / 'index.html').write_text(
+                    show_tmpl.render(
+                        title=item.title,
+                        slug=item.slug,
+                        section_name=section_name,
+                        lang=(getattr(item, 'language', None) or 'sa').split(';')[0],
+                        verses=verses,
+                        verses_json=json.dumps(verses, ensure_ascii=False),
+                    ),
+                    encoding='utf-8',
+                )
+                show_count += 1
+
             # Copy associated binary files
             _copy_item_assets(item, item_dir)
 
     print(f'  Rendered {sum(len(v) for v in sections.values())} item pages')
+    if show_count:
+        print(f'  Rendered {show_count} recitation slideshows')
 
     # Render book chapter pages
     chapter_tmpl = env.get_template('book_chapter.html')
@@ -412,6 +468,105 @@ def _render_catalogue(sections: dict, queue_items: list, env: Environment) -> No
         encoding='utf-8'
     )
     print(f'  Rendered catalogue ({len(catalogue_items)} items)')
+
+    # Authors & Publications layer (additive; safe if it fails)
+    try:
+        import build_authors
+        build_authors.render(env)
+    except Exception as e:
+        print(f'  WARNING: build_authors failed: {e}', file=sys.stderr)
+
+
+# ─── Verse splitting (for the recitation slideshow) ─────────────────────────
+# Lines like "1.   शरीरभ्रान्तिनिवारणम्" open a verse; a leading number with a
+# short title is a section heading, a bare number is just a marker.
+_VERSE_HEADING = re.compile(r'^\s*([0-9]{1,3}|[०-९]{1,3})\s*[.)।॥:\-]*\s*(.{0,60})$')
+# Traditional closing marker: "॥ ५ ॥" or "।। 5 ।।" at the end of a line.
+_VERSE_CLOSER = re.compile(r'[।॥]{1,2}\s*[0-9०-९]{1,3}\s*[।॥]{1,2}\s*$')
+_TAG = re.compile(r'<[^>]+>')
+
+
+_DEVA_DIGITS = str.maketrans('०१२३४५६७८९', '0123456789')
+
+
+def _html_paragraphs(body_html: str) -> list[str]:
+    """Flatten body_html into a list of plain-text lines, blanks dropped."""
+    if not body_html:
+        return []
+    text = re.sub(r'(?i)<br\s*/?>', '\n', body_html)
+    text = re.sub(r'(?i)</(p|div|h[1-6]|li|tr)>', '\n', text)
+    text = _TAG.sub('', text)
+    text = html_mod.unescape(text)
+    # DOCX conversion leaves non-breaking spaces in the numbered headings.
+    text = text.replace(' ', ' ')
+    return [ln.strip() for ln in text.split('\n') if ln.strip()]
+
+
+def _heading_number(line: str) -> int | None:
+    """The work's own verse number from a heading like '12.  प्राणोत्क्रान्तिः'."""
+    m = _VERSE_HEADING.match(line)
+    if not m:
+        return None
+    try:
+        return int(m.group(1).translate(_DEVA_DIGITS))
+    except ValueError:
+        return None
+
+
+def _tidy(line: str) -> str:
+    """Collapse the runs of whitespace that DOCX numbering leaves behind."""
+    return re.sub(r'\s{2,}', ' ', line).strip()
+
+
+def split_verses(body_html: str) -> list[dict]:
+    """Split a work's body into one entry per verse, for the slideshow.
+
+    Returns [{'heading': str, 'text': str, 'num': int | None}, …] — 'num' is the
+    work's own verse number where it prints one, so "jump to 42" reaches verse
+    42 rather than the 42nd slide. Three strategies, in order: numbered headings
+    (most of VKG's Sanskrit works), traditional trailing verse markers, and —
+    failing both — one slide per line.
+    """
+    lines = _html_paragraphs(body_html)
+    if not lines:
+        return []
+
+    # Strategy 1 — a numbered heading opens each verse.
+    heads = [i for i, ln in enumerate(lines) if _VERSE_HEADING.match(ln)]
+    if len(heads) >= 2:
+        verses: list[dict] = []
+        # Anything before the first numbered heading is an opening slide
+        # (an invocation or the refrain line) — never dropped.
+        if heads[0] > 0:
+            verses.append({'heading': '', 'text': '\n'.join(lines[:heads[0]]), 'num': None})
+        for n, start in enumerate(heads):
+            end = heads[n + 1] if n + 1 < len(heads) else len(lines)
+            body = lines[start + 1:end]
+            num = _heading_number(lines[start])
+            if body:
+                verses.append({'heading': _tidy(lines[start]), 'text': '\n'.join(body),
+                               'num': num})
+            else:
+                # A lone number with no following lines — keep it as its own slide.
+                verses.append({'heading': '', 'text': _tidy(lines[start]), 'num': num})
+        return verses
+
+    # Strategy 2 — a trailing "॥ n ॥" closes each verse.
+    closers = [i for i, ln in enumerate(lines) if _VERSE_CLOSER.search(ln)]
+    if len(closers) >= 2:
+        verses, start = [], 0
+        for end in closers:
+            m = re.search(r'([0-9०-९]{1,3})', _VERSE_CLOSER.search(lines[end]).group(0))
+            num = int(m.group(1).translate(_DEVA_DIGITS)) if m else None
+            verses.append({'heading': '', 'text': '\n'.join(lines[start:end + 1]),
+                           'num': num})
+            start = end + 1
+        if start < len(lines):
+            verses.append({'heading': '', 'text': '\n'.join(lines[start:]), 'num': None})
+        return verses
+
+    # Strategy 3 — one slide per line.
+    return [{'heading': '', 'text': ln, 'num': None} for ln in lines]
 
 
 def _build_context(item: ArticleData, site_url: str) -> dict:

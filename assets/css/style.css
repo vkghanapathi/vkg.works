@@ -800,3 +800,43 @@ h1.lang-kn, h2.lang-kn { font-family: var(--font-kn); }
   .hero-portrait { width: 110px; height: 110px; }
   .home-columns { grid-template-columns: 1fr; }
 }
+
+/* ── Recitation slideshow link on poem / song pages ─────────────────── */
+.recite-link {
+  margin: 0.6rem 0 0;
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+}
+.recite-link a {
+  display: inline-block;
+  padding: 0.35rem 0.9rem;
+  border: 1px solid var(--color-gold);
+  border-radius: 4px;
+  color: var(--color-accent);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+.recite-link a:hover {
+  background: var(--color-surface);
+}
+
+/* ── Home hero: a strip of portraits beside the main one ────────────── */
+.hero-portrait-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  flex-shrink: 0;
+}
+.hero-portrait-stack .hero-portrait-small {
+  width: 66px;
+  height: 66px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+  border: 2px solid var(--color-gold-light);
+  box-shadow: 0 0 0 4px rgba(212, 168, 67, 0.14), 0 3px 12px rgba(0,0,0,0.35);
+}
+@media (max-width: 700px) {
+  .hero-portrait-stack { flex-direction: row; }
+  .hero-portrait-stack .hero-portrait-small { width: 54px; height: 54px; }
+}

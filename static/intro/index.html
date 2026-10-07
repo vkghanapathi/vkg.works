@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Vamshi Krishna Ghanapathi — Vedic Scholar & Orator</title>
+<meta name="description" content="Brahmasrī Dr. Vamshi Krishna Ghanapāṭhī — scholar of the four Vedas, orator, author and academic based in Mysore.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Cinzel:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --saffron: #E8621A;
+    --deep-saffron: #C04A0A;
+    --gold: #C8922A;
+    --gold-light: #E8B84A;
+    --cream: #FBF6EE;
+    --parchment: #F0E6D0;
+    --brown-deep: #2A1505;
+    --brown-mid: #5C3010;
+    --maroon: #6B1A0E;
+    --off-white: #FEFCF8;
+    --text-dark: #1A0A02;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Lato', sans-serif;
+    background: var(--cream);
+    color: var(--text-dark);
+    overflow-x: hidden;
+  }
+
+  /* HERO */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, var(--brown-deep) 0%, #3D1A08 40%, var(--maroon) 100%);
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C8922A' fill-opacity='0.07'%3E%3Cpath d='M30 0l30 30-30 30L0 30z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.5;
+  }
+
+  .hero-mandala {
+    position: absolute;
+    right: -10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 650px;
+    height: 650px;
+    opacity: 0.07;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .hero-badge {
+    display: inline-block;
+    background: linear-gradient(90deg, var(--gold), var(--gold-light));
+    color: var(--brown-deep);
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    margin-bottom: 28px;
+    clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+  }
+
+  .hero-sanskrit {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    color: var(--gold-light);
+    font-style: italic;
+    margin-bottom: 16px;
+    opacity: 0.9;
+    letter-spacing: 1px;
+  }
+
+  .hero-name {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(36px, 5vw, 58px);
+    font-weight: 700;
+    color: var(--off-white);
+    line-height: 1.1;
+    margin-bottom: 8px;
+    text-shadow: 0 2px 20px rgba(200,146,42,0.3);
+  }
+
+  .hero-name span {
+    color: var(--gold-light);
+    display: block;
+  }
+
+  .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 300;
+    color: rgba(251,246,238,0.75);
+    margin-top: 12px;
+    margin-bottom: 36px;
+    letter-spacing: 2px;
+    font-style: italic;
+  }
+
+  .hero-divider {
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--gold), transparent);
+    margin-bottom: 32px;
+  }
+
+  .hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+
+  .tag {
+    border: 1px solid rgba(200,146,42,0.5);
+    color: var(--gold-light);
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 7px 16px;
+    font-family: 'Cinzel', serif;
+  }
+
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .stat {
+    text-align: center;
+    border-top: 1px solid rgba(200,146,42,0.3);
+    padding-top: 16px;
+  }
+
+  .stat-num {
+    font-family: 'Cinzel', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--gold-light);
+    display: block;
+  }
+
+  .stat-label {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(251,246,238,0.5);
+    font-family: 'Lato', sans-serif;
+    margin-top: 4px;
+    display: block;
+  }
+
+  .hero-photos {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 16px;
+  }
+
+  .hero-main-photo {
+    position: relative;
+    border-radius: 2px;
+    overflow: hidden;
+    border: 3px solid var(--gold);
+    box-shadow: 20px 20px 60px rgba(0,0,0,0.5), -5px -5px 0 var(--saffron);
+  }
+
+  .hero-main-photo img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    filter: sepia(10%) contrast(1.05);
+  }
+
+  .hero-photo-strip {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  .hero-photo-strip img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 2px;
+    border: 2px solid rgba(200,146,42,0.4);
+    filter: sepia(15%) contrast(1.05);
+    transition: transform 0.3s;
+  }
+
+  .hero-photo-strip img.pos-center { object-position: center 85%; }
+  .hero-photo-strip img:hover { transform: scale(1.03); }
+
+  /* INTRO */
+  .section-intro {
+    background: var(--off-white);
+    padding: 80px 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--saffron);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .section-label::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 1px;
+    background: var(--saffron);
+  }
+
+  .section-heading {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 600;
+    color: var(--brown-deep);
+    line-height: 1.2;
+    margin-bottom: 32px;
+  }
+
+  .intro-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 60px;
+    align-items: start;
+  }
+
+  .intro-text p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 19px;
+    line-height: 1.85;
+    color: var(--brown-mid);
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+
+  .highlight-box {
+    background: linear-gradient(135deg, var(--brown-deep), var(--maroon));
+    color: var(--off-white);
+    padding: 36px;
+    margin-top: 8px;
+  }
+
+  .highlight-box blockquote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-style: italic;
+    line-height: 1.6;
+    color: var(--gold-light);
+    margin-bottom: 16px;
+  }
+
+  .highlight-box cite {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(251,246,238,0.5);
+    font-style: normal;
+    font-family: 'Cinzel', serif;
+  }
+
+  /* ORATOR */
+  .section-orator {
+    background: linear-gradient(135deg, #FBF6EE 0%, #F0E6D0 100%);
+    padding: 80px 60px;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid rgba(200,146,42,0.2);
+    border-bottom: 1px solid rgba(200,146,42,0.2);
+  }
+
+  .section-orator::before {
+    content: '\1F399';
+    position: absolute;
+    right: 6%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 200px;
+    opacity: 0.04;
+    pointer-events: none;
+  }
+
+  .orator-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .orator-banner {
+    background: linear-gradient(135deg, var(--saffron), var(--deep-saffron));
+    color: white;
+    padding: 18px 36px;
+    margin-bottom: 48px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%);
+  }
+
+  .orator-banner-icon { font-size: 32px; flex-shrink: 0; }
+
+  .orator-banner h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .orator-banner p {
+    font-size: 14px;
+    opacity: 0.9;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.5px;
+  }
+
+  .orator-points {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .orator-point {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 20px 24px;
+    background: white;
+    border-left: 4px solid var(--saffron);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    transition: box-shadow 0.3s, transform 0.3s;
+  }
+
+  .orator-point:hover {
+    box-shadow: 0 6px 24px rgba(232,98,26,0.15);
+    transform: translateY(-2px);
+  }
+
+  .orator-point-num {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--saffron);
+    background: rgba(232,98,26,0.1);
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    margin-top: 2px;
+  }
+
+  .orator-point-text h5 {
+    font-family: 'Cinzel', serif;
+    font-size: 13.5px;
+    color: var(--brown-deep);
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+
+  .orator-point-text p {
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    color: var(--brown-mid);
+    line-height: 1.65;
+  }
+
+  .orator-photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+
+  .orator-photo-gallery figure {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid rgba(200,146,42,0.35);
+  }
+
+  .orator-photo-gallery img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+    filter: sepia(5%) contrast(1.05);
+    transition: transform 0.4s ease;
+  }
+
+  .orator-photo-gallery figure:hover img { transform: scale(1.04); }
+
+  .orator-photo-gallery figcaption {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: linear-gradient(transparent, rgba(26,5,2,0.85));
+    color: var(--gold-light);
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 18px 12px 10px;
+    text-align: center;
+  }
+
+  .orator-quote-strip {
+    background: var(--brown-deep);
+    padding: 28px 40px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .orator-quote-strip blockquote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 19px;
+    font-style: italic;
+    color: var(--gold-light);
+    line-height: 1.6;
+    flex: 1;
+  }
+
+  .orator-quote-strip .q-mark {
+    font-family: 'Cinzel', serif;
+    font-size: 80px;
+    color: var(--saffron);
+    opacity: 0.3;
+    line-height: 0.8;
+    flex-shrink: 0;
+  }
+
+  /* GLIMPSES */
+  .section-glimpses {
+    background: var(--off-white);
+    padding: 80px 60px;
+  }
+
+  .glimpses-inner { max-width: 1200px; margin: 0 auto; }
+
+  .glimpses-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    margin-top: 40px;
+  }
+
+  .glimpses-grid figure {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid rgba(200,146,42,0.25);
+  }
+
+  .glimpses-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    filter: sepia(5%) contrast(1.05);
+    transition: transform 0.4s ease;
+  }
+
+  .glimpses-grid figure:hover img { transform: scale(1.05); }
+
+  .glimpses-grid figcaption {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: linear-gradient(transparent, rgba(26,5,2,0.85));
+    color: var(--gold-light);
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 14px 8px 8px;
+    text-align: center;
+  }
+
+  /* CREDENTIALS */
+  .section-credentials {
+    background: var(--parchment);
+    padding: 80px 60px;
+  }
+
+  .credentials-inner { max-width: 1200px; margin: 0 auto; }
+
+  .credentials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    margin-top: 48px;
+    background: rgba(200,146,42,0.2);
+  }
+
+  .cred-card {
+    background: var(--off-white);
+    padding: 36px 28px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+
+  .cred-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--saffron), var(--gold));
+  }
+
+  .cred-card:hover { transform: translateY(-4px); }
+
+  .cred-icon { font-size: 28px; margin-bottom: 16px; display: block; }
+
+  .cred-title {
+    font-family: 'Cinzel', serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--brown-deep);
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+  }
+
+  .cred-body {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--brown-mid);
+  }
+
+  /* EXPERTISE */
+  .section-expertise {
+    padding: 80px 60px;
+    background: var(--off-white);
+  }
+
+  .expertise-inner { max-width: 1200px; margin: 0 auto; }
+
+  .expertise-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 48px;
+  }
+
+  .expertise-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 32px;
+    align-items: flex-start;
+  }
+
+  .expertise-num {
+    font-family: 'Cinzel', serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: rgba(200,146,42,0.2);
+    line-height: 1;
+    min-width: 52px;
+  }
+
+  .expertise-content h4 {
+    font-family: 'Cinzel', serif;
+    font-size: 15px;
+    color: var(--brown-deep);
+    margin-bottom: 8px;
+  }
+
+  .expertise-content p {
+    font-family: 'Lato', sans-serif;
+    font-size: 13.5px;
+    color: var(--brown-mid);
+    line-height: 1.7;
+  }
+
+  /* ACHIEVEMENTS */
+  .section-achievements {
+    background: linear-gradient(135deg, var(--brown-deep), #3D1A08);
+    padding: 80px 60px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .section-achievements::before {
+    content: 'ॐ';
+    position: absolute;
+    right: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 350px;
+    color: rgba(255,255,255,0.03);
+    font-family: 'Cormorant Garamond', serif;
+    pointer-events: none;
+  }
+
+  .achievements-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .section-achievements .section-label { color: var(--gold-light); }
+  .section-achievements .section-heading { color: var(--off-white); }
+
+  .awards-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 48px;
+  }
+
+  .award-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px 24px;
+    border: 1px solid rgba(200,146,42,0.2);
+    background: rgba(255,255,255,0.03);
+    transition: background 0.3s;
+  }
+
+  .award-item:hover { background: rgba(200,146,42,0.08); }
+
+  .award-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--gold);
+    border-radius: 50%;
+    margin-top: 6px;
+    flex-shrink: 0;
+  }
+
+  .award-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: rgba(251,246,238,0.8);
+    line-height: 1.5;
+  }
+
+  .award-text strong {
+    display: block;
+    color: var(--gold-light);
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+    margin-bottom: 4px;
+  }
+
+  /* PROJECTS */
+  .section-projects { padding: 80px 60px; background: var(--parchment); }
+
+  .projects-inner { max-width: 1200px; margin: 0 auto; }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+  }
+
+  .project-card {
+    background: var(--off-white);
+    padding: 28px;
+    border-bottom: 3px solid var(--saffron);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .project-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 0;
+    height: 3px;
+    background: var(--gold);
+    transition: width 0.4s ease;
+  }
+
+  .project-card:hover::after { width: 100%; }
+
+  .project-tag {
+    display: inline-block;
+    background: var(--saffron);
+    color: white;
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    margin-bottom: 14px;
+    font-family: 'Cinzel', serif;
+  }
+
+  .project-name {
+    font-family: 'Cinzel', serif;
+    font-size: 16px;
+    color: var(--brown-deep);
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  .project-desc {
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    color: var(--brown-mid);
+    line-height: 1.7;
+  }
+
+  .project-link {
+    display: inline-block;
+    margin-top: 12px;
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: var(--saffron);
+    text-decoration: none;
+    border-bottom: 1px solid var(--saffron);
+    padding-bottom: 2px;
+  }
+
+  /* CONTACT */
+  .section-contact {
+    background: var(--cream);
+    padding: 60px 60px;
+    border-top: 4px solid var(--gold);
+  }
+
+  .contact-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 60px;
+    align-items: center;
+  }
+
+  .contact-info h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 28px;
+    color: var(--brown-deep);
+    margin-bottom: 24px;
+  }
+
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contact-link {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: var(--brown-mid);
+    text-decoration: none;
+  }
+
+  .contact-link-icon {
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, var(--saffron), var(--gold));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+
+  .contact-link-icon--web   { background: linear-gradient(135deg, #1a6e3e, #2d9e5a); font-weight: 700; font-family: 'Cinzel', serif; font-size: 13px; }
+  .contact-link-icon--fb    { background: #1877F2; font-weight: 700; font-size: 18px; font-family: Georgia, serif; }
+  .contact-link-icon--email { background: linear-gradient(135deg, var(--saffron), var(--deep-saffron)); font-weight: 700; font-size: 16px; }
+  .contact-link-icon--phone { background: linear-gradient(135deg, #2c7a4b, #1e5c38); font-weight: 700; font-size: 16px; }
+  .contact-link-icon--loc   { background: linear-gradient(135deg, var(--maroon), #8B2515); font-size: 12px; }
+
+  .om-mark {
+    font-size: 80px;
+    color: var(--saffron);
+    opacity: 0.15;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: normal;
+    line-height: 1;
+  }
+
+  footer {
+    background: var(--brown-deep);
+    color: rgba(251,246,238,0.4);
+    text-align: center;
+    padding: 24px;
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 900px) {
+    .hero-content, .intro-grid, .expertise-cols, .contact-inner,
+    .credentials-grid, .projects-grid, .awards-list,
+    .orator-points, .orator-photo-gallery {
+      grid-template-columns: 1fr;
+    }
+    .glimpses-grid { grid-template-columns: repeat(2, 1fr); }
+    .hero-stats { grid-template-columns: repeat(3, 1fr); }
+    .hero-content, .section-intro, .section-credentials,
+    .section-expertise, .section-achievements, .section-projects,
+    .section-contact, .section-orator, .section-glimpses {
+      padding: 48px 24px;
+    }
+  }
+
+  /* PRINT (PDF) */
+  @media print {
+    body { background: white; }
+    .hero { min-height: auto; page-break-after: always; }
+    section { page-break-inside: avoid; }
+    .hero-photo-strip img, .orator-photo-gallery img,
+    .hero-main-photo img, .glimpses-grid img { filter: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <svg class="hero-mandala" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="100" cy="100" r="95" stroke="#C8922A" stroke-width="1"/>
+    <circle cx="100" cy="100" r="75" stroke="#C8922A" stroke-width="0.5"/>
+    <circle cx="100" cy="100" r="55" stroke="#C8922A" stroke-width="0.5"/>
+    <circle cx="100" cy="100" r="35" stroke="#C8922A" stroke-width="0.5"/>
+    <circle cx="100" cy="100" r="15" stroke="#C8922A" stroke-width="0.5"/>
+    <ellipse cx="100" cy="65" rx="10" ry="30" fill="#C8922A" opacity="0.4" transform="rotate(0 100 100)"/>
+    <ellipse cx="100" cy="65" rx="10" ry="30" fill="#C8922A" opacity="0.4" transform="rotate(45 100 100)"/>
+    <ellipse cx="100" cy="65" rx="10" ry="30" fill="#C8922A" opacity="0.4" transform="rotate(90 100 100)"/>
+    <ellipse cx="100" cy="65" rx="10" ry="30" fill="#C8922A" opacity="0.4" transform="rotate(135 100 100)"/>
+    <ellipse cx="100" cy="65" rx="10" ry="30" fill="#C8922A" opacity="0.4" transform="rotate(180 100 100)"/>
+    <ellipse cx="100" cy="65" rx="10" ry="30" fill="#C8922A" opacity="0.4" transform="rotate(225 100 100)"/>
+    <ellipse cx="100" cy="65" rx="10" ry="30" fill="#C8922A" opacity="0.4" transform="rotate(270 100 100)"/>
+    <ellipse cx="100" cy="65" rx="10" ry="30" fill="#C8922A" opacity="0.4" transform="rotate(315 100 100)"/>
+  </svg>
+
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="hero-badge">Brahmasri · Scholar · Orator · Public Speaker</div>
+      <p class="hero-sanskrit">वेदबोधकः — वेदव्याख्याता — वाग्मी</p>
+      <h1 class="hero-name">
+        Dr. Vamshi Krishna
+        <span>Ghanapathi</span>
+      </h1>
+      <p class="hero-title">Scholar of 4 Vedas · Renowned Orator · Academic · Poet</p>
+      <div class="hero-divider"></div>
+      <div class="hero-tags">
+        <span class="tag">Ghanapāṭhī</span>
+        <span class="tag">Sanskrit PhD · D.Litt</span>
+        <span class="tag">Āgama Śāstra</span>
+        <span class="tag">Avadhoota Datta Peetham</span>
+        <span class="tag">Public Speaker</span>
+        <span class="tag">VedaBhāṣyam-Śāstra</span>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">500+</span>
+          <span class="stat-label">Articles, Poems, Songs</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">150+</span>
+          <span class="stat-label">Temple Consecrations</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">80+</span>
+          <span class="stat-label">Vedic Books Published</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-photos">
+      <div class="hero-main-photo">
+        <img src="images/profile_pic.jpg" alt="Dr. Vamshi Krishna Ghanapathi">
+      </div>
+      <div class="hero-photo-strip">
+        <img src="images/Abhisheka.jpg" alt="Performing abhisheka">
+        <img src="images/Hanuman%20Consecration.jpg" alt="Hanuman consecration">
+        <img src="images/Ishti-Adhwaryu.jpg" alt="Officiating an Iṣṭi as Adhvaryu">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="section-intro">
+  <div class="section-label">About</div>
+  <h2 class="section-heading">A life devoted to the Vedas</h2>
+  <div class="intro-grid">
+    <div class="intro-text">
+      <p>
+        Brahmasrī Dr. Vamshi Krishna Ghanapāṭhī is a Caturveda Ghanapāṭhī — a master
+        of the highest recitative form of all four Vedas — and a Sanskrit scholar with
+        a PhD and D.Litt to his name. Based in Mysore, Karnataka, he has spent more
+        than three decades in the rigorous study, preservation, and public exposition
+        of the Vedic tradition.
+      </p>
+      <p>
+        His work spans recitation, ritual (Āgama and Yājña), commentary
+        (Bhāṣya-śāstra), academic research, and prolific authorship. Across temple
+        consecrations, public lectures, broadcast media, and printed volumes, he has
+        carried Vedic scholarship from the chanting hall into contemporary
+        public life.
+      </p>
+      <p>
+        He is widely regarded for the clarity of his discourse — moving fluently
+        between Sanskrit, Kannada, Telugu, and English — and for his ability to
+        render dense śāstric material accessible without dilution.
+      </p>
+    </div>
+    <div class="highlight-box">
+      <blockquote>
+        "वेदोऽखिलो धर्ममूलम् — the Veda is the root of all dharma. To preserve it
+        whole, to recite it true, and to teach it living: that is the work of a
+        lifetime."
+      </blockquote>
+      <cite>— Dr. Vamshi Krishna Ghanapāṭhī</cite>
+    </div>
+  </div>
+</section>
+
+<!-- ORATOR -->
+<section class="section-orator">
+  <div class="orator-inner">
+    <div class="orator-banner">
+      <div class="orator-banner-icon">🎙</div>
+      <div>
+        <h3>The Orator</h3>
+        <p>Public discourse rooted in Vedic precision and contemporary clarity</p>
+      </div>
+    </div>
+
+    <div class="orator-points">
+      <div class="orator-point">
+        <span class="orator-point-num">1</span>
+        <div class="orator-point-text">
+          <h5>Multilingual Discourse</h5>
+          <p>Lectures and discourses delivered in Sanskrit, Kannada, Telugu and English — with the same scholarly weight in each language.</p>
+        </div>
+      </div>
+      <div class="orator-point">
+        <span class="orator-point-num">2</span>
+        <div class="orator-point-text">
+          <h5>Śāstra-Backed</h5>
+          <p>Every public talk is anchored in primary śāstra — Veda, Vedānta, Āgama, Itihāsa, Purāṇa — cited from memory.</p>
+        </div>
+      </div>
+      <div class="orator-point">
+        <span class="orator-point-num">3</span>
+        <div class="orator-point-text">
+          <h5>Pan-India Platform</h5>
+          <p>Featured speaker at major Vedic conferences, religious sammelanas and university convocations across India.</p>
+        </div>
+      </div>
+      <div class="orator-point">
+        <span class="orator-point-num">4</span>
+        <div class="orator-point-text">
+          <h5>Media Engagement</h5>
+          <p>Frequent television and press interviews on dharma, current affairs, and the future of Vedic learning.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="orator-photo-gallery">
+      <figure>
+        <img src="images/chanting.jpg" alt="Recitation">
+        <figcaption>Recitation</figcaption>
+      </figure>
+      <figure>
+        <img src="images/At%20Work%20Table.jpg" alt="At the editorial desk">
+        <figcaption>At the Desk</figcaption>
+      </figure>
+      <figure>
+        <img src="images/dpt_office2.jpg" alt="Teaching at DPT office">
+        <figcaption>Counsel &amp; Teaching</figcaption>
+      </figure>
+    </div>
+
+    <div class="orator-quote-strip">
+      <span class="q-mark">"</span>
+      <blockquote>
+        Tradition is not the worship of ashes; it is the keeping of the fire. The
+        Vedic word, when spoken correctly, still carries that fire today.
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- GLIMPSES -->
+<section class="section-glimpses">
+  <div class="glimpses-inner">
+    <div class="section-label">Glimpses</div>
+    <h2 class="section-heading">In service, in pilgrimage, in study</h2>
+    <div class="glimpses-grid">
+      <figure>
+        <img src="images/abhisheka_parameshwara.jpg" alt="Parameśvara abhiṣeka">
+        <figcaption>Parameśvara Abhiṣeka</figcaption>
+      </figure>
+      <figure>
+        <img src="images/Meditation.jpg" alt="Meditation">
+        <figcaption>Dhyāna</figcaption>
+      </figure>
+      <figure>
+        <img src="images/haridwar_2025.jpg" alt="Haridwar 2025">
+        <figcaption>Haridwar 2025</figcaption>
+      </figure>
+      <figure>
+        <img src="images/tirupati_resort.jpg" alt="Tirupati">
+        <figcaption>Tirupati</figcaption>
+      </figure>
+      <figure>
+        <img src="images/dandeli_2025.png" alt="Dandeli 2025">
+        <figcaption>Dandeli 2025</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- CREDENTIALS -->
+<section class="section-credentials">
+  <div class="credentials-inner">
+    <div class="section-label">Credentials</div>
+    <h2 class="section-heading">Scholarship recognised, teaching tested</h2>
+    <div class="credentials-grid">
+      <div class="cred-card">
+        <span class="cred-icon">📚</span>
+        <h4 class="cred-title">Caturveda Ghanapāṭhī</h4>
+        <p class="cred-body">Mastery of the Ghana-pāṭha — the most rigorous recitative form — across all four Vedas: Ṛk, Yajus, Sāma and Atharva.</p>
+      </div>
+      <div class="cred-card">
+        <span class="cred-icon">🎓</span>
+        <h4 class="cred-title">PhD &amp; D.Litt — Sanskrit</h4>
+        <p class="cred-body">Doctorate and Doctor of Letters in Sanskrit, with research focused on Vedic commentary and Āgama-śāstra.</p>
+      </div>
+      <div class="cred-card">
+        <span class="cred-icon">🏛</span>
+        <h4 class="cred-title">Avadhūta Datta Pīṭham</h4>
+        <p class="cred-body">Long-standing association with the Avadhūta Datta Pīṭham, Mysore — guiding ritual, recitation and śāstric instruction.</p>
+      </div>
+      <div class="cred-card">
+        <span class="cred-icon">🛕</span>
+        <h4 class="cred-title">150+ Pratiṣṭhas</h4>
+        <p class="cred-body">Ritual leadership of more than 150 temple consecrations across India, conducted strictly as per Āgama-śāstra.</p>
+      </div>
+      <div class="cred-card">
+        <span class="cred-icon">📖</span>
+        <h4 class="cred-title">80+ Books Published</h4>
+        <p class="cred-body">Authored and edited over 80 volumes — Vedic recitation aids, commentaries, ritual manuals and Sanskrit textbooks.</p>
+      </div>
+      <div class="cred-card">
+        <span class="cred-icon">✍️</span>
+        <h4 class="cred-title">500+ Articles &amp; Poems</h4>
+        <p class="cred-body">Prolific output across scholarly journals, periodicals and devotional poetry — in Sanskrit, Kannada and Telugu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section class="section-expertise">
+  <div class="expertise-inner">
+    <div class="section-label">Areas of Expertise</div>
+    <h2 class="section-heading">Where the work happens</h2>
+    <div class="expertise-cols">
+      <div>
+        <div class="expertise-item">
+          <span class="expertise-num">01</span>
+          <div class="expertise-content">
+            <h4>Veda Recitation</h4>
+            <p>Saṃhitā, Pada, Krama, Jaṭā and Ghana pāṭhas — taught and examined to traditional standard.</p>
+          </div>
+        </div>
+        <div class="expertise-item">
+          <span class="expertise-num">02</span>
+          <div class="expertise-content">
+            <h4>Āgama &amp; Pratiṣṭhā</h4>
+            <p>Temple consecration rituals — design, calendar, prayoga and adhvaryu leadership.</p>
+          </div>
+        </div>
+        <div class="expertise-item">
+          <span class="expertise-num">03</span>
+          <div class="expertise-content">
+            <h4>Sanskrit Pedagogy</h4>
+            <p>Curriculum design and teaching from foundational vyākaraṇa to advanced kāvya and śāstra.</p>
+          </div>
+        </div>
+        <div class="expertise-item">
+          <span class="expertise-num">04</span>
+          <div class="expertise-content">
+            <h4>Bhāṣya &amp; Commentary</h4>
+            <p>Veda Bhāṣya tradition — engagement with Sāyaṇa, Skanda-svāmin and modern scholarship.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="expertise-item">
+          <span class="expertise-num">05</span>
+          <div class="expertise-content">
+            <h4>Public Discourse</h4>
+            <p>Pravacanas, upanyāsas and convocation addresses — pan-India and online.</p>
+          </div>
+        </div>
+        <div class="expertise-item">
+          <span class="expertise-num">06</span>
+          <div class="expertise-content">
+            <h4>Editorial Work</h4>
+            <p>Critical editing of Vedic and Sanskrit texts — including PUA-aware Vedic-accent typography.</p>
+          </div>
+        </div>
+        <div class="expertise-item">
+          <span class="expertise-num">07</span>
+          <div class="expertise-content">
+            <h4>Devotional Poetry</h4>
+            <p>Composer of stotras, kīrtanas and modern devotional verse in Sanskrit, Kannada and Telugu.</p>
+          </div>
+        </div>
+        <div class="expertise-item">
+          <span class="expertise-num">08</span>
+          <div class="expertise-content">
+            <h4>Digital Vedic Tools</h4>
+            <p>Architect of online platforms (vkg.works, vedavishtaram.in, vedanidhi.in) bringing Vedic resources to global learners.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section class="section-achievements">
+  <div class="achievements-inner">
+    <div class="section-label">Recognition</div>
+    <h2 class="section-heading">Honours &amp; titles</h2>
+    <div class="awards-list">
+      <div class="award-item">
+        <span class="award-dot"></span>
+        <div class="award-text">
+          <strong>Ghanapāṭhī</strong>
+          Conferred title for completion of the Ghana-pāṭha across the four Vedas.
+        </div>
+      </div>
+      <div class="award-item">
+        <span class="award-dot"></span>
+        <div class="award-text">
+          <strong>Brahmasrī</strong>
+          Traditional honorific for śrauta scholarship and conduct.
+        </div>
+      </div>
+      <div class="award-item">
+        <span class="award-dot"></span>
+        <div class="award-text">
+          <strong>Doctor of Letters (D.Litt)</strong>
+          Conferred for sustained contribution to Sanskrit and Vedic studies.
+        </div>
+      </div>
+      <div class="award-item">
+        <span class="award-dot"></span>
+        <div class="award-text">
+          <strong>PhD — Sanskrit</strong>
+          Awarded for original research in Veda-bhāṣya tradition.
+        </div>
+      </div>
+      <div class="award-item">
+        <span class="award-dot"></span>
+        <div class="award-text">
+          <strong>State &amp; Peetha Felicitations</strong>
+          Felicitated by leading dharma-pīṭhas and state cultural bodies.
+        </div>
+      </div>
+      <div class="award-item">
+        <span class="award-dot"></span>
+        <div class="award-text">
+          <strong>International Speaking Invitations</strong>
+          Invited speaker at Vedic conferences in the United States, United Kingdom and beyond.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section-projects">
+  <div class="projects-inner">
+    <div class="section-label">Ongoing Projects</div>
+    <h2 class="section-heading">What is being built now</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <span class="project-tag">Web</span>
+        <h4 class="project-name">vkg.works</h4>
+        <p class="project-desc">Personal scholarly hub — articles, poems, songs, books, audio, video, and a structured catalogue of every published work.</p>
+        <a href="https://vkg.works/" class="project-link">Visit →</a>
+      </div>
+      <div class="project-card">
+        <span class="project-tag">Platform</span>
+        <h4 class="project-name">vedavishtaram.in</h4>
+        <p class="project-desc">A growing repository of Vedic recitation, ritual reference and śāstric study material — for students and scholars worldwide.</p>
+        <a href="https://vedavishtaram.in/" class="project-link">Visit →</a>
+      </div>
+      <div class="project-card">
+        <span class="project-tag">Archive</span>
+        <h4 class="project-name">vedanidhi.in</h4>
+        <p class="project-desc">A long-form treasury of Vedic texts — accent-faithful, search-friendly, and accessible to traditional and academic readers alike.</p>
+        <a href="https://vedanidhi.in/" class="project-link">Visit →</a>
+      </div>
+      <div class="project-card">
+        <span class="project-tag">Q&amp;A</span>
+        <h4 class="project-name">Samvid Ghanam</h4>
+        <p class="project-desc">A Q&amp;A hub where seekers ask, scholars deliberate, and answers are published as text, audio, video and diagrams.</p>
+        <a href="https://sumvid.dharmaposhanam.in/" class="project-link">Visit →</a>
+      </div>
+      <div class="project-card">
+        <span class="project-tag">Tools</span>
+        <h4 class="project-name">Pranetaa &amp; Apps</h4>
+        <p class="project-desc">Authoring and publishing tools designed for Vedic-accent typography, Sanskrit workflows and traditional pedagogy.</p>
+        <a href="https://vkg.works/projects/pranetaa/" class="project-link">Visit →</a>
+      </div>
+      <div class="project-card">
+        <span class="project-tag">Books</span>
+        <h4 class="project-name">VedaBhāṣyam Series</h4>
+        <p class="project-desc">An ongoing series of bhāṣya volumes — bringing classical commentary into print with modern editorial standards.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section-contact">
+  <div class="contact-inner">
+    <div class="contact-info">
+      <h3>Get in touch</h3>
+      <div class="contact-links">
+        <a class="contact-link" href="https://vkg.works/">
+          <span class="contact-link-icon contact-link-icon--web">vkg</span>
+          vkg.works
+        </a>
+        <a class="contact-link" href="https://www.facebook.com/sarvaveda4" target="_blank" rel="noopener">
+          <span class="contact-link-icon contact-link-icon--fb">f</span>
+          facebook.com/sarvaveda4
+        </a>
+        <a class="contact-link" href="mailto:contact@vkg.works">
+          <span class="contact-link-icon contact-link-icon--email">@</span>
+          contact@vkg.works
+        </a>
+        <a class="contact-link" href="https://wa.me/919900082080">
+          <span class="contact-link-icon contact-link-icon--phone">☏</span>
+          +91 99000 82080 · WhatsApp
+        </a>
+        <span class="contact-link">
+          <span class="contact-link-icon contact-link-icon--loc">📍</span>
+          Mysore, Karnataka, India
+        </span>
+      </div>
+    </div>
+    <div class="om-mark">ॐ</div>
+  </div>
+</section>
+
+<footer>
+  © Dr. Vamshi Krishna Ghanapāṭhī · vkg.works
+</footer>
+
+</body>
+</html>

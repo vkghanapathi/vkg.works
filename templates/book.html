@@ -10,7 +10,7 @@
       <h1>{{ title }}</h1>
       <p class="article-meta">
         {% if date_display %}{{ date_display }}{% endif %}
-        {% if author %} &bull; {{ author }}{% endif %}
+        {% if author %} &bull; {% set _au = author | author_url %}{% if _au %}<a href="{{ _au }}">{{ author }}</a>{% else %}{{ author }}{% endif %}{% endif %}
         {% if uid %} &bull; <span class="uid-badge">{{ uid }}</span>{% endif %}
       </p>
     </header>

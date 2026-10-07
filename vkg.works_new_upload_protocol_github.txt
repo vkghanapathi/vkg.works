@@ -1,0 +1,9 @@
+For each DOCX or PDF you upload, also create a companion .md sidecar file with the same filename (e.g. my-project.docx + my-project.md) containing:
+
+
+---
+title: "Your Project Title"
+date: 2026-02-28
+status: draft
+category: research
+excerpt: "Brief description"

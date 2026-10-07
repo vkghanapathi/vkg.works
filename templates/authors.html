@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Authors & Editors — vkg.works{% endblock %}
+{% set active_section = "authors" %}
+
+{% block content %}
+<div class="page-container">
+  <h1>Authors &amp; Editors</h1>
+
+  {% if prolific %}
+  <section class="authors-prolific">
+    <div class="author-card-grid">
+      {% for a in prolific %}
+      <a class="author-card" href="{{ a.url }}">
+        {% if a.photo %}<img src="/authors/_media/{{ a.photo }}" alt="{{ a.name }}">{% endif %}
+        <span class="author-card-name">{{ a.name }}</span>
+        <span class="author-card-meta">{{ a.roles | join(' · ') | title }} &bull; {{ a.work_count }} works</span>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if minor %}
+  <section class="authors-contributors">
+    <h2>Contributors</h2>
+    {% for a in minor %}
+    <div class="contributor" id="{{ a.slug }}">
+      <h3>{{ a.name }}{% if a.roles %} <span class="muted">— {{ a.roles | join(' · ') | title }}</span>{% endif %}</h3>
+      {{ a.bio_html | safe }}
+      {% if a.works %}
+      <p class="contributor-works">Works:
+        {% for w in a.works %}<a href="{{ w.url }}">{{ w.title }}</a>{% if not loop.last %}, {% endif %}{% endfor %}
+      </p>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </section>
+  {% endif %}
+</div>
+{% endblock %}

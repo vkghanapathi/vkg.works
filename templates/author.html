@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}{{ author.name }} — vkg.works{% endblock %}
+{% block description %}{{ author.bio_short or author.name }}{% endblock %}
+{% set active_section = "authors" %}
+
+{% block content %}
+<div class="page-container">
+  <article class="full-article author-page">
+    <header>
+      <h1>{{ author.name }}</h1>
+      <p class="article-meta">
+        {% if author.roles %}{{ author.roles | join(' · ') | title }}{% endif %}
+        {% if author.orcid %} &bull; <a href="https://orcid.org/{{ author.orcid }}">ORCID {{ author.orcid }}</a>{% endif %}
+        &bull; {{ works | length }} work{{ '' if works|length == 1 else 's' }}
+      </p>
+    </header>
+
+    {% if author.photo %}
+    <p class="author-photo"><img src="/authors/_media/{{ author.photo }}" alt="{{ author.name }}"></p>
+    {% endif %}
+
+    <div class="author-bio">
+      {{ author.bio_html | safe }}
+    </div>
+
+    {% if author.links %}
+    <ul class="author-links">
+      {% for l in author.links %}<li><a href="{{ l.url }}">{{ l.label }}</a></li>{% endfor %}
+    </ul>
+    {% endif %}
+
+    <section class="author-works">
+      <h2>Works</h2>
+      {% for group, items in works_grouped.items() %}
+      <h3>{{ group }}</h3>
+      <ul class="works-list">
+        {% for w in items %}
+        <li>
+          <a href="{{ w.url }}">{{ w.title }}</a>
+          {% if w.year %} <span class="muted">({{ w.year }})</span>{% endif %}
+          {% if w.publisher %} <span class="pill">{{ w.publisher }}</span>{% endif %}
+          {% if w.isbn %} <span class="muted">ISBN {{ w.isbn }}</span>{% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+      {% endfor %}
+    </section>
+  </article>
+</div>
+{% endblock %}

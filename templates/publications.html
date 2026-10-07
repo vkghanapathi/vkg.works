@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Publications — vkg.works{% endblock %}
+{% set active_section = "publications" %}
+
+{% block content %}
+<div class="page-container">
+  <h1>Publications</h1>
+  <p class="muted">{{ total }} titles across {{ groups | length }} publisher(s). Each title links to its page; author names link to their biography.</p>
+
+  {% for publisher, items in groups.items() %}
+  <section class="pub-group">
+    <h2>{{ publisher }} <span class="muted">({{ items | length }})</span></h2>
+    <table class="pub-table">
+      <thead>
+        <tr><th>Title</th><th>Author / Editor</th><th>Category</th><th>Lang</th><th>Year</th><th>ISBN</th></tr>
+      </thead>
+      <tbody>
+        {% for w in items %}
+        <tr>
+          <td><a href="{{ w.url }}">{{ w.title }}</a></td>
+          <td>{% if w.author_url %}<a href="{{ w.author_url }}">{{ w.author_name }}</a>{% else %}{{ w.author_name }}{% endif %}</td>
+          <td>{{ w.subject or w.section or '' }}</td>
+          <td>{{ w.language or '' }}</td>
+          <td>{{ w.year or '' }}</td>
+          <td>{{ w.isbn or '' }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+  {% endfor %}
+</div>
+{% endblock %}

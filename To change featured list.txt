@@ -1,0 +1,26 @@
+How to change the featured?
+Edit the .md sidecar file for any article. Add featured: true to feature it, remove that line to unfeature it.
+
+To feature an article — open its .md file and add the line:
+
+
+---
+title: "Kumbhabhishekam Explanation"
+date: 2026-02-27
+author: "Dr. Vamshi Krishna Ghanapāṭhī"
+category: analytical
+featured: true        ← add this
+---
+To unfeature — remove or delete the featured: true line.
+
+The .md files are at:
+
+[content/articles/](c:/Users/Datta/Documents/VK/Code Programming/vkg-works/content/articles/) — e.g. [2026-02-27-kumbhabhishekam-explanation.md](c:/Users/Datta/Documents/VK/Code Programming/vkg-works/content/articles/2026-02-27-kumbhabhishekam-explanation.md)
+[content/songs/](c:/Users/Datta/Documents/VK/Code Programming/vkg-works/content/songs/)
+[content/poems/](c:/Users/Datta/Documents/VK/Code Programming/vkg-works/content/poems/)
+Currently featured (3 items):
+
+Articles: Bhagavad Gita Synthesis, Nakshatra Vijnaana, Role Model Narrative
+Songs: Sahasra Chandra Darshanam
+Poems: Govinda Lahari 2026
+The home page shows all items with featured: true in the left column. You can feature as many as you want — just tell me which ones to change, or edit the files directly in VS Code and I'll commit.

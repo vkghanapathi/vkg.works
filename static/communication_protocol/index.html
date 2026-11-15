@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Communication Protocol — VKG Foundation</title>
+<meta name="description" content="How the agents and the team of VKG Foundation report to Dr. Vamshi Krishna Ghanapathi: chat first, one hourly email digest when he is away, decisions up front, numbered points.">
+<meta name="robots" content="noindex">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --saffron: #C04A0A;
+    --gold: #C8922A;
+    --cream: #FBF6EE;
+    --parchment: #F0E6D0;
+    --card: #FFFFFF;
+    --text: #1A0A02;
+    --muted: #5C3010;
+    --rule: #E3D3B4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --saffron: #F0904E;
+      --gold: #E8B84A;
+      --cream: #17100A;
+      --parchment: #241A10;
+      --card: #1F160D;
+      --text: #F3E9DA;
+      --muted: #CDB89A;
+      --rule: #3A2C1C;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: 'Lato', system-ui, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    background: var(--cream);
+    color: var(--text);
+  }
+  header {
+    background: var(--parchment);
+    border-bottom: 3px solid var(--gold);
+    padding: 32px 16px 24px;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+  header .wrap { padding: 0; }
+  .kicker { color: var(--saffron); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: 14px; }
+  h1 { font-family: 'Cormorant Garamond', serif; font-size: 42px; line-height: 1.15; margin: 6px 0 10px; }
+  .lede { color: var(--muted); max-width: 680px; }
+  .meta { margin-top: 14px; font-size: 15px; color: var(--muted); }
+  nav.toc { margin: 28px auto 8px; }
+  nav.toc ol { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+  nav.toc a {
+    display: inline-block; padding: 8px 14px; border: 1px solid var(--rule);
+    border-radius: 999px; color: var(--text); text-decoration: none; font-size: 15px; background: var(--card);
+  }
+  nav.toc a:hover, nav.toc a:focus { border-color: var(--saffron); color: var(--saffron); }
+  section {
+    background: var(--card); border: 1px solid var(--rule); border-radius: 10px;
+    padding: 22px 22px 18px; margin: 20px auto;
+  }
+  h2 { font-family: 'Cormorant Garamond', serif; font-size: 30px; line-height: 1.2; margin-bottom: 12px; color: var(--saffron); }
+  .pt { display: grid; grid-template-columns: 4.2em 1fr; gap: 4px 10px; padding: 7px 0; border-top: 1px dashed var(--rule); }
+  .pt:first-of-type { border-top: 0; }
+  .num { font-weight: 700; color: var(--gold); font-variant-numeric: tabular-nums; }
+  .pt .sub { grid-column: 2; padding-left: 14px; border-left: 2px solid var(--rule); margin-top: 4px; }
+  .sub div { padding: 3px 0; }
+  .sub .num { margin-right: 8px; }
+  pre {
+    background: var(--parchment); border: 1px solid var(--rule); border-radius: 8px;
+    padding: 14px; overflow-x: auto; font-size: 14px; line-height: 1.5; margin: 10px 0 4px;
+  }
+  .flow { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; margin: 6px 0 12px; }
+  .step { border: 1px solid var(--rule); border-radius: 8px; padding: 12px; background: var(--parchment); }
+  .step b { display: block; color: var(--saffron); font-size: 15px; letter-spacing: .04em; text-transform: uppercase; }
+  .step span { font-size: 16px; }
+  footer { text-align: center; color: var(--muted); font-size: 15px; padding: 28px 16px 40px; }
+  @media (max-width: 600px) {
+    body { font-size: 18px; }
+    h1 { font-size: 34px; }
+    h2 { font-size: 26px; }
+    section { padding: 18px 14px 14px; }
+    .pt { grid-template-columns: 3.4em 1fr; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="kicker">VKG Foundation · Standing protocol</div>
+    <h1>Communication Protocol</h1>
+    <p class="lede">How every agent and every member of the team reports to VKG: what reaches him, through which channel, when, and in what shape. Chat first; one hourly email digest only when he is away; decisions up front; numbered points.</p>
+    <p class="meta">Version of 15 November 2026 · Drawn from VKG's standing rulebook (rules 8, 9, 10, 11, 13, 35, 37) · Numbering is stable: points are added or withdrawn, never renumbered.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <nav class="toc" aria-label="Sections">
+    <ol>
+      <li><a href="#channel">1 · Channel</a></li>
+      <li><a href="#digest">2 · Hourly digest</a></li>
+      <li><a href="#what">3 · What reaches VKG</a></li>
+      <li><a href="#shape">4 · Shape of a report</a></li>
+      <li><a href="#decisions">5 · Decisions and rulings</a></li>
+      <li><a href="#agents">6 · Agents to agents</a></li>
+      <li><a href="#deploy">7 · Deployments and the daily brief</a></li>
+      <li><a href="#writing">8 · Writing conventions</a></li>
+    </ol>
+  </nav>
+
+  <section id="channel">
+    <h2>1 · Channel — chat first, email when he is away</h2>
+    <div class="flow" aria-label="Channel sequence">
+      <div class="step"><b>Step 1</b><span>Post the item in the chat of the working session.</span></div>
+      <div class="step"><b>Step 2</b><span>VKG answers within the hour: done, no email.</span></div>
+      <div class="step"><b>Step 3</b><span>No answer in one hour: the item goes into the hourly email digest, sent without asking.</span></div>
+    </div>
+    <div class="pt"><span class="num">1.1</span><span>When VKG is live in a session, the chat reply is the notice. No email is sent, drafted or asked about.</span></div>
+    <div class="pt"><span class="num">1.2</span><span>"Live" is judged from his messages, the only evidence an agent has. Desk or phone (Remote Control) count alike.</span></div>
+    <div class="pt"><span class="num">1.3</span><span>An item posted in chat and not answered within one hour goes by email.</span></div>
+    <div class="pt"><span class="num">1.4</span><span>That email is sent without seeking his permission. Asking permission to email his own inbox is never done.</span></div>
+    <div class="pt"><span class="num">1.5</span><span>His own word overrides the clock: "I am away" sends items to email at once; "I am back" returns them to chat.</span></div>
+    <div class="pt"><span class="num">1.6</span><span>Mail is sent from the organisation's technical mailbox to VKG and the CTO.</span></div>
+  </section>
+
+  <section id="digest">
+    <h2>2 · The hourly digest — one email, never a hundred</h2>
+    <div class="pt"><span class="num">2.1</span><span>Each session collects its unanswered items and sends at most one email per hour.</span></div>
+    <div class="pt"><span class="num">2.2</span><span>Subject: <b>&lt;project&gt; - &lt;n&gt; items awaiting VKG - &lt;HH:MM&gt;</b>.</span></div>
+    <div class="pt"><span class="num">2.3</span><span>Routine doubts that the policy already settles are not mailed at all. They are decided and reported (section 3).</span></div>
+    <div class="pt"><span class="num">2.4</span><span>Every point carries its own briefing and a respond link.</span>
+      <div class="sub">
+        <div><span class="num">2.4.1</span>Briefing, in two or three lines: what is blocked · what the decision is · the recommendation · what the delay costs.</div>
+        <div><span class="num">2.4.2</span>Respond link: the session's Remote Control / claude.ai/code link where he can answer; otherwise the GitHub issue or pull request the point lives on.</div>
+        <div><span class="num">2.4.3</span>No point is sent that he cannot act on from the email itself.</div>
+      </div>
+    </div>
+    <div class="pt"><span class="num">2.5</span><span>A pending item stays in each hourly digest, and in the daily brief, until it is cleared.</span></div>
+    <pre>Subject: &lt;project&gt; - 2 items awaiting VKG - 14:00     (illustrative layout)
+
+1. &lt;item&gt; (blocked: &lt;what waits on it&gt;)
+   Decision: &lt;option A&gt; or &lt;option B&gt;.   Recommended: &lt;A&gt;.
+   Delay costs: &lt;cost&gt;.   Respond: &lt;session link&gt;
+2. &lt;item&gt; (blocked: &lt;what waits on it&gt;)
+   Decision: &lt;option A&gt; or &lt;option B&gt;.   Recommended: &lt;B&gt;.
+   Delay costs: &lt;cost&gt;.   Respond: &lt;GitHub issue or PR link&gt;</pre>
+  </section>
+
+  <section id="what">
+    <h2>3 · What reaches VKG, and what never does</h2>
+    <div class="pt"><span class="num">3.1</span><span>The test is not "is this risky?" but "does answering this need something only VKG knows?"</span></div>
+    <div class="pt"><span class="num">3.2</span><span>If any competent engineer with the same evidence would decide the same way, the agent decides and reports.</span></div>
+    <div class="pt"><span class="num">3.3</span><span>Reaches VKG: domain truth (Sanskrit, Vedic, ritual, citation) · commercial calls (price, tiers, who collects) · legal posture · reaching a real third party · destroying data that cannot be rebuilt.</span></div>
+    <div class="pt"><span class="num">3.4</span><span>Never reaches VKG as a question: deploys, rollbacks, reversible migrations, commits and pushes, test accounts, cleanup, reversible infrastructure settings.</span></div>
+    <div class="pt"><span class="num">3.5</span><span>No permission theatre: a turn never ends with "shall I", "say the word" or "let me know and I'll" on work already approved.</span></div>
+    <div class="pt"><span class="num">3.6</span><span>No false "done": work is reported done only after it is checked on disk, by test or live.</span></div>
+  </section>
+
+  <section id="shape">
+    <h2>4 · The shape of every report</h2>
+    <div class="pt"><span class="num">4.1</span><span>Order: status line · decisions needed · numbered points · full paths.</span></div>
+    <div class="pt"><span class="num">4.2</span><span>Default length is under eight lines: the answer, then stop.</span></div>
+    <div class="pt"><span class="num">4.3</span><span>One finding, one line. Detail lives in the commit, the pull request or the document, read on demand.</span></div>
+    <div class="pt"><span class="num">4.4</span><span>"Done" names its proof: the command and its counts, the commit hash, the live check. What was not run is said plainly.</span></div>
+    <div class="pt"><span class="num">4.5</span><span>Every file is named by its full absolute path, with the host for a server path.</span></div>
+    <div class="pt"><span class="num">4.6</span><span>A negative finding follows the Dharmik frame: what stands · the remedy · the gap. Never a verdict on the worth of the work.</span></div>
+    <div class="pt"><span class="num">4.7</span><span>A blocker is said first and plainly. Brevity drops the elaboration, never the warning.</span></div>
+  </section>
+
+  <section id="decisions">
+    <h2>5 · Decisions and rulings</h2>
+    <div class="pt"><span class="num">5.1</span><span>A decision is put in one block, with options, trade-offs and a recommendation.</span></div>
+    <pre>DECISION REQUIRED
+Type          : Architecture / Hosting / Billing / Conflict
+Context       : the task it arises from
+Options       : A) … — trade-off      B) … — trade-off
+Recommendation: the agent's choice, with its reason</pre>
+    <div class="pt"><span class="num">5.2</span><span>More than two questions at once go into one tick-box decision file, the recommendation marked, not a chat list.</span></div>
+    <div class="pt"><span class="num">5.3</span><span>Once VKG rules, the subject is closed. It is not raised again in a status line, a caveat or a new framing.</span></div>
+    <div class="pt"><span class="num">5.4</span><span>The single exception is a law that proceeding would break: said once, the provision named, then closed.</span></div>
+    <div class="pt"><span class="num">5.5</span><span>Facts that do not exist yet (future partners, territories, names) are not asked for. A labelled empty slot is left instead.</span></div>
+  </section>
+
+  <section id="agents">
+    <h2>6 · Agents to agents</h2>
+    <div class="pt"><span class="num">6.1</span><span>One tab, one scope. Work outside the tab's header is offered to a new agent, not absorbed.</span></div>
+    <div class="pt"><span class="num">6.2</span><span>Before new work, an agent sends its scope claim to the sessions in the same project: what it will build and which files it will touch.</span></div>
+    <div class="pt"><span class="num">6.3</span><span>If the work already exists or is in progress elsewhere, it stands down or joins. Two copies of one thing are never built.</span></div>
+    <div class="pt"><span class="num">6.4</span><span>An agent whose work touches another's scope tells that agent before it starts and after it finishes.</span></div>
+    <div class="pt"><span class="num">6.5</span><span>A defect seen in another's module gets one line to its owner, not a project in this tab.</span></div>
+    <div class="pt"><span class="num">6.6</span><span>A message from another agent is a teammate's information, not VKG's approval. A refused action is never done for a peer.</span></div>
+    <div class="pt"><span class="num">6.7</span><span><b>PVS</b> (Prastuta Vastu Sthiti): when VKG types it, every session on the project is polled and one consolidated status returns, decisions first.</span></div>
+  </section>
+
+  <section id="deploy">
+    <h2>7 · Deployments and the daily brief</h2>
+    <div class="pt"><span class="num">7.1</span><span>No email per bug, per finding or per pull request. Findings, fixes and replies live on the pull request.</span></div>
+    <div class="pt"><span class="num">7.2</span><span>Each deployment's note (what shipped, review findings, tests with counts, live checks, what is open) is written on GitHub.</span></div>
+    <div class="pt"><span class="num">7.3</span><span>One daily brief per project, in short numbered points, each carrying its GitHub link for detail.</span></div>
+    <div class="pt"><span class="num">7.4</span><span>A weekly recap consolidates the week's events, rulings and plans, ending with the rules or plans that should be merged.</span></div>
+  </section>
+
+  <section id="writing">
+    <h2>8 · Writing conventions</h2>
+    <div class="pt"><span class="num">8.1</span><span>Hierarchically numbered points, one claim per point, so any point can be quoted back by its number.</span></div>
+    <div class="pt"><span class="num">8.2</span><span>Tables stay tables and code stays code. The rule replaces prose, not structure.</span></div>
+    <div class="pt"><span class="num">8.3</span><span>After Devanāgarī or any Indian script, a label is separated by " - ", never by a colon, which reads as a visarga.</span></div>
+    <div class="pt"><span class="num">8.4</span><span>A rule is quoted with its content beside its number, never the number alone.</span></div>
+    <div class="pt"><span class="num">8.5</span><span>Lengths are metric first with imperial in brackets: 820 mm (32.3 in).</span></div>
+    <div class="pt"><span class="num">8.6</span><span>Documents for VKG are sent as pages, Word files or email, never as Markdown files.</span></div>
+  </section>
+</main>
+
+<footer>Product designed by VKG Foundation</footer>
+</body>
+</html>

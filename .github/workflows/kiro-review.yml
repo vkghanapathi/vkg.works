@@ -62,7 +62,7 @@ jobs:
 
       - name: Check out PR head
         if: steps.key.outputs.ok == 'true'
-        uses: actions/checkout@v4
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2
         with:
           fetch-depth: 0
           ref: refs/pull/${{ env.PR }}/head
@@ -79,7 +79,11 @@ jobs:
       - name: Install Kiro CLI
         if: steps.key.outputs.ok == 'true'
         run: |
-          curl -fsSL https://cli.kiro.dev/install | bash
+          # Download, then run (no curl|bash; Semgrep gha-curl-pipe-shell).
+          curl -fsSL --proto '=https' --tlsv1.2 -o /tmp/kiro-install.sh https://cli.kiro.dev/install
+          head -c 2 /tmp/kiro-install.sh | grep -q '#!' || { echo "::error::Kiro installer is not a script"; exit 1; }
+          sha256sum /tmp/kiro-install.sh
+          bash /tmp/kiro-install.sh
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
 
       - name: Run Kiro review

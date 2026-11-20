@@ -1,0 +1,191 @@
+# Kiro PR review — standard for every VKG repo (rule 35.3, Kiro replaces Amazon Q).
+# Source of truth: administrative/ci/kiro-review.yml. Install with
+#   administrative/ci/add-kiro-review.sh <owner/repo>
+# Do not edit copies by hand (STF 7.6); edit here and re-run the installer.
+#
+# Secrets (repo level):
+#   KIRO_API_KEY  Kiro Pro key (kiro.dev/docs/cli/headless). Missing -> review skips.
+#   SMTP_USER     tech@dharmaposhanam.in (Google Workspace, rule 27.5.3)
+#   SMTP_PASS     Gmail app password for SMTP_USER. Missing -> mail skipped, logged.
+# Mail policy (VKG, 2026-11-20): a HIGH finding mails at once; everything else
+# goes in a digest per repo at 04:00 and 16:00 IST, each covering the previous
+# 12 hours (VKG, 2026-11-20). No reviews in the window -> no mail.
+name: Kiro Code Review
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize, ready_for_review]
+  issue_comment:
+    types: [created]
+  schedule:
+    - cron: "30 22 * * *"  # 04:00 IST digest
+    - cron: "30 10 * * *"  # 16:00 IST digest
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: read
+
+env:
+  MAIL_TO: sarvaveda@gmail.com, tech@dharmaposhanam.in
+  MARK: "## Kiro code review"
+
+jobs:
+  review:
+    if: >-
+      (github.event_name == 'pull_request' && github.event.pull_request.draft == false) ||
+      (github.event_name == 'issue_comment' && github.event.issue.pull_request &&
+       startsWith(github.event.comment.body, '/review') &&
+       contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association))
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    concurrency:
+      group: kiro-review-${{ github.event.pull_request.number || github.event.issue.number }}
+      cancel-in-progress: true
+    env:
+      KIRO_API_KEY: ${{ secrets.KIRO_API_KEY }}
+      SMTP_USER: ${{ secrets.SMTP_USER }}
+      SMTP_PASS: ${{ secrets.SMTP_PASS }}
+      GH_TOKEN: ${{ github.token }}
+      PR: ${{ github.event.pull_request.number || github.event.issue.number }}
+    steps:
+      - name: Check for KIRO_API_KEY
+        id: key
+        run: |
+          if [ -z "$KIRO_API_KEY" ]; then
+            echo "::notice::KIRO_API_KEY secret not set — Kiro review skipped."
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Check out PR head
+        if: steps.key.outputs.ok == 'true'
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2
+        with:
+          fetch-depth: 0
+          ref: refs/pull/${{ env.PR }}/head
+
+      - name: Build diff against base
+        if: steps.key.outputs.ok == 'true'
+        run: |
+          BASE=$(gh pr view "$PR" --repo "$GITHUB_REPOSITORY" --json baseRefName -q .baseRefName)
+          git fetch --no-tags origin "$BASE"
+          git diff --stat "origin/$BASE"...HEAD > /tmp/diffstat.txt
+          git diff "origin/$BASE"...HEAD > /tmp/pr.diff
+          wc -l /tmp/pr.diff
+
+      - name: Install Kiro CLI
+        if: steps.key.outputs.ok == 'true'
+        run: |
+          # Download, then run (no curl|bash; Semgrep gha-curl-pipe-shell).
+          curl -fsSL --proto '=https' --tlsv1.2 -o /tmp/kiro-install.sh https://cli.kiro.dev/install
+          head -c 2 /tmp/kiro-install.sh | grep -q '#!' || { echo "::error::Kiro installer is not a script"; exit 1; }
+          sha256sum /tmp/kiro-install.sh
+          bash /tmp/kiro-install.sh
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Run Kiro review
+        if: steps.key.outputs.ok == 'true'
+        run: |
+          cat > /tmp/prompt.txt <<'EOF'
+          You are the external code reviewer for this pull request (VKG rule 35.3).
+          The full diff is in /tmp/pr.diff and a summary in /tmp/diffstat.txt;
+          the repository is checked out at the PR head for context.
+          Report only real defects: correctness bugs, crashes and runtime failures,
+          security issues, data loss, broken tests, secrets committed.
+          Skip style nits. For each finding give: file:line, severity
+          (HIGH / MEDIUM / LOW), the defect in one sentence, and the fix in one sentence.
+          HIGH means it will crash, lose or corrupt data, leak a secret or open a
+          security hole in production.
+          Number the findings 1, 2, 3 ... so the author can answer each by number.
+          If you find nothing, say "No defects found" and list what you checked.
+          Output GitHub Markdown only, no preamble.
+          The very last line must be exactly:
+          KIRO-SUMMARY: high=<n> medium=<n> low=<n>
+          EOF
+          kiro-cli chat --v3 --no-interactive --trust-tools=read_file,grep_search \
+            "$(cat /tmp/prompt.txt)" > /tmp/review.md 2> /tmp/kiro.err || {
+              echo "::warning::Kiro CLI exited non-zero"; cat /tmp/kiro.err; }
+          grep -q '^KIRO-SUMMARY:' /tmp/review.md || echo "KIRO-SUMMARY: high=? medium=? low=?" >> /tmp/review.md
+
+      - name: Post review comment
+        if: steps.key.outputs.ok == 'true'
+        run: |
+          { echo "$MARK"; echo; cat /tmp/review.md; echo;
+            echo "_Fix each finding or answer it by number before merging (rule 35.3.2). Comment \`/review\` to re-run._"; } > /tmp/comment.md
+          gh pr comment "$PR" --repo "$GITHUB_REPOSITORY" --body-file /tmp/comment.md
+
+      - name: Mail at once on a HIGH finding
+        if: steps.key.outputs.ok == 'true'
+        run: |
+          HIGH=$(sed -n 's/^KIRO-SUMMARY: high=\([0-9?]*\).*/\1/p' /tmp/review.md | tail -1)
+          if [ "$HIGH" = "0" ]; then echo "No HIGH finding; left for the daily digest."; exit 0; fi
+          TITLE=$(gh pr view "$PR" --repo "$GITHUB_REPOSITORY" --json title -q .title)
+          URL="https://github.com/$GITHUB_REPOSITORY/pull/$PR"
+          REPO="${GITHUB_REPOSITORY#*/}"
+          SUBJECT="$REPO - Kiro HIGH finding - PR #$PR"
+          [ "$HIGH" = "?" ] && SUBJECT="$REPO - Kiro review unreadable - PR #$PR"
+          {
+            echo "1. Repository: $GITHUB_REPOSITORY"
+            echo "2. Pull request: #$PR $TITLE"
+            echo "3. HIGH findings: $HIGH"
+            echo "4. Read and answer on the PR: $URL"
+            echo
+            echo "-- Kiro review --"
+            cat /tmp/review.md
+          } > /tmp/mailbody.txt
+          if [ -z "$SMTP_USER" ] || [ -z "$SMTP_PASS" ]; then
+            echo "::notice::SMTP_USER/SMTP_PASS not set — HIGH mail skipped ($SUBJECT)"; exit 0; fi
+          RCPT=(); IFS=',' read -ra TO <<< "$MAIL_TO"
+          for t in "${TO[@]}"; do RCPT+=(--mail-rcpt "$(echo "$t" | xargs)"); done
+          { echo "From: Kiro Review <$SMTP_USER>"; echo "To: $MAIL_TO"; echo "Subject: $SUBJECT"
+            echo "Content-Type: text/plain; charset=UTF-8"; echo; cat /tmp/mailbody.txt; } > /tmp/mail.eml
+          curl -sS --ssl-reqd --url smtps://smtp.gmail.com:465 --user "$SMTP_USER:$SMTP_PASS" \
+            --mail-from "$SMTP_USER" "${RCPT[@]}" --upload-file /tmp/mail.eml && echo "Mailed: $SUBJECT"
+
+  digest:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ github.token }}
+      SMTP_USER: ${{ secrets.SMTP_USER }}
+      SMTP_PASS: ${{ secrets.SMTP_PASS }}
+    steps:
+      - name: Collect last 12 h of Kiro reviews and mail one digest
+        run: |
+          SINCE=$(date -u -d '12 hours ago' +%Y-%m-%dT%H:%M:%SZ)
+          REPO="${GITHUB_REPOSITORY#*/}"
+          gh api --paginate "repos/$GITHUB_REPOSITORY/issues/comments?since=$SINCE&per_page=100" \
+            -q '.[] | select(.body | startswith(env.MARK)) | [.issue_url, .html_url, .created_at, (.body | capture("KIRO-SUMMARY: high=(?<h>[0-9?]+) medium=(?<m>[0-9?]+) low=(?<l>[0-9?]+)") // {h:"?",m:"?",l:"?"} | "\(.h) \(.m) \(.l)")] | @tsv' \
+            > /tmp/rows.tsv
+          N=$(wc -l < /tmp/rows.tsv)
+          echo "$N Kiro reviews in the last 12 h"
+          [ "$N" -eq 0 ] && { echo "Nothing to report; no mail."; exit 0; }
+          TODAY=$(TZ=Asia/Kolkata date +'%d %b %Y')
+          SLOT=$(TZ=Asia/Kolkata date +'%H:%M')
+          SUBJECT="$REPO - Kiro digest - $N reviews - $TODAY $SLOT IST"
+          i=0
+          {
+            echo "Kiro reviews on $GITHUB_REPOSITORY, the 12 hours to $TODAY $SLOT IST."
+            echo
+            while IFS=$'\t' read -r ISSUE LINK WHEN COUNTS; do
+              i=$((i+1)); read -r H M L <<< "$COUNTS"
+              NUM=${ISSUE##*/}
+              TITLE=$(gh pr view "$NUM" --repo "$GITHUB_REPOSITORY" --json title,state -q '"\(.title) [\(.state)]"')
+              echo "$i. PR #$NUM $TITLE"
+              echo "   $i.1  HIGH $H · MEDIUM $M · LOW $L"
+              echo "   $i.2  $LINK"
+            done < /tmp/rows.tsv
+          } > /tmp/mailbody.txt
+          cat /tmp/mailbody.txt
+          if [ -z "$SMTP_USER" ] || [ -z "$SMTP_PASS" ]; then
+            echo "::notice::SMTP_USER/SMTP_PASS not set — digest mail skipped"; exit 0; fi
+          RCPT=(); IFS=',' read -ra TO <<< "$MAIL_TO"
+          for t in "${TO[@]}"; do RCPT+=(--mail-rcpt "$(echo "$t" | xargs)"); done
+          { echo "From: Kiro Review <$SMTP_USER>"; echo "To: $MAIL_TO"; echo "Subject: $SUBJECT"
+            echo "Content-Type: text/plain; charset=UTF-8"; echo; cat /tmp/mailbody.txt; } > /tmp/mail.eml
+          curl -sS --ssl-reqd --url smtps://smtp.gmail.com:465 --user "$SMTP_USER:$SMTP_PASS" \
+            --mail-from "$SMTP_USER" "${RCPT[@]}" --upload-file /tmp/mail.eml && echo "Mailed: $SUBJECT"
